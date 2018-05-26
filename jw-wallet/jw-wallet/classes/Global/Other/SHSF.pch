@@ -1,0 +1,25 @@
+//
+//  SHSF.pch
+//  jw-wallet
+//
+//  Created by 王冠阳 on 2018/5/26.
+//  Copyright © 2018年 SHSF. All rights reserved.
+//
+
+#ifndef SHSF_pch
+#define SHSF_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "CommonMethods.h"
+#import "DefineMacro.h"
+#import "DefineRequest.h"
+#import "DefineTheme.h"
+#import "PathManager.h"
+#import "UserDefaultUtil.h"
+#import "UIViewController+swizzling.h"
+#import "NSArray+swiArray.h"
+#import "AppDelegate+AppService.h"
+#import "AppDelegate+ViewController.h"
+#import "UINavigationBar+style.h"
+#endif /* SHSF_pch */
