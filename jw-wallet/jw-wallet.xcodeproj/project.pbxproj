@@ -120,9 +120,9 @@
 		2E48163220B983AC00AFCBBB /* home_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_gray@3x.png"; sourceTree = "<group>"; };
 		2E48163320B983AC00AFCBBB /* circle_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle_gray@2x.png"; sourceTree = "<group>"; };
 		2E48163420B983AC00AFCBBB /* circle_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle_gray@3x.png"; sourceTree = "<group>"; };
-		2E48164220B9840600AFCBBB /* DefineTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTheme.h; sourceTree = "<group>"; };
-		2E48164320B9840600AFCBBB /* DefineMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineMacro.h; sourceTree = "<group>"; };
-		2E48164420B9840600AFCBBB /* DefineRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineRequest.h; sourceTree = "<group>"; };
+		2E48164920B990EE00AFCBBB /* DefineTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineTheme.h; sourceTree = "<group>"; };
+		2E48164A20B990EE00AFCBBB /* DefineMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineMacro.h; sourceTree = "<group>"; };
+		2E48164B20B990EF00AFCBBB /* DefineRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -560,9 +560,9 @@
 		2E4815F220B97C7A00AFCBBB /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				2E48164320B9840600AFCBBB /* DefineMacro.h */,
-				2E48164420B9840600AFCBBB /* DefineRequest.h */,
-				2E48164220B9840600AFCBBB /* DefineTheme.h */,
+				2E48164A20B990EE00AFCBBB /* DefineMacro.h */,
+				2E48164B20B990EF00AFCBBB /* DefineRequest.h */,
+				2E48164920B990EE00AFCBBB /* DefineTheme.h */,
 			);
 			name = Define;
 			path = "../../../../资料/MyApp/MyApp/Define";
