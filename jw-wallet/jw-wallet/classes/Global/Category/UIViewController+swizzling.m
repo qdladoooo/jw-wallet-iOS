@@ -1,10 +1,6 @@
 //
 //  UIViewController+swizzling.m
-//  MyApp
-//
-//  Created by liaowentao on 17/3/28.
-//  Copyright © 2017年 Haochuang. All rights reserved.
-//
+
 
 #import "UIViewController+swizzling.h"
 #import <objc/runtime.h>

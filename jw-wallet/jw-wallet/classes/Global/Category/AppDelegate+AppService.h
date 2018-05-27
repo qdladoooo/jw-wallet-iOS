@@ -1,10 +1,6 @@
 //
 //  AppDelegate+AppService.h
-//  MyApp
-//
-//  Created by liaowentao on 17/3/29.
-//  Copyright © 2017年 Haochuang. All rights reserved.
-//  Appservice
+
 
 #import "AppDelegate.h"
 

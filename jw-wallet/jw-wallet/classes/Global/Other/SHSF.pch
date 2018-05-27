@@ -22,4 +22,5 @@
 #import "AppDelegate+AppService.h"
 #import "AppDelegate+ViewController.h"
 #import "UINavigationBar+style.h"
+#import "UIBarButtonItem+Category.h"
 #endif /* SHSF_pch */
