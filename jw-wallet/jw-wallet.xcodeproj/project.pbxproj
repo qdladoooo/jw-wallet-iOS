@@ -133,9 +133,6 @@
 		2E48163220B983AC00AFCBBB /* home_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_gray@3x.png"; sourceTree = "<group>"; };
 		2E48163320B983AC00AFCBBB /* circle_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle_gray@2x.png"; sourceTree = "<group>"; };
 		2E48163420B983AC00AFCBBB /* circle_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle_gray@3x.png"; sourceTree = "<group>"; };
-		2E48164C20B9A73D00AFCBBB /* DefineMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineMacro.h; sourceTree = "<group>"; };
-		2E48164D20B9A73D00AFCBBB /* DefineRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineRequest.h; sourceTree = "<group>"; };
-		2E48164E20B9A73D00AFCBBB /* DefineTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTheme.h; sourceTree = "<group>"; };
 		2E48164F20B9A95500AFCBBB /* UIBarButtonItem+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Category.m"; sourceTree = "<group>"; };
 		2E48165020B9A95500AFCBBB /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		2E48165120B9A95500AFCBBB /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
@@ -168,6 +165,9 @@
 		2E48168C20BAD8B900AFCBBB /* SSMarketModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMarketModel.m; sourceTree = "<group>"; };
 		2E48168E20BAD8CE00AFCBBB /* SSAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAccountModel.h; sourceTree = "<group>"; };
 		2E48168F20BAD8CE00AFCBBB /* SSAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAccountModel.m; sourceTree = "<group>"; };
+		2E48169C20BB9AE300AFCBBB /* DefineTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTheme.h; sourceTree = "<group>"; };
+		2E48169D20BB9AE300AFCBBB /* DefineMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineMacro.h; sourceTree = "<group>"; };
+		2E48169E20BB9AE300AFCBBB /* DefineRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -536,7 +536,7 @@
 		2E48158820B9734900AFCBBB /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				2E4815F220B97C7A00AFCBBB /* Define */,
+				2E48169F20BB9BE300AFCBBB /* Define */,
 				2E48158920B9734900AFCBBB /* Category */,
 				2E48159520B9734900AFCBBB /* NetWork */,
 				2E48159820B9734900AFCBBB /* Other */,
@@ -606,17 +606,6 @@
 				2E4815F920B97D6400AFCBBB /* UserDefaultUtil.m */,
 			);
 			path = DataManage;
-			sourceTree = "<group>";
-		};
-		2E4815F220B97C7A00AFCBBB /* Define */ = {
-			isa = PBXGroup;
-			children = (
-				2E48164C20B9A73D00AFCBBB /* DefineMacro.h */,
-				2E48164D20B9A73D00AFCBBB /* DefineRequest.h */,
-				2E48164E20B9A73D00AFCBBB /* DefineTheme.h */,
-			);
-			name = Define;
-			path = "../../../../资料/MyApp/MyApp/Define";
 			sourceTree = "<group>";
 		};
 		2E48160020B9812C00AFCBBB /* view */ = {
@@ -764,6 +753,16 @@
 				2E48167F20BAD7CF00AFCBBB /* SSMarktViewController.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		2E48169F20BB9BE300AFCBBB /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				2E48169D20BB9AE300AFCBBB /* DefineMacro.h */,
+				2E48169E20BB9AE300AFCBBB /* DefineRequest.h */,
+				2E48169C20BB9AE300AFCBBB /* DefineTheme.h */,
+			);
+			path = Define;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

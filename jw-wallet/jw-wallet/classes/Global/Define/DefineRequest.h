@@ -1,11 +1,6 @@
 //
 //  DefineRequest.h
-//  MyApp
-//
-//  Created by liaowentao on 17/3/27.
-//  Copyright © 2017年 Haochuang. All rights reserved.
-//
-// 各请求的定义(网址都是乱写的）
+
 
 #ifndef DefineRequest_h
 #define DefineRequest_h
