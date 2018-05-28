@@ -9,6 +9,7 @@
 #import "SSAsertViewController.h"
 #import "SSAsertHearView.h"
 #import "SSAsertCell.h"
+#import "SSAsertDetailVC.h"
 
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView* tableView;
@@ -79,6 +80,10 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SSAsertDetailVC *vc = [[SSAsertDetailVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80;
 }
