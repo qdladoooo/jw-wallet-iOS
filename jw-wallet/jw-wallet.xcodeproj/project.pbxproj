@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002CF42B8F8ECDB403EEFB1D /* libPods-jw-wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */; };
 		2E48153220B91FB800AFCBBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48153120B91FB800AFCBBB /* AppDelegate.m */; };
 		2E48153520B91FB800AFCBBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48153420B91FB800AFCBBB /* ViewController.m */; };
 		2E48153820B91FB800AFCBBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E48153620B91FB800AFCBBB /* Main.storyboard */; };
@@ -68,6 +69,17 @@
 		2E6C892B20BC539E00C0B37E /* SSTranferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C892920BC539E00C0B37E /* SSTranferViewController.xib */; };
 		2E6C893420BC5ECC00C0B37E /* SSGetMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C893220BC5ECC00C0B37E /* SSGetMoneyViewController.m */; };
 		2E6C893520BC5ECC00C0B37E /* SSGetMoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C893320BC5ECC00C0B37E /* SSGetMoneyViewController.xib */; };
+		2E6C895C20BD9A3C00C0B37E /* SSManagerPurseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C895A20BD9A3C00C0B37E /* SSManagerPurseViewController.m */; };
+		2E6C895D20BD9A3C00C0B37E /* SSManagerPurseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C895B20BD9A3C00C0B37E /* SSManagerPurseViewController.xib */; };
+		2E6C896120BD9A8A00C0B37E /* SSCreatePurseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C895F20BD9A8A00C0B37E /* SSCreatePurseViewController.m */; };
+		2E6C896220BD9A8A00C0B37E /* SSCreatePurseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C896020BD9A8A00C0B37E /* SSCreatePurseViewController.xib */; };
+		2E6C896620BD9AD600C0B37E /* SSAddPurseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C896420BD9AD600C0B37E /* SSAddPurseViewController.m */; };
+		2E6C896720BD9AD600C0B37E /* SSAddPurseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C896520BD9AD600C0B37E /* SSAddPurseViewController.xib */; };
+		2E6C896A20BDB39400C0B37E /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C896820BDB39300C0B37E /* UIImage+Image.m */; };
+		2E6C896F20BDB7C300C0B37E /* SSPurseListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C896D20BDB7C300C0B37E /* SSPurseListCell.m */; };
+		2E6C897020BDB7C300C0B37E /* SSPurseListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C896E20BDB7C300C0B37E /* SSPurseListCell.xib */; };
+		2E6C897320BDB7DE00C0B37E /* SSPurseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C897220BDB7DE00C0B37E /* SSPurseListModel.m */; };
+		2E6C897620BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C897520BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +203,27 @@
 		2E6C893120BC5ECC00C0B37E /* SSGetMoneyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSGetMoneyViewController.h; sourceTree = "<group>"; };
 		2E6C893220BC5ECC00C0B37E /* SSGetMoneyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSGetMoneyViewController.m; sourceTree = "<group>"; };
 		2E6C893320BC5ECC00C0B37E /* SSGetMoneyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSGetMoneyViewController.xib; sourceTree = "<group>"; };
+		2E6C895920BD9A3C00C0B37E /* SSManagerPurseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSManagerPurseViewController.h; sourceTree = "<group>"; };
+		2E6C895A20BD9A3C00C0B37E /* SSManagerPurseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSManagerPurseViewController.m; sourceTree = "<group>"; };
+		2E6C895B20BD9A3C00C0B37E /* SSManagerPurseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSManagerPurseViewController.xib; sourceTree = "<group>"; };
+		2E6C895E20BD9A8A00C0B37E /* SSCreatePurseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSCreatePurseViewController.h; sourceTree = "<group>"; };
+		2E6C895F20BD9A8A00C0B37E /* SSCreatePurseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCreatePurseViewController.m; sourceTree = "<group>"; };
+		2E6C896020BD9A8A00C0B37E /* SSCreatePurseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSCreatePurseViewController.xib; sourceTree = "<group>"; };
+		2E6C896320BD9AD600C0B37E /* SSAddPurseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAddPurseViewController.h; sourceTree = "<group>"; };
+		2E6C896420BD9AD600C0B37E /* SSAddPurseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAddPurseViewController.m; sourceTree = "<group>"; };
+		2E6C896520BD9AD600C0B37E /* SSAddPurseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAddPurseViewController.xib; sourceTree = "<group>"; };
+		2E6C896820BDB39300C0B37E /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		2E6C896920BDB39300C0B37E /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		2E6C896C20BDB7C300C0B37E /* SSPurseListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSPurseListCell.h; sourceTree = "<group>"; };
+		2E6C896D20BDB7C300C0B37E /* SSPurseListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSPurseListCell.m; sourceTree = "<group>"; };
+		2E6C896E20BDB7C300C0B37E /* SSPurseListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSPurseListCell.xib; sourceTree = "<group>"; };
+		2E6C897120BDB7DE00C0B37E /* SSPurseListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSPurseListModel.h; sourceTree = "<group>"; };
+		2E6C897220BDB7DE00C0B37E /* SSPurseListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSPurseListModel.m; sourceTree = "<group>"; };
+		2E6C897420BDC43C00C0B37E /* UIColor+WLZ_HexRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WLZ_HexRGB.h"; sourceTree = "<group>"; };
+		2E6C897520BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WLZ_HexRGB.m"; sourceTree = "<group>"; };
+		45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.release.xcconfig"; sourceTree = "<group>"; };
+		CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002CF42B8F8ECDB403EEFB1D /* libPods-jw-wallet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +259,8 @@
 				2E48154820B91FB900AFCBBB /* jw-walletTests */,
 				2E48155320B91FB900AFCBBB /* jw-walletUITests */,
 				2E48152E20B91FB800AFCBBB /* Products */,
+				37CAACB097E5C8DDF8007802 /* Pods */,
+				54DC894A045ECA55A50D29FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -532,6 +568,8 @@
 		2E48158620B96FD100AFCBBB /* assert(资产) */ = {
 			isa = PBXGroup;
 			children = (
+				2E6C896B20BDB73400C0B37E /* 扫码 */,
+				2E6C895520BD988800C0B37E /* 钱包 */,
 				2E6C891F20BC52F900C0B37E /* 收款 */,
 				2E6C892320BC52F900C0B37E /* 转账 */,
 				2E48160220B9813F00AFCBBB /* controller */,
@@ -574,6 +612,8 @@
 		2E48158920B9734900AFCBBB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2E6C896920BDB39300C0B37E /* UIImage+Image.h */,
+				2E6C896820BDB39300C0B37E /* UIImage+Image.m */,
 				2E48165220B9A95500AFCBBB /* UIBarButtonItem+Category.h */,
 				2E48164F20B9A95500AFCBBB /* UIBarButtonItem+Category.m */,
 				2E48165120B9A95500AFCBBB /* UIView+Category.h */,
@@ -588,6 +628,8 @@
 				2E48159220B9734900AFCBBB /* AppDelegate+AppService.m */,
 				2E48158E20B9734900AFCBBB /* NSArray+swiArray.h */,
 				2E48159320B9734900AFCBBB /* NSArray+swiArray.m */,
+				2E6C897420BDC43C00C0B37E /* UIColor+WLZ_HexRGB.h */,
+				2E6C897520BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -866,6 +908,75 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		2E6C895520BD988800C0B37E /* 钱包 */ = {
+			isa = PBXGroup;
+			children = (
+				2E6C895820BD98C300C0B37E /* controller */,
+				2E6C895720BD98BB00C0B37E /* model */,
+				2E6C895620BD98A800C0B37E /* view */,
+			);
+			path = "钱包";
+			sourceTree = "<group>";
+		};
+		2E6C895620BD98A800C0B37E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2E6C896C20BDB7C300C0B37E /* SSPurseListCell.h */,
+				2E6C896D20BDB7C300C0B37E /* SSPurseListCell.m */,
+				2E6C896E20BDB7C300C0B37E /* SSPurseListCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2E6C895720BD98BB00C0B37E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2E6C897120BDB7DE00C0B37E /* SSPurseListModel.h */,
+				2E6C897220BDB7DE00C0B37E /* SSPurseListModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2E6C895820BD98C300C0B37E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E6C895920BD9A3C00C0B37E /* SSManagerPurseViewController.h */,
+				2E6C895A20BD9A3C00C0B37E /* SSManagerPurseViewController.m */,
+				2E6C895B20BD9A3C00C0B37E /* SSManagerPurseViewController.xib */,
+				2E6C895E20BD9A8A00C0B37E /* SSCreatePurseViewController.h */,
+				2E6C895F20BD9A8A00C0B37E /* SSCreatePurseViewController.m */,
+				2E6C896020BD9A8A00C0B37E /* SSCreatePurseViewController.xib */,
+				2E6C896320BD9AD600C0B37E /* SSAddPurseViewController.h */,
+				2E6C896420BD9AD600C0B37E /* SSAddPurseViewController.m */,
+				2E6C896520BD9AD600C0B37E /* SSAddPurseViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2E6C896B20BDB73400C0B37E /* 扫码 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "扫码";
+			sourceTree = "<group>";
+		};
+		37CAACB097E5C8DDF8007802 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */,
+				53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54DC894A045ECA55A50D29FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -873,6 +984,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E48155920B91FB900AFCBBB /* Build configuration list for PBXNativeTarget "jw-wallet" */;
 			buildPhases = (
+				932A0B30651648D6609C089E /* [CP] Check Pods Manifest.lock */,
 				2E48152920B91FB800AFCBBB /* Sources */,
 				2E48152A20B91FB800AFCBBB /* Frameworks */,
 				2E48152B20B91FB800AFCBBB /* Resources */,
@@ -973,18 +1085,22 @@
 				2E48163720B983AC00AFCBBB /* home_blue@3x.png in Resources */,
 				2E48163920B983AC00AFCBBB /* me@3x.png in Resources */,
 				2E6C891920BC522900C0B37E /* SSAsertCell.xib in Resources */,
+				2E6C897020BDB7C300C0B37E /* SSPurseListCell.xib in Resources */,
 				2E48163820B983AC00AFCBBB /* u=2796464312,3280625818&fm=11&gp=0.jpg in Resources */,
 				2E6C893520BC5ECC00C0B37E /* SSGetMoneyViewController.xib in Resources */,
 				2E6C891A20BC522900C0B37E /* SSAsertHearView.xib in Resources */,
 				2E48163520B983AC00AFCBBB /* me@2x.png in Resources */,
+				2E6C895D20BD9A3C00C0B37E /* SSManagerPurseViewController.xib in Resources */,
 				2E6C892B20BC539E00C0B37E /* SSTranferViewController.xib in Resources */,
 				2E48164120B983AC00AFCBBB /* circle_gray@3x.png in Resources */,
+				2E6C896720BD9AD600C0B37E /* SSAddPurseViewController.xib in Resources */,
 				2E48163B20B983AC00AFCBBB /* me_blue@2x.png in Resources */,
 				2E6C891820BC522900C0B37E /* SSTradingRecordsCell.xib in Resources */,
 				2E48163F20B983AC00AFCBBB /* home_gray@3x.png in Resources */,
 				2E48167320BA889000AFCBBB /* SSAccoutHeaderView.xib in Resources */,
 				2E48163D20B983AC00AFCBBB /* circle_blue@3x.png in Resources */,
 				2E48153D20B91FB900AFCBBB /* LaunchScreen.storyboard in Resources */,
+				2E6C896220BD9A8A00C0B37E /* SSCreatePurseViewController.xib in Resources */,
 				2E48163620B983AC00AFCBBB /* home_blue@2x.png in Resources */,
 				2E6C890220BC2E9900C0B37E /* SSAsertDetailVC.xib in Resources */,
 				2E48166E20BA868300AFCBBB /* SSAccoutCell.xib in Resources */,
@@ -1015,6 +1131,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		932A0B30651648D6609C089E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jw-wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E48152920B91FB800AFCBBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1022,10 +1159,14 @@
 			files = (
 				2E48168320BAD82400AFCBBB /* SSSectionHeaderView.m in Sources */,
 				2E6C891620BC522900C0B37E /* SSAsertCell.m in Sources */,
+				2E6C896620BD9AD600C0B37E /* SSAddPurseViewController.m in Sources */,
 				2E6C891E20BC526400C0B37E /* SSTradeRecordModel.m in Sources */,
 				2E4815A620B9734900AFCBBB /* UIViewController+swizzling.m in Sources */,
+				2E6C895C20BD9A3C00C0B37E /* SSManagerPurseViewController.m in Sources */,
 				2E4815AB20B9734900AFCBBB /* CommonMethods.m in Sources */,
 				2E48165320B9A95500AFCBBB /* UIBarButtonItem+Category.m in Sources */,
+				2E6C896120BD9A8A00C0B37E /* SSCreatePurseViewController.m in Sources */,
+				2E6C897320BDB7DE00C0B37E /* SSPurseListModel.m in Sources */,
 				2E4815FB20B97D6400AFCBBB /* PathManager.m in Sources */,
 				2E6C891B20BC522900C0B37E /* SSAserModel.m in Sources */,
 				2E48166D20BA868300AFCBBB /* SSAccoutCell.m in Sources */,
@@ -1050,6 +1191,9 @@
 				2E4815A820B9734900AFCBBB /* AppDelegate+ViewController.m in Sources */,
 				2E48154020B91FB900AFCBBB /* main.m in Sources */,
 				2E48160520B9818900AFCBBB /* SSAsertViewController.m in Sources */,
+				2E6C896F20BDB7C300C0B37E /* SSPurseListCell.m in Sources */,
+				2E6C897620BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m in Sources */,
+				2E6C896A20BDB39400C0B37E /* UIImage+Image.m in Sources */,
 				2E6C891520BC522900C0B37E /* SSAsertHearView.m in Sources */,
 				2E48153220B91FB800AFCBBB /* AppDelegate.m in Sources */,
 				2E4815A920B9734900AFCBBB /* AppDelegate+AppService.m in Sources */,
@@ -1219,10 +1363,11 @@
 		};
 		2E48155A20B91FB900AFCBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DYK3K8MU62;
+				DEVELOPMENT_TEAM = SU3Y433YRH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/jw-wallet/classes/Global/Other/SHSF.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/jw-wallet/Supporting Files/Info.plist";
@@ -1239,10 +1384,11 @@
 		};
 		2E48155B20B91FB900AFCBBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DYK3K8MU62;
+				DEVELOPMENT_TEAM = SU3Y433YRH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/jw-wallet/classes/Global/Other/SHSF.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/jw-wallet/Supporting Files/Info.plist";

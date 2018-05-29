@@ -34,7 +34,7 @@
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = self.address.text;
     NSLog(@"%@",pasteboard.string);
-    
+   
 }
 
 /*

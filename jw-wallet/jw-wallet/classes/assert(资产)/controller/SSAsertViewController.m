@@ -10,6 +10,7 @@
 #import "SSAsertHearView.h"
 #import "SSAsertCell.h"
 #import "SSAsertDetailVC.h"
+#import "SSManagerPurseViewController.h"
 
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView* tableView;
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self setNavComponent];
+    [self setNavComponent];
     [self buildTableView];
     _dataArr = @[@"1",@"2",@"3",@"4"];
     self.navigationController.navigationBarHidden = YES;
@@ -46,14 +47,9 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)setNavComponent {
+     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriRenderingImage:@"purse"] style:UIBarButtonItemStylePlain target:self action:@selector(scan)];
+     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriRenderingImage:@"purse"] style:UIBarButtonItemStylePlain target:self action:@selector(purse)];
     
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(next) image:@"nav_scan_code" highImage:nil];
-    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftBtn setTitle:@"Bang" forState:UIControlStateNormal];
-    leftBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    leftBtn.frame = CGRectMake(0, 0, 44, 44);
-    [leftBtn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
 }
 #pragma mark - TableView
 - (void)buildTableView {
@@ -154,5 +150,14 @@
     _navgationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
     _navgationView.backgroundColor = MAIN_GROUNDCOLOR;
     [self.view addSubview:_navgationView];
+}
+
+#pragma mark - 头部按钮点击
+-(void)purse{
+    SSManagerPurseViewController *vc = [[SSManagerPurseViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+-(void)scan{
+    
 }
 @end

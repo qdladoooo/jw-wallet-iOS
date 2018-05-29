@@ -1,0 +1,25 @@
+platform :ios, '7.0'
+
+target 'jw-wallet' do
+    
+#遮罩
+pod 'MBProgressHUD', '1.0.0'
+
+# 图片加载框架
+pod 'SDWebImage', ‘3.8.2’
+
+# 轮播图
+pod 'SDCycleScrollView', '1.65'
+
+# 下拉刷新
+pod 'MJRefresh', '3.1.12'
+
+# 模型与字典转换
+pod 'MJExtension', '3.0.13'
+
+# 集成与H5交互框架
+pod 'WebViewJavascriptBridge', '6.0.3'
+
+# 全屏手势返回
+pod 'FDFullscreenPopGesture', '1.1'
+end

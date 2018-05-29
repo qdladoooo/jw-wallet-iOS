@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = WHITCOLOR;
-    self.navigationController.navigationBarHidden = YES;
+    self.fd_prefersNavigationBarHidden = YES;
     [self buildTableView];
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;

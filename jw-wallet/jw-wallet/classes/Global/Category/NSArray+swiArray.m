@@ -1,9 +1,6 @@
 //
 //  NSArray+swiArray.m
-//  MyApp
-//
-//  Created by liaowentao on 17/3/28.
-//  Copyright © 2017年 Haochuang. All rights reserved.
+
 //
 
 #import "NSArray+swiArray.h"
