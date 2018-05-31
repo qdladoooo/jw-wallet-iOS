@@ -9,6 +9,7 @@
 #import "SSAccountViewController.h"
 #import "SSAccoutCell.h"
 #import "SSAccoutHeaderView.h"
+#import "SSLanguageSetVC.h"
 @interface SSAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView* tableView;
@@ -129,6 +130,11 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    if (indexPath.section == 2) {
+        if (indexPath.row == 1) {
+            SSLanguageSetVC *vc = [[SSLanguageSetVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
 }
 @end

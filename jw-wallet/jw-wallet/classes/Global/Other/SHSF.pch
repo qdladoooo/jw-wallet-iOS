@@ -27,4 +27,6 @@
 #import "UIImage+Image.h"
 #import <UINavigationController+FDFullscreenPopGesture.h>
 #import "UIColor+WLZ_HexRGB.h"
+#import "SJNavigationBar.h"
+#import "UIView+TNAppLib.h"
 #endif /* SHSF_pch */

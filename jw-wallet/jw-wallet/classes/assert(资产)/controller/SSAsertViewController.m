@@ -11,6 +11,7 @@
 #import "SSAsertCell.h"
 #import "SSAsertDetailVC.h"
 #import "SSManagerPurseViewController.h"
+#import "SJLaunchPageView.h"
 
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView* tableView;
@@ -33,6 +34,7 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    [SJLaunchPageView showLaunchPageView];
 }
 #pragma mark - 设置导航栏透明
 - (void)viewWillAppear:(BOOL)animated {

@@ -39,6 +39,9 @@
     self.tableView.backgroundColor = [UIColor colorWithRed:24 green:244 blue:255 alpha:1];
     //    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
+    
+    
+    
 }
 #pragma mark - tableViewDelegate
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

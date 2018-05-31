@@ -8,6 +8,8 @@
 
 #import "SSManagerPurseViewController.h"
 #import "SSPurseListCell.h"
+#import "SSCreatePurseViewController.h"
+#import "SSAddPurseViewController.h"
 @interface SSManagerPurseViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -44,9 +46,14 @@
 
 #pragma mark - 创建钱包
 - (IBAction)createPurse:(id)sender {
+    SSCreatePurseViewController *vc = [[SSCreatePurseViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - 导入钱包
 - (IBAction)AddPurse:(id)sender {
+    SSAddPurseViewController *vc = [[SSAddPurseViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 - (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
