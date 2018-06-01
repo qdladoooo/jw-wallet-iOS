@@ -7,18 +7,19 @@
 //
 
 #import "UINavigationBar+style.h"
+#import <objc/message.h>
 
 @implementation UINavigationBar (style)
 static char overlayKey;
 
-//- (UIView *)overlay
-//{
-//    return objc_getAssociatedObject(self, &overlayKey);
-//}
-//
-//- (void)setOverlay:(UIView *)overlay{
-//    objc_setAssociatedObject(self, &overlayKey, overlay, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//}
+- (UIView *)overlay
+{
+    return objc_getAssociatedObject(self, &overlayKey);
+}
+
+- (void)setOverlay:(UIView *)overlay{
+    objc_setAssociatedObject(self, &overlayKey, overlay, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 
 - (void)lt_setBackgroundColor:(UIColor *)backgroundColor
 {

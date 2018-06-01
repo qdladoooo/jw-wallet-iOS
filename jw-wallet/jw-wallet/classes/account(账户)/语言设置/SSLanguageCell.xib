@@ -32,7 +32,7 @@
                     <constraint firstItem="JUA-xs-F9u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="wjd-mq-3eV"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <viewLayoutGuide key="safeArea" id="sVf-hD-cWd"/>
             <connections>
                 <outlet property="title" destination="JUA-xs-F9u" id="Lkk-35-MR3"/>
             </connections>

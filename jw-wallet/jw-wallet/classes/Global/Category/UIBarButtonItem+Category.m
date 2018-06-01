@@ -2,9 +2,6 @@
 //  UIBarButtonItem+Category.m
 //  SimpleAppBasicDemo
 //
-//  Created by 劉光軍 on 16/3/16.
-//  Copyright © 2016年 劉光軍. All rights reserved.
-//
 
 #import "UIBarButtonItem+Category.h"
 #import "UIView+Category.h"

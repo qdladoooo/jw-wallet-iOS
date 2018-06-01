@@ -48,6 +48,8 @@
 - (IBAction)createPurse:(id)sender {
     SSCreatePurseViewController *vc = [[SSCreatePurseViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 #pragma mark - 导入钱包
 - (IBAction)AddPurse:(id)sender {
