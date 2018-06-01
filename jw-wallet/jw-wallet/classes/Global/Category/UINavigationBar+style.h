@@ -12,4 +12,5 @@
 - (UIView *)overlay;
 - (void)setOverlay:(UIView *)overlay;
 - (void)lt_setBackgroundColor:(UIColor *)backgroundColor;
+
 @end

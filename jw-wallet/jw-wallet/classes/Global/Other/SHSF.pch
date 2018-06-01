@@ -30,4 +30,5 @@
 #import "SJNavigationBar.h"
 #import "UIView+TNAppLib.h"
 #import <SGQRCode.h>
+#import "MBProgressHUD+HYExtension.h"
 #endif /* SHSF_pch */

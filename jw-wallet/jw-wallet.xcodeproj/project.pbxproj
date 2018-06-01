@@ -96,6 +96,7 @@
 		2E6C8A1320C0EEB600C0B37E /* ScanSuccessJumpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A0F20C0EEB600C0B37E /* ScanSuccessJumpVC.m */; };
 		2E6C8A1720C0EECE00C0B37E /* SGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A1520C0EECE00C0B37E /* SGWebView.m */; };
 		2E6C8A4520C122E400C0B37E /* MBProgressHUD+HYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A4320C122E300C0B37E /* MBProgressHUD+HYExtension.m */; };
+		2E6C8AB020C196BE00C0B37E /* SSNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AAF20C196BE00C0B37E /* SSNavigationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,6 +276,8 @@
 		2E6C8A1620C0EECE00C0B37E /* SGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGWebView.h; sourceTree = "<group>"; };
 		2E6C8A4320C122E300C0B37E /* MBProgressHUD+HYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HYExtension.m"; sourceTree = "<group>"; };
 		2E6C8A4420C122E400C0B37E /* MBProgressHUD+HYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HYExtension.h"; sourceTree = "<group>"; };
+		2E6C8AAE20C196BE00C0B37E /* SSNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSNavigationView.h; sourceTree = "<group>"; };
+		2E6C8AAF20C196BE00C0B37E /* SSNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNavigationView.m; sourceTree = "<group>"; };
 		45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.release.xcconfig"; sourceTree = "<group>"; };
 		CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -890,6 +893,8 @@
 				2E6C890F20BC522900C0B37E /* SSAsertCell.xib */,
 				2E6C891020BC522900C0B37E /* SSAsertHearView.xib */,
 				2E6C891120BC522900C0B37E /* SSAsertHearView.h */,
+				2E6C8AAE20C196BE00C0B37E /* SSNavigationView.h */,
+				2E6C8AAF20C196BE00C0B37E /* SSNavigationView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1300,6 +1305,7 @@
 				2E6C8A0620C05C7200C0B37E /* UIView+TNAppLib.m in Sources */,
 				2E6C891E20BC526400C0B37E /* SSTradeRecordModel.m in Sources */,
 				2E6C8A0020C0534400C0B37E /* HXLanguageManager.m in Sources */,
+				2E6C8AB020C196BE00C0B37E /* SSNavigationView.m in Sources */,
 				2E4815A620B9734900AFCBBB /* UIViewController+swizzling.m in Sources */,
 				2E6C895C20BD9A3C00C0B37E /* SSManagerPurseViewController.m in Sources */,
 				2E4815AB20B9734900AFCBBB /* CommonMethods.m in Sources */,
