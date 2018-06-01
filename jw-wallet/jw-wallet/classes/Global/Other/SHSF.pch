@@ -29,4 +29,5 @@
 #import "UIColor+WLZ_HexRGB.h"
 #import "SJNavigationBar.h"
 #import "UIView+TNAppLib.h"
+#import <SGQRCode.h>
 #endif /* SHSF_pch */
