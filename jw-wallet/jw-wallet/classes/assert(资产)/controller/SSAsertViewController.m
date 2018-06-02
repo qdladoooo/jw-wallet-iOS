@@ -65,8 +65,8 @@
     
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
     CGFloat y = self.tableView.contentOffset.y;
-   
     if (y > 145) {
         _nav_view.backgroundColor = rgba(0, 10, 42, 1);
     } else {
@@ -118,27 +118,6 @@
 
 
 
-//根据滑动尺寸改变透明度
-- (UIImage *)getImageWithAlpha:(CGFloat)alpha {
-    
-//    UIColor *color = [UIColor colorWithRed:251/255.0 green:249/255.0 blue:248/255.0 alpha:alpha];
-    UIColor *color = MAIN_GROUNDCOLOR;
-    CGSize colorSize = CGSizeMake(1, 1);
-    
-    //UIGraphicsBeginImageContext（）获取指定需要截取color的size
-    UIGraphicsBeginImageContext(colorSize);
-    //得到当前上下文
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    //用颜色填充
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    //每个截取到的上下文中需要填充的模板的frame
-    CGContextFillRect(context, CGRectMake(0, 0, 1, 1));
-    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return img;
-}
 /*
 #pragma mark - Navigation
 
@@ -215,7 +194,7 @@
     [alertC addAction:alertA];
     [self presentViewController:alertC animated:YES completion:nil];
 }
-
+#pragma mark - 导航栏view
 -(void)navigationView{
     _nav_view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
     _nav_view.backgroundColor = [UIColor clearColor];

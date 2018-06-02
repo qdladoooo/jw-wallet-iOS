@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSUnitSetViewController">
+            <connections>
+                <outlet property="tableview" destination="QVR-ji-Izh" id="r7u-j4-E79"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cE-QJ-cRG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="货币单位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dE2-oI-p6f">
+                            <rect key="frame" x="152.5" y="33" width="70" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyH-cM-Spw">
+                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <state key="normal" image="nav_white"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="nyH-cM-Spw" firstAttribute="leading" secondItem="6cE-QJ-cRG" secondAttribute="leading" constant="15" id="UfZ-5z-heJ"/>
+                        <constraint firstAttribute="bottom" secondItem="dE2-oI-p6f" secondAttribute="bottom" constant="10" id="qF7-Id-V3g"/>
+                        <constraint firstItem="nyH-cM-Spw" firstAttribute="centerY" secondItem="dE2-oI-p6f" secondAttribute="centerY" id="xKT-Q4-9xA"/>
+                        <constraint firstAttribute="height" constant="64" id="yoB-8G-YMV"/>
+                        <constraint firstItem="dE2-oI-p6f" firstAttribute="centerX" secondItem="6cE-QJ-cRG" secondAttribute="centerX" id="zra-nE-N2c"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QVR-ji-Izh">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="oWa-dU-2c7"/>
+                        <outlet property="delegate" destination="-1" id="NqA-DO-2Iv"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6cE-QJ-cRG" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="7Hc-xO-XFF"/>
+                <constraint firstItem="QVR-ji-Izh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="D81-br-rvZ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="QVR-ji-Izh" secondAttribute="bottom" id="T8B-K3-Nra"/>
+                <constraint firstItem="QVR-ji-Izh" firstAttribute="top" secondItem="6cE-QJ-cRG" secondAttribute="bottom" id="TpR-xn-odm"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6cE-QJ-cRG" secondAttribute="trailing" id="V1G-fb-sZM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="QVR-ji-Izh" secondAttribute="trailing" id="Vn7-7n-KlH"/>
+                <constraint firstItem="6cE-QJ-cRG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kYi-Uk-pIQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_white" width="10" height="17"/>
+    </resources>
+</document>

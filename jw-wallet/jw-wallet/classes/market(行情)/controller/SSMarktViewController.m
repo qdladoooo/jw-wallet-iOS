@@ -9,7 +9,7 @@
 #import "SSMarktViewController.h"
 #import "SSMarketCell.h"
 #import "SSSectionHeaderView.h"
-@interface SSMarktViewController ()<UITabBarDelegate,UITableViewDataSource>
+@interface SSMarktViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView *tableView;
 @end
@@ -39,9 +39,7 @@
     self.tableView.backgroundColor = [UIColor colorWithRed:24 green:244 blue:255 alpha:1];
     //    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
-    
-    
-    
+  
 }
 #pragma mark - tableViewDelegate
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
