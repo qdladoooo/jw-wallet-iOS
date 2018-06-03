@@ -69,14 +69,5 @@
 - (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
-- (void)updateSwitchAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    UISwitch *switchView = (UISwitch *)cell.accessoryView;
-    
-    if ([switchView isOn]) {
-        [switchView setOn:NO animated:YES];
-    } else {
-        [switchView setOn:YES animated:YES];
-    }
-}
+
 @end

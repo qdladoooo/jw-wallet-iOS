@@ -23,7 +23,7 @@
 #import "AppDelegate+ViewController.h"
 #import "UINavigationBar+style.h"
 #import "UIBarButtonItem+Category.h"
-//#import <MBProgressHUD.h>
+#import <MBProgressHUD.h>
 #import "UIImage+Image.h"
 #import <UINavigationController+FDFullscreenPopGesture.h>
 #import "UIColor+WLZ_HexRGB.h"
@@ -31,5 +31,7 @@
 #import "UIView+TNAppLib.h"
 #import <SGQRCode.h>
 #import "MBProgressHUD+HYExtension.h"
+#import "AAGlobalMacro.h"
+#import "UIView+Category.h"
 
 #endif /* SHSF_pch */

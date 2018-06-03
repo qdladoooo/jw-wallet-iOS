@@ -10,4 +10,8 @@
 
 @interface SSSectionHeaderView : UIView
 +(UIView *)creatSectionHeaderView;
+@property (weak, nonatomic) IBOutlet UILabel *title1;
+@property (weak, nonatomic) IBOutlet UILabel *title2;
+@property (weak, nonatomic) IBOutlet UILabel *title3;
+
 @end

@@ -10,6 +10,8 @@
 #import "SSMarketCell.h"
 #import "SSSectionHeaderView.h"
 #import "SSAddMarketsViewController.h"
+#import "SSMarketsDetalViewController.h"
+#import "SSEdiMarketsViewController.h"
 @interface SSMarktViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView *tableView;
@@ -64,13 +66,19 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SSMarketsDetalViewController *detailVC = [[SSMarketsDetalViewController alloc] init];
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 #pragma mark - 行情编辑
 -(void)marketsControll{
 
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *Action1 = [UIAlertAction actionWithTitle:@"编辑行情" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        ;
+        
+        SSEdiMarketsViewController *vc = [[SSEdiMarketsViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }];
     UIAlertAction *Action2 = [UIAlertAction actionWithTitle:@"添加行情" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {

@@ -55,6 +55,48 @@
 		2E48168A20BAD89900AFCBBB /* SSSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E48168920BAD89900AFCBBB /* SSSectionHeaderView.xib */; };
 		2E48168D20BAD8B900AFCBBB /* SSMarketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48168C20BAD8B900AFCBBB /* SSMarketModel.m */; };
 		2E48169020BAD8CE00AFCBBB /* SSAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48168F20BAD8CE00AFCBBB /* SSAccountModel.m */; };
+		2E60DD6220C3E60A00A20429 /* AAHighchartsLib.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD1F20C3E60900A20429 /* AAHighchartsLib.js */; };
+		2E60DD6320C3E60A00A20429 /* AAHighchartsMore.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD2020C3E60900A20429 /* AAHighchartsMore.js */; };
+		2E60DD6420C3E60A00A20429 /* AAFunnel.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD2120C3E60900A20429 /* AAFunnel.js */; };
+		2E60DD6520C3E60A00A20429 /* AAHighcharts-3d.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD2220C3E60900A20429 /* AAHighcharts-3d.js */; };
+		2E60DD6620C3E60A00A20429 /* AAChartView.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD2320C3E60900A20429 /* AAChartView.html */; };
+		2E60DD6720C3E60A00A20429 /* AAAreaspline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD2620C3E60900A20429 /* AAAreaspline.m */; };
+		2E60DD6820C3E60A00A20429 /* AALabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD2820C3E60900A20429 /* AALabels.m */; };
+		2E60DD6920C3E60A00A20429 /* AASeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD2B20C3E60900A20429 /* AASeries.m */; };
+		2E60DD6A20C3E60A00A20429 /* AAXAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD2C20C3E60900A20429 /* AAXAxis.m */; };
+		2E60DD6B20C3E60A00A20429 /* AAPlotOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD2E20C3E60900A20429 /* AAPlotOptions.m */; };
+		2E60DD6C20C3E60A00A20429 /* AADataLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD2F20C3E60900A20429 /* AADataLabels.m */; };
+		2E60DD6D20C3E60A00A20429 /* AALine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD3020C3E60A00A20429 /* AALine.m */; };
+		2E60DD6E20C3E60A00A20429 /* AATooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD3320C3E60A00A20429 /* AATooltip.m */; };
+		2E60DD6F20C3E60A00A20429 /* AASubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD3520C3E60A00A20429 /* AASubtitle.m */; };
+		2E60DD7020C3E60A00A20429 /* AAYAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD3620C3E60A00A20429 /* AAYAxis.m */; };
+		2E60DD7120C3E60A00A20429 /* AACrosshair.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD3720C3E60A00A20429 /* AACrosshair.m */; };
+		2E60DD7220C3E60A00A20429 /* AAColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD3C20C3E60A00A20429 /* AAColumn.m */; };
+		2E60DD7320C3E60A00A20429 /* AAPlotLinesElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD3D20C3E60A00A20429 /* AAPlotLinesElement.m */; };
+		2E60DD7420C3E60A00A20429 /* AAOptions3d.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD3F20C3E60A00A20429 /* AAOptions3d.m */; };
+		2E60DD7520C3E60A00A20429 /* AAStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4120C3E60A00A20429 /* AAStyle.m */; };
+		2E60DD7620C3E60A00A20429 /* AABar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4220C3E60A00A20429 /* AABar.m */; };
+		2E60DD7720C3E60A00A20429 /* AATitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4320C3E60A00A20429 /* AATitle.m */; };
+		2E60DD7820C3E60A00A20429 /* AAArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4620C3E60A00A20429 /* AAArea.m */; };
+		2E60DD7920C3E60A00A20429 /* AAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4720C3E60A00A20429 /* AAAnimation.m */; };
+		2E60DD7A20C3E60A00A20429 /* AALegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4820C3E60A00A20429 /* AALegend.m */; };
+		2E60DD7B20C3E60A00A20429 /* AAMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4A20C3E60A00A20429 /* AAMarker.m */; };
+		2E60DD7C20C3E60A00A20429 /* AASpline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4E20C3E60A00A20429 /* AASpline.m */; };
+		2E60DD7D20C3E60A00A20429 /* AAItemStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD4F20C3E60A00A20429 /* AAItemStyle.m */; };
+		2E60DD7E20C3E60A00A20429 /* AAPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD5020C3E60A00A20429 /* AAPie.m */; };
+		2E60DD7F20C3E60A00A20429 /* AAChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD5620C3E60A00A20429 /* AAChart.m */; };
+		2E60DD8020C3E60A00A20429 /* AAChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD5920C3E60A00A20429 /* AAChartView.m */; };
+		2E60DD8120C3E60A00A20429 /* AAChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD5C20C3E60A00A20429 /* AAChartModel.m */; };
+		2E60DD8220C3E60A00A20429 /* AAOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD5E20C3E60A00A20429 /* AAOptions.m */; };
+		2E60DD8320C3E60A00A20429 /* AASeriesElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD5F20C3E60A00A20429 /* AASeriesElement.m */; };
+		2E60DD8720C3F71300A20429 /* SSMarketsDetalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD8520C3F71300A20429 /* SSMarketsDetalViewController.m */; };
+		2E60DD8820C3F71300A20429 /* SSMarketsDetalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD8620C3F71300A20429 /* SSMarketsDetalViewController.xib */; };
+		2E60DD8C20C43FF000A20429 /* SSEdiMarketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD8A20C43FF000A20429 /* SSEdiMarketsViewController.m */; };
+		2E60DD8D20C43FF000A20429 /* SSEdiMarketsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD8B20C43FF000A20429 /* SSEdiMarketsViewController.xib */; };
+		2E60DD9120C4437C00A20429 /* SSEditMarketsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD8F20C4437C00A20429 /* SSEditMarketsCell.m */; };
+		2E60DD9220C4437C00A20429 /* SSEditMarketsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD9020C4437C00A20429 /* SSEditMarketsCell.xib */; };
+		2E60DD9620C44A0900A20429 /* SSMarketRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD9420C44A0900A20429 /* SSMarketRemindViewController.m */; };
+		2E60DD9720C44A0900A20429 /* SSMarketRemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD9520C44A0900A20429 /* SSMarketRemindViewController.xib */; };
 		2E6C890120BC2E9900C0B37E /* SSAsertDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C88FF20BC2E9900C0B37E /* SSAsertDetailVC.m */; };
 		2E6C890220BC2E9900C0B37E /* SSAsertDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C890020BC2E9900C0B37E /* SSAsertDetailVC.xib */; };
 		2E6C891520BC522900C0B37E /* SSAsertHearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C890B20BC522900C0B37E /* SSAsertHearView.m */; };
@@ -226,6 +268,83 @@
 		2E48169C20BB9AE300AFCBBB /* DefineTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTheme.h; sourceTree = "<group>"; };
 		2E48169D20BB9AE300AFCBBB /* DefineMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineMacro.h; sourceTree = "<group>"; };
 		2E48169E20BB9AE300AFCBBB /* DefineRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineRequest.h; sourceTree = "<group>"; };
+		2E60DD1F20C3E60900A20429 /* AAHighchartsLib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAHighchartsLib.js; sourceTree = "<group>"; };
+		2E60DD2020C3E60900A20429 /* AAHighchartsMore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAHighchartsMore.js; sourceTree = "<group>"; };
+		2E60DD2120C3E60900A20429 /* AAFunnel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAFunnel.js; sourceTree = "<group>"; };
+		2E60DD2220C3E60900A20429 /* AAHighcharts-3d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "AAHighcharts-3d.js"; sourceTree = "<group>"; };
+		2E60DD2320C3E60900A20429 /* AAChartView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AAChartView.html; sourceTree = "<group>"; };
+		2E60DD2520C3E60900A20429 /* AAArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAArea.h; sourceTree = "<group>"; };
+		2E60DD2620C3E60900A20429 /* AAAreaspline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAreaspline.m; sourceTree = "<group>"; };
+		2E60DD2720C3E60900A20429 /* AATitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATitle.h; sourceTree = "<group>"; };
+		2E60DD2820C3E60900A20429 /* AALabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALabels.m; sourceTree = "<group>"; };
+		2E60DD2920C3E60900A20429 /* AAStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAStyle.h; sourceTree = "<group>"; };
+		2E60DD2A20C3E60900A20429 /* AABar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABar.h; sourceTree = "<group>"; };
+		2E60DD2B20C3E60900A20429 /* AASeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASeries.m; sourceTree = "<group>"; };
+		2E60DD2C20C3E60900A20429 /* AAXAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAXAxis.m; sourceTree = "<group>"; };
+		2E60DD2D20C3E60900A20429 /* AAOptions3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAOptions3d.h; sourceTree = "<group>"; };
+		2E60DD2E20C3E60900A20429 /* AAPlotOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPlotOptions.m; sourceTree = "<group>"; };
+		2E60DD2F20C3E60900A20429 /* AADataLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AADataLabels.m; sourceTree = "<group>"; };
+		2E60DD3020C3E60A00A20429 /* AALine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALine.m; sourceTree = "<group>"; };
+		2E60DD3120C3E60A00A20429 /* AAMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAMarker.h; sourceTree = "<group>"; };
+		2E60DD3220C3E60A00A20429 /* AALegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALegend.h; sourceTree = "<group>"; };
+		2E60DD3320C3E60A00A20429 /* AATooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATooltip.m; sourceTree = "<group>"; };
+		2E60DD3420C3E60A00A20429 /* AAAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAAnimation.h; sourceTree = "<group>"; };
+		2E60DD3520C3E60A00A20429 /* AASubtitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASubtitle.m; sourceTree = "<group>"; };
+		2E60DD3620C3E60A00A20429 /* AAYAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAYAxis.m; sourceTree = "<group>"; };
+		2E60DD3720C3E60A00A20429 /* AACrosshair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AACrosshair.m; sourceTree = "<group>"; };
+		2E60DD3820C3E60A00A20429 /* AAPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPie.h; sourceTree = "<group>"; };
+		2E60DD3920C3E60A00A20429 /* AAItemStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAItemStyle.h; sourceTree = "<group>"; };
+		2E60DD3A20C3E60A00A20429 /* AASpline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASpline.h; sourceTree = "<group>"; };
+		2E60DD3B20C3E60A00A20429 /* AAChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChart.h; sourceTree = "<group>"; };
+		2E60DD3C20C3E60A00A20429 /* AAColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAColumn.m; sourceTree = "<group>"; };
+		2E60DD3D20C3E60A00A20429 /* AAPlotLinesElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPlotLinesElement.m; sourceTree = "<group>"; };
+		2E60DD3E20C3E60A00A20429 /* AAXAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAXAxis.h; sourceTree = "<group>"; };
+		2E60DD3F20C3E60A00A20429 /* AAOptions3d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAOptions3d.m; sourceTree = "<group>"; };
+		2E60DD4020C3E60A00A20429 /* AASeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASeries.h; sourceTree = "<group>"; };
+		2E60DD4120C3E60A00A20429 /* AAStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAStyle.m; sourceTree = "<group>"; };
+		2E60DD4220C3E60A00A20429 /* AABar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AABar.m; sourceTree = "<group>"; };
+		2E60DD4320C3E60A00A20429 /* AATitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATitle.m; sourceTree = "<group>"; };
+		2E60DD4420C3E60A00A20429 /* AALabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALabels.h; sourceTree = "<group>"; };
+		2E60DD4520C3E60A00A20429 /* AAAreaspline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAAreaspline.h; sourceTree = "<group>"; };
+		2E60DD4620C3E60A00A20429 /* AAArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAArea.m; sourceTree = "<group>"; };
+		2E60DD4720C3E60A00A20429 /* AAAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAnimation.m; sourceTree = "<group>"; };
+		2E60DD4820C3E60A00A20429 /* AALegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALegend.m; sourceTree = "<group>"; };
+		2E60DD4920C3E60A00A20429 /* AATooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATooltip.h; sourceTree = "<group>"; };
+		2E60DD4A20C3E60A00A20429 /* AAMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAMarker.m; sourceTree = "<group>"; };
+		2E60DD4B20C3E60A00A20429 /* AALine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALine.h; sourceTree = "<group>"; };
+		2E60DD4C20C3E60A00A20429 /* AADataLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AADataLabels.h; sourceTree = "<group>"; };
+		2E60DD4D20C3E60A00A20429 /* AAPlotOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPlotOptions.h; sourceTree = "<group>"; };
+		2E60DD4E20C3E60A00A20429 /* AASpline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASpline.m; sourceTree = "<group>"; };
+		2E60DD4F20C3E60A00A20429 /* AAItemStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAItemStyle.m; sourceTree = "<group>"; };
+		2E60DD5020C3E60A00A20429 /* AAPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPie.m; sourceTree = "<group>"; };
+		2E60DD5120C3E60A00A20429 /* AACrosshair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACrosshair.h; sourceTree = "<group>"; };
+		2E60DD5220C3E60A00A20429 /* AAYAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAYAxis.h; sourceTree = "<group>"; };
+		2E60DD5320C3E60A00A20429 /* AASubtitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASubtitle.h; sourceTree = "<group>"; };
+		2E60DD5420C3E60A00A20429 /* AAPlotLinesElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPlotLinesElement.h; sourceTree = "<group>"; };
+		2E60DD5520C3E60A00A20429 /* AAColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAColumn.h; sourceTree = "<group>"; };
+		2E60DD5620C3E60A00A20429 /* AAChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAChart.m; sourceTree = "<group>"; };
+		2E60DD5820C3E60A00A20429 /* AAOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAOptions.h; sourceTree = "<group>"; };
+		2E60DD5920C3E60A00A20429 /* AAChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAChartView.m; sourceTree = "<group>"; };
+		2E60DD5A20C3E60A00A20429 /* AAGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAGlobalMacro.h; sourceTree = "<group>"; };
+		2E60DD5B20C3E60A00A20429 /* AASeriesElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASeriesElement.h; sourceTree = "<group>"; };
+		2E60DD5C20C3E60A00A20429 /* AAChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAChartModel.m; sourceTree = "<group>"; };
+		2E60DD5D20C3E60A00A20429 /* AAChartKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChartKit.h; sourceTree = "<group>"; };
+		2E60DD5E20C3E60A00A20429 /* AAOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAOptions.m; sourceTree = "<group>"; };
+		2E60DD5F20C3E60A00A20429 /* AASeriesElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASeriesElement.m; sourceTree = "<group>"; };
+		2E60DD6020C3E60A00A20429 /* AAChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChartView.h; sourceTree = "<group>"; };
+		2E60DD6120C3E60A00A20429 /* AAChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChartModel.h; sourceTree = "<group>"; };
+		2E60DD8420C3F71300A20429 /* SSMarketsDetalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMarketsDetalViewController.h; sourceTree = "<group>"; };
+		2E60DD8520C3F71300A20429 /* SSMarketsDetalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMarketsDetalViewController.m; sourceTree = "<group>"; };
+		2E60DD8620C3F71300A20429 /* SSMarketsDetalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSMarketsDetalViewController.xib; sourceTree = "<group>"; };
+		2E60DD8920C43FF000A20429 /* SSEdiMarketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSEdiMarketsViewController.h; sourceTree = "<group>"; };
+		2E60DD8A20C43FF000A20429 /* SSEdiMarketsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSEdiMarketsViewController.m; sourceTree = "<group>"; };
+		2E60DD8B20C43FF000A20429 /* SSEdiMarketsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSEdiMarketsViewController.xib; sourceTree = "<group>"; };
+		2E60DD8E20C4437C00A20429 /* SSEditMarketsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSEditMarketsCell.h; sourceTree = "<group>"; };
+		2E60DD8F20C4437C00A20429 /* SSEditMarketsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSEditMarketsCell.m; sourceTree = "<group>"; };
+		2E60DD9020C4437C00A20429 /* SSEditMarketsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSEditMarketsCell.xib; sourceTree = "<group>"; };
+		2E60DD9320C44A0900A20429 /* SSMarketRemindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMarketRemindViewController.h; sourceTree = "<group>"; };
+		2E60DD9420C44A0900A20429 /* SSMarketRemindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMarketRemindViewController.m; sourceTree = "<group>"; };
+		2E60DD9520C44A0900A20429 /* SSMarketRemindViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSMarketRemindViewController.xib; sourceTree = "<group>"; };
 		2E6C88FE20BC2E9900C0B37E /* SSAsertDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAsertDetailVC.h; sourceTree = "<group>"; };
 		2E6C88FF20BC2E9900C0B37E /* SSAsertDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAsertDetailVC.m; sourceTree = "<group>"; };
 		2E6C890020BC2E9900C0B37E /* SSAsertDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAsertDetailVC.xib; sourceTree = "<group>"; };
@@ -734,6 +853,7 @@
 		2E48158820B9734900AFCBBB /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				2E60DD1D20C3E60900A20429 /* AAChartKitLib */,
 				2E48169F20BB9BE300AFCBBB /* Define */,
 				2E48158920B9734900AFCBBB /* Category */,
 				2E48159520B9734900AFCBBB /* NetWork */,
@@ -902,6 +1022,9 @@
 				2EA78EF820C3990600593E7B /* SSAddMarketsListCell.h */,
 				2EA78EF920C3990600593E7B /* SSAddMarketsListCell.m */,
 				2EA78EFA20C3990600593E7B /* SSAddMarketsListCell.xib */,
+				2E60DD8E20C4437C00A20429 /* SSEditMarketsCell.h */,
+				2E60DD8F20C4437C00A20429 /* SSEditMarketsCell.m */,
+				2E60DD9020C4437C00A20429 /* SSEditMarketsCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -914,6 +1037,15 @@
 				2EA78EF320C397E200593E7B /* SSAddMarketsViewController.h */,
 				2EA78EF420C397E200593E7B /* SSAddMarketsViewController.m */,
 				2EA78EF520C397E200593E7B /* SSAddMarketsViewController.xib */,
+				2E60DD8420C3F71300A20429 /* SSMarketsDetalViewController.h */,
+				2E60DD8520C3F71300A20429 /* SSMarketsDetalViewController.m */,
+				2E60DD8620C3F71300A20429 /* SSMarketsDetalViewController.xib */,
+				2E60DD8920C43FF000A20429 /* SSEdiMarketsViewController.h */,
+				2E60DD8A20C43FF000A20429 /* SSEdiMarketsViewController.m */,
+				2E60DD8B20C43FF000A20429 /* SSEdiMarketsViewController.xib */,
+				2E60DD9320C44A0900A20429 /* SSMarketRemindViewController.h */,
+				2E60DD9420C44A0900A20429 /* SSMarketRemindViewController.m */,
+				2E60DD9520C44A0900A20429 /* SSMarketRemindViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -926,6 +1058,102 @@
 				2E48169C20BB9AE300AFCBBB /* DefineTheme.h */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		2E60DD1D20C3E60900A20429 /* AAChartKitLib */ = {
+			isa = PBXGroup;
+			children = (
+				2E60DD1E20C3E60900A20429 /* AAJSFiles */,
+				2E60DD2420C3E60900A20429 /* AAOptionsModel */,
+				2E60DD5720C3E60A00A20429 /* AAChartConfiger */,
+			);
+			path = AAChartKitLib;
+			sourceTree = "<group>";
+		};
+		2E60DD1E20C3E60900A20429 /* AAJSFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2E60DD1F20C3E60900A20429 /* AAHighchartsLib.js */,
+				2E60DD2020C3E60900A20429 /* AAHighchartsMore.js */,
+				2E60DD2120C3E60900A20429 /* AAFunnel.js */,
+				2E60DD2220C3E60900A20429 /* AAHighcharts-3d.js */,
+				2E60DD2320C3E60900A20429 /* AAChartView.html */,
+			);
+			path = AAJSFiles;
+			sourceTree = "<group>";
+		};
+		2E60DD2420C3E60900A20429 /* AAOptionsModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E60DD2520C3E60900A20429 /* AAArea.h */,
+				2E60DD2620C3E60900A20429 /* AAAreaspline.m */,
+				2E60DD2720C3E60900A20429 /* AATitle.h */,
+				2E60DD2820C3E60900A20429 /* AALabels.m */,
+				2E60DD2920C3E60900A20429 /* AAStyle.h */,
+				2E60DD2A20C3E60900A20429 /* AABar.h */,
+				2E60DD2B20C3E60900A20429 /* AASeries.m */,
+				2E60DD2C20C3E60900A20429 /* AAXAxis.m */,
+				2E60DD2D20C3E60900A20429 /* AAOptions3d.h */,
+				2E60DD2E20C3E60900A20429 /* AAPlotOptions.m */,
+				2E60DD2F20C3E60900A20429 /* AADataLabels.m */,
+				2E60DD3020C3E60A00A20429 /* AALine.m */,
+				2E60DD3120C3E60A00A20429 /* AAMarker.h */,
+				2E60DD3220C3E60A00A20429 /* AALegend.h */,
+				2E60DD3320C3E60A00A20429 /* AATooltip.m */,
+				2E60DD3420C3E60A00A20429 /* AAAnimation.h */,
+				2E60DD3520C3E60A00A20429 /* AASubtitle.m */,
+				2E60DD3620C3E60A00A20429 /* AAYAxis.m */,
+				2E60DD3720C3E60A00A20429 /* AACrosshair.m */,
+				2E60DD3820C3E60A00A20429 /* AAPie.h */,
+				2E60DD3920C3E60A00A20429 /* AAItemStyle.h */,
+				2E60DD3A20C3E60A00A20429 /* AASpline.h */,
+				2E60DD3B20C3E60A00A20429 /* AAChart.h */,
+				2E60DD3C20C3E60A00A20429 /* AAColumn.m */,
+				2E60DD3D20C3E60A00A20429 /* AAPlotLinesElement.m */,
+				2E60DD3E20C3E60A00A20429 /* AAXAxis.h */,
+				2E60DD3F20C3E60A00A20429 /* AAOptions3d.m */,
+				2E60DD4020C3E60A00A20429 /* AASeries.h */,
+				2E60DD4120C3E60A00A20429 /* AAStyle.m */,
+				2E60DD4220C3E60A00A20429 /* AABar.m */,
+				2E60DD4320C3E60A00A20429 /* AATitle.m */,
+				2E60DD4420C3E60A00A20429 /* AALabels.h */,
+				2E60DD4520C3E60A00A20429 /* AAAreaspline.h */,
+				2E60DD4620C3E60A00A20429 /* AAArea.m */,
+				2E60DD4720C3E60A00A20429 /* AAAnimation.m */,
+				2E60DD4820C3E60A00A20429 /* AALegend.m */,
+				2E60DD4920C3E60A00A20429 /* AATooltip.h */,
+				2E60DD4A20C3E60A00A20429 /* AAMarker.m */,
+				2E60DD4B20C3E60A00A20429 /* AALine.h */,
+				2E60DD4C20C3E60A00A20429 /* AADataLabels.h */,
+				2E60DD4D20C3E60A00A20429 /* AAPlotOptions.h */,
+				2E60DD4E20C3E60A00A20429 /* AASpline.m */,
+				2E60DD4F20C3E60A00A20429 /* AAItemStyle.m */,
+				2E60DD5020C3E60A00A20429 /* AAPie.m */,
+				2E60DD5120C3E60A00A20429 /* AACrosshair.h */,
+				2E60DD5220C3E60A00A20429 /* AAYAxis.h */,
+				2E60DD5320C3E60A00A20429 /* AASubtitle.h */,
+				2E60DD5420C3E60A00A20429 /* AAPlotLinesElement.h */,
+				2E60DD5520C3E60A00A20429 /* AAColumn.h */,
+				2E60DD5620C3E60A00A20429 /* AAChart.m */,
+			);
+			path = AAOptionsModel;
+			sourceTree = "<group>";
+		};
+		2E60DD5720C3E60A00A20429 /* AAChartConfiger */ = {
+			isa = PBXGroup;
+			children = (
+				2E60DD5D20C3E60A00A20429 /* AAChartKit.h */,
+				2E60DD5A20C3E60A00A20429 /* AAGlobalMacro.h */,
+				2E60DD5B20C3E60A00A20429 /* AASeriesElement.h */,
+				2E60DD5F20C3E60A00A20429 /* AASeriesElement.m */,
+				2E60DD5820C3E60A00A20429 /* AAOptions.h */,
+				2E60DD5E20C3E60A00A20429 /* AAOptions.m */,
+				2E60DD6020C3E60A00A20429 /* AAChartView.h */,
+				2E60DD5920C3E60A00A20429 /* AAChartView.m */,
+				2E60DD6120C3E60A00A20429 /* AAChartModel.h */,
+				2E60DD5C20C3E60A00A20429 /* AAChartModel.m */,
+			);
+			path = AAChartConfiger;
 			sourceTree = "<group>";
 		};
 		2E6C890820BC522900C0B37E /* view */ = {
@@ -1346,6 +1574,7 @@
 				2E6C89D120BEFEF900C0B37E /* InfoPlist.strings in Resources */,
 				2E48163920B983AC00AFCBBB /* me@3x.png in Resources */,
 				2E6C89F820C03F1000C0B37E /* SSLanguageSetVC.xib in Resources */,
+				2E60DD8D20C43FF000A20429 /* SSEdiMarketsViewController.xib in Resources */,
 				2E6C891920BC522900C0B37E /* SSAsertCell.xib in Resources */,
 				2E6C897020BDB7C300C0B37E /* SSPurseListCell.xib in Resources */,
 				2E6C8AD420C26AFA00C0B37E /* SSUnitSetTableViewCell.xib in Resources */,
@@ -1353,19 +1582,23 @@
 				2E48163820B983AC00AFCBBB /* u=2796464312,3280625818&fm=11&gp=0.jpg in Resources */,
 				2E6C893520BC5ECC00C0B37E /* SSGetMoneyViewController.xib in Resources */,
 				2E6C891A20BC522900C0B37E /* SSAsertHearView.xib in Resources */,
+				2E60DD6620C3E60A00A20429 /* AAChartView.html in Resources */,
 				2E6C8AF520C2C13600C0B37E /* SSArticleTableViewCell.xib in Resources */,
 				2E6C89FD20C041A200C0B37E /* SSLanguageCell.xib in Resources */,
 				2E6C8ABC20C23EEA00C0B37E /* SSBackupMemorizingWordsVC.xib in Resources */,
 				2E48163520B983AC00AFCBBB /* me@2x.png in Resources */,
+				2E60DD9220C4437C00A20429 /* SSEditMarketsCell.xib in Resources */,
 				2EA78EFC20C3990600593E7B /* SSAddMarketsListCell.xib in Resources */,
 				2E6C89E120C0301D00C0B37E /* SSManagerPurseViewController.xib in Resources */,
 				2E6C892B20BC539E00C0B37E /* SSTranferViewController.xib in Resources */,
+				2E60DD8820C3F71300A20429 /* SSMarketsDetalViewController.xib in Resources */,
 				2E48164120B983AC00AFCBBB /* circle_gray@3x.png in Resources */,
 				2EA78EF720C397E200593E7B /* SSAddMarketsViewController.xib in Resources */,
 				2E6C896720BD9AD600C0B37E /* SSAddPurseViewController.xib in Resources */,
 				2E6C89D820BF01D500C0B37E /* Localizable.strings in Resources */,
 				2E48163B20B983AC00AFCBBB /* me_blue@2x.png in Resources */,
 				2E6C891820BC522900C0B37E /* SSTradingRecordsCell.xib in Resources */,
+				2E60DD6220C3E60A00A20429 /* AAHighchartsLib.js in Resources */,
 				2E48163F20B983AC00AFCBBB /* home_gray@3x.png in Resources */,
 				2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */,
 				2E48167320BA889000AFCBBB /* SSAccoutHeaderView.xib in Resources */,
@@ -1378,11 +1611,15 @@
 				2E48166E20BA868300AFCBBB /* SSAccoutCell.xib in Resources */,
 				2E48153A20B91FB900AFCBBB /* Assets.xcassets in Resources */,
 				2E6C8AEB20C2B6AB00C0B37E /* SSApplicationsShareView.xib in Resources */,
+				2E60DD6320C3E60A00A20429 /* AAHighchartsMore.js in Resources */,
 				2E48168820BAD88D00AFCBBB /* SSMarketCell.xib in Resources */,
 				2E6C8AC820C2619000C0B37E /* SSChangePasswordVC.xib in Resources */,
 				2E48164020B983AC00AFCBBB /* circle_gray@2x.png in Resources */,
+				2E60DD6520C3E60A00A20429 /* AAHighcharts-3d.js in Resources */,
 				2E48163E20B983AC00AFCBBB /* home_gray@2x.png in Resources */,
+				2E60DD9720C44A0900A20429 /* SSMarketRemindViewController.xib in Resources */,
 				2E48163A20B983AC00AFCBBB /* circle_blue@2x.png in Resources */,
+				2E60DD6420C3E60A00A20429 /* AAFunnel.js in Resources */,
 				2E48168A20BAD89900AFCBBB /* SSSectionHeaderView.xib in Resources */,
 				2E48153820B91FB800AFCBBB /* Main.storyboard in Resources */,
 				2E48163C20B983AC00AFCBBB /* me_blue@3x.png in Resources */,
@@ -1453,6 +1690,7 @@
 			files = (
 				2E6C8A1120C0EEB600C0B37E /* WBQRCodeScanningVC.m in Sources */,
 				2E6C8ABB20C23EEA00C0B37E /* SSBackupMemorizingWordsVC.m in Sources */,
+				2E60DD8C20C43FF000A20429 /* SSEdiMarketsViewController.m in Sources */,
 				2E48168320BAD82400AFCBBB /* SSSectionHeaderView.m in Sources */,
 				2E6C8A1020C0EEB600C0B37E /* QRCodeGenerateVC.m in Sources */,
 				2E6C8AB620C2367B00C0B37E /* SSBackupWalletViewController.m in Sources */,
@@ -1465,11 +1703,15 @@
 				2E6C891E20BC526400C0B37E /* SSTradeRecordModel.m in Sources */,
 				2E6C8A0020C0534400C0B37E /* HXLanguageManager.m in Sources */,
 				2E6C8AB020C196BE00C0B37E /* SSNavigationView.m in Sources */,
+				2E60DD7A20C3E60A00A20429 /* AALegend.m in Sources */,
 				2E4815A620B9734900AFCBBB /* UIViewController+swizzling.m in Sources */,
+				2E60DD9120C4437C00A20429 /* SSEditMarketsCell.m in Sources */,
 				2E6C895C20BD9A3C00C0B37E /* SSManagerPurseViewController.m in Sources */,
 				2E6C8ACE20C267F900C0B37E /* SSUnitSetViewController.m in Sources */,
+				2E60DD7C20C3E60A00A20429 /* AASpline.m in Sources */,
 				2E4815AB20B9734900AFCBBB /* CommonMethods.m in Sources */,
 				2E48165320B9A95500AFCBBB /* UIBarButtonItem+Category.m in Sources */,
+				2E60DD8320C3E60A00A20429 /* AASeriesElement.m in Sources */,
 				2E6C896120BD9A8A00C0B37E /* SSCreatePurseViewController.m in Sources */,
 				2E6C897920BE32C300C0B37E /* SJNavigationBar.m in Sources */,
 				2E6C897320BDB7DE00C0B37E /* SSPurseListModel.m in Sources */,
@@ -1477,48 +1719,76 @@
 				2EA78EFB20C3990600593E7B /* SSAddMarketsListCell.m in Sources */,
 				2E6C891B20BC522900C0B37E /* SSAserModel.m in Sources */,
 				2E6C8A0320C05B5000C0B37E /* SJLaunchPageView.m in Sources */,
+				2E60DD7F20C3E60A00A20429 /* AAChart.m in Sources */,
 				2E6C8AE920C26F6D00C0B37E /* SSApplicationsShareView.m in Sources */,
+				2E60DD6E20C3E60A00A20429 /* AATooltip.m in Sources */,
 				2E48166D20BA868300AFCBBB /* SSAccoutCell.m in Sources */,
 				2E48168D20BAD8B900AFCBBB /* SSMarketModel.m in Sources */,
+				2E60DD7120C3E60A00A20429 /* AACrosshair.m in Sources */,
 				2E48168020BAD7CF00AFCBBB /* SSMarktViewController.m in Sources */,
 				2E6C892A20BC539E00C0B37E /* SSTranferViewController.m in Sources */,
 				2EA78EED20C31A5C00593E7B /* SSAppScrollview.m in Sources */,
 				2E6C891720BC522900C0B37E /* SSTradingRecordsCell.m in Sources */,
+				2E60DD7420C3E60A00A20429 /* AAOptions3d.m in Sources */,
 				2E4815AE20B9734900AFCBBB /* LWTNavigationViewController.m in Sources */,
 				2E6C8AE420C26F3400C0B37E /* SSBannerView.m in Sources */,
 				2E48166920BA843B00AFCBBB /* SSAccountViewController.m in Sources */,
+				2E60DD9620C44A0900A20429 /* SSMarketRemindViewController.m in Sources */,
 				2E48168720BAD88D00AFCBBB /* SSMarketCell.m in Sources */,
 				2E6C8AC120C25B7A00C0B37E /* SSAuthorizedLoginCV.m in Sources */,
 				2E4815FC20B97D6400AFCBBB /* UserDefaultUtil.m in Sources */,
 				2E6C8AD920C26CB900C0B37E /* SSHelpCenterViewController.m in Sources */,
+				2E60DD7720C3E60A00A20429 /* AATitle.m in Sources */,
 				2E48165420B9A95500AFCBBB /* UIView+Category.m in Sources */,
 				2E6C8AC720C2619000C0B37E /* SSChangePasswordVC.m in Sources */,
 				2E48169020BAD8CE00AFCBBB /* SSAccountModel.m in Sources */,
+				2E60DD6F20C3E60A00A20429 /* AASubtitle.m in Sources */,
+				2E60DD7E20C3E60A00A20429 /* AAPie.m in Sources */,
+				2E60DD8720C3F71300A20429 /* SSMarketsDetalViewController.m in Sources */,
+				2E60DD8220C3E60A00A20429 /* AAOptions.m in Sources */,
+				2E60DD6A20C3E60A00A20429 /* AAXAxis.m in Sources */,
+				2E60DD7D20C3E60A00A20429 /* AAItemStyle.m in Sources */,
 				2E4815FF20B97EAB00AFCBBB /* UINavigationBar+style.m in Sources */,
 				2E6C8A1320C0EEB600C0B37E /* ScanSuccessJumpVC.m in Sources */,
 				2E48153520B91FB800AFCBBB /* ViewController.m in Sources */,
 				2E6C89FC20C041A200C0B37E /* SSLanguageCell.m in Sources */,
 				2E6C8AE120C26DDF00C0B37E /* SSDiscoverViewController.m in Sources */,
+				2E60DD6820C3E60A00A20429 /* AALabels.m in Sources */,
+				2E60DD6920C3E60A00A20429 /* AASeries.m in Sources */,
 				2E4815AA20B9734900AFCBBB /* NSArray+swiArray.m in Sources */,
 				2E6C890120BC2E9900C0B37E /* SSAsertDetailVC.m in Sources */,
+				2E60DD7620C3E60A00A20429 /* AABar.m in Sources */,
+				2E60DD7B20C3E60A00A20429 /* AAMarker.m in Sources */,
+				2E60DD8120C3E60A00A20429 /* AAChartModel.m in Sources */,
 				2E4815AD20B9734900AFCBBB /* LWTSegementViewController.m in Sources */,
 				2E4815AF20B9734900AFCBBB /* RootTabViewController.m in Sources */,
 				2E6C8AD320C26AFA00C0B37E /* SSUnitSetTableViewCell.m in Sources */,
 				2E48167120BA888500AFCBBB /* SSAccoutHeaderView.m in Sources */,
 				2E6C8AF420C2C13600C0B37E /* SSArticleTableViewCell.m in Sources */,
+				2E60DD6B20C3E60A00A20429 /* AAPlotOptions.m in Sources */,
+				2E60DD6720C3E60A00A20429 /* AAAreaspline.m in Sources */,
 				2E6C8A4520C122E400C0B37E /* MBProgressHUD+HYExtension.m in Sources */,
 				2E6C893420BC5ECC00C0B37E /* SSGetMoneyViewController.m in Sources */,
 				2E6C8AEF20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.m in Sources */,
 				2E4815A820B9734900AFCBBB /* AppDelegate+ViewController.m in Sources */,
 				2E48154020B91FB900AFCBBB /* main.m in Sources */,
+				2E60DD8020C3E60A00A20429 /* AAChartView.m in Sources */,
 				2E6C8A1220C0EEB600C0B37E /* WCQRCodeScanningVC.m in Sources */,
+				2E60DD7920C3E60A00A20429 /* AAAnimation.m in Sources */,
+				2E60DD7220C3E60A00A20429 /* AAColumn.m in Sources */,
+				2E60DD7320C3E60A00A20429 /* AAPlotLinesElement.m in Sources */,
 				2E48160520B9818900AFCBBB /* SSAsertViewController.m in Sources */,
 				2E6C896F20BDB7C300C0B37E /* SSPurseListCell.m in Sources */,
+				2E60DD7020C3E60A00A20429 /* AAYAxis.m in Sources */,
 				2E6C897620BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m in Sources */,
 				2E6C896A20BDB39400C0B37E /* UIImage+Image.m in Sources */,
+				2E60DD6C20C3E60A00A20429 /* AADataLabels.m in Sources */,
 				2E6C891520BC522900C0B37E /* SSAsertHearView.m in Sources */,
 				2E48153220B91FB800AFCBBB /* AppDelegate.m in Sources */,
+				2E60DD7820C3E60A00A20429 /* AAArea.m in Sources */,
+				2E60DD7520C3E60A00A20429 /* AAStyle.m in Sources */,
 				2E4815A920B9734900AFCBBB /* AppDelegate+AppService.m in Sources */,
+				2E60DD6D20C3E60A00A20429 /* AALine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
