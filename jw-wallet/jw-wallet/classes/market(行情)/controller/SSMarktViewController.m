@@ -9,6 +9,7 @@
 #import "SSMarktViewController.h"
 #import "SSMarketCell.h"
 #import "SSSectionHeaderView.h"
+#import "SSAddMarketsViewController.h"
 @interface SSMarktViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView *tableView;
@@ -25,6 +26,8 @@
 //    } else {
 //        self.automaticallyAdjustsScrollViewInsets = NO;
 //    }
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"..." style:UIBarButtonItemStylePlain target:self action:@selector(marketsControll)];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,6 +64,36 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
+#pragma mark - 行情编辑
+-(void)marketsControll{
+
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *Action1 = [UIAlertAction actionWithTitle:@"编辑行情" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        ;
+        
+    }];
+    UIAlertAction *Action2 = [UIAlertAction actionWithTitle:@"添加行情" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        SSAddMarketsViewController *vc = [[SSAddMarketsViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    //修改按钮
+    
+     [Action1 setValue:[UIColor colorFromHexRGB:@"333333"] forKey:@"titleTextColor"];
+     [Action2 setValue:[UIColor colorFromHexRGB:@"333333"] forKey:@"titleTextColor"];
+    [cancel setValue:[UIColor colorFromHexRGB:@"333333"] forKey:@"titleTextColor"];
+    
+    
+    [alertController addAction:Action1];
+    [alertController addAction:Action2];
+    [alertController addAction:cancel];
+    [self  presentViewController:alertController animated:YES completion:nil];
+}
+
+
 @end
 
 

@@ -120,6 +120,11 @@
 		2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AEE20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib */; };
 		2E6C8AF420C2C13600C0B37E /* SSArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */; };
 		2E6C8AF520C2C13600C0B37E /* SSArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */; };
+		2EA78EED20C31A5C00593E7B /* SSAppScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */; };
+		2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EF420C397E200593E7B /* SSAddMarketsViewController.m */; };
+		2EA78EF720C397E200593E7B /* SSAddMarketsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA78EF520C397E200593E7B /* SSAddMarketsViewController.xib */; };
+		2EA78EFB20C3990600593E7B /* SSAddMarketsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EF920C3990600593E7B /* SSAddMarketsListCell.m */; };
+		2EA78EFC20C3990600593E7B /* SSAddMarketsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA78EFA20C3990600593E7B /* SSAddMarketsListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,6 +341,14 @@
 		2E6C8AF120C2C13600C0B37E /* SSArticleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSArticleTableViewCell.h; sourceTree = "<group>"; };
 		2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSArticleTableViewCell.m; sourceTree = "<group>"; };
 		2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSArticleTableViewCell.xib; sourceTree = "<group>"; };
+		2EA78EEB20C31A5C00593E7B /* SSAppScrollview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppScrollview.h; sourceTree = "<group>"; };
+		2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppScrollview.m; sourceTree = "<group>"; };
+		2EA78EF320C397E200593E7B /* SSAddMarketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAddMarketsViewController.h; sourceTree = "<group>"; };
+		2EA78EF420C397E200593E7B /* SSAddMarketsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAddMarketsViewController.m; sourceTree = "<group>"; };
+		2EA78EF520C397E200593E7B /* SSAddMarketsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAddMarketsViewController.xib; sourceTree = "<group>"; };
+		2EA78EF820C3990600593E7B /* SSAddMarketsListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAddMarketsListCell.h; sourceTree = "<group>"; };
+		2EA78EF920C3990600593E7B /* SSAddMarketsListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAddMarketsListCell.m; sourceTree = "<group>"; };
+		2EA78EFA20C3990600593E7B /* SSAddMarketsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAddMarketsListCell.xib; sourceTree = "<group>"; };
 		45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.release.xcconfig"; sourceTree = "<group>"; };
 		CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -886,6 +899,9 @@
 				2E48168420BAD88D00AFCBBB /* SSMarketCell.h */,
 				2E48168520BAD88D00AFCBBB /* SSMarketCell.m */,
 				2E48168620BAD88D00AFCBBB /* SSMarketCell.xib */,
+				2EA78EF820C3990600593E7B /* SSAddMarketsListCell.h */,
+				2EA78EF920C3990600593E7B /* SSAddMarketsListCell.m */,
+				2EA78EFA20C3990600593E7B /* SSAddMarketsListCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -895,6 +911,9 @@
 			children = (
 				2E48167E20BAD7CF00AFCBBB /* SSMarktViewController.h */,
 				2E48167F20BAD7CF00AFCBBB /* SSMarktViewController.m */,
+				2EA78EF320C397E200593E7B /* SSAddMarketsViewController.h */,
+				2EA78EF420C397E200593E7B /* SSAddMarketsViewController.m */,
+				2EA78EF520C397E200593E7B /* SSAddMarketsViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1173,6 +1192,8 @@
 				2E6C8AF120C2C13600C0B37E /* SSArticleTableViewCell.h */,
 				2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */,
 				2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */,
+				2EA78EEB20C31A5C00593E7B /* SSAppScrollview.h */,
+				2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1336,9 +1357,11 @@
 				2E6C89FD20C041A200C0B37E /* SSLanguageCell.xib in Resources */,
 				2E6C8ABC20C23EEA00C0B37E /* SSBackupMemorizingWordsVC.xib in Resources */,
 				2E48163520B983AC00AFCBBB /* me@2x.png in Resources */,
+				2EA78EFC20C3990600593E7B /* SSAddMarketsListCell.xib in Resources */,
 				2E6C89E120C0301D00C0B37E /* SSManagerPurseViewController.xib in Resources */,
 				2E6C892B20BC539E00C0B37E /* SSTranferViewController.xib in Resources */,
 				2E48164120B983AC00AFCBBB /* circle_gray@3x.png in Resources */,
+				2EA78EF720C397E200593E7B /* SSAddMarketsViewController.xib in Resources */,
 				2E6C896720BD9AD600C0B37E /* SSAddPurseViewController.xib in Resources */,
 				2E6C89D820BF01D500C0B37E /* Localizable.strings in Resources */,
 				2E48163B20B983AC00AFCBBB /* me_blue@2x.png in Resources */,
@@ -1436,6 +1459,7 @@
 				2E6C891620BC522900C0B37E /* SSAsertCell.m in Sources */,
 				2E6C896620BD9AD600C0B37E /* SSAddPurseViewController.m in Sources */,
 				2E6C8A1720C0EECE00C0B37E /* SGWebView.m in Sources */,
+				2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */,
 				2E6C89F720C03F1000C0B37E /* SSLanguageSetVC.m in Sources */,
 				2E6C8A0620C05C7200C0B37E /* UIView+TNAppLib.m in Sources */,
 				2E6C891E20BC526400C0B37E /* SSTradeRecordModel.m in Sources */,
@@ -1450,6 +1474,7 @@
 				2E6C897920BE32C300C0B37E /* SJNavigationBar.m in Sources */,
 				2E6C897320BDB7DE00C0B37E /* SSPurseListModel.m in Sources */,
 				2E4815FB20B97D6400AFCBBB /* PathManager.m in Sources */,
+				2EA78EFB20C3990600593E7B /* SSAddMarketsListCell.m in Sources */,
 				2E6C891B20BC522900C0B37E /* SSAserModel.m in Sources */,
 				2E6C8A0320C05B5000C0B37E /* SJLaunchPageView.m in Sources */,
 				2E6C8AE920C26F6D00C0B37E /* SSApplicationsShareView.m in Sources */,
@@ -1457,6 +1482,7 @@
 				2E48168D20BAD8B900AFCBBB /* SSMarketModel.m in Sources */,
 				2E48168020BAD7CF00AFCBBB /* SSMarktViewController.m in Sources */,
 				2E6C892A20BC539E00C0B37E /* SSTranferViewController.m in Sources */,
+				2EA78EED20C31A5C00593E7B /* SSAppScrollview.m in Sources */,
 				2E6C891720BC522900C0B37E /* SSTradingRecordsCell.m in Sources */,
 				2E4815AE20B9734900AFCBBB /* LWTNavigationViewController.m in Sources */,
 				2E6C8AE420C26F3400C0B37E /* SSBannerView.m in Sources */,
