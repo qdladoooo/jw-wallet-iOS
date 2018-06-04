@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSHelpCenterViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSAppShareViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,38 +20,38 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-mV-nU4">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGS-qF-znP" customClass="SJNavigationBar">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮助中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-Yo-Rp6">
-                            <rect key="frame" x="152.5" y="33.5" width="70" height="20.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应用推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf5-5N-PHc">
+                            <rect key="frame" x="153.5" y="33.5" width="69.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R6-bc-ETt">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdi-rC-yGb">
                             <rect key="frame" x="15" y="33" width="10" height="22"/>
                             <state key="normal" image="nav_white"/>
                             <connections>
-                                <action selector="back:" destination="-1" eventType="touchUpInside" id="ONo-W8-1mG"/>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="ena-xE-cny"/>
                             </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="ex7-Yo-Rp6" secondAttribute="bottom" constant="10" id="FGR-CY-yel"/>
-                        <constraint firstAttribute="height" constant="64" id="Gbd-sG-ZdE"/>
-                        <constraint firstItem="ex7-Yo-Rp6" firstAttribute="centerX" secondItem="hIW-mV-nU4" secondAttribute="centerX" id="XMb-vh-MUG"/>
-                        <constraint firstItem="2R6-bc-ETt" firstAttribute="leading" secondItem="hIW-mV-nU4" secondAttribute="leading" constant="15" id="bp5-Cw-qqR"/>
-                        <constraint firstItem="2R6-bc-ETt" firstAttribute="centerY" secondItem="ex7-Yo-Rp6" secondAttribute="centerY" id="sC9-9C-Xje"/>
+                        <constraint firstItem="Tf5-5N-PHc" firstAttribute="centerX" secondItem="kGS-qF-znP" secondAttribute="centerX" id="1QB-0G-ZuA"/>
+                        <constraint firstAttribute="height" constant="64" id="Rjq-JF-Mtv"/>
+                        <constraint firstItem="cdi-rC-yGb" firstAttribute="leading" secondItem="kGS-qF-znP" secondAttribute="leading" constant="15" id="YaP-La-Pfl"/>
+                        <constraint firstItem="cdi-rC-yGb" firstAttribute="centerY" secondItem="Tf5-5N-PHc" secondAttribute="centerY" id="e9o-jZ-4TW"/>
+                        <constraint firstAttribute="bottom" secondItem="Tf5-5N-PHc" secondAttribute="bottom" constant="10" id="tEy-Uv-baq"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.94901960784313721" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="hIW-mV-nU4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="0RJ-nz-OZc"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hIW-mV-nU4" secondAttribute="trailing" id="DSH-0o-9Fv"/>
-                <constraint firstItem="hIW-mV-nU4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UNT-LU-PvZ"/>
+                <constraint firstItem="kGS-qF-znP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="1YO-Mi-wAA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kGS-qF-znP" secondAttribute="trailing" id="Rxn-PK-nMh"/>
+                <constraint firstItem="kGS-qF-znP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X0X-da-62x"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>

@@ -15,6 +15,8 @@
  textView占位字符
  */
 @property (weak, nonatomic) IBOutlet UILabel *textViewPlaceHolderText;
+@property (weak, nonatomic) IBOutlet UIButton *helpMemoryBtn;
+@property (weak, nonatomic) IBOutlet UIButton *privateKey;
 
 @end
 
@@ -24,12 +26,24 @@
     [super viewDidLoad];
      self.fd_prefersNavigationBarHidden = YES;
     self.textView.delegate = self;
-    
+    self.helpMemoryBtn.selected = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonClick:(UIButton *)sender {
+    if (sender.tag==111) {
+        self.helpMemoryBtn.selected = YES;
+        self.privateKey.selected = NO;
+        self.textViewPlaceHolderText.text = @"请填写助记词，按空格分隔";
+    }else{
+        self.privateKey.selected = YES;
+        self.helpMemoryBtn.selected = NO;
+        self.textViewPlaceHolderText.text = @"请填写明文私钥";
+    }
+    
 }
 #pragma mark - 点击事件
 - (IBAction)back:(id)sender {

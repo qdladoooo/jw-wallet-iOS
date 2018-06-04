@@ -17,16 +17,19 @@
 @end
 
 @implementation SSAsertDetailVC
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden=  NO;
-    self.title = @"资产详情";
-    if (@available(iOS 11.0, *)) {
-        self.tablewView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    } else {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
+    self.fd_prefersNavigationBarHidden = YES;
+//    self.title = @"资产详情";
+//    if (@available(iOS 11.0, *)) {
+//        self.tablewView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    } else {
+//        self.automaticallyAdjustsScrollViewInsets = NO;
+//    }
     self.tablewView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tablewView.backgroundColor = BACKGROUNDCOLOR;
 }

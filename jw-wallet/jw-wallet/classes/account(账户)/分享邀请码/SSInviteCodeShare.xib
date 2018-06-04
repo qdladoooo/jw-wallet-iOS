@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSInviteCodeShare">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kth-HA-TLz" customClass="SJNavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CB-A2-7mE">
+                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <state key="normal" image="nav_white"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="5aW-3I-4yt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享邀请码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4O-6j-eEo">
+                            <rect key="frame" x="144" y="33" width="87" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="8CB-A2-7mE" firstAttribute="leading" secondItem="kth-HA-TLz" secondAttribute="leading" constant="15" id="Ajw-89-EIe"/>
+                        <constraint firstItem="8CB-A2-7mE" firstAttribute="centerY" secondItem="T4O-6j-eEo" secondAttribute="centerY" id="I2A-HA-nmI"/>
+                        <constraint firstItem="T4O-6j-eEo" firstAttribute="centerX" secondItem="kth-HA-TLz" secondAttribute="centerX" id="WhE-nn-Lb1"/>
+                        <constraint firstAttribute="bottom" secondItem="T4O-6j-eEo" secondAttribute="bottom" constant="10" id="XuB-xm-HMC"/>
+                        <constraint firstAttribute="height" constant="64" id="ba4-LB-YDX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kth-HA-TLz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="XHq-On-Gco"/>
+                <constraint firstItem="kth-HA-TLz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hER-AC-FiS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kth-HA-TLz" secondAttribute="trailing" id="zMh-r3-6LJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_white" width="10" height="17"/>
+    </resources>
+</document>

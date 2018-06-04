@@ -19,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.currentPassword.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 12, 45)];
+     self.fd_prefersNavigationBarHidden =  YES;
     
 }
 

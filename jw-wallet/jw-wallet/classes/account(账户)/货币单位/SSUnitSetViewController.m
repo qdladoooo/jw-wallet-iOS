@@ -11,13 +11,17 @@
 @interface SSUnitSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 
+
 @end
 
 @implementation SSUnitSetViewController
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.fd_prefersNavigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {

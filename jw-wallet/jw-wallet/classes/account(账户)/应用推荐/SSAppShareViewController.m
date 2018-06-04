@@ -1,25 +1,25 @@
 //
-//  SSHelpCenterViewController.m
+//  SSAppShareViewController.m
 //  jw-wallet
 //
-//  Created by 王冠阳 on 2018/6/2.
+//  Created by 王冠阳 on 2018/6/4.
 //  Copyright © 2018年 SHSF. All rights reserved.
 //
 
-#import "SSHelpCenterViewController.h"
+#import "SSAppShareViewController.h"
 
-@interface SSHelpCenterViewController ()
+@interface SSAppShareViewController ()
 
 @end
 
-@implementation SSHelpCenterViewController
-- (IBAction)back:(id)sender {
+@implementation SSAppShareViewController
+- (IBAction)backAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     self.fd_prefersNavigationBarHidden =  YES;
+    self.fd_prefersNavigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
