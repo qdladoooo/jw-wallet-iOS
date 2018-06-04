@@ -24,14 +24,8 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0x123456789087654321" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICP-Gu-Skh">
-                            <rect key="frame" x="241.5" y="127.5" width="123" height="12"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8o-w8-Ikk">
-                            <rect key="frame" x="15" y="164.5" width="576" height="44"/>
+                            <rect key="frame" x="15" y="162.5" width="576" height="44"/>
                             <color key="backgroundColor" red="0.058823529411764705" green="0.50980392156862742" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="UBQ-Sy-JrN"/>
@@ -44,16 +38,29 @@
                                 <action selector="addNewAsserts:" destination="ILq-Oo-oc5" eventType="touchUpInside" id="kRI-F0-fgd"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ql-PZ-tCp">
+                            <rect key="frame" x="240.5" y="127.5" width="125" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="kaf-BL-Q7x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="0X456789098765156789">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="getMoneyAdress:" destination="ILq-Oo-oc5" eventType="touchUpInside" id="oFH-Y3-RhS"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="ICP-Gu-Skh" firstAttribute="centerX" secondItem="MlD-dC-PX8" secondAttribute="centerX" id="8pt-9W-N63"/>
+                        <constraint firstItem="q8o-w8-Ikk" firstAttribute="top" secondItem="0Ql-PZ-tCp" secondAttribute="bottom" constant="25" id="KwU-jU-tPj"/>
                         <constraint firstItem="q8o-w8-Ikk" firstAttribute="leading" secondItem="Gyf-ue-q9A" secondAttribute="leading" constant="15" id="Lig-cY-mtH"/>
                         <constraint firstItem="MlD-dC-PX8" firstAttribute="top" secondItem="Gyf-ue-q9A" secondAttribute="top" constant="93" id="aRZ-v9-sS8"/>
                         <constraint firstItem="MlD-dC-PX8" firstAttribute="centerX" secondItem="Gyf-ue-q9A" secondAttribute="centerX" id="c0x-T1-dZ5"/>
-                        <constraint firstItem="q8o-w8-Ikk" firstAttribute="top" secondItem="ICP-Gu-Skh" secondAttribute="bottom" constant="25" id="eAU-rx-kJC"/>
                         <constraint firstAttribute="trailing" secondItem="q8o-w8-Ikk" secondAttribute="trailing" constant="15" id="n9Y-8C-f6m"/>
-                        <constraint firstItem="ICP-Gu-Skh" firstAttribute="top" secondItem="MlD-dC-PX8" secondAttribute="bottom" constant="15" id="n9b-V0-Wzh"/>
+                        <constraint firstItem="0Ql-PZ-tCp" firstAttribute="top" secondItem="MlD-dC-PX8" secondAttribute="bottom" constant="15" id="pbb-Ur-20N"/>
+                        <constraint firstItem="0Ql-PZ-tCp" firstAttribute="centerX" secondItem="Gyf-ue-q9A" secondAttribute="centerX" id="vZ9-za-ZAA"/>
                     </constraints>
                 </view>
             </subviews>

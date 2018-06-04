@@ -7,7 +7,7 @@
 //
 
 #import "SSBackupWalletViewController.h"
-
+#import "SSBackupMemorizingWordsVC.h"
 @interface SSBackupWalletViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.fd_prefersNavigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,6 +30,8 @@
 }
 // 确认
 - (IBAction)sure:(id)sender {
+    SSBackupMemorizingWordsVC *vc = [[SSBackupMemorizingWordsVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

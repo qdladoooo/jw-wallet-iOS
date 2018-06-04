@@ -7,7 +7,7 @@
 //
 
 #import "SSBackupMemorizingWordsVC.h"
-
+#import "SSConfirmHelpWordsVC.h"
 @interface SSBackupMemorizingWordsVC ()
 
 @end
@@ -15,7 +15,8 @@
 @implementation SSBackupMemorizingWordsVC
 // 下一步
 - (IBAction)next:(id)sender {
-    
+    SSConfirmHelpWordsVC *vc = [[SSConfirmHelpWordsVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 // 返回上级
 - (IBAction)backAction:(id)sender {
@@ -25,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.fd_prefersNavigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,6 +16,10 @@
 		2E3F35A320C57A53001C78CB /* SSInviteCodeShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F35A120C57A53001C78CB /* SSInviteCodeShareCell.xib */; };
 		2E3F35A920C5869D001C78CB /* SSTouchIDSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35A720C5869D001C78CB /* SSTouchIDSetCell.m */; };
 		2E3F35AA20C5869D001C78CB /* SSTouchIDSetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F35A820C5869D001C78CB /* SSTouchIDSetCell.xib */; };
+		2E3F35AD20C5943F001C78CB /* SSCreateWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35AC20C5943F001C78CB /* SSCreateWalletView.m */; };
+		2E3F35AF20C5944C001C78CB /* SSCreateWalletView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F35AE20C5944C001C78CB /* SSCreateWalletView.xib */; };
+		2E3F35B420C5A3BC001C78CB /* SSConfirmHelpWordsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35B220C5A3BC001C78CB /* SSConfirmHelpWordsVC.m */; };
+		2E3F35B520C5A3BC001C78CB /* SSConfirmHelpWordsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F35B320C5A3BC001C78CB /* SSConfirmHelpWordsVC.xib */; };
 		2E48153220B91FB800AFCBBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48153120B91FB800AFCBBB /* AppDelegate.m */; };
 		2E48153520B91FB800AFCBBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48153420B91FB800AFCBBB /* ViewController.m */; };
 		2E48153820B91FB800AFCBBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E48153620B91FB800AFCBBB /* Main.storyboard */; };
@@ -212,6 +216,12 @@
 		2E3F35A620C5869D001C78CB /* SSTouchIDSetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTouchIDSetCell.h; sourceTree = "<group>"; };
 		2E3F35A720C5869D001C78CB /* SSTouchIDSetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTouchIDSetCell.m; sourceTree = "<group>"; };
 		2E3F35A820C5869D001C78CB /* SSTouchIDSetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSTouchIDSetCell.xib; sourceTree = "<group>"; };
+		2E3F35AB20C5943F001C78CB /* SSCreateWalletView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSCreateWalletView.h; sourceTree = "<group>"; };
+		2E3F35AC20C5943F001C78CB /* SSCreateWalletView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCreateWalletView.m; sourceTree = "<group>"; };
+		2E3F35AE20C5944C001C78CB /* SSCreateWalletView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSCreateWalletView.xib; sourceTree = "<group>"; };
+		2E3F35B120C5A3BC001C78CB /* SSConfirmHelpWordsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSConfirmHelpWordsVC.h; sourceTree = "<group>"; };
+		2E3F35B220C5A3BC001C78CB /* SSConfirmHelpWordsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSConfirmHelpWordsVC.m; sourceTree = "<group>"; };
+		2E3F35B320C5A3BC001C78CB /* SSConfirmHelpWordsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSConfirmHelpWordsVC.xib; sourceTree = "<group>"; };
 		2E48152D20B91FB800AFCBBB /* jw-wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jw-wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E48153020B91FB800AFCBBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E48153120B91FB800AFCBBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -605,7 +615,6 @@
 			children = (
 				2E60DD9820C4C92A00A20429 /* Login&Register */,
 				2E6C8ADB20C26D8C00C0B37E /* Discover(发现) */,
-				2E48158520B96FD100AFCBBB /* Main */,
 				2E48158820B9734900AFCBBB /* Global */,
 				2E48156720B96FD000AFCBBB /* market(行情) */,
 				2E48156820B96FD000AFCBBB /* account(账户) */,
@@ -638,13 +647,6 @@
 				2E48166820BA843B00AFCBBB /* view */,
 			);
 			path = "account(账户)";
-			sourceTree = "<group>";
-		};
-		2E48158520B96FD100AFCBBB /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		2E48158620B96FD100AFCBBB /* assert(资产) */ = {
@@ -738,6 +740,9 @@
 				2E4815B220B9765200AFCBBB /* SHSF.pch */,
 				2E4815A020B9734900AFCBBB /* CommonMethods.h */,
 				2E48159420B9734900AFCBBB /* CommonMethods.m */,
+				2E3F35AB20C5943F001C78CB /* SSCreateWalletView.h */,
+				2E3F35AC20C5943F001C78CB /* SSCreateWalletView.m */,
+				2E3F35AE20C5944C001C78CB /* SSCreateWalletView.xib */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1153,6 +1158,9 @@
 				2E6C8AB820C23EE900C0B37E /* SSBackupMemorizingWordsVC.h */,
 				2E6C8AB920C23EE900C0B37E /* SSBackupMemorizingWordsVC.m */,
 				2E6C8ABA20C23EE900C0B37E /* SSBackupMemorizingWordsVC.xib */,
+				2E3F35B120C5A3BC001C78CB /* SSConfirmHelpWordsVC.h */,
+				2E3F35B220C5A3BC001C78CB /* SSConfirmHelpWordsVC.m */,
+				2E3F35B320C5A3BC001C78CB /* SSConfirmHelpWordsVC.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1415,6 +1423,7 @@
 				2E6C8AB720C2367B00C0B37E /* SSBackupWalletViewController.xib in Resources */,
 				2E6C8ADA20C26CB900C0B37E /* SSHelpCenterViewController.xib in Resources */,
 				2E6C8AC220C25B7A00C0B37E /* SSAuthorizedLoginCV.xib in Resources */,
+				2E3F35AF20C5944C001C78CB /* SSCreateWalletView.xib in Resources */,
 				2E6C89D120BEFEF900C0B37E /* InfoPlist.strings in Resources */,
 				2E48163920B983AC00AFCBBB /* me@3x.png in Resources */,
 				2E6C89F820C03F1000C0B37E /* SSLanguageSetVC.xib in Resources */,
@@ -1461,6 +1470,7 @@
 				2E6C8AEB20C2B6AB00C0B37E /* SSApplicationsShareView.xib in Resources */,
 				2E60DD6320C3E60A00A20429 /* AAHighchartsMore.js in Resources */,
 				2E3F359E20C51A6A001C78CB /* SSAppShareViewController.xib in Resources */,
+				2E3F35B520C5A3BC001C78CB /* SSConfirmHelpWordsVC.xib in Resources */,
 				2E48168820BAD88D00AFCBBB /* SSMarketCell.xib in Resources */,
 				2E6C8AC820C2619000C0B37E /* SSChangePasswordVC.xib in Resources */,
 				2E48164020B983AC00AFCBBB /* circle_gray@2x.png in Resources */,
@@ -1549,6 +1559,7 @@
 				2E6C891620BC522900C0B37E /* SSAsertCell.m in Sources */,
 				2E60DDA120C4DB1C00A20429 /* SSAddAssertsCell.m in Sources */,
 				2E6C896620BD9AD600C0B37E /* SSAddPurseViewController.m in Sources */,
+				2E3F35B420C5A3BC001C78CB /* SSConfirmHelpWordsVC.m in Sources */,
 				2E6C8A1720C0EECE00C0B37E /* SGWebView.m in Sources */,
 				2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */,
 				2E6C89F720C03F1000C0B37E /* SSLanguageSetVC.m in Sources */,
@@ -1639,6 +1650,7 @@
 				2E6C897620BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m in Sources */,
 				2E6C896A20BDB39400C0B37E /* UIImage+Image.m in Sources */,
 				2E60DD6C20C3E60A00A20429 /* AADataLabels.m in Sources */,
+				2E3F35AD20C5943F001C78CB /* SSCreateWalletView.m in Sources */,
 				2E6C891520BC522900C0B37E /* SSAsertHearView.m in Sources */,
 				2E48153220B91FB800AFCBBB /* AppDelegate.m in Sources */,
 				2E60DD7820C3E60A00A20429 /* AAArea.m in Sources */,

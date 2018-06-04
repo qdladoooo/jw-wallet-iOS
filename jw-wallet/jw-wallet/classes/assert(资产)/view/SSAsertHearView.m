@@ -7,13 +7,25 @@
 //
 #import "SSAddAssertsVC.h"
 #import "SSAsertHearView.h"
-
+#import "SSGetMoneyViewController.h"
 @implementation SSAsertHearView
 
 +(UIView *)createAsertHearView{
     UIView *view = [[[NSBundle mainBundle] loadNibNamed:@"SSAsertHearView" owner:self options:nil] lastObject];
     return view;
 }
+
+/**
+ 收款地址，点击打开二维码
+
+ @param sender <#sender description#>
+ */
+- (IBAction)getMoneyAdress:(id)sender {
+    SSGetMoneyViewController *vc = [[SSGetMoneyViewController alloc] init];
+    [self.viewController.navigationController pushViewController:vc  animated:YES];
+}
+
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

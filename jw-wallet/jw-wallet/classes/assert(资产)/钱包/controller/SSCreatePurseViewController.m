@@ -7,7 +7,7 @@
 //
 
 #import "SSCreatePurseViewController.h"
-
+#import "SSBackupWalletViewController.h"
 @interface SSCreatePurseViewController ()
 
 @end
@@ -30,6 +30,8 @@
 }
 #pragma mark - 确认操作
 - (IBAction)sure:(id)sender {
+    SSBackupWalletViewController *vc =[[SSBackupWalletViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 
