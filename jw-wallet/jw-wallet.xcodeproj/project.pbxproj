@@ -97,6 +97,12 @@
 		2E60DD9220C4437C00A20429 /* SSEditMarketsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD9020C4437C00A20429 /* SSEditMarketsCell.xib */; };
 		2E60DD9620C44A0900A20429 /* SSMarketRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD9420C44A0900A20429 /* SSMarketRemindViewController.m */; };
 		2E60DD9720C44A0900A20429 /* SSMarketRemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD9520C44A0900A20429 /* SSMarketRemindViewController.xib */; };
+		2E60DD9C20C4D73400A20429 /* SSAddAssertsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD9A20C4D73400A20429 /* SSAddAssertsVC.m */; };
+		2E60DD9D20C4D73400A20429 /* SSAddAssertsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DD9B20C4D73400A20429 /* SSAddAssertsVC.xib */; };
+		2E60DDA120C4DB1C00A20429 /* SSAddAssertsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD9F20C4DB1C00A20429 /* SSAddAssertsCell.m */; };
+		2E60DDA220C4DB1C00A20429 /* SSAddAssertsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DDA020C4DB1C00A20429 /* SSAddAssertsCell.xib */; };
+		2E60DDA520C4E0E300A20429 /* SSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DDA420C4E0E300A20429 /* SSNavigationBar.m */; };
+		2E60DDA720C4E14700A20429 /* SSNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DDA620C4E14700A20429 /* SSNavigationBar.xib */; };
 		2E6C890120BC2E9900C0B37E /* SSAsertDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C88FF20BC2E9900C0B37E /* SSAsertDetailVC.m */; };
 		2E6C890220BC2E9900C0B37E /* SSAsertDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C890020BC2E9900C0B37E /* SSAsertDetailVC.xib */; };
 		2E6C891520BC522900C0B37E /* SSAsertHearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C890B20BC522900C0B37E /* SSAsertHearView.m */; };
@@ -138,7 +144,6 @@
 		2E6C8A1320C0EEB600C0B37E /* ScanSuccessJumpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A0F20C0EEB600C0B37E /* ScanSuccessJumpVC.m */; };
 		2E6C8A1720C0EECE00C0B37E /* SGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A1520C0EECE00C0B37E /* SGWebView.m */; };
 		2E6C8A4520C122E400C0B37E /* MBProgressHUD+HYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A4320C122E300C0B37E /* MBProgressHUD+HYExtension.m */; };
-		2E6C8AB020C196BE00C0B37E /* SSNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AAF20C196BE00C0B37E /* SSNavigationView.m */; };
 		2E6C8AB620C2367B00C0B37E /* SSBackupWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AB420C2367B00C0B37E /* SSBackupWalletViewController.m */; };
 		2E6C8AB720C2367B00C0B37E /* SSBackupWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AB520C2367B00C0B37E /* SSBackupWalletViewController.xib */; };
 		2E6C8ABB20C23EEA00C0B37E /* SSBackupMemorizingWordsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AB920C23EE900C0B37E /* SSBackupMemorizingWordsVC.m */; };
@@ -345,6 +350,15 @@
 		2E60DD9320C44A0900A20429 /* SSMarketRemindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMarketRemindViewController.h; sourceTree = "<group>"; };
 		2E60DD9420C44A0900A20429 /* SSMarketRemindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMarketRemindViewController.m; sourceTree = "<group>"; };
 		2E60DD9520C44A0900A20429 /* SSMarketRemindViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSMarketRemindViewController.xib; sourceTree = "<group>"; };
+		2E60DD9920C4D73400A20429 /* SSAddAssertsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAddAssertsVC.h; sourceTree = "<group>"; };
+		2E60DD9A20C4D73400A20429 /* SSAddAssertsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAddAssertsVC.m; sourceTree = "<group>"; };
+		2E60DD9B20C4D73400A20429 /* SSAddAssertsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAddAssertsVC.xib; sourceTree = "<group>"; };
+		2E60DD9E20C4DB1C00A20429 /* SSAddAssertsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAddAssertsCell.h; sourceTree = "<group>"; };
+		2E60DD9F20C4DB1C00A20429 /* SSAddAssertsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAddAssertsCell.m; sourceTree = "<group>"; };
+		2E60DDA020C4DB1C00A20429 /* SSAddAssertsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAddAssertsCell.xib; sourceTree = "<group>"; };
+		2E60DDA320C4E0E300A20429 /* SSNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSNavigationBar.h; sourceTree = "<group>"; };
+		2E60DDA420C4E0E300A20429 /* SSNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNavigationBar.m; sourceTree = "<group>"; };
+		2E60DDA620C4E14700A20429 /* SSNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSNavigationBar.xib; sourceTree = "<group>"; };
 		2E6C88FE20BC2E9900C0B37E /* SSAsertDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAsertDetailVC.h; sourceTree = "<group>"; };
 		2E6C88FF20BC2E9900C0B37E /* SSAsertDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAsertDetailVC.m; sourceTree = "<group>"; };
 		2E6C890020BC2E9900C0B37E /* SSAsertDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAsertDetailVC.xib; sourceTree = "<group>"; };
@@ -423,17 +437,15 @@
 		2E6C8A1620C0EECE00C0B37E /* SGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGWebView.h; sourceTree = "<group>"; };
 		2E6C8A4320C122E300C0B37E /* MBProgressHUD+HYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HYExtension.m"; sourceTree = "<group>"; };
 		2E6C8A4420C122E400C0B37E /* MBProgressHUD+HYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HYExtension.h"; sourceTree = "<group>"; };
-		2E6C8AAE20C196BE00C0B37E /* SSNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSNavigationView.h; sourceTree = "<group>"; };
-		2E6C8AAF20C196BE00C0B37E /* SSNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNavigationView.m; sourceTree = "<group>"; };
 		2E6C8AB320C2367B00C0B37E /* SSBackupWalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBackupWalletViewController.h; sourceTree = "<group>"; };
 		2E6C8AB420C2367B00C0B37E /* SSBackupWalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBackupWalletViewController.m; sourceTree = "<group>"; };
 		2E6C8AB520C2367B00C0B37E /* SSBackupWalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSBackupWalletViewController.xib; sourceTree = "<group>"; };
 		2E6C8AB820C23EE900C0B37E /* SSBackupMemorizingWordsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBackupMemorizingWordsVC.h; sourceTree = "<group>"; };
 		2E6C8AB920C23EE900C0B37E /* SSBackupMemorizingWordsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBackupMemorizingWordsVC.m; sourceTree = "<group>"; };
 		2E6C8ABA20C23EE900C0B37E /* SSBackupMemorizingWordsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSBackupMemorizingWordsVC.xib; sourceTree = "<group>"; };
-		2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SSAuthorizedLoginCV.h; path = "jw-wallet/classes/assert(资产)/钱包/controller/SSAuthorizedLoginCV.h"; sourceTree = SOURCE_ROOT; };
-		2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SSAuthorizedLoginCV.m; path = "jw-wallet/classes/assert(资产)/钱包/controller/SSAuthorizedLoginCV.m"; sourceTree = SOURCE_ROOT; };
-		2E6C8AC020C25B7A00C0B37E /* SSAuthorizedLoginCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SSAuthorizedLoginCV.xib; path = "jw-wallet/classes/assert(资产)/钱包/controller/SSAuthorizedLoginCV.xib"; sourceTree = SOURCE_ROOT; };
+		2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SSAuthorizedLoginCV.h; path = "jw-wallet/classes/Login&Register/SSAuthorizedLoginCV.h"; sourceTree = SOURCE_ROOT; };
+		2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SSAuthorizedLoginCV.m; path = "jw-wallet/classes/Login&Register/SSAuthorizedLoginCV.m"; sourceTree = SOURCE_ROOT; };
+		2E6C8AC020C25B7A00C0B37E /* SSAuthorizedLoginCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SSAuthorizedLoginCV.xib; path = "jw-wallet/classes/Login&Register/SSAuthorizedLoginCV.xib"; sourceTree = SOURCE_ROOT; };
 		2E6C8AC420C2619000C0B37E /* SSChangePasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSChangePasswordVC.h; sourceTree = "<group>"; };
 		2E6C8AC520C2619000C0B37E /* SSChangePasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSChangePasswordVC.m; sourceTree = "<group>"; };
 		2E6C8AC620C2619000C0B37E /* SSChangePasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSChangePasswordVC.xib; sourceTree = "<group>"; };
@@ -551,8 +563,8 @@
 		2E48156520B96FD000AFCBBB /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				2E60DD9820C4C92A00A20429 /* Login&Register */,
 				2E6C8ADB20C26D8C00C0B37E /* Discover(发现) */,
-				2E6C8ABD20C25A6500C0B37E /* Login&Register */,
 				2E48158520B96FD100AFCBBB /* Main */,
 				2E48158820B9734900AFCBBB /* Global */,
 				2E48156720B96FD000AFCBBB /* market(行情) */,
@@ -946,6 +958,9 @@
 				2E6C88FE20BC2E9900C0B37E /* SSAsertDetailVC.h */,
 				2E6C88FF20BC2E9900C0B37E /* SSAsertDetailVC.m */,
 				2E6C890020BC2E9900C0B37E /* SSAsertDetailVC.xib */,
+				2E60DD9920C4D73400A20429 /* SSAddAssertsVC.h */,
+				2E60DD9A20C4D73400A20429 /* SSAddAssertsVC.m */,
+				2E60DD9B20C4D73400A20429 /* SSAddAssertsVC.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1025,6 +1040,9 @@
 				2E60DD8E20C4437C00A20429 /* SSEditMarketsCell.h */,
 				2E60DD8F20C4437C00A20429 /* SSEditMarketsCell.m */,
 				2E60DD9020C4437C00A20429 /* SSEditMarketsCell.xib */,
+				2E60DDA320C4E0E300A20429 /* SSNavigationBar.h */,
+				2E60DDA420C4E0E300A20429 /* SSNavigationBar.m */,
+				2E60DDA620C4E14700A20429 /* SSNavigationBar.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1156,20 +1174,31 @@
 			path = AAChartConfiger;
 			sourceTree = "<group>";
 		};
+		2E60DD9820C4C92A00A20429 /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */,
+				2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */,
+				2E6C8AC020C25B7A00C0B37E /* SSAuthorizedLoginCV.xib */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
 		2E6C890820BC522900C0B37E /* view */ = {
 			isa = PBXGroup;
 			children = (
-				2E6C890920BC522900C0B37E /* SSAsertCell.h */,
 				2E6C890A20BC522900C0B37E /* SSTradingRecordsCell.h */,
-				2E6C890B20BC522900C0B37E /* SSAsertHearView.m */,
-				2E6C890C20BC522900C0B37E /* SSAsertCell.m */,
 				2E6C890D20BC522900C0B37E /* SSTradingRecordsCell.m */,
 				2E6C890E20BC522900C0B37E /* SSTradingRecordsCell.xib */,
+				2E6C890920BC522900C0B37E /* SSAsertCell.h */,
+				2E6C890C20BC522900C0B37E /* SSAsertCell.m */,
 				2E6C890F20BC522900C0B37E /* SSAsertCell.xib */,
-				2E6C891020BC522900C0B37E /* SSAsertHearView.xib */,
 				2E6C891120BC522900C0B37E /* SSAsertHearView.h */,
-				2E6C8AAE20C196BE00C0B37E /* SSNavigationView.h */,
-				2E6C8AAF20C196BE00C0B37E /* SSNavigationView.m */,
+				2E6C890B20BC522900C0B37E /* SSAsertHearView.m */,
+				2E6C891020BC522900C0B37E /* SSAsertHearView.xib */,
+				2E60DD9E20C4DB1C00A20429 /* SSAddAssertsCell.h */,
+				2E60DD9F20C4DB1C00A20429 /* SSAddAssertsCell.m */,
+				2E60DDA020C4DB1C00A20429 /* SSAddAssertsCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1350,16 +1379,6 @@
 				2E6C8A1520C0EECE00C0B37E /* SGWebView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		2E6C8ABD20C25A6500C0B37E /* Login&Register */ = {
-			isa = PBXGroup;
-			children = (
-				2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */,
-				2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */,
-				2E6C8AC020C25B7A00C0B37E /* SSAuthorizedLoginCV.xib */,
-			);
-			path = "Login&Register";
 			sourceTree = "<group>";
 		};
 		2E6C8AC320C2616400C0B37E /* 密码相关 */ = {
@@ -1568,6 +1587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E48163720B983AC00AFCBBB /* home_blue@3x.png in Resources */,
+				2E60DDA220C4DB1C00A20429 /* SSAddAssertsCell.xib in Resources */,
 				2E6C8AB720C2367B00C0B37E /* SSBackupWalletViewController.xib in Resources */,
 				2E6C8ADA20C26CB900C0B37E /* SSHelpCenterViewController.xib in Resources */,
 				2E6C8AC220C25B7A00C0B37E /* SSAuthorizedLoginCV.xib in Resources */,
@@ -1578,6 +1598,7 @@
 				2E6C891920BC522900C0B37E /* SSAsertCell.xib in Resources */,
 				2E6C897020BDB7C300C0B37E /* SSPurseListCell.xib in Resources */,
 				2E6C8AD420C26AFA00C0B37E /* SSUnitSetTableViewCell.xib in Resources */,
+				2E60DD9D20C4D73400A20429 /* SSAddAssertsVC.xib in Resources */,
 				2E6C8AE620C26F4100C0B37E /* SSBannerView.xib in Resources */,
 				2E48163820B983AC00AFCBBB /* u=2796464312,3280625818&fm=11&gp=0.jpg in Resources */,
 				2E6C893520BC5ECC00C0B37E /* SSGetMoneyViewController.xib in Resources */,
@@ -1598,6 +1619,7 @@
 				2E6C89D820BF01D500C0B37E /* Localizable.strings in Resources */,
 				2E48163B20B983AC00AFCBBB /* me_blue@2x.png in Resources */,
 				2E6C891820BC522900C0B37E /* SSTradingRecordsCell.xib in Resources */,
+				2E60DDA720C4E14700A20429 /* SSNavigationBar.xib in Resources */,
 				2E60DD6220C3E60A00A20429 /* AAHighchartsLib.js in Resources */,
 				2E48163F20B983AC00AFCBBB /* home_gray@3x.png in Resources */,
 				2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */,
@@ -1695,6 +1717,7 @@
 				2E6C8A1020C0EEB600C0B37E /* QRCodeGenerateVC.m in Sources */,
 				2E6C8AB620C2367B00C0B37E /* SSBackupWalletViewController.m in Sources */,
 				2E6C891620BC522900C0B37E /* SSAsertCell.m in Sources */,
+				2E60DDA120C4DB1C00A20429 /* SSAddAssertsCell.m in Sources */,
 				2E6C896620BD9AD600C0B37E /* SSAddPurseViewController.m in Sources */,
 				2E6C8A1720C0EECE00C0B37E /* SGWebView.m in Sources */,
 				2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */,
@@ -1702,7 +1725,6 @@
 				2E6C8A0620C05C7200C0B37E /* UIView+TNAppLib.m in Sources */,
 				2E6C891E20BC526400C0B37E /* SSTradeRecordModel.m in Sources */,
 				2E6C8A0020C0534400C0B37E /* HXLanguageManager.m in Sources */,
-				2E6C8AB020C196BE00C0B37E /* SSNavigationView.m in Sources */,
 				2E60DD7A20C3E60A00A20429 /* AALegend.m in Sources */,
 				2E4815A620B9734900AFCBBB /* UIViewController+swizzling.m in Sources */,
 				2E60DD9120C4437C00A20429 /* SSEditMarketsCell.m in Sources */,
@@ -1732,6 +1754,7 @@
 				2E60DD7420C3E60A00A20429 /* AAOptions3d.m in Sources */,
 				2E4815AE20B9734900AFCBBB /* LWTNavigationViewController.m in Sources */,
 				2E6C8AE420C26F3400C0B37E /* SSBannerView.m in Sources */,
+				2E60DDA520C4E0E300A20429 /* SSNavigationBar.m in Sources */,
 				2E48166920BA843B00AFCBBB /* SSAccountViewController.m in Sources */,
 				2E60DD9620C44A0900A20429 /* SSMarketRemindViewController.m in Sources */,
 				2E48168720BAD88D00AFCBBB /* SSMarketCell.m in Sources */,
@@ -1746,6 +1769,7 @@
 				2E60DD7E20C3E60A00A20429 /* AAPie.m in Sources */,
 				2E60DD8720C3F71300A20429 /* SSMarketsDetalViewController.m in Sources */,
 				2E60DD8220C3E60A00A20429 /* AAOptions.m in Sources */,
+				2E60DD9C20C4D73400A20429 /* SSAddAssertsVC.m in Sources */,
 				2E60DD6A20C3E60A00A20429 /* AAXAxis.m in Sources */,
 				2E60DD7D20C3E60A00A20429 /* AAItemStyle.m in Sources */,
 				2E4815FF20B97EAB00AFCBBB /* UINavigationBar+style.m in Sources */,

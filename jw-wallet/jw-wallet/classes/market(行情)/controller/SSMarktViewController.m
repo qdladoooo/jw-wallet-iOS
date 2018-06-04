@@ -12,6 +12,7 @@
 #import "SSAddMarketsViewController.h"
 #import "SSMarketsDetalViewController.h"
 #import "SSEdiMarketsViewController.h"
+#import "SSNavigationBar.h"
 @interface SSMarktViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView *tableView;
@@ -21,6 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.fd_prefersNavigationBarHidden = YES;
+//    UIView  *nav = [SSNavigationBar creatNavigationBar];
+//    nav.frame = CGRectMake(0, 0, SCREEN_WIDTH, 64);
+//    [self.view addSubview:nav];
+    
     self.title = @"行情";
     [self buildTableView];
 //    if (@available(iOS 11.0, *)) {
@@ -29,7 +35,7 @@
 //        self.automaticallyAdjustsScrollViewInsets = NO;
 //    }
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"..." style:UIBarButtonItemStylePlain target:self action:@selector(marketsControll)];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
