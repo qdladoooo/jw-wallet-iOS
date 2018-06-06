@@ -195,6 +195,8 @@
 		2E72AECB20C83D0D00340615 /* SSWalletHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AECA20C83D0D00340615 /* SSWalletHeader.xib */; };
 		2E72AECE20C83EB400340615 /* SSWalletHeaderTop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E72AECD20C83EB400340615 /* SSWalletHeaderTop.m */; };
 		2E72AED020C83EDF00340615 /* SSWalletHeaderTop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AECF20C83EDF00340615 /* SSWalletHeaderTop.xib */; };
+		2E72AED320C844FA00340615 /* SSExportPrivatePassWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E72AED220C844FA00340615 /* SSExportPrivatePassWord.m */; };
+		2E72AED520C8450700340615 /* SSExportPrivatePassWord.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AED420C8450700340615 /* SSExportPrivatePassWord.xib */; };
 		2EA78EED20C31A5C00593E7B /* SSAppScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */; };
 		2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EF420C397E200593E7B /* SSAddMarketsViewController.m */; };
 		2EA78EF720C397E200593E7B /* SSAddMarketsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA78EF520C397E200593E7B /* SSAddMarketsViewController.xib */; };
@@ -545,6 +547,9 @@
 		2E72AECC20C83EB400340615 /* SSWalletHeaderTop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWalletHeaderTop.h; sourceTree = "<group>"; };
 		2E72AECD20C83EB400340615 /* SSWalletHeaderTop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWalletHeaderTop.m; sourceTree = "<group>"; };
 		2E72AECF20C83EDF00340615 /* SSWalletHeaderTop.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSWalletHeaderTop.xib; sourceTree = "<group>"; };
+		2E72AED120C844FA00340615 /* SSExportPrivatePassWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSExportPrivatePassWord.h; sourceTree = "<group>"; };
+		2E72AED220C844FA00340615 /* SSExportPrivatePassWord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSExportPrivatePassWord.m; sourceTree = "<group>"; };
+		2E72AED420C8450700340615 /* SSExportPrivatePassWord.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSExportPrivatePassWord.xib; sourceTree = "<group>"; };
 		2EA78EEB20C31A5C00593E7B /* SSAppScrollview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppScrollview.h; sourceTree = "<group>"; };
 		2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppScrollview.m; sourceTree = "<group>"; };
 		2EA78EF320C397E200593E7B /* SSAddMarketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAddMarketsViewController.h; sourceTree = "<group>"; };
@@ -1218,6 +1223,9 @@
 				2E72AECC20C83EB400340615 /* SSWalletHeaderTop.h */,
 				2E72AECD20C83EB400340615 /* SSWalletHeaderTop.m */,
 				2E72AECF20C83EDF00340615 /* SSWalletHeaderTop.xib */,
+				2E72AED120C844FA00340615 /* SSExportPrivatePassWord.h */,
+				2E72AED220C844FA00340615 /* SSExportPrivatePassWord.m */,
+				2E72AED420C8450700340615 /* SSExportPrivatePassWord.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1564,6 +1572,7 @@
 				2E48166E20BA868300AFCBBB /* SSAccoutCell.xib in Resources */,
 				2E64F23520C7748A005BB5AB /* SSTagCollectionViewCell.xib in Resources */,
 				2E72AEBF20C8311000340615 /* SSWalletDetailVC.xib in Resources */,
+				2E72AED520C8450700340615 /* SSExportPrivatePassWord.xib in Resources */,
 				2E48153A20B91FB900AFCBBB /* Assets.xcassets in Resources */,
 				2E6C8AEB20C2B6AB00C0B37E /* SSApplicationsShareView.xib in Resources */,
 				2E60DD6320C3E60A00A20429 /* AAHighchartsMore.js in Resources */,
@@ -1655,6 +1664,7 @@
 				2E64F23420C7748A005BB5AB /* SSTagCollectionViewCell.m in Sources */,
 				2E72AEC320C834CC00340615 /* SSWalletListCell.m in Sources */,
 				2E48168320BAD82400AFCBBB /* SSSectionHeaderView.m in Sources */,
+				2E72AED320C844FA00340615 /* SSExportPrivatePassWord.m in Sources */,
 				2E3F35A220C57A53001C78CB /* SSInviteCodeShareCell.m in Sources */,
 				2E6C8A1020C0EEB600C0B37E /* QRCodeGenerateVC.m in Sources */,
 				2E6C8AB620C2367B00C0B37E /* SSBackupWalletViewController.m in Sources */,

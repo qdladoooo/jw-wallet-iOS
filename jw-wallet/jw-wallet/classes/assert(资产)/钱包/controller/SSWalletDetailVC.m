@@ -10,6 +10,8 @@
 #import "SSWalletListCell.h"
 #import "SSWalletHeader.h"
 #import "SSWalletHeaderTop.h"
+#import "SSExportPrivatePassWord.h"
+
 @interface SSWalletDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
 @property (weak, nonatomic) IBOutlet UITableView *tabelView;
@@ -103,7 +105,9 @@
  @param sender <#sender description#>
  */
 - (IBAction)deleteWallet:(id)sender {
-    [MBProgressHUD showText:@"删除钱包"];
+    SSExportPrivatePassWord *view = [[[NSBundle mainBundle] loadNibNamed:@"SSExportPrivatePassWord" owner:nil options:nil] lastObject];
+    view.frame = [UIScreen mainScreen].bounds;
+    [self.view addSubview:view];
 }
 - (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];

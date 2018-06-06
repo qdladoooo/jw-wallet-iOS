@@ -19,6 +19,7 @@
 #define TIPTEXT_COLOR UIColorFromRGB(0x888888)//提示语文本颜色
 #define MAIN_GROUNDCOLOR UIColorFromRGB(0x000A2A)//主题景色
 #define BACKGROUNDCOLOR UIColorFromRGB(0xF2F6FF)//背景颜色
+#define Bluecolor rgba(15, 129, 255, 1) // 蓝色
 //字体大小
 #define TITLEFONT [UIFont systemFontOfSize:18]
 #define TEXTFONT [UIFont systemFontOfSize:16]
