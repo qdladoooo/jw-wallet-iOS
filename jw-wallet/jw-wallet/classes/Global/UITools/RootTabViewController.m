@@ -32,8 +32,8 @@
     self.tabBar.backgroundImage = [CommonMethods createImageWithColor:[UIColor clearColor]];
     self.tabBar.shadowImage     = [CommonMethods createImageWithColor:[UIColor grayColor]];
     
-    NSArray * normalItems       = @[@"home_gray",@"circle_gray",@"me",@"me"];
-    NSArray * selectItmes       = @[@"home_blue",@"circle_blue",@"me_blue",@"me_blue"];
+    NSArray * normalItems       = @[@"assets",@"markets",@"discover",@"mine"];
+    NSArray * selectItmes       = @[@"assets_selected",@"markets_selected",@"discover_selected",@"mine_selected"];
     
     NSArray * controllClass     = @[@"SSAsertViewController",@"SSMarktViewController",@"SSDiscoverViewController",@"SSAccountViewController"];
     self.delegate               = self;

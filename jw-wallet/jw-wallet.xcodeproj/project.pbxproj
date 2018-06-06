@@ -115,6 +115,14 @@
 		2E60DDA220C4DB1C00A20429 /* SSAddAssertsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DDA020C4DB1C00A20429 /* SSAddAssertsCell.xib */; };
 		2E60DDA520C4E0E300A20429 /* SSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DDA420C4E0E300A20429 /* SSNavigationBar.m */; };
 		2E60DDA720C4E14700A20429 /* SSNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E60DDA620C4E14700A20429 /* SSNavigationBar.xib */; };
+		2E64F22820C772AA005BB5AB /* AJSectionBackgroundLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E64F21C20C772AA005BB5AB /* AJSectionBackgroundLayout.m */; };
+		2E64F22920C772AA005BB5AB /* AJTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E64F21D20C772AA005BB5AB /* AJTagModel.m */; };
+		2E64F22A20C772AA005BB5AB /* AJTagsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E64F21E20C772AA005BB5AB /* AJTagsCell.m */; };
+		2E64F22B20C772AA005BB5AB /* AJSectionBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E64F21F20C772AA005BB5AB /* AJSectionBackgroundView.m */; };
+		2E64F22C20C772AA005BB5AB /* AJTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E64F22020C772AA005BB5AB /* AJTagsView.m */; };
+		2E64F22E20C772AA005BB5AB /* TagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E64F22720C772AA005BB5AB /* TagModel.m */; };
+		2E64F23420C7748A005BB5AB /* SSTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E64F23220C7748A005BB5AB /* SSTagCollectionViewCell.m */; };
+		2E64F23520C7748A005BB5AB /* SSTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E64F23320C7748A005BB5AB /* SSTagCollectionViewCell.xib */; };
 		2E6C890120BC2E9900C0B37E /* SSAsertDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C88FF20BC2E9900C0B37E /* SSAsertDetailVC.m */; };
 		2E6C890220BC2E9900C0B37E /* SSAsertDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C890020BC2E9900C0B37E /* SSAsertDetailVC.xib */; };
 		2E6C891520BC522900C0B37E /* SSAsertHearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C890B20BC522900C0B37E /* SSAsertHearView.m */; };
@@ -179,6 +187,14 @@
 		2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AEE20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib */; };
 		2E6C8AF420C2C13600C0B37E /* SSArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */; };
 		2E6C8AF520C2C13600C0B37E /* SSArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */; };
+		2E72AEBE20C8311000340615 /* SSWalletDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E72AEBC20C8311000340615 /* SSWalletDetailVC.m */; };
+		2E72AEBF20C8311000340615 /* SSWalletDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AEBD20C8311000340615 /* SSWalletDetailVC.xib */; };
+		2E72AEC320C834CC00340615 /* SSWalletListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E72AEC120C834CC00340615 /* SSWalletListCell.m */; };
+		2E72AEC420C834CC00340615 /* SSWalletListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AEC220C834CC00340615 /* SSWalletListCell.xib */; };
+		2E72AEC720C83CF500340615 /* SSWalletHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E72AEC620C83CF500340615 /* SSWalletHeader.m */; };
+		2E72AECB20C83D0D00340615 /* SSWalletHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AECA20C83D0D00340615 /* SSWalletHeader.xib */; };
+		2E72AECE20C83EB400340615 /* SSWalletHeaderTop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E72AECD20C83EB400340615 /* SSWalletHeaderTop.m */; };
+		2E72AED020C83EDF00340615 /* SSWalletHeaderTop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AECF20C83EDF00340615 /* SSWalletHeaderTop.xib */; };
 		2EA78EED20C31A5C00593E7B /* SSAppScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */; };
 		2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EF420C397E200593E7B /* SSAddMarketsViewController.m */; };
 		2EA78EF720C397E200593E7B /* SSAddMarketsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA78EF520C397E200593E7B /* SSAddMarketsViewController.xib */; };
@@ -389,6 +405,21 @@
 		2E60DDA320C4E0E300A20429 /* SSNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSNavigationBar.h; sourceTree = "<group>"; };
 		2E60DDA420C4E0E300A20429 /* SSNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNavigationBar.m; sourceTree = "<group>"; };
 		2E60DDA620C4E14700A20429 /* SSNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSNavigationBar.xib; sourceTree = "<group>"; };
+		2E64F21920C772AA005BB5AB /* AJSectionBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSectionBackgroundView.h; sourceTree = "<group>"; };
+		2E64F21A20C772AA005BB5AB /* AJTagsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTagsCell.h; sourceTree = "<group>"; };
+		2E64F21B20C772AA005BB5AB /* AJTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTagsView.h; sourceTree = "<group>"; };
+		2E64F21C20C772AA005BB5AB /* AJSectionBackgroundLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSectionBackgroundLayout.m; sourceTree = "<group>"; };
+		2E64F21D20C772AA005BB5AB /* AJTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTagModel.m; sourceTree = "<group>"; };
+		2E64F21E20C772AA005BB5AB /* AJTagsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTagsCell.m; sourceTree = "<group>"; };
+		2E64F21F20C772AA005BB5AB /* AJSectionBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSectionBackgroundView.m; sourceTree = "<group>"; };
+		2E64F22020C772AA005BB5AB /* AJTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTagsView.m; sourceTree = "<group>"; };
+		2E64F22120C772AA005BB5AB /* AJSectionBackgroundLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSectionBackgroundLayout.h; sourceTree = "<group>"; };
+		2E64F22220C772AA005BB5AB /* AJTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTagModel.h; sourceTree = "<group>"; };
+		2E64F22420C772AA005BB5AB /* TagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagModel.h; sourceTree = "<group>"; };
+		2E64F22720C772AA005BB5AB /* TagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagModel.m; sourceTree = "<group>"; };
+		2E64F23120C7748A005BB5AB /* SSTagCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTagCollectionViewCell.h; sourceTree = "<group>"; };
+		2E64F23220C7748A005BB5AB /* SSTagCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTagCollectionViewCell.m; sourceTree = "<group>"; };
+		2E64F23320C7748A005BB5AB /* SSTagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSTagCollectionViewCell.xib; sourceTree = "<group>"; };
 		2E6C88FE20BC2E9900C0B37E /* SSAsertDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAsertDetailVC.h; sourceTree = "<group>"; };
 		2E6C88FF20BC2E9900C0B37E /* SSAsertDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAsertDetailVC.m; sourceTree = "<group>"; };
 		2E6C890020BC2E9900C0B37E /* SSAsertDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAsertDetailVC.xib; sourceTree = "<group>"; };
@@ -502,6 +533,18 @@
 		2E6C8AF120C2C13600C0B37E /* SSArticleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSArticleTableViewCell.h; sourceTree = "<group>"; };
 		2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSArticleTableViewCell.m; sourceTree = "<group>"; };
 		2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSArticleTableViewCell.xib; sourceTree = "<group>"; };
+		2E72AEBB20C8311000340615 /* SSWalletDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWalletDetailVC.h; sourceTree = "<group>"; };
+		2E72AEBC20C8311000340615 /* SSWalletDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWalletDetailVC.m; sourceTree = "<group>"; };
+		2E72AEBD20C8311000340615 /* SSWalletDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSWalletDetailVC.xib; sourceTree = "<group>"; };
+		2E72AEC020C834CC00340615 /* SSWalletListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWalletListCell.h; sourceTree = "<group>"; };
+		2E72AEC120C834CC00340615 /* SSWalletListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWalletListCell.m; sourceTree = "<group>"; };
+		2E72AEC220C834CC00340615 /* SSWalletListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSWalletListCell.xib; sourceTree = "<group>"; };
+		2E72AEC520C83CF500340615 /* SSWalletHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWalletHeader.h; sourceTree = "<group>"; };
+		2E72AEC620C83CF500340615 /* SSWalletHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWalletHeader.m; sourceTree = "<group>"; };
+		2E72AECA20C83D0D00340615 /* SSWalletHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSWalletHeader.xib; sourceTree = "<group>"; };
+		2E72AECC20C83EB400340615 /* SSWalletHeaderTop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWalletHeaderTop.h; sourceTree = "<group>"; };
+		2E72AECD20C83EB400340615 /* SSWalletHeaderTop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWalletHeaderTop.m; sourceTree = "<group>"; };
+		2E72AECF20C83EDF00340615 /* SSWalletHeaderTop.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSWalletHeaderTop.xib; sourceTree = "<group>"; };
 		2EA78EEB20C31A5C00593E7B /* SSAppScrollview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppScrollview.h; sourceTree = "<group>"; };
 		2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppScrollview.m; sourceTree = "<group>"; };
 		2EA78EF320C397E200593E7B /* SSAddMarketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAddMarketsViewController.h; sourceTree = "<group>"; };
@@ -1013,6 +1056,44 @@
 			path = "Login&Register";
 			sourceTree = "<group>";
 		};
+		2E64F21720C772AA005BB5AB /* tagView */ = {
+			isa = PBXGroup;
+			children = (
+				2E64F21820C772AA005BB5AB /* AJTag */,
+				2E64F22320C772AA005BB5AB /* custom */,
+			);
+			path = tagView;
+			sourceTree = "<group>";
+		};
+		2E64F21820C772AA005BB5AB /* AJTag */ = {
+			isa = PBXGroup;
+			children = (
+				2E64F21920C772AA005BB5AB /* AJSectionBackgroundView.h */,
+				2E64F21F20C772AA005BB5AB /* AJSectionBackgroundView.m */,
+				2E64F21A20C772AA005BB5AB /* AJTagsCell.h */,
+				2E64F21E20C772AA005BB5AB /* AJTagsCell.m */,
+				2E64F22120C772AA005BB5AB /* AJSectionBackgroundLayout.h */,
+				2E64F21C20C772AA005BB5AB /* AJSectionBackgroundLayout.m */,
+				2E64F22220C772AA005BB5AB /* AJTagModel.h */,
+				2E64F21D20C772AA005BB5AB /* AJTagModel.m */,
+				2E64F21B20C772AA005BB5AB /* AJTagsView.h */,
+				2E64F22020C772AA005BB5AB /* AJTagsView.m */,
+			);
+			path = AJTag;
+			sourceTree = "<group>";
+		};
+		2E64F22320C772AA005BB5AB /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				2E64F23120C7748A005BB5AB /* SSTagCollectionViewCell.h */,
+				2E64F23220C7748A005BB5AB /* SSTagCollectionViewCell.m */,
+				2E64F23320C7748A005BB5AB /* SSTagCollectionViewCell.xib */,
+				2E64F22420C772AA005BB5AB /* TagModel.h */,
+				2E64F22720C772AA005BB5AB /* TagModel.m */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
 		2E6C890820BC522900C0B37E /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -1124,9 +1205,19 @@
 		2E6C895620BD98A800C0B37E /* view */ = {
 			isa = PBXGroup;
 			children = (
+				2E64F21720C772AA005BB5AB /* tagView */,
 				2E6C896C20BDB7C300C0B37E /* SSPurseListCell.h */,
 				2E6C896D20BDB7C300C0B37E /* SSPurseListCell.m */,
 				2E6C896E20BDB7C300C0B37E /* SSPurseListCell.xib */,
+				2E72AEC020C834CC00340615 /* SSWalletListCell.h */,
+				2E72AEC120C834CC00340615 /* SSWalletListCell.m */,
+				2E72AEC220C834CC00340615 /* SSWalletListCell.xib */,
+				2E72AEC520C83CF500340615 /* SSWalletHeader.h */,
+				2E72AEC620C83CF500340615 /* SSWalletHeader.m */,
+				2E72AECA20C83D0D00340615 /* SSWalletHeader.xib */,
+				2E72AECC20C83EB400340615 /* SSWalletHeaderTop.h */,
+				2E72AECD20C83EB400340615 /* SSWalletHeaderTop.m */,
+				2E72AECF20C83EDF00340615 /* SSWalletHeaderTop.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1161,6 +1252,9 @@
 				2E3F35B120C5A3BC001C78CB /* SSConfirmHelpWordsVC.h */,
 				2E3F35B220C5A3BC001C78CB /* SSConfirmHelpWordsVC.m */,
 				2E3F35B320C5A3BC001C78CB /* SSConfirmHelpWordsVC.xib */,
+				2E72AEBB20C8311000340615 /* SSWalletDetailVC.h */,
+				2E72AEBC20C8311000340615 /* SSWalletDetailVC.m */,
+				2E72AEBD20C8311000340615 /* SSWalletDetailVC.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1430,6 +1524,7 @@
 				2E60DD8D20C43FF000A20429 /* SSEdiMarketsViewController.xib in Resources */,
 				2E6C891920BC522900C0B37E /* SSAsertCell.xib in Resources */,
 				2E6C897020BDB7C300C0B37E /* SSPurseListCell.xib in Resources */,
+				2E72AEC420C834CC00340615 /* SSWalletListCell.xib in Resources */,
 				2E6C8AD420C26AFA00C0B37E /* SSUnitSetTableViewCell.xib in Resources */,
 				2E60DD9D20C4D73400A20429 /* SSAddAssertsVC.xib in Resources */,
 				2E6C8AE620C26F4100C0B37E /* SSBannerView.xib in Resources */,
@@ -1451,6 +1546,7 @@
 				2E6C896720BD9AD600C0B37E /* SSAddPurseViewController.xib in Resources */,
 				2E6C89D820BF01D500C0B37E /* Localizable.strings in Resources */,
 				2E48163B20B983AC00AFCBBB /* me_blue@2x.png in Resources */,
+				2E72AECB20C83D0D00340615 /* SSWalletHeader.xib in Resources */,
 				2E6C891820BC522900C0B37E /* SSTradingRecordsCell.xib in Resources */,
 				2E60DDA720C4E14700A20429 /* SSNavigationBar.xib in Resources */,
 				2E60DD6220C3E60A00A20429 /* AAHighchartsLib.js in Resources */,
@@ -1466,6 +1562,8 @@
 				2E6C890220BC2E9900C0B37E /* SSAsertDetailVC.xib in Resources */,
 				2E3F35AA20C5869D001C78CB /* SSTouchIDSetCell.xib in Resources */,
 				2E48166E20BA868300AFCBBB /* SSAccoutCell.xib in Resources */,
+				2E64F23520C7748A005BB5AB /* SSTagCollectionViewCell.xib in Resources */,
+				2E72AEBF20C8311000340615 /* SSWalletDetailVC.xib in Resources */,
 				2E48153A20B91FB900AFCBBB /* Assets.xcassets in Resources */,
 				2E6C8AEB20C2B6AB00C0B37E /* SSApplicationsShareView.xib in Resources */,
 				2E60DD6320C3E60A00A20429 /* AAHighchartsMore.js in Resources */,
@@ -1479,6 +1577,7 @@
 				2E3F35A320C57A53001C78CB /* SSInviteCodeShareCell.xib in Resources */,
 				2E60DD9720C44A0900A20429 /* SSMarketRemindViewController.xib in Resources */,
 				2E48163A20B983AC00AFCBBB /* circle_blue@2x.png in Resources */,
+				2E72AED020C83EDF00340615 /* SSWalletHeaderTop.xib in Resources */,
 				2E60DD6420C3E60A00A20429 /* AAFunnel.js in Resources */,
 				2E48168A20BAD89900AFCBBB /* SSSectionHeaderView.xib in Resources */,
 				2E48153820B91FB800AFCBBB /* Main.storyboard in Resources */,
@@ -1550,13 +1649,17 @@
 			files = (
 				2E3F359620C5180F001C78CB /* SSInviteCodeShare.m in Sources */,
 				2E6C8A1120C0EEB600C0B37E /* WBQRCodeScanningVC.m in Sources */,
+				2E64F22E20C772AA005BB5AB /* TagModel.m in Sources */,
 				2E6C8ABB20C23EEA00C0B37E /* SSBackupMemorizingWordsVC.m in Sources */,
 				2E60DD8C20C43FF000A20429 /* SSEdiMarketsViewController.m in Sources */,
+				2E64F23420C7748A005BB5AB /* SSTagCollectionViewCell.m in Sources */,
+				2E72AEC320C834CC00340615 /* SSWalletListCell.m in Sources */,
 				2E48168320BAD82400AFCBBB /* SSSectionHeaderView.m in Sources */,
 				2E3F35A220C57A53001C78CB /* SSInviteCodeShareCell.m in Sources */,
 				2E6C8A1020C0EEB600C0B37E /* QRCodeGenerateVC.m in Sources */,
 				2E6C8AB620C2367B00C0B37E /* SSBackupWalletViewController.m in Sources */,
 				2E6C891620BC522900C0B37E /* SSAsertCell.m in Sources */,
+				2E64F22920C772AA005BB5AB /* AJTagModel.m in Sources */,
 				2E60DDA120C4DB1C00A20429 /* SSAddAssertsCell.m in Sources */,
 				2E6C896620BD9AD600C0B37E /* SSAddPurseViewController.m in Sources */,
 				2E3F35B420C5A3BC001C78CB /* SSConfirmHelpWordsVC.m in Sources */,
@@ -1596,6 +1699,7 @@
 				2E60DD7420C3E60A00A20429 /* AAOptions3d.m in Sources */,
 				2E4815AE20B9734900AFCBBB /* LWTNavigationViewController.m in Sources */,
 				2E6C8AE420C26F3400C0B37E /* SSBannerView.m in Sources */,
+				2E72AEBE20C8311000340615 /* SSWalletDetailVC.m in Sources */,
 				2E60DDA520C4E0E300A20429 /* SSNavigationBar.m in Sources */,
 				2E48166920BA843B00AFCBBB /* SSAccountViewController.m in Sources */,
 				2E60DD9620C44A0900A20429 /* SSMarketRemindViewController.m in Sources */,
@@ -1612,11 +1716,16 @@
 				2E60DD8720C3F71300A20429 /* SSMarketsDetalViewController.m in Sources */,
 				2E60DD8220C3E60A00A20429 /* AAOptions.m in Sources */,
 				2E60DD9C20C4D73400A20429 /* SSAddAssertsVC.m in Sources */,
+				2E64F22A20C772AA005BB5AB /* AJTagsCell.m in Sources */,
+				2E64F22820C772AA005BB5AB /* AJSectionBackgroundLayout.m in Sources */,
 				2E60DD6A20C3E60A00A20429 /* AAXAxis.m in Sources */,
+				2E64F22B20C772AA005BB5AB /* AJSectionBackgroundView.m in Sources */,
+				2E72AECE20C83EB400340615 /* SSWalletHeaderTop.m in Sources */,
 				2E60DD7D20C3E60A00A20429 /* AAItemStyle.m in Sources */,
 				2E4815FF20B97EAB00AFCBBB /* UINavigationBar+style.m in Sources */,
 				2E6C8A1320C0EEB600C0B37E /* ScanSuccessJumpVC.m in Sources */,
 				2E48153520B91FB800AFCBBB /* ViewController.m in Sources */,
+				2E72AEC720C83CF500340615 /* SSWalletHeader.m in Sources */,
 				2E6C89FC20C041A200C0B37E /* SSLanguageCell.m in Sources */,
 				2E6C8AE120C26DDF00C0B37E /* SSDiscoverViewController.m in Sources */,
 				2E60DD6820C3E60A00A20429 /* AALabels.m in Sources */,
@@ -1644,6 +1753,7 @@
 				2E60DD7220C3E60A00A20429 /* AAColumn.m in Sources */,
 				2E60DD7320C3E60A00A20429 /* AAPlotLinesElement.m in Sources */,
 				2E48160520B9818900AFCBBB /* SSAsertViewController.m in Sources */,
+				2E64F22C20C772AA005BB5AB /* AJTagsView.m in Sources */,
 				2E6C896F20BDB7C300C0B37E /* SSPurseListCell.m in Sources */,
 				2E60DD7020C3E60A00A20429 /* AAYAxis.m in Sources */,
 				2E3F359D20C51A6A001C78CB /* SSAppShareViewController.m in Sources */,

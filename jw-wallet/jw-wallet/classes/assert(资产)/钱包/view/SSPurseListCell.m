@@ -7,7 +7,14 @@
 //
 
 #import "SSPurseListCell.h"
+@interface SSPurseListCell()
 
+/**
+ 设置按钮
+ */
+@property (weak, nonatomic) IBOutlet UIButton *setBtn;
+
+@end
 @implementation SSPurseListCell
 
 - (void)awakeFromNib {
@@ -28,4 +35,14 @@
     }
     return cell;
 }
+- (IBAction)setWallet:(id)sender {
+    _setBtn.selected = !_setBtn.selected;
+    if (_IsButtonnSelectedBlock) {
+        _IsButtonnSelectedBlock(_setBtn.selected);
+    }
+    // 存储选择状态
+    [[NSUserDefaults standardUserDefaults] setBool:_setBtn.selected forKey:@"MoRenWallet"];
+}
+
+
 @end

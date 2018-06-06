@@ -38,6 +38,9 @@
                                 <rect key="frame" x="100" y="22" width="50" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="设置默认"/>
+                                <connections>
+                                    <action selector="setWallet:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QnL-s5-ers"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKM-0S-GVD">
                                 <rect key="frame" x="369" y="41.5" width="8" height="22"/>
@@ -82,6 +85,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="setBtn" destination="6Lq-m2-gLw" id="Cb9-yL-asV"/>
+            </connections>
             <point key="canvasLocation" x="50" y="-164.5"/>
         </tableViewCell>
     </objects>

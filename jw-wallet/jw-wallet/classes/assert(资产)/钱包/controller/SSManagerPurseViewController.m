@@ -10,6 +10,7 @@
 #import "SSPurseListCell.h"
 #import "SSCreatePurseViewController.h"
 #import "SSAddPurseViewController.h"
+#import "SSWalletDetailVC.h"
 @interface SSManagerPurseViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -36,8 +37,17 @@
     return 2;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
     SSPurseListCell *cell = [SSPurseListCell cellWithTableView:tableView];
+
     return cell;
+  
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SSWalletDetailVC *vc = [[SSWalletDetailVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - UITableViewDelegate
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -10,4 +10,6 @@
 
 @interface SSPurseListCell : UITableViewCell
 +(instancetype)cellWithTableView:(UITableView *)tableView;
+@property (nonatomic, assign) BOOL SetMoRenWallet;
+@property (nonatomic, strong) void (^IsButtonnSelectedBlock)(BOOL);
 @end
