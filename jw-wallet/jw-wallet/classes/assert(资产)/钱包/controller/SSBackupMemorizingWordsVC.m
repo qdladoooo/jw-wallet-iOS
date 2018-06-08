@@ -17,6 +17,8 @@
 - (IBAction)next:(id)sender {
     SSConfirmHelpWordsVC *vc = [[SSConfirmHelpWordsVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+
+    
 }
 // 返回上级
 - (IBAction)backAction:(id)sender {

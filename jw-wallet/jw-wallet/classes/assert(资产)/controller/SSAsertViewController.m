@@ -198,15 +198,15 @@
 -(void)navigationView{
     _nav_view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
     _nav_view.backgroundColor = [UIColor clearColor];
-    
-    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(10, 20, 60, 60)];
+    // 扫描按钮
+    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(10, 20, 40, 40)];
     btn1.tintColor = [UIColor whiteColor];
-    [btn1 setImage:[UIImage imageNamed:@"purse"] forState:UIControlStateNormal];
+    [btn1 setImage:[UIImage imageNamed:@"扫描"] forState:UIControlStateNormal];
     [_nav_view addSubview:btn1];
-    
-    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-70, 20, 60, 60)];
+    // 钱包按钮
+    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-50, 20, 40, 40)];
     btn2.tintColor = [UIColor whiteColor];
-    [btn2 setImage:[UIImage imageNamed:@"purse"] forState:UIControlStateNormal];
+    [btn2 setImage:[UIImage imageNamed:@"钱包"] forState:UIControlStateNormal];
     [_nav_view addSubview:btn2];
     [btn1 addTarget:self action:@selector(scan) forControlEvents:UIControlEventTouchUpInside];
     [btn2 addTarget:self action:@selector(purse) forControlEvents:UIControlEventTouchUpInside];

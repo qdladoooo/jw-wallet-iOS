@@ -12,61 +12,54 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="SSAddAssertsCell">
-            <rect key="frame" x="0.0" y="0.0" width="349" height="118"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="SSAddAssertsCell">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="349" height="117.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="340" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="zFl-K1-im2">
-                        <rect key="frame" x="20" y="38" width="40" height="40"/>
+                        <rect key="frame" x="20" y="30" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="pyi-wv-bZc"/>
                             <constraint firstAttribute="height" constant="40" id="uNn-Mj-JHI"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digix Dao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3M-en-wAz">
-                        <rect key="frame" x="70" y="52" width="46.5" height="12"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0X000123737" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htu-Dg-lba">
-                        <rect key="frame" x="70" y="74" width="67.5" height="12"/>
+                        <rect key="frame" x="70" y="58" width="67.5" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GDG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upu-YE-jRI">
-                        <rect key="frame" x="70" y="24" width="33" height="18"/>
+                        <rect key="frame" x="70" y="30" width="33" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTI-RN-BDK">
-                        <rect key="frame" x="280" y="43" width="51" height="31"/>
+                        <rect key="frame" x="271" y="34.5" width="51" height="31"/>
                     </switch>
                 </subviews>
-                <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="b3M-en-wAz" firstAttribute="top" secondItem="upu-YE-jRI" secondAttribute="bottom" constant="10" id="0l1-Jj-TR1"/>
                     <constraint firstAttribute="trailing" secondItem="FTI-RN-BDK" secondAttribute="trailing" constant="20" id="1rn-GR-6MH"/>
-                    <constraint firstItem="htu-Dg-lba" firstAttribute="top" secondItem="b3M-en-wAz" secondAttribute="bottom" constant="10" id="2k6-MK-cR9"/>
-                    <constraint firstItem="b3M-en-wAz" firstAttribute="leading" secondItem="zFl-K1-im2" secondAttribute="trailing" constant="10" id="51A-mB-I9Z"/>
-                    <constraint firstItem="b3M-en-wAz" firstAttribute="centerY" secondItem="zFl-K1-im2" secondAttribute="centerY" id="8WD-C9-Aps"/>
+                    <constraint firstItem="upu-YE-jRI" firstAttribute="leading" secondItem="zFl-K1-im2" secondAttribute="trailing" constant="10" id="6Sj-CU-3aN"/>
                     <constraint firstItem="zFl-K1-im2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="EwH-er-hsr"/>
-                    <constraint firstItem="upu-YE-jRI" firstAttribute="leading" secondItem="b3M-en-wAz" secondAttribute="leading" id="II9-8v-cXI"/>
-                    <constraint firstItem="htu-Dg-lba" firstAttribute="leading" secondItem="b3M-en-wAz" secondAttribute="leading" id="Oxl-3I-6Tb"/>
+                    <constraint firstItem="htu-Dg-lba" firstAttribute="bottom" secondItem="zFl-K1-im2" secondAttribute="bottom" id="RVy-7J-cOv"/>
                     <constraint firstItem="FTI-RN-BDK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="U9o-AH-nPg"/>
+                    <constraint firstItem="htu-Dg-lba" firstAttribute="leading" secondItem="upu-YE-jRI" secondAttribute="leading" id="Y0i-7n-obz"/>
                     <constraint firstItem="zFl-K1-im2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rcE-Ac-aZ6"/>
+                    <constraint firstItem="upu-YE-jRI" firstAttribute="top" secondItem="zFl-K1-im2" secondAttribute="top" id="svg-V2-pwk"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="imageLogo" destination="zFl-K1-im2" id="rn5-ji-U4g"/>
             </connections>
-            <point key="canvasLocation" x="48.5" y="91"/>
+            <point key="canvasLocation" x="44" y="82"/>
         </tableViewCell>
     </objects>
     <resources>

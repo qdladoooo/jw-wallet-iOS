@@ -10,7 +10,7 @@
 #import "SSTradingRecordsCell.h"
 #import "SSTranferViewController.h"
 #import "SSGetMoneyViewController.h"
-
+#import "SSTransRecordVC.h"
 @interface SSAsertDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tablewView;
 
@@ -69,7 +69,10 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 30;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SSTransRecordVC *recordVC = [[SSTransRecordVC alloc] init];
+    [self.navigationController pushViewController:recordVC animated:YES];
+}
 #pragma mark - 点击事件
 // 转账
 - (IBAction)transferAction:(id)sender {

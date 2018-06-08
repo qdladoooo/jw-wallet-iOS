@@ -18,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
-    self.tableView.backgroundColor = MAIN_GROUNDCOLOR;
+    self.tableView.backgroundColor = BACKGROUNDCOLOR;
+    self.tableView.separatorColor = BACKGROUNDCOLOR;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +42,9 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 80;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 15;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SSAddAssertsCell *cell = [SSAddAssertsCell cellWithTableView:tableView];
     return cell;
