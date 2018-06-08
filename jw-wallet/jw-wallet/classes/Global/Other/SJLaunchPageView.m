@@ -210,8 +210,7 @@
     // 4. 设置样式
     [startButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     startButton.titleLabel.font = [UIFont systemFontOfSize:12.0f];
-//    startButton.borderColor = [UIColor whiteColor].CGColor;
-//    startButton.borderWidth = 0.5f;
+
     
     startButton.layer.cornerRadius = 5.0f;
     // 5.添加点击事件
