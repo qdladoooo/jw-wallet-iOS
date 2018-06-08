@@ -10,4 +10,6 @@
 
 @interface SSAddAssertsCell : UITableViewCell
 +(instancetype)cellWithTableView:(UITableView *)tableView;
+@property (weak, nonatomic) IBOutlet UISwitch *switchStatus;
+
 @end

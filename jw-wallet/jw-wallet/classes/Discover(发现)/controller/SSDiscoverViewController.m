@@ -11,14 +11,16 @@
 #import "SSApplicationsShareView.h"
 #import "SSArticleTableViewCell.h"
 #import "SDCycleScrollView.h"
-#import "SSAppScrollview.h"
-@interface SSDiscoverViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>
+#import "YYBHorizontalCollectionView.h"
+#import "YYBHCModel.h"
+#import "YYBHorizontalCollectionCell.h"
+
+@interface SSDiscoverViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate,YYBHorizontalCollectionViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong) UIView *NormalHeaderView;
 @property (nonatomic, strong) UILabel *NormalHeaderTitle;
 @property (nonatomic, copy) NSArray *imageArr;
 @property (nonatomic, strong) SDCycleScrollView *cycleScrollView;
-@property (nonatomic, strong) SSAppScrollview *appScrollview;
 @end
 
 @implementation SSDiscoverViewController
@@ -89,10 +91,21 @@
         
         return _cycleScrollView;
        
-    }else if (section == 2){
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 125)];
-        view.backgroundColor = [UIColor lightGrayColor];
-        return view;
+    }else if (section == 2){ // app
+        NSMutableArray *dataArray = [NSMutableArray arrayWithCapacity:10];
+        for (int i = 0; i < 10; i ++) {
+            YYBHCModel *model = [[YYBHCModel alloc]init];
+            model.imagestring = @"u=2796464312,3280625818&fm=11&gp=0.jpg";
+            model.labelstring = [NSString stringWithFormat:@"应用%d",i];
+            [dataArray addObject:model];
+        }
+        NSArray *models = (NSArray *)dataArray;
+        
+        
+          YYBHorizontalCollectionView *hcollectionview = [[YYBHorizontalCollectionView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 125) ItemSize:CGSizeMake(80, 125) MinimumLineSpacing:5 MinimumInteritemSpacing:0];
+        hcollectionview.models = models;
+        hcollectionview.yybdelegate = self;
+        return hcollectionview;
     }
     else{
         
@@ -123,7 +136,7 @@
 //        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 275) delegate:self placeholderImage:[UIImage imageNamed:@"banner"]];
 //        _cycleScrollView.backgroundColor = [UIColor redColor];
 //    }
-//    _cycleScrollView.imageURLStringsGroup = @[@"https://img.zcool.cn/community/017a40596eea61a8012193a3e8f019.jpg@2o.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527967337152&di=e3686479ec94c4f3e7c5a1a87835d572&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015aeb591d13cfb5b3086ed4c94464.png",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527967337151&di=2d527d16eb9ceeb6b5318716e3bc4c49&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F011d75596ccb8da8012193a3569662.jpg%401280w_1l_2o_100sh.jpg"];
+
 //    return _cycleScrollView;
 //}
 
@@ -135,5 +148,11 @@
 /** 图片滚动回调 */
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didScrollToIndex:(NSInteger)index{
      NSLog(@"当前是第%ld个图片",index);
+}
+
+#pragma mark - YYBHorizontalCollectionViewDelegate
+- (void)YYBHorizontalcollectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+   
 }
 @end

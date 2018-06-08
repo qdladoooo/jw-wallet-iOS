@@ -58,6 +58,7 @@
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="imageLogo" destination="zFl-K1-im2" id="rn5-ji-U4g"/>
+                <outlet property="switchStatus" destination="FTI-RN-BDK" id="NL1-kt-HRO"/>
             </connections>
             <point key="canvasLocation" x="44" y="82"/>
         </tableViewCell>

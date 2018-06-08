@@ -36,7 +36,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     // 启动图
-    [SJLaunchPageView showLaunchPageView];
+    [self checkVersion];
     
     self.fd_prefersNavigationBarHidden = YES;
     
@@ -118,20 +118,6 @@
 
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-//-(void)navigationView{
-//    _navgationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
-//    _navgationView.backgroundColor = MAIN_GROUNDCOLOR;
-//    [self.view addSubview:_navgationView];
-//}
 
 #pragma mark - 头部按钮点击
 -(void)purse{
@@ -212,5 +198,28 @@
     [btn2 addTarget:self action:@selector(purse) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:_nav_view];
+}
+#pragma mark - 第一次进入
+-(void)checkVersion{
+    // 取出沙盒中存储的上次使用软件的版本号
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    NSString *lastVersion = [defaults stringForKey:@"CFBundleShortVersionString"];
+//    // 获得当前软件的版本号
+//    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+//    // 如果跟沙盒中存储的版本一致就不弹出遮盖
+//    if (![currentVersion isEqualToString:lastVersion]) {
+//        [SJLaunchPageView showLaunchPageView];
+//    }
+//    [defaults setObject:currentVersion forKey:@"CFBundleShortVersionString"];
+//    [defaults synchronize];
+
+//    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirstLaunch"];
+    BOOL isFirstLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"isFirstLaunch"];
+    BOOL endNewFeature = [[NSUserDefaults standardUserDefaults] boolForKey:@"EndNewFeature"];
+    if (isFirstLaunch && endNewFeature) {
+        [SJLaunchPageView showLaunchPageView];
+
+    }
+
 }
 @end

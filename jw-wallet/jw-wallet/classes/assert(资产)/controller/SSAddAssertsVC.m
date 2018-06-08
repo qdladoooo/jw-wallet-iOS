@@ -47,6 +47,7 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SSAddAssertsCell *cell = [SSAddAssertsCell cellWithTableView:tableView];
+    [cell.switchStatus setOn:NO animated:YES];
     return cell;
 }
 

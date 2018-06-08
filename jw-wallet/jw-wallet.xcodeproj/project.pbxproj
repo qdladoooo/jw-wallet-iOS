@@ -214,7 +214,12 @@
 		2E72AED020C83EDF00340615 /* SSWalletHeaderTop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AECF20C83EDF00340615 /* SSWalletHeaderTop.xib */; };
 		2E72AED320C844FA00340615 /* SSExportPrivatePassWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E72AED220C844FA00340615 /* SSExportPrivatePassWord.m */; };
 		2E72AED520C8450700340615 /* SSExportPrivatePassWord.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E72AED420C8450700340615 /* SSExportPrivatePassWord.xib */; };
-		2EA78EED20C31A5C00593E7B /* SSAppScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */; };
+		2EA596CE20CA29BB00A25951 /* SJ_NewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596CD20CA29BB00A25951 /* SJ_NewfeatureViewController.m */; };
+		2EA596D720CA6FE500A25951 /* SSAppCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596D620CA6FE500A25951 /* SSAppCollectionHeaderView.m */; };
+		2EA596D920CA701F00A25951 /* SSAppCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA596D820CA701F00A25951 /* SSAppCollectionHeaderView.xib */; };
+		2EA596DE20CA7B1300A25951 /* YYBHorizontalCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596DA20CA7B1100A25951 /* YYBHorizontalCollectionCell.m */; };
+		2EA596DF20CA7B1300A25951 /* YYBHorizontalCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596DD20CA7B1300A25951 /* YYBHorizontalCollectionView.m */; };
+		2EA596E220CA7B9E00A25951 /* YYBHCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596E120CA7B9E00A25951 /* YYBHCModel.m */; };
 		2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EF420C397E200593E7B /* SSAddMarketsViewController.m */; };
 		2EA78EF720C397E200593E7B /* SSAddMarketsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA78EF520C397E200593E7B /* SSAddMarketsViewController.xib */; };
 		2EA78EFB20C3990600593E7B /* SSAddMarketsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA78EF920C3990600593E7B /* SSAddMarketsListCell.m */; };
@@ -594,8 +599,17 @@
 		2E72AED120C844FA00340615 /* SSExportPrivatePassWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSExportPrivatePassWord.h; sourceTree = "<group>"; };
 		2E72AED220C844FA00340615 /* SSExportPrivatePassWord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSExportPrivatePassWord.m; sourceTree = "<group>"; };
 		2E72AED420C8450700340615 /* SSExportPrivatePassWord.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSExportPrivatePassWord.xib; sourceTree = "<group>"; };
-		2EA78EEB20C31A5C00593E7B /* SSAppScrollview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppScrollview.h; sourceTree = "<group>"; };
-		2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppScrollview.m; sourceTree = "<group>"; };
+		2EA596CC20CA29BB00A25951 /* SJ_NewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJ_NewfeatureViewController.h; sourceTree = "<group>"; };
+		2EA596CD20CA29BB00A25951 /* SJ_NewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJ_NewfeatureViewController.m; sourceTree = "<group>"; };
+		2EA596D520CA6FE500A25951 /* SSAppCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppCollectionHeaderView.h; sourceTree = "<group>"; };
+		2EA596D620CA6FE500A25951 /* SSAppCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppCollectionHeaderView.m; sourceTree = "<group>"; };
+		2EA596D820CA701F00A25951 /* SSAppCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAppCollectionHeaderView.xib; sourceTree = "<group>"; };
+		2EA596DA20CA7B1100A25951 /* YYBHorizontalCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBHorizontalCollectionCell.m; sourceTree = "<group>"; };
+		2EA596DB20CA7B1100A25951 /* YYBHorizontalCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYBHorizontalCollectionCell.h; sourceTree = "<group>"; };
+		2EA596DC20CA7B1200A25951 /* YYBHorizontalCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYBHorizontalCollectionView.h; sourceTree = "<group>"; };
+		2EA596DD20CA7B1300A25951 /* YYBHorizontalCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBHorizontalCollectionView.m; sourceTree = "<group>"; };
+		2EA596E020CA7B9E00A25951 /* YYBHCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYBHCModel.h; sourceTree = "<group>"; };
+		2EA596E120CA7B9E00A25951 /* YYBHCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBHCModel.m; sourceTree = "<group>"; };
 		2EA78EF320C397E200593E7B /* SSAddMarketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAddMarketsViewController.h; sourceTree = "<group>"; };
 		2EA78EF420C397E200593E7B /* SSAddMarketsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAddMarketsViewController.m; sourceTree = "<group>"; };
 		2EA78EF520C397E200593E7B /* SSAddMarketsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAddMarketsViewController.xib; sourceTree = "<group>"; };
@@ -887,6 +901,7 @@
 		2E48159820B9734900AFCBBB /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				2EA596CB20CA29BB00A25951 /* Newfeature */,
 				2E6C8A0220C05B5000C0B37E /* SJLaunchPageView.h */,
 				2E6C8A0120C05B5000C0B37E /* SJLaunchPageView.m */,
 				2E4815B220B9765200AFCBBB /* SHSF.pch */,
@@ -1472,6 +1487,10 @@
 		2E6C8ADC20C26DB200C0B37E /* view */ = {
 			isa = PBXGroup;
 			children = (
+				2EA596DB20CA7B1100A25951 /* YYBHorizontalCollectionCell.h */,
+				2EA596DA20CA7B1100A25951 /* YYBHorizontalCollectionCell.m */,
+				2EA596DC20CA7B1200A25951 /* YYBHorizontalCollectionView.h */,
+				2EA596DD20CA7B1300A25951 /* YYBHorizontalCollectionView.m */,
 				2E6C8AE220C26F3400C0B37E /* SSBannerView.h */,
 				2E6C8AE320C26F3400C0B37E /* SSBannerView.m */,
 				2E6C8AE520C26F4100C0B37E /* SSBannerView.xib */,
@@ -1484,8 +1503,9 @@
 				2E6C8AF120C2C13600C0B37E /* SSArticleTableViewCell.h */,
 				2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */,
 				2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */,
-				2EA78EEB20C31A5C00593E7B /* SSAppScrollview.h */,
-				2EA78EEC20C31A5C00593E7B /* SSAppScrollview.m */,
+				2EA596D520CA6FE500A25951 /* SSAppCollectionHeaderView.h */,
+				2EA596D620CA6FE500A25951 /* SSAppCollectionHeaderView.m */,
+				2EA596D820CA701F00A25951 /* SSAppCollectionHeaderView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1493,6 +1513,8 @@
 		2E6C8ADD20C26DB500C0B37E /* model */ = {
 			isa = PBXGroup;
 			children = (
+				2EA596E020CA7B9E00A25951 /* YYBHCModel.h */,
+				2EA596E120CA7B9E00A25951 /* YYBHCModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1504,6 +1526,15 @@
 				2E6C8AE020C26DDF00C0B37E /* SSDiscoverViewController.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		2EA596CB20CA29BB00A25951 /* Newfeature */ = {
+			isa = PBXGroup;
+			children = (
+				2EA596CC20CA29BB00A25951 /* SJ_NewfeatureViewController.h */,
+				2EA596CD20CA29BB00A25951 /* SJ_NewfeatureViewController.m */,
+			);
+			path = Newfeature;
 			sourceTree = "<group>";
 		};
 		37CAACB097E5C8DDF8007802 /* Pods */ = {
@@ -1642,6 +1673,7 @@
 				2E48163920B983AC00AFCBBB /* me@3x.png in Resources */,
 				2E6C89F820C03F1000C0B37E /* SSLanguageSetVC.xib in Resources */,
 				2E32EE3720C93B9100D00CFB /* SSUnSelectedTableViewCell.xib in Resources */,
+				2EA596D920CA701F00A25951 /* SSAppCollectionHeaderView.xib in Resources */,
 				2E60DD8D20C43FF000A20429 /* SSEdiMarketsViewController.xib in Resources */,
 				2E6C891920BC522900C0B37E /* SSAsertCell.xib in Resources */,
 				2E32EE1D20C9083900D00CFB /* SSTagCellCollectionViewCell.xib in Resources */,
@@ -1779,6 +1811,7 @@
 				2E64F22E20C772AA005BB5AB /* TagModel.m in Sources */,
 				2E6C8ABB20C23EEA00C0B37E /* SSBackupMemorizingWordsVC.m in Sources */,
 				2E60DD8C20C43FF000A20429 /* SSEdiMarketsViewController.m in Sources */,
+				2EA596CE20CA29BB00A25951 /* SJ_NewfeatureViewController.m in Sources */,
 				2E64F23420C7748A005BB5AB /* SSTagCollectionViewCell.m in Sources */,
 				2E72AEC320C834CC00340615 /* SSWalletListCell.m in Sources */,
 				2E32EE3820C93F5300D00CFB /* SSUnSelectedTableViewCell.m in Sources */,
@@ -1825,12 +1858,13 @@
 				2E60DD7120C3E60A00A20429 /* AACrosshair.m in Sources */,
 				2E48168020BAD7CF00AFCBBB /* SSMarktViewController.m in Sources */,
 				2E6C892A20BC539E00C0B37E /* SSTranferViewController.m in Sources */,
-				2EA78EED20C31A5C00593E7B /* SSAppScrollview.m in Sources */,
+				2EA596DE20CA7B1300A25951 /* YYBHorizontalCollectionCell.m in Sources */,
 				2E6C891720BC522900C0B37E /* SSTradingRecordsCell.m in Sources */,
 				2E60DD7420C3E60A00A20429 /* AAOptions3d.m in Sources */,
 				2E4815AE20B9734900AFCBBB /* LWTNavigationViewController.m in Sources */,
 				2E6C8AE420C26F3400C0B37E /* SSBannerView.m in Sources */,
 				2E72AEBE20C8311000340615 /* SSWalletDetailVC.m in Sources */,
+				2EA596D720CA6FE500A25951 /* SSAppCollectionHeaderView.m in Sources */,
 				2E32EE1C20C9083900D00CFB /* SSTagCellCollectionViewCell.m in Sources */,
 				2E60DDA520C4E0E300A20429 /* SSNavigationBar.m in Sources */,
 				2E48166920BA843B00AFCBBB /* SSAccountViewController.m in Sources */,
@@ -1847,6 +1881,7 @@
 				2E48169020BAD8CE00AFCBBB /* SSAccountModel.m in Sources */,
 				2E60DD6F20C3E60A00A20429 /* AASubtitle.m in Sources */,
 				2E60DD7E20C3E60A00A20429 /* AAPie.m in Sources */,
+				2EA596DF20CA7B1300A25951 /* YYBHorizontalCollectionView.m in Sources */,
 				2E60DD8720C3F71300A20429 /* SSMarketsDetalViewController.m in Sources */,
 				2E60DD8220C3E60A00A20429 /* AAOptions.m in Sources */,
 				2E60DD9C20C4D73400A20429 /* SSAddAssertsVC.m in Sources */,
@@ -1854,6 +1889,7 @@
 				2E64F22820C772AA005BB5AB /* AJSectionBackgroundLayout.m in Sources */,
 				2E60DD6A20C3E60A00A20429 /* AAXAxis.m in Sources */,
 				2E64F22B20C772AA005BB5AB /* AJSectionBackgroundView.m in Sources */,
+				2EA596E220CA7B9E00A25951 /* YYBHCModel.m in Sources */,
 				2E72AECE20C83EB400340615 /* SSWalletHeaderTop.m in Sources */,
 				2E60DD7D20C3E60A00A20429 /* AAItemStyle.m in Sources */,
 				2E4815FF20B97EAB00AFCBBB /* UINavigationBar+style.m in Sources */,

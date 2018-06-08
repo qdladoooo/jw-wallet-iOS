@@ -5,8 +5,9 @@
 //  Created by 王冠阳 on 2018/5/26.
 //  Copyright © 2018年 SHSF. All rights reserved.
 //
-
+#import "SJ_NewfeatureViewController.h"
 #import "AppDelegate.h"
+#import "RootTabViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +23,30 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     //设置全局状态栏字体颜色为白色
 //     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-   
+    
+    // 2.新特性--(引导页)--
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    NSString *key = @"CFBundleShortVersionString";
+    
+    // 取出沙盒中存储的上次使用软件的版本号
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *lastVersion = [defaults stringForKey:key];
+    [defaults setValue: nil forKey: @"deleteCard"];
+    
+    // 获得当前软件的版本号
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+    // 如果跟沙盒中存储的版本一致就跳过新特性
+    if ([currentVersion isEqualToString:lastVersion]) {
+        
+        RootTabViewController *tabBarVc = [[RootTabViewController alloc] init];
+        self.window.rootViewController = tabBarVc;
+        
+    } else { // 新版本，进入导航页界面
+        self.window.rootViewController = [[SJ_NewfeatureViewController alloc] init];
+        // 存储新版本 进入首页再进行存储
+        [defaults setObject:currentVersion forKey:key];
+        [defaults synchronize];
+    }
     return YES;
 }
 
