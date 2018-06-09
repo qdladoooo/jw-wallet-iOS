@@ -31,7 +31,6 @@
 #import "UIView+TNAppLib.h"
 #import <SGQRCode.h>
 #import "MBProgressHUD+HYExtension.h"
-#import "AAGlobalMacro.h"
 #import "UIView+Category.h"
 
 #endif /* SHSF_pch */

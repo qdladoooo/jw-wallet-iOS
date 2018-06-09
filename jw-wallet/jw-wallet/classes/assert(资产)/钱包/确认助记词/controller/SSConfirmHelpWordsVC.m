@@ -1,110 +1,55 @@
 //
 //  SSConfirmHelpWordsVC.m
-//  jw-wallet
+//  conllectionDemo
 //
-//  Created by 王冠阳 on 2018/6/5.
+//  Created by 王冠阳 on 2018/6/9.
 //  Copyright © 2018年 SHSF. All rights reserved.
 //
 
-
-#import "ViewController.h"
-
-#import "TagModel.h"
 #import "SSConfirmHelpWordsVC.h"
-#import "SSManagerPurseViewController.h"
-#import "YZTagList.h"
-#import "SSconfirmHeaderView.h"
-#import "SSSelectedTableViewCell.h"
-#import "SSUnSelectedTableViewCell.h"
-#import "SSTagCellCollectionViewCell.h"
-static NSString * const SelectedCellIdentifer = @"SSSelectedTableViewCell";
+#import "HZQTagCell.h"
+#import "GTButtonTagsView.h"
 
-static NSString * const UnselectedCellIdentifer = @"SSUnSelectedTableViewCell";
 
-@interface SSConfirmHelpWordsVC ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate>
+// 每行个数
+#define RowCount 4
 
-//@property (nonatomic, strong) NSMutableArray *groups;
+// 每个按钮的高度
+#define BtnHeight 30
+@interface SSConfirmHelpWordsVC () <GTButtonTagsViewDelegate>
+{
+    NSMutableArray *_titles;
+    NSMutableArray *_selectedStatusTitles; // 选中状态下的标题
+}
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewHeight;
+@property (weak, nonatomic) IBOutlet GTButtonTagsView *labelsView;
 
-@property (nonatomic, strong) NSMutableDictionary *selectTagDict;
-
-@property (nonatomic, strong) NSMutableArray *deleteList;
-@property (strong, nonatomic) NSMutableArray *selectedList; // 已选数组
-@property (strong, nonatomic) NSMutableArray *unSelectedList; // 候选数组
-@property (nonatomic, strong) YZTagList *tagList;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation SSConfirmHelpWordsVC
-- (IBAction)back:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-    
 
-}
-
-- (NSMutableDictionary *)selectTagDict
-{
-    if (_selectTagDict == nil) {
-        _selectTagDict = [NSMutableDictionary dictionary];
-    }
-    return _selectTagDict;
-}
-- (YZTagList *)tagList
-{
-    if (_tagList == nil) {
-        _tagList = [[YZTagList alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 0)];
-        _tagList.tagBackgroundColor = [UIColor colorWithRed:20 / 255.0 green:145 / 255.0 blue:255 / 255.0 alpha:1];
-        _tagList.tagCornerRadius = 7;
-        __weak typeof(self) weakSelf = self;
-        _tagList.clickTagBlock = ^(NSString *tag){
-            [weakSelf clickTag:tag];
-            
-        };
-        _tagList.tagColor = [UIColor whiteColor];
-    }
-    _tagList.backgroundColor = [UIColor lightGrayColor];
-    return _tagList;
-}
-
-- (void)clickTag:(NSString *)tag
-{
-    // 删除标签
-    [_tagList deleteTag:tag];
-    
-    // 刷新第0组
-    NSIndexSet *indexSex = [NSIndexSet indexSetWithIndex:0];
-    [self.tableView reloadSections:indexSex withRowAnimation:UITableViewRowAnimationNone];
-    
-    
-    
-    // 更新cell标题
-//    SSTagCellCollectionViewCell *cell = self.selectTagDict[tag];
-    
-//    cell.tagLabel
-//    YZTagItem *item = cell.item;
-//    item.isSelected = !item.isSelected;
-//    cell.item = item;
-//    cell.tagLabel =
-
-//     移除选中的cell
-//    [self.selectTagDict removeObjectForKey:tag];
-    
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
+    _titles = [NSMutableArray array];
     
-    _unSelectedList = [NSMutableArray array];
-    _selectedList = [NSMutableArray array];
+//    [_titles addObject:@"三年级1班"];
+//    [_titles addObject:@"三年级2班"];
+//    [_titles addObject:@"三年级3班"];
+//    [_titles addObject:@"三年级4班"];
+//    [_titles addObject:@"三年级5班"];
+//    [_titles addObject:@"三年级6班"];
+//    [_titles addObject:@"三年级7班"];
     
-    [_selectedList addObjectsFromArray:@[@"hello",@"hello",@"hello"]];
-    [_unSelectedList addObjectsFromArray:@[@"hello",@"hello",@"hello",@"hello",@"hello",@"hello",@"hello",@"hello",@"hello",@"hello",@"hello",@"hello",@"hello"]];
+    [self setupColloctionView];
     
-    // 注册已选cell
-    [self.tableView registerClass:[SSSelectedTableViewCell class] forCellReuseIdentifier:SelectedCellIdentifer];
-    // 注册待选cell
-    [self.tableView registerNib:[UINib nibWithNibName:@"SSUnSelectedTableViewCell" bundle:nil] forCellReuseIdentifier:UnselectedCellIdentifer];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // --------bottomview
+    
+    self.labelsView.delegate = self;
+    self.labelsView.dataArr = @[@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -112,93 +57,114 @@ static NSString * const UnselectedCellIdentifer = @"SSUnSelectedTableViewCell";
     // Dispose of any resources that can be recreated.
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+- (IBAction)backAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+
+/** 设置collectionViewHeight */
+- (void)settingCollectionViewHeight {
+    
+    // 初始高度
+    if (_titles.count == 0) {
+        self.collectionViewHeight.constant = 40.0f;
+        return;
+    }
+    
+    if (_titles.count % RowCount == 0) {
+        self.collectionViewHeight.constant = ((BtnHeight + 10) * _titles.count / RowCount);
+        
+    } else {
+        self.collectionViewHeight.constant = ((BtnHeight + 10) * ((_titles.count / RowCount) + 1));
+    }
+    
+}
+
+/** 设置ColloctionView属性 */
+- (void)setupColloctionView
+{
+    // 设置collectionViewHeight
+    [self settingCollectionViewHeight];
+    
+    //设置代理
+    self.collectionView.alwaysBounceVertical = YES;
+    [self.collectionView registerClass:[HZQTagCell class] forCellWithReuseIdentifier:@"cell"];
+    
+}
+
+//定义展示的UICollectionViewCell的个数
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return _titles.count;
+}
+
+//定义展示的Section的个数
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
     return 1;
 }
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 0) {
-        return _tagList.tagListH;
 
-    }else{
-        CGFloat itemH = 30;
-        CGFloat originY = 27;
-        CGFloat margin = 10;
-        NSInteger cols = 4;
-        NSInteger rows = (self.unSelectedList.count - 1) / cols + 1;
-        CGFloat cellH = rows * (itemH + margin) + originY;
-        return cellH;
-    }
-}
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
-    return 105;
-}
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row ==0) {
-        SSSelectedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SelectedCellIdentifer];
-        cell.tagList = self.tagList;
-        cell.backgroundColor = [UIColor lightGrayColor];
-        return cell;
-    }else{
-        
-        SSUnSelectedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:UnselectedCellIdentifer forIndexPath:indexPath];
-        cell.collectionView.delegate = self;
-        cell.itemsArr = self.unSelectedList;
-        return cell;
-    }
-    return nil;
-}
-
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    SSconfirmHeaderView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"SSconfirmHeaderView" owner:nil options:nil] lastObject];
-    return headerView;
-}
-
--(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    
-    // footerView
-    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 75)];
-    // 下一步按钮
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(15, 15, SCREEN_WIDTH-30, 45)];
-    [btn setTitle:@"下一步" forState:UIControlStateNormal];
-    [btn.titleLabel setFont:[UIFont systemFontOfSize:15]];
-    btn.titleLabel.textColor = WHITCOLOR;
-    btn.backgroundColor = Bluecolor;
-    [btn addTarget:self action:@selector(nextStep) forControlEvents:UIControlEventTouchUpInside];
-    
-    [footerView addSubview:btn];
-    return footerView;
-}
-
-#pragma mark - UICollectionViewDelegate
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+//每个UICollectionView展示的内容
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    SSTagCellCollectionViewCell *cell = (SSTagCellCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-
-    NSString *tagStr = [NSString stringWithFormat:@"%@",cell.tagLabel.text];
-    [self.tagList addTag:tagStr];
-//    cell.isSelected = !cell.selected;
-//    if (cell.isSelected) {
-//        // 添加标签
-//        [self.tagList addTag:tagStr];
-//
-//    } else {
-//        // 删除标签
-//        [self.tagList deleteTag:tagStr];
-//    }
+    static NSString *identify = @"cell";
+    HZQTagCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
+    [cell sizeToFit];
+    if (!cell) {
+        NSLog(@"无法创建CollectionViewCell时打印，自定义的cell就不可能进来了。");
+    }
     
-    // 刷新第0组
-    NSIndexSet *indexSex = [NSIndexSet indexSetWithIndex:0];
-    [self.tableView reloadSections:indexSex withRowAnimation:UITableViewRowAnimationNone];
+    cell.text.text = _titles[indexPath.row];
+    
+    return cell;
+}
+
+
+#pragma mark --UICollectionViewDelegateFlowLayout
+//定义每个UICollectionView 的大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    //边距占5*4=20 ，2个
+    //图片为正方形，边长：(fDeviceWidth-20)/2-5-5 所以总高(fDeviceWidth-20)/2-5-5 +20+30+5+5 label高20 btn高30 边
+    int count = RowCount;
+    float padding = (count+2)*(count+1);
+    
+    return CGSizeMake((SCREEN_WIDTH-padding)/count, BtnHeight);
+}
+
+#pragma mark --UICollectionViewDelegate
+//UICollectionView被选中时调用的方法
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [_titles removeObjectAtIndex:indexPath.row];
+    
+    [self.collectionView reloadData];
+    
+    // 设置collectionViewHeight
+    [self settingCollectionViewHeight];
+    
+    [self.view layoutIfNeeded];
+}
+
+#pragma mark -  <GTButtonTagsViewDelegate>
+
+
+-(void)GTButtonTagsView:(GTButtonTagsView *)view selectIndex:(NSInteger)index selectText:(NSString *)text {
+    NSLog(@"第: %ld 文本: %@", index, text);
+    if (_titles.count>=12) {
+        return;
+    }
+  
+    [_titles addObject:text];
+    [self.collectionView reloadData];
+    [self settingCollectionViewHeight];
+   
+
 }
 #pragma mark - 下一步
--(void)nextStep{
-    [MBProgressHUD showText:@"你备份的助记词验证正确，是否从钱包移除该助记词？"];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+- (IBAction)nextStep:(id)sender {
+    
 }
-
 
 @end

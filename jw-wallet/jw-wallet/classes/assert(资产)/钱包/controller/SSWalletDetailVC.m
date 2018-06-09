@@ -11,6 +11,7 @@
 #import "SSWalletHeader.h"
 #import "SSWalletHeaderTop.h"
 #import "SSExportPrivatePassWord.h"
+#import "SSChangePasswordVC.h"
 
 @interface SSWalletDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
@@ -99,18 +100,76 @@
     }
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section==1) {
+        if (indexPath.row == 1) {
+            // 修改密码
+            SSChangePasswordVC *vc = [[SSChangePasswordVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }else if (indexPath.section==2){
+        if (indexPath.row == 0) {
+            NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:2];
+            [self passwordAlert:path];
+             // 导出私钥
+        }else{
+            NSIndexPath *path = [NSIndexPath indexPathForRow:1 inSection:2];
+            // 导出keystore，没有发现设计图
+            [self passwordAlert:path];
+        }
+    }
+}
 /**
  删除钱包
 
  @param sender <#sender description#>
  */
 - (IBAction)deleteWallet:(id)sender {
-    SSExportPrivatePassWord *view = [[[NSBundle mainBundle] loadNibNamed:@"SSExportPrivatePassWord" owner:nil options:nil] lastObject];
-    view.frame = [UIScreen mainScreen].bounds;
-    [self.view addSubview:view];
+    [self passwordAlert:nil];
+ 
 }
 - (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+#pragma mark - 密码输入框
+-(void)passwordAlert:(NSIndexPath*)pach{
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"" message: @"请输入密码" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"请输入密码";
+        textField.layer.borderColor = Bluecolor.CGColor;
+        textField.layer.borderWidth = 1.0f;
+        textField.textColor = [UIColor darkGrayColor];
+         textField.font = [UIFont systemFontOfSize:14];
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+        textField.secureTextEntry = YES;
+
+
+    }];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSArray * textfields = alertController.textFields;
+        UITextField * passwordfiled = textfields[0];
+        NSLog(@"%@",passwordfiled.text);
+        
+        if (pach.section==2) {
+            if (pach.row==0) {
+                // 导出私钥
+                SSExportPrivatePassWord *view = [[[NSBundle mainBundle] loadNibNamed:@"SSExportPrivatePassWord" owner:nil options:nil] lastObject];
+                view.frame = [UIScreen mainScreen].bounds;
+                [self.view addSubview:view];
+            }else{
+                // 导出keystore
+                
+            }
+        }
+        
+        
+    }]];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        // 取消
+    }]];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 @end
