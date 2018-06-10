@@ -1,5 +1,6 @@
 PODS:
   - FDFullscreenPopGesture (1.1)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
@@ -13,16 +14,19 @@ PODS:
 
 DEPENDENCIES:
   - FDFullscreenPopGesture (= 1.1)
+  - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 1.0.0)
   - MJExtension (= 3.0.13)
   - MJRefresh (= 3.1.12)
   - SDCycleScrollView (~> 1.75)
+  - SDWebImage (~> 4.4.0)
   - SGQRCode (~> 2.2.0)
   - WebViewJavascriptBridge (= 6.0.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FDFullscreenPopGesture
+    - Masonry
     - MBProgressHUD
     - MJExtension
     - MJRefresh
@@ -33,6 +37,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
@@ -41,6 +46,6 @@ SPEC CHECKSUMS:
   SGQRCode: 6cd7f03ea6b74d1267820d427b07d1451b387c79
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: 8ca1b31dd937b67dca23a61db12fb3df00435f24
+PODFILE CHECKSUM: 45381febd6bdb489e686a2b0a51dd5a39cc7d82c
 
 COCOAPODS: 1.5.3

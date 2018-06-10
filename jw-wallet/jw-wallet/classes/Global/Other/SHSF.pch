@@ -32,5 +32,5 @@
 #import <SGQRCode.h>
 #import "MBProgressHUD+HYExtension.h"
 #import "UIView+Category.h"
-
+#import <Masonry.h>
 #endif /* SHSF_pch */

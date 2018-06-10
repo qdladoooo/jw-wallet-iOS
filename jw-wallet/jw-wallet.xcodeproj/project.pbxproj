@@ -183,6 +183,34 @@
 		2EB989EC20CC040400694110 /* TagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB989C620CC040400694110 /* TagModel.m */; };
 		2EB989ED20CC040400694110 /* SSWalletListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB989C820CC040400694110 /* SSWalletListCell.m */; };
 		2EB989EE20CC040400694110 /* SSWalletHeaderTop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB989CA20CC040400694110 /* SSWalletHeaderTop.m */; };
+		2EB996E820CD5F8700694110 /* YYLineDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB996E320CD5F8700694110 /* YYLineDataModel.m */; };
+		2EB996E920CD5F8700694110 /* YYTimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB996E520CD5F8700694110 /* YYTimeLineModel.m */; };
+		2EB996EA20CD5F8700694110 /* YYFiveRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB996E720CD5F8700694110 /* YYFiveRecordModel.m */; };
+		2EB9973220CD5F9A00694110 /* UIColor+YYStockTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB996EE20CD5F9A00694110 /* UIColor+YYStockTheme.m */; };
+		2EB9973320CD5F9A00694110 /* YYStockVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB996F320CD5F9A00694110 /* YYStockVariable.m */; };
+		2EB9973420CD5F9A00694110 /* YYTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB996F720CD5F9A00694110 /* YYTopBarView.m */; };
+		2EB9973520CD5F9A00694110 /* YYStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB996FA20CD5F9A00694110 /* YYStock.m */; };
+		2EB9973620CD5F9A00694110 /* YYLinePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9970120CD5F9A00694110 /* YYLinePositionModel.m */; };
+		2EB9973720CD5F9A00694110 /* YYVolumePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9970420CD5F9A00694110 /* YYVolumePositionModel.m */; };
+		2EB9973820CD5F9A00694110 /* YYStockView_TimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9970720CD5F9A00694110 /* YYStockView_TimeLine.m */; };
+		2EB9973920CD5F9A00694110 /* YYFiveRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9970B20CD5F9A00694110 /* YYFiveRecordTableViewCell.m */; };
+		2EB9973A20CD5F9A00694110 /* YYFiveRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9970D20CD5F9A00694110 /* YYFiveRecordTableViewCell.xib */; };
+		2EB9973B20CD5F9A00694110 /* YYFiveRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9970E20CD5F9A00694110 /* YYFiveRecordView.m */; };
+		2EB9973C20CD5F9A00694110 /* YYTimeLineMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9971220CD5F9A00694110 /* YYTimeLineMaskView.m */; };
+		2EB9973D20CD5F9A00694110 /* YYTimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9971420CD5F9A00694110 /* YYTimeLineView.m */; };
+		2EB9973E20CD5F9A00694110 /* YYTimeLineVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9971720CD5F9A00694110 /* YYTimeLineVolumeView.m */; };
+		2EB9973F20CD5F9A00694110 /* YYStockView_Kline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9971A20CD5F9A00694110 /* YYStockView_Kline.m */; };
+		2EB9974020CD5F9A00694110 /* YYStockScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9971D20CD5F9A00694110 /* YYStockScrollView.m */; };
+		2EB9974120CD5F9A00694110 /* YYStockViewMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9972020CD5F9A00694110 /* YYStockViewMaskView.m */; };
+		2EB9974220CD5F9A00694110 /* YYKlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9972420CD5F9A00694110 /* YYKlineView.m */; };
+		2EB9974320CD5F9A00694110 /* YYKline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9972720CD5F9A00694110 /* YYKline.m */; };
+		2EB9974420CD5F9A00694110 /* MAline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9972920CD5F9A00694110 /* MAline.m */; };
+		2EB9974520CD5F9A00694110 /* YYKlineMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9972C20CD5F9A00694110 /* YYKlineMaskView.m */; };
+		2EB9974620CD5F9A00694110 /* YYKlineVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9972F20CD5F9A00694110 /* YYKlineVolumeView.m */; };
+		2EB9974B20CD5FA900694110 /* dayData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9974820CD5FA800694110 /* dayData.plist */; };
+		2EB9974C20CD5FA900694110 /* fiveData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9974920CD5FA800694110 /* fiveData.plist */; };
+		2EB9974D20CD5FA900694110 /* AppServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9974A20CD5FA900694110 /* AppServer.m */; };
+		2EB9974F20CD5FB100694110 /* minuteData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9974E20CD5FB100694110 /* minuteData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -499,6 +527,62 @@
 		2EB989C820CC040400694110 /* SSWalletListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSWalletListCell.m; sourceTree = "<group>"; };
 		2EB989C920CC040400694110 /* SSWalletHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSWalletHeader.h; sourceTree = "<group>"; };
 		2EB989CA20CC040400694110 /* SSWalletHeaderTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSWalletHeaderTop.m; sourceTree = "<group>"; };
+		2EB996E220CD5F8700694110 /* YYTimeLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimeLineModel.h; sourceTree = "<group>"; };
+		2EB996E320CD5F8700694110 /* YYLineDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLineDataModel.m; sourceTree = "<group>"; };
+		2EB996E420CD5F8700694110 /* YYFiveRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFiveRecordModel.h; sourceTree = "<group>"; };
+		2EB996E520CD5F8700694110 /* YYTimeLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimeLineModel.m; sourceTree = "<group>"; };
+		2EB996E620CD5F8700694110 /* YYLineDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLineDataModel.h; sourceTree = "<group>"; };
+		2EB996E720CD5F8700694110 /* YYFiveRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFiveRecordModel.m; sourceTree = "<group>"; };
+		2EB996EE20CD5F9A00694110 /* UIColor+YYStockTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YYStockTheme.m"; sourceTree = "<group>"; };
+		2EB996EF20CD5F9A00694110 /* UIColor+YYStockTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YYStockTheme.h"; sourceTree = "<group>"; };
+		2EB996F120CD5F9A00694110 /* YYStockConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockConstant.h; sourceTree = "<group>"; };
+		2EB996F320CD5F9A00694110 /* YYStockVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYStockVariable.m; sourceTree = "<group>"; };
+		2EB996F420CD5F9A00694110 /* YYStockVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockVariable.h; sourceTree = "<group>"; };
+		2EB996F720CD5F9A00694110 /* YYTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTopBarView.m; sourceTree = "<group>"; };
+		2EB996F820CD5F9A00694110 /* YYTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTopBarView.h; sourceTree = "<group>"; };
+		2EB996FA20CD5F9A00694110 /* YYStock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYStock.m; sourceTree = "<group>"; };
+		2EB996FD20CD5F9A00694110 /* YYStockTimeLineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockTimeLineProtocol.h; sourceTree = "<group>"; };
+		2EB996FE20CD5F9A00694110 /* YYStockFiveRecordProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockFiveRecordProtocol.h; sourceTree = "<group>"; };
+		2EB996FF20CD5F9A00694110 /* YYStockDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockDataProtocol.h; sourceTree = "<group>"; };
+		2EB9970120CD5F9A00694110 /* YYLinePositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLinePositionModel.m; sourceTree = "<group>"; };
+		2EB9970220CD5F9A00694110 /* YYLinePositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLinePositionModel.h; sourceTree = "<group>"; };
+		2EB9970420CD5F9A00694110 /* YYVolumePositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYVolumePositionModel.m; sourceTree = "<group>"; };
+		2EB9970520CD5F9A00694110 /* YYVolumePositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYVolumePositionModel.h; sourceTree = "<group>"; };
+		2EB9970720CD5F9A00694110 /* YYStockView_TimeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYStockView_TimeLine.m; sourceTree = "<group>"; };
+		2EB9970820CD5F9A00694110 /* YYStockView_Kline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockView_Kline.h; sourceTree = "<group>"; };
+		2EB9970B20CD5F9A00694110 /* YYFiveRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFiveRecordTableViewCell.m; sourceTree = "<group>"; };
+		2EB9970C20CD5F9A00694110 /* YYFiveRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFiveRecordView.h; sourceTree = "<group>"; };
+		2EB9970D20CD5F9A00694110 /* YYFiveRecordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYFiveRecordTableViewCell.xib; sourceTree = "<group>"; };
+		2EB9970E20CD5F9A00694110 /* YYFiveRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFiveRecordView.m; sourceTree = "<group>"; };
+		2EB9970F20CD5F9A00694110 /* YYFiveRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFiveRecordTableViewCell.h; sourceTree = "<group>"; };
+		2EB9971120CD5F9A00694110 /* YYTimeLineMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimeLineMaskView.h; sourceTree = "<group>"; };
+		2EB9971220CD5F9A00694110 /* YYTimeLineMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimeLineMaskView.m; sourceTree = "<group>"; };
+		2EB9971420CD5F9A00694110 /* YYTimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimeLineView.m; sourceTree = "<group>"; };
+		2EB9971520CD5F9A00694110 /* YYTimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimeLineView.h; sourceTree = "<group>"; };
+		2EB9971720CD5F9A00694110 /* YYTimeLineVolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimeLineVolumeView.m; sourceTree = "<group>"; };
+		2EB9971820CD5F9A00694110 /* YYTimeLineVolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimeLineVolumeView.h; sourceTree = "<group>"; };
+		2EB9971920CD5F9A00694110 /* YYStockView_TimeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockView_TimeLine.h; sourceTree = "<group>"; };
+		2EB9971A20CD5F9A00694110 /* YYStockView_Kline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYStockView_Kline.m; sourceTree = "<group>"; };
+		2EB9971C20CD5F9A00694110 /* YYStockScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockScrollView.h; sourceTree = "<group>"; };
+		2EB9971D20CD5F9A00694110 /* YYStockScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYStockScrollView.m; sourceTree = "<group>"; };
+		2EB9971F20CD5F9A00694110 /* YYStockViewMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStockViewMaskView.h; sourceTree = "<group>"; };
+		2EB9972020CD5F9A00694110 /* YYStockViewMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYStockViewMaskView.m; sourceTree = "<group>"; };
+		2EB9972320CD5F9A00694110 /* YYKlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKlineView.h; sourceTree = "<group>"; };
+		2EB9972420CD5F9A00694110 /* YYKlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKlineView.m; sourceTree = "<group>"; };
+		2EB9972620CD5F9A00694110 /* YYKline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKline.h; sourceTree = "<group>"; };
+		2EB9972720CD5F9A00694110 /* YYKline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKline.m; sourceTree = "<group>"; };
+		2EB9972920CD5F9A00694110 /* MAline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAline.m; sourceTree = "<group>"; };
+		2EB9972A20CD5F9A00694110 /* MAline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAline.h; sourceTree = "<group>"; };
+		2EB9972C20CD5F9A00694110 /* YYKlineMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKlineMaskView.m; sourceTree = "<group>"; };
+		2EB9972D20CD5F9A00694110 /* YYKlineMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKlineMaskView.h; sourceTree = "<group>"; };
+		2EB9972F20CD5F9A00694110 /* YYKlineVolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKlineVolumeView.m; sourceTree = "<group>"; };
+		2EB9973020CD5F9A00694110 /* YYKlineVolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKlineVolumeView.h; sourceTree = "<group>"; };
+		2EB9973120CD5F9A00694110 /* YYStock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStock.h; sourceTree = "<group>"; };
+		2EB9974720CD5FA800694110 /* AppServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppServer.h; sourceTree = "<group>"; };
+		2EB9974820CD5FA800694110 /* dayData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dayData.plist; sourceTree = "<group>"; };
+		2EB9974920CD5FA800694110 /* fiveData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fiveData.plist; sourceTree = "<group>"; };
+		2EB9974A20CD5FA900694110 /* AppServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppServer.m; sourceTree = "<group>"; };
+		2EB9974E20CD5FB100694110 /* minuteData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = minuteData.plist; sourceTree = "<group>"; };
 		45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.release.xcconfig"; sourceTree = "<group>"; };
 		CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1348,8 +1432,288 @@
 		2EB98BB920CC05D700694110 /* MYTools */ = {
 			isa = PBXGroup;
 			children = (
+				2EB996E020CD5F5900694110 /* KLine */,
 			);
 			path = MYTools;
+			sourceTree = "<group>";
+		};
+		2EB996E020CD5F5900694110 /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9974E20CD5FB100694110 /* minuteData.plist */,
+				2EB9974720CD5FA800694110 /* AppServer.h */,
+				2EB9974A20CD5FA900694110 /* AppServer.m */,
+				2EB9974820CD5FA800694110 /* dayData.plist */,
+				2EB9974920CD5FA800694110 /* fiveData.plist */,
+				2EB996EB20CD5F9A00694110 /* YYStock */,
+				2EB996E120CD5F8700694110 /* StockDataModel[数据源Model] */,
+			);
+			path = KLine;
+			sourceTree = "<group>";
+		};
+		2EB996E120CD5F8700694110 /* StockDataModel[数据源Model] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996E420CD5F8700694110 /* YYFiveRecordModel.h */,
+				2EB996E720CD5F8700694110 /* YYFiveRecordModel.m */,
+				2EB996E220CD5F8700694110 /* YYTimeLineModel.h */,
+				2EB996E520CD5F8700694110 /* YYTimeLineModel.m */,
+				2EB996E620CD5F8700694110 /* YYLineDataModel.h */,
+				2EB996E320CD5F8700694110 /* YYLineDataModel.m */,
+			);
+			path = "StockDataModel[数据源Model]";
+			sourceTree = "<group>";
+		};
+		2EB996EB20CD5F9A00694110 /* YYStock */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996EC20CD5F9A00694110 /* Config[主题+定义] */,
+				2EB996F520CD5F9A00694110 /* Packages */,
+				2EB996F920CD5F9A00694110 /* Stock */,
+			);
+			path = YYStock;
+			sourceTree = "<group>";
+		};
+		2EB996EC20CD5F9A00694110 /* Config[主题+定义] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996ED20CD5F9A00694110 /* Theme[主题] */,
+				2EB996F020CD5F9A00694110 /* Constant[常量定义] */,
+				2EB996F220CD5F9A00694110 /* Variable[变量] */,
+			);
+			path = "Config[主题+定义]";
+			sourceTree = "<group>";
+		};
+		2EB996ED20CD5F9A00694110 /* Theme[主题] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996EE20CD5F9A00694110 /* UIColor+YYStockTheme.m */,
+				2EB996EF20CD5F9A00694110 /* UIColor+YYStockTheme.h */,
+			);
+			path = "Theme[主题]";
+			sourceTree = "<group>";
+		};
+		2EB996F020CD5F9A00694110 /* Constant[常量定义] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996F120CD5F9A00694110 /* YYStockConstant.h */,
+			);
+			path = "Constant[常量定义]";
+			sourceTree = "<group>";
+		};
+		2EB996F220CD5F9A00694110 /* Variable[变量] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996F320CD5F9A00694110 /* YYStockVariable.m */,
+				2EB996F420CD5F9A00694110 /* YYStockVariable.h */,
+			);
+			path = "Variable[变量]";
+			sourceTree = "<group>";
+		};
+		2EB996F520CD5F9A00694110 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996F620CD5F9A00694110 /* YYTopBar */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		2EB996F620CD5F9A00694110 /* YYTopBar */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996F720CD5F9A00694110 /* YYTopBarView.m */,
+				2EB996F820CD5F9A00694110 /* YYTopBarView.h */,
+			);
+			path = YYTopBar;
+			sourceTree = "<group>";
+		};
+		2EB996F920CD5F9A00694110 /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9973120CD5F9A00694110 /* YYStock.h */,
+				2EB996FA20CD5F9A00694110 /* YYStock.m */,
+				2EB996FB20CD5F9A00694110 /* StockModel */,
+				2EB9970620CD5F9A00694110 /* StockView */,
+			);
+			path = Stock;
+			sourceTree = "<group>";
+		};
+		2EB996FB20CD5F9A00694110 /* StockModel */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996FC20CD5F9A00694110 /* StockDataProtocol */,
+				2EB9970020CD5F9A00694110 /* StockLinePositionModel */,
+				2EB9970320CD5F9A00694110 /* StockVolumePositionModel */,
+			);
+			path = StockModel;
+			sourceTree = "<group>";
+		};
+		2EB996FC20CD5F9A00694110 /* StockDataProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				2EB996FD20CD5F9A00694110 /* YYStockTimeLineProtocol.h */,
+				2EB996FE20CD5F9A00694110 /* YYStockFiveRecordProtocol.h */,
+				2EB996FF20CD5F9A00694110 /* YYStockDataProtocol.h */,
+			);
+			path = StockDataProtocol;
+			sourceTree = "<group>";
+		};
+		2EB9970020CD5F9A00694110 /* StockLinePositionModel */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9970120CD5F9A00694110 /* YYLinePositionModel.m */,
+				2EB9970220CD5F9A00694110 /* YYLinePositionModel.h */,
+			);
+			path = StockLinePositionModel;
+			sourceTree = "<group>";
+		};
+		2EB9970320CD5F9A00694110 /* StockVolumePositionModel */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9970420CD5F9A00694110 /* YYVolumePositionModel.m */,
+				2EB9970520CD5F9A00694110 /* YYVolumePositionModel.h */,
+			);
+			path = StockVolumePositionModel;
+			sourceTree = "<group>";
+		};
+		2EB9970620CD5F9A00694110 /* StockView */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9971920CD5F9A00694110 /* YYStockView_TimeLine.h */,
+				2EB9970720CD5F9A00694110 /* YYStockView_TimeLine.m */,
+				2EB9970820CD5F9A00694110 /* YYStockView_Kline.h */,
+				2EB9971A20CD5F9A00694110 /* YYStockView_Kline.m */,
+				2EB9970920CD5F9A00694110 /* TimeLine[分时图] */,
+				2EB9971B20CD5F9A00694110 /* StockScrollview[画背景线] */,
+				2EB9971E20CD5F9A00694110 /* MaskView[TopBar遮罩] */,
+				2EB9972120CD5F9A00694110 /* LineView[K线图] */,
+			);
+			path = StockView;
+			sourceTree = "<group>";
+		};
+		2EB9970920CD5F9A00694110 /* TimeLine[分时图] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9970A20CD5F9A00694110 /* FiveRecordView[五档] */,
+				2EB9971020CD5F9A00694110 /* MaskView[遮罩] */,
+				2EB9971320CD5F9A00694110 /* TimeLineView[分时图] */,
+				2EB9971620CD5F9A00694110 /* VolumeView[成交量] */,
+			);
+			path = "TimeLine[分时图]";
+			sourceTree = "<group>";
+		};
+		2EB9970A20CD5F9A00694110 /* FiveRecordView[五档] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9970B20CD5F9A00694110 /* YYFiveRecordTableViewCell.m */,
+				2EB9970C20CD5F9A00694110 /* YYFiveRecordView.h */,
+				2EB9970D20CD5F9A00694110 /* YYFiveRecordTableViewCell.xib */,
+				2EB9970E20CD5F9A00694110 /* YYFiveRecordView.m */,
+				2EB9970F20CD5F9A00694110 /* YYFiveRecordTableViewCell.h */,
+			);
+			path = "FiveRecordView[五档]";
+			sourceTree = "<group>";
+		};
+		2EB9971020CD5F9A00694110 /* MaskView[遮罩] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9971120CD5F9A00694110 /* YYTimeLineMaskView.h */,
+				2EB9971220CD5F9A00694110 /* YYTimeLineMaskView.m */,
+			);
+			path = "MaskView[遮罩]";
+			sourceTree = "<group>";
+		};
+		2EB9971320CD5F9A00694110 /* TimeLineView[分时图] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9971420CD5F9A00694110 /* YYTimeLineView.m */,
+				2EB9971520CD5F9A00694110 /* YYTimeLineView.h */,
+			);
+			path = "TimeLineView[分时图]";
+			sourceTree = "<group>";
+		};
+		2EB9971620CD5F9A00694110 /* VolumeView[成交量] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9971720CD5F9A00694110 /* YYTimeLineVolumeView.m */,
+				2EB9971820CD5F9A00694110 /* YYTimeLineVolumeView.h */,
+			);
+			path = "VolumeView[成交量]";
+			sourceTree = "<group>";
+		};
+		2EB9971B20CD5F9A00694110 /* StockScrollview[画背景线] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9971C20CD5F9A00694110 /* YYStockScrollView.h */,
+				2EB9971D20CD5F9A00694110 /* YYStockScrollView.m */,
+			);
+			path = "StockScrollview[画背景线]";
+			sourceTree = "<group>";
+		};
+		2EB9971E20CD5F9A00694110 /* MaskView[TopBar遮罩] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9971F20CD5F9A00694110 /* YYStockViewMaskView.h */,
+				2EB9972020CD5F9A00694110 /* YYStockViewMaskView.m */,
+			);
+			path = "MaskView[TopBar遮罩]";
+			sourceTree = "<group>";
+		};
+		2EB9972120CD5F9A00694110 /* LineView[K线图] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9972220CD5F9A00694110 /* KlineView[K线上部分] */,
+				2EB9972B20CD5F9A00694110 /* MaskView[遮罩] */,
+				2EB9972E20CD5F9A00694110 /* VolumeView[成交量] */,
+			);
+			path = "LineView[K线图]";
+			sourceTree = "<group>";
+		};
+		2EB9972220CD5F9A00694110 /* KlineView[K线上部分] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9972320CD5F9A00694110 /* YYKlineView.h */,
+				2EB9972420CD5F9A00694110 /* YYKlineView.m */,
+				2EB9972520CD5F9A00694110 /* Kline */,
+				2EB9972820CD5F9A00694110 /* MAline */,
+			);
+			path = "KlineView[K线上部分]";
+			sourceTree = "<group>";
+		};
+		2EB9972520CD5F9A00694110 /* Kline */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9972620CD5F9A00694110 /* YYKline.h */,
+				2EB9972720CD5F9A00694110 /* YYKline.m */,
+			);
+			path = Kline;
+			sourceTree = "<group>";
+		};
+		2EB9972820CD5F9A00694110 /* MAline */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9972920CD5F9A00694110 /* MAline.m */,
+				2EB9972A20CD5F9A00694110 /* MAline.h */,
+			);
+			path = MAline;
+			sourceTree = "<group>";
+		};
+		2EB9972B20CD5F9A00694110 /* MaskView[遮罩] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9972C20CD5F9A00694110 /* YYKlineMaskView.m */,
+				2EB9972D20CD5F9A00694110 /* YYKlineMaskView.h */,
+			);
+			path = "MaskView[遮罩]";
+			sourceTree = "<group>";
+		};
+		2EB9972E20CD5F9A00694110 /* VolumeView[成交量] */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9972F20CD5F9A00694110 /* YYKlineVolumeView.m */,
+				2EB9973020CD5F9A00694110 /* YYKlineVolumeView.h */,
+			);
+			path = "VolumeView[成交量]";
 			sourceTree = "<group>";
 		};
 		37CAACB097E5C8DDF8007802 /* Pods */ = {
@@ -1477,6 +1841,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB9974B20CD5FA900694110 /* dayData.plist in Resources */,
 				2EB989D420CC040400694110 /* SSCreatePurseViewController.xib in Resources */,
 				2E48163720B983AC00AFCBBB /* home_blue@3x.png in Resources */,
 				2E60DDA220C4DB1C00A20429 /* SSAddAssertsCell.xib in Resources */,
@@ -1498,6 +1863,7 @@
 				2E6C893520BC5ECC00C0B37E /* SSGetMoneyViewController.xib in Resources */,
 				2E6C891A20BC522900C0B37E /* SSAsertHearView.xib in Resources */,
 				2E6C8AF520C2C13600C0B37E /* SSArticleTableViewCell.xib in Resources */,
+				2EB9974C20CD5FA900694110 /* fiveData.plist in Resources */,
 				2E6C89FD20C041A200C0B37E /* SSLanguageCell.xib in Resources */,
 				2E48163520B983AC00AFCBBB /* me@2x.png in Resources */,
 				2E60DD9220C4437C00A20429 /* SSEditMarketsCell.xib in Resources */,
@@ -1529,11 +1895,13 @@
 				2E3F35AA20C5869D001C78CB /* SSTouchIDSetCell.xib in Resources */,
 				2E32EE4720C9FFEA00D00CFB /* SSTransRecordHeaderView.xib in Resources */,
 				2E32EE2720C927E400D00CFB /* hobby.plist in Resources */,
+				2EB9973A20CD5F9A00694110 /* YYFiveRecordTableViewCell.xib in Resources */,
 				2E48166E20BA868300AFCBBB /* SSAccoutCell.xib in Resources */,
 				2E48153A20B91FB900AFCBBB /* Assets.xcassets in Resources */,
 				2E32EE3D20C988A700D00CFB /* SSTransRecordVC.xib in Resources */,
 				2EB989E220CC040400694110 /* SSWalletListCell.xib in Resources */,
 				2E6C8AEB20C2B6AB00C0B37E /* SSApplicationsShareView.xib in Resources */,
+				2EB9974F20CD5FB100694110 /* minuteData.plist in Resources */,
 				2EB989D520CC040400694110 /* SSWalletDetailVC.xib in Resources */,
 				2E3F359E20C51A6A001C78CB /* SSAppShareViewController.xib in Resources */,
 				2E48168820BAD88D00AFCBBB /* SSMarketCell.xib in Resources */,
@@ -1616,7 +1984,9 @@
 				2EB989CE20CC040400694110 /* HZQTagCell.m in Sources */,
 				2EB989E720CC040400694110 /* AJTagsCell.m in Sources */,
 				2E3F359620C5180F001C78CB /* SSInviteCodeShare.m in Sources */,
+				2EB996EA20CD5F8700694110 /* YYFiveRecordModel.m in Sources */,
 				2E6C8A1120C0EEB600C0B37E /* WBQRCodeScanningVC.m in Sources */,
+				2EB9974620CD5F9A00694110 /* YYKlineVolumeView.m in Sources */,
 				2E60DD8C20C43FF000A20429 /* SSEdiMarketsViewController.m in Sources */,
 				2EA596CE20CA29BB00A25951 /* SJ_NewfeatureViewController.m in Sources */,
 				2E48168320BAD82400AFCBBB /* SSSectionHeaderView.m in Sources */,
@@ -1624,7 +1994,10 @@
 				2E6C8A1020C0EEB600C0B37E /* QRCodeGenerateVC.m in Sources */,
 				2E6C891620BC522900C0B37E /* SSAsertCell.m in Sources */,
 				2E60DDA120C4DB1C00A20429 /* SSAddAssertsCell.m in Sources */,
+				2EB996E820CD5F8700694110 /* YYLineDataModel.m in Sources */,
 				2EB989E620CC040400694110 /* AJTagModel.m in Sources */,
+				2EB9973420CD5F9A00694110 /* YYTopBarView.m in Sources */,
+				2EB9973920CD5F9A00694110 /* YYFiveRecordTableViewCell.m in Sources */,
 				2E6C8A1720C0EECE00C0B37E /* SGWebView.m in Sources */,
 				2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */,
 				2E6C89F720C03F1000C0B37E /* SSLanguageSetVC.m in Sources */,
@@ -1632,6 +2005,7 @@
 				2E6C891E20BC526400C0B37E /* SSTradeRecordModel.m in Sources */,
 				2EB989DE20CC040400694110 /* SSExportPrivatePassWord.m in Sources */,
 				2E6C8A0020C0534400C0B37E /* HXLanguageManager.m in Sources */,
+				2EB9973B20CD5F9A00694110 /* YYFiveRecordView.m in Sources */,
 				2E4815A620B9734900AFCBBB /* UIViewController+swizzling.m in Sources */,
 				2E32EE4520C9FFDE00D00CFB /* SSTransRecordHeaderView.m in Sources */,
 				2E60DD9120C4437C00A20429 /* SSEditMarketsCell.m in Sources */,
@@ -1644,34 +2018,47 @@
 				2E3F35A920C5869D001C78CB /* SSTouchIDSetCell.m in Sources */,
 				2E6C897920BE32C300C0B37E /* SJNavigationBar.m in Sources */,
 				2E4815FB20B97D6400AFCBBB /* PathManager.m in Sources */,
+				2EB9974020CD5F9A00694110 /* YYStockScrollView.m in Sources */,
 				2EA78EFB20C3990600593E7B /* SSAddMarketsListCell.m in Sources */,
 				2E6C891B20BC522900C0B37E /* SSAserModel.m in Sources */,
 				2E6C8A0320C05B5000C0B37E /* SJLaunchPageView.m in Sources */,
 				2E6C8AE920C26F6D00C0B37E /* SSApplicationsShareView.m in Sources */,
+				2EB9974D20CD5FA900694110 /* AppServer.m in Sources */,
 				2E48166D20BA868300AFCBBB /* SSAccoutCell.m in Sources */,
 				2E48168D20BAD8B900AFCBBB /* SSMarketModel.m in Sources */,
+				2EB9973820CD5F9A00694110 /* YYStockView_TimeLine.m in Sources */,
+				2EB9973520CD5F9A00694110 /* YYStock.m in Sources */,
 				2E48168020BAD7CF00AFCBBB /* SSMarktViewController.m in Sources */,
 				2E6C892A20BC539E00C0B37E /* SSTranferViewController.m in Sources */,
 				2EA596DE20CA7B1300A25951 /* YYBHorizontalCollectionCell.m in Sources */,
+				2EB9974220CD5F9A00694110 /* YYKlineView.m in Sources */,
+				2EB9973F20CD5F9A00694110 /* YYStockView_Kline.m in Sources */,
 				2E6C891720BC522900C0B37E /* SSTradingRecordsCell.m in Sources */,
 				2E4815AE20B9734900AFCBBB /* LWTNavigationViewController.m in Sources */,
 				2E6C8AE420C26F3400C0B37E /* SSBannerView.m in Sources */,
 				2EA596D720CA6FE500A25951 /* SSAppCollectionHeaderView.m in Sources */,
+				2EB9973C20CD5F9A00694110 /* YYTimeLineMaskView.m in Sources */,
 				2EB989D320CC040400694110 /* SSWalletDetailVC.m in Sources */,
 				2EB989DA20CC040400694110 /* SSManagerPurseViewController.m in Sources */,
 				2E60DDA520C4E0E300A20429 /* SSNavigationBar.m in Sources */,
+				2EB9973D20CD5F9A00694110 /* YYTimeLineView.m in Sources */,
 				2E48166920BA843B00AFCBBB /* SSAccountViewController.m in Sources */,
 				2E60DD9620C44A0900A20429 /* SSMarketRemindViewController.m in Sources */,
 				2E48168720BAD88D00AFCBBB /* SSMarketCell.m in Sources */,
 				2E6C8AC120C25B7A00C0B37E /* SSAuthorizedLoginCV.m in Sources */,
 				2E4815FC20B97D6400AFCBBB /* UserDefaultUtil.m in Sources */,
+				2EB9974520CD5F9A00694110 /* YYKlineMaskView.m in Sources */,
 				2E6C8AD920C26CB900C0B37E /* SSHelpCenterViewController.m in Sources */,
+				2EB9974120CD5F9A00694110 /* YYStockViewMaskView.m in Sources */,
 				2E48165420B9A95500AFCBBB /* UIView+Category.m in Sources */,
 				2E6C8AC720C2619000C0B37E /* SSChangePasswordVC.m in Sources */,
+				2EB9973320CD5F9A00694110 /* YYStockVariable.m in Sources */,
 				2EB989D720CC040400694110 /* SSAddPurseViewController.m in Sources */,
 				2E48169020BAD8CE00AFCBBB /* SSAccountModel.m in Sources */,
+				2EB9973E20CD5F9A00694110 /* YYTimeLineVolumeView.m in Sources */,
 				2EA596DF20CA7B1300A25951 /* YYBHorizontalCollectionView.m in Sources */,
 				2EB989CD20CC040400694110 /* SSTagModel.m in Sources */,
+				2EB9974420CD5F9A00694110 /* MAline.m in Sources */,
 				2E60DD8720C3F71300A20429 /* SSMarketsDetalViewController.m in Sources */,
 				2EB989E520CC040400694110 /* AJSectionBackgroundLayout.m in Sources */,
 				2E60DD9C20C4D73400A20429 /* SSAddAssertsVC.m in Sources */,
@@ -1689,7 +2076,10 @@
 				2E6C890120BC2E9900C0B37E /* SSAsertDetailVC.m in Sources */,
 				2E4815AD20B9734900AFCBBB /* LWTSegementViewController.m in Sources */,
 				2E4815AF20B9734900AFCBBB /* RootTabViewController.m in Sources */,
+				2EB9974320CD5F9A00694110 /* YYKline.m in Sources */,
 				2E6C8AD320C26AFA00C0B37E /* SSUnitSetTableViewCell.m in Sources */,
+				2EB9973620CD5F9A00694110 /* YYLinePositionModel.m in Sources */,
+				2EB996E920CD5F8700694110 /* YYTimeLineModel.m in Sources */,
 				2E48167120BA888500AFCBBB /* SSAccoutHeaderView.m in Sources */,
 				2EB989EC20CC040400694110 /* TagModel.m in Sources */,
 				2E6C8AF420C2C13600C0B37E /* SSArticleTableViewCell.m in Sources */,
@@ -1700,6 +2090,7 @@
 				2E6C8AEF20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.m in Sources */,
 				2EB989E820CC040400694110 /* AJSectionBackgroundView.m in Sources */,
 				2E4815A820B9734900AFCBBB /* AppDelegate+ViewController.m in Sources */,
+				2EB9973220CD5F9A00694110 /* UIColor+YYStockTheme.m in Sources */,
 				2E48154020B91FB900AFCBBB /* main.m in Sources */,
 				2E6C8A1220C0EEB600C0B37E /* WCQRCodeScanningVC.m in Sources */,
 				2E48160520B9818900AFCBBB /* SSAsertViewController.m in Sources */,
@@ -1707,6 +2098,7 @@
 				2EB989EE20CC040400694110 /* SSWalletHeaderTop.m in Sources */,
 				2EB989DC20CC040400694110 /* SSPurseListModel.m in Sources */,
 				2E3F359D20C51A6A001C78CB /* SSAppShareViewController.m in Sources */,
+				2EB9973720CD5F9A00694110 /* YYVolumePositionModel.m in Sources */,
 				2E6C897620BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m in Sources */,
 				2EB989CF20CC040400694110 /* GTButtonTagsView.m in Sources */,
 				2E6C896A20BDB39400C0B37E /* UIImage+Image.m in Sources */,
