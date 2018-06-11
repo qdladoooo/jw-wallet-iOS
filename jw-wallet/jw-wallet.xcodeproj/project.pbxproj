@@ -257,6 +257,7 @@
 		2E3571EB20CE4CE6009C4CE9 /* SSHomeCoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSHomeCoverVC.h; sourceTree = "<group>"; };
 		2E3571EC20CE4CE6009C4CE9 /* SSHomeCoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSHomeCoverVC.m; sourceTree = "<group>"; };
 		2E3571ED20CE4CE6009C4CE9 /* SSHomeCoverVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSHomeCoverVC.xib; sourceTree = "<group>"; };
+		2E3571F020CE5400009C4CE9 /* jw-wallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "jw-wallet.entitlements"; sourceTree = "<group>"; };
 		2E3F359320C5180F001C78CB /* SSInviteCodeShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSInviteCodeShare.h; sourceTree = "<group>"; };
 		2E3F359420C5180F001C78CB /* SSInviteCodeShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSInviteCodeShare.m; sourceTree = "<group>"; };
 		2E3F359520C5180F001C78CB /* SSInviteCodeShare.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSInviteCodeShare.xib; sourceTree = "<group>"; };
@@ -693,6 +694,7 @@
 		2E48152F20B91FB800AFCBBB /* jw-wallet */ = {
 			isa = PBXGroup;
 			children = (
+				2E3571F020CE5400009C4CE9 /* jw-wallet.entitlements */,
 				2E48156520B96FD000AFCBBB /* classes */,
 				2E48158720B9701400AFCBBB /* Supporting Files */,
 			);
@@ -1898,6 +1900,11 @@
 				TargetAttributes = {
 					2E48152C20B91FB800AFCBBB = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2E48154420B91FB900AFCBBB = {
 						CreatedOnToolsVersion = 9.3;
@@ -2420,6 +2427,7 @@
 			baseConfigurationReference = 45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "jw-wallet/jw-wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SU3Y433YRH;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2445,6 +2453,7 @@
 			baseConfigurationReference = 53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "jw-wallet/jw-wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SU3Y433YRH;
 				FRAMEWORK_SEARCH_PATHS = (

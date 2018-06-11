@@ -28,4 +28,7 @@ pod 'SDWebImage', '~> 4.4.0'
 
 #布局框架
 pod 'Masonry', '~> 1.1.0'
+
+#极光推送
+pod 'JPush-iOS-SDK', '~> 3.0.5'
 end

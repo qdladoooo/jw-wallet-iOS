@@ -25,7 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-//    [self setNavComponent];
     [self buildTableView];
     _dataArr = @[@"1",@"2",@"3",@"4"];
 
@@ -34,7 +33,7 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    // 启动图
+    // 启动图- 创建/导入钱包
     [self checkVersion];
     
     self.fd_prefersNavigationBarHidden = YES;
@@ -45,24 +44,13 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
-    
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"toumingbeijing"] forBarMetrics:UIBarMetricsDefault];
-//    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)setNavComponent {
-//    self.navAlpha = 0;
-//    self.navTintColor = [UIColor colorWithRed:0 green:10 blue:41 alpha:1];;
-//    self.navTitleColor = [UIColor whiteColor];
-//    self.navBackgroundColor = [UIColor colorWithRed:0 green:10 blue:41 alpha:1];
-    
-     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriRenderingImage:@"purse"] style:UIBarButtonItemStylePlain target:self action:@selector(scan)];
-     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriRenderingImage:@"purse"] style:UIBarButtonItemStylePlain target:self action:@selector(purse)];
-    
-}
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     CGFloat y = self.tableView.contentOffset.y;
@@ -120,9 +108,8 @@
 
 #pragma mark - 头部按钮点击
 -(void)purse{
-//    SSManagerPurseViewController *vc = [[SSManagerPurseViewController alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
-    
+    SSManagerPurseViewController *vc = [[SSManagerPurseViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 
 }
 #pragma mark - 扫一扫

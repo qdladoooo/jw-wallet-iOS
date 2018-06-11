@@ -8,8 +8,18 @@
 #import "SJ_NewfeatureViewController.h"
 #import "AppDelegate.h"
 #import "RootTabViewController.h"
-@interface AppDelegate ()
 
+// 引入JPush功能所需头文件-----****------
+#import "JPUSHService.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+// 如果需要使用idfa功能所需要引入的头文件（可选）
+#import <AdSupport/AdSupport.h>
+// -----****------
+
+@interface AppDelegate ()<JPUSHRegisterDelegate>
 @end
 
 @implementation AppDelegate
@@ -17,6 +27,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      // Override point for customization after application launch.
+    // 极光推送
+    [self Add_JPUSH_APNs]; //初始化APNs代码
+    [self Init_JPUSH:launchOptions]; //初始化JPush代码
+    
     //设置全局状态栏字体颜色
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     [self setAppWindows];
@@ -46,6 +60,9 @@
         [defaults setObject:currentVersion forKey:key];
         [defaults synchronize];
     }
+    
+    
+    
     return YES;
 }
 
@@ -75,6 +92,106 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+#pragma mark - 添加初始化APNs代码
+-(void)Add_JPUSH_APNs{
+    //Required
+    //notice: 3.0.0及以后版本注册可以这样写，也可以继续用之前的注册方式
+    JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
+    entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound;
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+        // 可以添加自定义categories
+        // NSSet<UNNotificationCategory *> *categories for iOS10 or later
+        // NSSet<UIUserNotificationCategory *> *categories for iOS8 and iOS9
+    }
+    [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
+}
+
+
+#pragma mark - 添加初始化JPush代码
+/**
+ 部分参数说明：
+ 
+ appKey
+ 选择 Web Portal上 的应用 ，点击“设置” 获取其 appkey 值。请确保应用内配置的 appkey 与 Portal 上创建应用后生成的 appkey 一致。
+ channel
+ 指明应用程序包的下载渠道，为方便分渠道统计，具体值由你自行定义，如：App Store。
+ apsForProduction
+ 1.3.1版本新增，用于标识当前应用所使用的APNs证书环境。
+ 0 (默认值)表示采用的是开发证书，1 表示采用生产证书发布应用。
+ 注：此字段的值要与Build Settings的Code Signing配置的证书环境一致。
+ advertisingIdentifier
+ 详见关于IDFA。https://docs.jiguang.cn/jpush/client/iOS/ios_guide_new/#_8
+ */
+-(void)Init_JPUSH:(NSDictionary *)launchOptions{
+    // Optional
+    // 获取IDFA
+    // 如需使用IDFA功能请添加此代码并在初始化方法的advertisingIdentifier参数中填写对应值
+//    NSString *advertisingId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    NSString *advertisingId = nil;
+    
+    // Required
+    // init Push
+    // notice: 2.1.5版本的SDK新增的注册方法，改成可上报IDFA，如果没有使用IDFA直接传nil
+    // 如需继续使用pushConfig.plist文件声明appKey等配置内容，请依旧使用[JPUSHService setupWithOption:launchOptions]方式初始化。
+    NSString *appKey = @"xxxxxx";
+    NSString *channel = @"AppStore";
+    BOOL isProduction = NO; // 0开发 1生产
+    [JPUSHService setupWithOption:launchOptions appKey:appKey
+                          channel:channel
+                 apsForProduction:isProduction
+            advertisingIdentifier:advertisingId];
+}
+
+#pragma mark - 注册APNs成功并上报DeviceToken
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
+    /// Required - 注册 DeviceToken
+    [JPUSHService registerDeviceToken:deviceToken];
+}
+#pragma mark - 实现注册APNs失败接口（可选）
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+      NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error);
+}
+
+#pragma mark - 添加处理APNs通知回调方法
+#pragma mark- JPUSHRegisterDelegate
+
+// iOS 10 Support
+- (void)jpushNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(NSInteger))completionHandler {
+    // Required
+    NSDictionary * userInfo = notification.request.content.userInfo;
+    if([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+        [JPUSHService handleRemoteNotification:userInfo];
+    }
+    completionHandler(UNNotificationPresentationOptionAlert); // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以选择设置
+}
+
+// iOS 10 Support
+- (void)jpushNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler {
+    // Required
+    NSDictionary * userInfo = response.notification.request.content.userInfo;
+    if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+        [JPUSHService handleRemoteNotification:userInfo];
+    }
+    completionHandler();  // 系统要求执行这个方法
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    
+    // Required, iOS 7 Support
+    [JPUSHService handleRemoteNotification:userInfo];
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+    // Required,For systems with less than or equal to iOS6
+    [JPUSHService handleRemoteNotification:userInfo];
+}
+
+
+
 
 
 @end
