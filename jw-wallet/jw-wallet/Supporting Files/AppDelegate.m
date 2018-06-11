@@ -17,12 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      // Override point for customization after application launch.
+    //设置全局状态栏字体颜色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     [self setAppWindows];
     [self setRootViewController];
-    //设置全局状态栏字体颜色为黑色
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-    //设置全局状态栏字体颜色为白色
-//     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
     
     // 2.新特性--(引导页)--
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

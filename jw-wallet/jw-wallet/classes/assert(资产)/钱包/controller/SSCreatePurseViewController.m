@@ -26,7 +26,11 @@
 
 #pragma mark - 返回上级页面
 - (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    if (self.isFromHomeAlert) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 #pragma mark - 确认操作
 - (IBAction)sure:(id)sender {

@@ -15,6 +15,8 @@
 		2E32EE4220C98A8300D00CFB /* SSTransRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE4020C98A8300D00CFB /* SSTransRecordCell.xib */; };
 		2E32EE4520C9FFDE00D00CFB /* SSTransRecordHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E32EE4420C9FFDE00D00CFB /* SSTransRecordHeaderView.m */; };
 		2E32EE4720C9FFEA00D00CFB /* SSTransRecordHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE4620C9FFEA00D00CFB /* SSTransRecordHeaderView.xib */; };
+		2E3571EE20CE4CE6009C4CE9 /* SSHomeCoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3571EC20CE4CE6009C4CE9 /* SSHomeCoverVC.m */; };
+		2E3571EF20CE4CE6009C4CE9 /* SSHomeCoverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3571ED20CE4CE6009C4CE9 /* SSHomeCoverVC.xib */; };
 		2E3F359620C5180F001C78CB /* SSInviteCodeShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F359420C5180F001C78CB /* SSInviteCodeShare.m */; };
 		2E3F359720C5180F001C78CB /* SSInviteCodeShare.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F359520C5180F001C78CB /* SSInviteCodeShare.xib */; };
 		2E3F359D20C51A6A001C78CB /* SSAppShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F359B20C51A6A001C78CB /* SSAppShareViewController.m */; };
@@ -110,7 +112,6 @@
 		2E6C89FC20C041A200C0B37E /* SSLanguageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C89FA20C041A200C0B37E /* SSLanguageCell.m */; };
 		2E6C89FD20C041A200C0B37E /* SSLanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C89FB20C041A200C0B37E /* SSLanguageCell.xib */; };
 		2E6C8A0020C0534400C0B37E /* HXLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C89FF20C0534400C0B37E /* HXLanguageManager.m */; };
-		2E6C8A0320C05B5000C0B37E /* SJLaunchPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A0120C05B5000C0B37E /* SJLaunchPageView.m */; };
 		2E6C8A0620C05C7200C0B37E /* UIView+TNAppLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A0420C05C7200C0B37E /* UIView+TNAppLib.m */; };
 		2E6C8A1020C0EEB600C0B37E /* QRCodeGenerateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A0A20C0EEB600C0B37E /* QRCodeGenerateVC.m */; };
 		2E6C8A1120C0EEB600C0B37E /* WBQRCodeScanningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A0C20C0EEB600C0B37E /* WBQRCodeScanningVC.m */; };
@@ -253,6 +254,9 @@
 		2E32EE4320C9FFDE00D00CFB /* SSTransRecordHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTransRecordHeaderView.h; sourceTree = "<group>"; };
 		2E32EE4420C9FFDE00D00CFB /* SSTransRecordHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTransRecordHeaderView.m; sourceTree = "<group>"; };
 		2E32EE4620C9FFEA00D00CFB /* SSTransRecordHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSTransRecordHeaderView.xib; sourceTree = "<group>"; };
+		2E3571EB20CE4CE6009C4CE9 /* SSHomeCoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSHomeCoverVC.h; sourceTree = "<group>"; };
+		2E3571EC20CE4CE6009C4CE9 /* SSHomeCoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSHomeCoverVC.m; sourceTree = "<group>"; };
+		2E3571ED20CE4CE6009C4CE9 /* SSHomeCoverVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSHomeCoverVC.xib; sourceTree = "<group>"; };
 		2E3F359320C5180F001C78CB /* SSInviteCodeShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSInviteCodeShare.h; sourceTree = "<group>"; };
 		2E3F359420C5180F001C78CB /* SSInviteCodeShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSInviteCodeShare.m; sourceTree = "<group>"; };
 		2E3F359520C5180F001C78CB /* SSInviteCodeShare.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSInviteCodeShare.xib; sourceTree = "<group>"; };
@@ -416,8 +420,6 @@
 		2E6C89FB20C041A200C0B37E /* SSLanguageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSLanguageCell.xib; sourceTree = "<group>"; };
 		2E6C89FE20C0534400C0B37E /* HXLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXLanguageManager.h; sourceTree = "<group>"; };
 		2E6C89FF20C0534400C0B37E /* HXLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXLanguageManager.m; sourceTree = "<group>"; };
-		2E6C8A0120C05B5000C0B37E /* SJLaunchPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLaunchPageView.m; sourceTree = "<group>"; };
-		2E6C8A0220C05B5000C0B37E /* SJLaunchPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLaunchPageView.h; sourceTree = "<group>"; };
 		2E6C8A0420C05C7200C0B37E /* UIView+TNAppLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TNAppLib.m"; sourceTree = "<group>"; };
 		2E6C8A0520C05C7200C0B37E /* UIView+TNAppLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TNAppLib.h"; sourceTree = "<group>"; };
 		2E6C8A0820C0EEB600C0B37E /* WBQRCodeScanningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBQRCodeScanningVC.h; sourceTree = "<group>"; };
@@ -842,8 +844,6 @@
 			isa = PBXGroup;
 			children = (
 				2EA596CB20CA29BB00A25951 /* Newfeature */,
-				2E6C8A0220C05B5000C0B37E /* SJLaunchPageView.h */,
-				2E6C8A0120C05B5000C0B37E /* SJLaunchPageView.m */,
 				2E4815B220B9765200AFCBBB /* SHSF.pch */,
 				2E4815A020B9734900AFCBBB /* CommonMethods.h */,
 				2E48159420B9734900AFCBBB /* CommonMethods.m */,
@@ -879,6 +879,9 @@
 				2E32EE3920C988A700D00CFB /* SSTransRecordVC.h */,
 				2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */,
 				2E32EE3B20C988A700D00CFB /* SSTransRecordVC.xib */,
+				2E3571EB20CE4CE6009C4CE9 /* SSHomeCoverVC.h */,
+				2E3571EC20CE4CE6009C4CE9 /* SSHomeCoverVC.m */,
+				2E3571ED20CE4CE6009C4CE9 /* SSHomeCoverVC.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1974,6 +1977,7 @@
 				2E6C891820BC522900C0B37E /* SSTradingRecordsCell.xib in Resources */,
 				2E60DDA720C4E14700A20429 /* SSNavigationBar.xib in Resources */,
 				2E48163F20B983AC00AFCBBB /* home_gray@3x.png in Resources */,
+				2E3571EF20CE4CE6009C4CE9 /* SSHomeCoverVC.xib in Resources */,
 				2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */,
 				2EB989D220CC040400694110 /* SSBackupMemorizingWordsVC.xib in Resources */,
 				2E48167320BA889000AFCBBB /* SSAccoutHeaderView.xib in Resources */,
@@ -2121,7 +2125,6 @@
 				2EB9974020CD5F9A00694110 /* YYStockScrollView.m in Sources */,
 				2EA78EFB20C3990600593E7B /* SSAddMarketsListCell.m in Sources */,
 				2E6C891B20BC522900C0B37E /* SSAserModel.m in Sources */,
-				2E6C8A0320C05B5000C0B37E /* SJLaunchPageView.m in Sources */,
 				2E6C8AE920C26F6D00C0B37E /* SSApplicationsShareView.m in Sources */,
 				2EB9974D20CD5FA900694110 /* AppServer.m in Sources */,
 				2E48166D20BA868300AFCBBB /* SSAccoutCell.m in Sources */,
@@ -2158,6 +2161,7 @@
 				2E48169020BAD8CE00AFCBBB /* SSAccountModel.m in Sources */,
 				2EB9973E20CD5F9A00694110 /* YYTimeLineVolumeView.m in Sources */,
 				2EA596DF20CA7B1300A25951 /* YYBHorizontalCollectionView.m in Sources */,
+				2E3571EE20CE4CE6009C4CE9 /* SSHomeCoverVC.m in Sources */,
 				2EB989CD20CC040400694110 /* SSTagModel.m in Sources */,
 				2EB9974420CD5F9A00694110 /* MAline.m in Sources */,
 				2E60DD8720C3F71300A20429 /* SSMarketsDetalViewController.m in Sources */,

@@ -11,9 +11,8 @@
 #import "SSAsertCell.h"
 #import "SSAsertDetailVC.h"
 #import "SSManagerPurseViewController.h"
-#import "SJLaunchPageView.h"
 #import "WCQRCodeScanningVC.h"
-
+#import "SSHomeCoverVC.h"
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView* tableView;
 @property(nonatomic, strong) NSArray* dataArr;/**< array */
@@ -121,8 +120,10 @@
 
 #pragma mark - 头部按钮点击
 -(void)purse{
-    SSManagerPurseViewController *vc = [[SSManagerPurseViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    SSManagerPurseViewController *vc = [[SSManagerPurseViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+
 }
 #pragma mark - 扫一扫
 -(void)scan{
@@ -201,23 +202,11 @@
 }
 #pragma mark - 第一次进入
 -(void)checkVersion{
-    // 取出沙盒中存储的上次使用软件的版本号
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    NSString *lastVersion = [defaults stringForKey:@"CFBundleShortVersionString"];
-//    // 获得当前软件的版本号
-//    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
-//    // 如果跟沙盒中存储的版本一致就不弹出遮盖
-//    if (![currentVersion isEqualToString:lastVersion]) {
-//        [SJLaunchPageView showLaunchPageView];
-//    }
-//    [defaults setObject:currentVersion forKey:@"CFBundleShortVersionString"];
-//    [defaults synchronize];
-
-//    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirstLaunch"];
     BOOL isFirstLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"isFirstLaunch"];
     BOOL endNewFeature = [[NSUserDefaults standardUserDefaults] boolForKey:@"EndNewFeature"];
     if (isFirstLaunch && endNewFeature) {
-        [SJLaunchPageView showLaunchPageView];
+        SSHomeCoverVC *vc = [[SSHomeCoverVC alloc] init];
+        [self.navigationController pushViewController:vc animated:NO];
 
     }
 

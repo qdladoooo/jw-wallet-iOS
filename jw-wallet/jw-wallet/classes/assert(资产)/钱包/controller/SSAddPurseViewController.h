@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SSAddPurseViewController : UIViewController
-
+/**
+ 如果首页弹窗进来的 返回使用dissmiss
+ */
+@property (nonatomic, assign) BOOL isFromHomeAlert;
 @end

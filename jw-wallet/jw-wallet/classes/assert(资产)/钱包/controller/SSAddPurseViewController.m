@@ -47,7 +47,11 @@
 }
 #pragma mark - 点击事件
 - (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    if (self.isFromHomeAlert) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 - (IBAction)begainAddPurse:(id)sender {
     
