@@ -12,7 +12,7 @@
 /**判断是否是第一次启动*/
 + (BOOL)isFirstLaunching
 {
-    BOOL firstLaunching = false;
+    BOOL firstLaunching = NO;
     
     NSString *lastAppVersion =  [UserDefaultUtil valueForKey:@"LastAppVersion"];
     NSString *currentAppVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];

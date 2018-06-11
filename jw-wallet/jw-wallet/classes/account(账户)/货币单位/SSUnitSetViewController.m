@@ -10,7 +10,7 @@
 #import "SSUnitSetTableViewCell.h"
 @interface SSUnitSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
-
+@property (nonatomic,copy) NSArray *titleArr;
 
 @end
 
@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
+    _titleArr = @[@"USD",@"CNY"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,6 +42,14 @@
     }else{
         cell.title.text = @"CNY";
     }
+    BOOL uniset = [[NSUserDefaults standardUserDefaults] boolForKey:_titleArr[indexPath.row]];
+    
+    if (uniset) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else{
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+   
     return cell;
 
 }
@@ -51,4 +60,18 @@
     return 10;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == 0) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"USD"];
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"CNY"];
+    }else{
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"USD"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"CNY"];
+    }
+    
+    [self.tableview reloadData];
+    
+    NSLog(@"当前货币：%@",_titleArr[indexPath.row]);
+}
 @end

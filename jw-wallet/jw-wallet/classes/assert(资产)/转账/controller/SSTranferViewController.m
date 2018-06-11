@@ -23,6 +23,11 @@
     [super viewDidLoad];
     self.title = @"转账";
     [self setTextField];
+    
+    // 扫描结果不为空，用解析地址填充第一栏信息
+    if (_jump_URL!=nil) {
+        _address.text = _jump_URL;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

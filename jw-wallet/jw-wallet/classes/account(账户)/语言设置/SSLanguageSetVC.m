@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
-    _dataAry = @[ @"zh-Hant-CN", //中文繁体
+    _dataAry = @[ @"zh-Hant", //中文繁体
                   @"en-CN"];// 英语
 }
 
@@ -47,37 +47,47 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SSLanguageCell *cell = [SSLanguageCell cellWithTableview:tableView];
     
-    
-    
     if (indexPath.row == 0) {
-        cell.title.text = @"繁体中文";
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        cell.title.text =  @"繁体中文";
     }else{
-        cell.title.text =@"English";
+        cell.title.text = @"English";
+    }
+    NSString *language = [kLanguageManager languageFormat:self.dataAry[indexPath.row]];
+    
+    //当前语言
+    NSString *currentLanguage = kLanguageManager.currentLanguage;
+    
+    if([currentLanguage rangeOfString:language].location != NSNotFound)
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
+    
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
  
+    if (indexPath.row == 0) {
+        
+    }
     NSString *language = self.dataAry[indexPath.row];
     [kLanguageManager setUserlanguage:language];
     [self.tableview reloadData];
+    NSLog(@"当前语言:%@",language);
     
 }
 
-//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//    return 10;
-//}
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+////对应国家的语言
+- (NSString *)ittemCountryLanguage:(NSString *)lang {
+    NSString *language = [kLanguageManager languageFormat:lang];
+    NSString *countryLanguage = [[[NSLocale alloc] initWithLocaleIdentifier:language] displayNameForKey:NSLocaleIdentifier value:language];
+    return countryLanguage;
 }
-*/
+
+
 
 @end

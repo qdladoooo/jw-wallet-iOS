@@ -1,6 +1,8 @@
 PODS:
   - FDFullscreenPopGesture (1.1)
-  - JPush-iOS-SDK (3.0.5)
+  - JCore (1.2.0)
+  - JShare (1.5.0):
+    - JCore (~> 1.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
@@ -15,7 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - FDFullscreenPopGesture (= 1.1)
-  - JPush-iOS-SDK (~> 3.0.5)
+  - JShare (~> 1.5.0)
   - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 1.0.0)
   - MJExtension (= 3.0.13)
@@ -28,7 +30,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FDFullscreenPopGesture
-    - JPush-iOS-SDK
+    - JCore
+    - JShare
     - Masonry
     - MBProgressHUD
     - MJExtension
@@ -40,7 +43,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
-  JPush-iOS-SDK: f80e435b524449fd5101e247b044d4e48174ef5f
+  JCore: b52e3dd73625eec70afd1244bb9c41038aa06087
+  JShare: 81eb931687063fc4a20e097d82ba33039ccf635c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
@@ -50,6 +54,6 @@ SPEC CHECKSUMS:
   SGQRCode: 6cd7f03ea6b74d1267820d427b07d1451b387c79
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: 55983d01660a75978a4fb175296a451bd7add3e6
+PODFILE CHECKSUM: cca1c60b8d16eb788a73370d2e8d460664f8ff9b
 
 COCOAPODS: 1.5.3

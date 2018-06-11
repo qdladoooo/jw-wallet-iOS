@@ -10,6 +10,11 @@
 #import "SSBackupWalletViewController.h"
 @interface SSCreatePurseViewController ()
 
+/**
+ 底部提示信息框
+ */
+@property (weak, nonatomic) IBOutlet UIView *bottomTipView;
+
 @end
 
 @implementation SSCreatePurseViewController
@@ -17,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
+    self.bottomTipView.layer.borderWidth = 1;
+    self.bottomTipView.layer.borderColor = rgba(105, 200, 250, 1).CGColor;
 }
 
 - (void)didReceiveMemoryWarning {

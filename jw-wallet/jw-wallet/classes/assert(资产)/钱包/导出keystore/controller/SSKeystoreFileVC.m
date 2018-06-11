@@ -62,12 +62,14 @@
         SSKeyStoreTipsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
         if (cell==nil) {
             cell = [[[NSBundle mainBundle] loadNibNamed:@"SSKeyStoreTipsCell" owner:nil options:nil] lastObject];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         cell.title.text = _titleArr[indexPath.row];
         cell.content.text = _contentArr[indexPath.row];
         return cell;
     }else{
         SSKeystoreContentCell *cell = [SSKeystoreContentCell cellWithTableVie:tableView];
+        
         return cell;
     }
 }

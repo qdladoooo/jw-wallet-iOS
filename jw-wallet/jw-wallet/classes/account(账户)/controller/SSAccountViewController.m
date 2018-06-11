@@ -20,6 +20,8 @@
 @interface SSAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView* tableView;
+@property (nonatomic, strong) NSString *launguageShow;
+@property (nonatomic, strong) NSString *unitShow;
 @end
 
 @implementation SSAccountViewController
@@ -38,7 +40,28 @@
     // 去除多余的cell
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // 语言设置
+    NSString *currentLanguage = kLanguageManager.currentLanguage;
+    if ([currentLanguage isEqualToString:@"zh-Hant"]) {
+        _launguageShow = @"繁体中文";
+    }else{
+        _launguageShow = @"EngLish";
+    }
+    // 货币设置
+    BOOL USD = [[NSUserDefaults standardUserDefaults] boolForKey:@"USD"];
+    BOOL CNY = [[NSUserDefaults standardUserDefaults] boolForKey:@"CNY"];
+    if (USD) {
+        _unitShow = @"USD";
+    }else if (CNY){
+        _unitShow = @"CNY";
+    }else{
+        _unitShow = @"";
+    }
+    
+    [self.tableView reloadData];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -103,14 +126,16 @@
                 cell.title.text = @"帮助中心";
                 break;
             case 1:
+            
                 cell.title.text = @"语言设置";
                 cell.title2.hidden = NO;
-                cell.title2.text = @"繁体中文";
+                cell.title2.text = _launguageShow;
                 break;
+            
             case 2:
                 cell.title.text = @"货币单位";
                 cell.title2.hidden = NO;
-                cell.title2.text = @"USD";
+                cell.title2.text = _unitShow;
                 break;
                 
             default:
@@ -156,7 +181,6 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     if (indexPath.section == 0) {
         SSInviteCodeShare *vc = [[SSInviteCodeShare alloc] init];
         [self.navigationController pushViewController:vc animated:YES];

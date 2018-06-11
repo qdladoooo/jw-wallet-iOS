@@ -49,10 +49,10 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQc-GE-9Pf">
-                    <rect key="frame" x="0.0" y="627" width="187.5" height="40"/>
+                    <rect key="frame" x="0.0" y="622" width="187.5" height="45"/>
                     <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="RTd-Tp-JGG"/>
+                        <constraint firstAttribute="height" constant="45" id="RTd-Tp-JGG"/>
                     </constraints>
                     <state key="normal" title="创建钱包">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -62,10 +62,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTk-ae-KOM">
-                    <rect key="frame" x="187.5" y="627" width="187.5" height="40"/>
+                    <rect key="frame" x="187.5" y="622" width="187.5" height="45"/>
                     <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="m7x-qF-TY5"/>
+                        <constraint firstAttribute="height" constant="45" id="m7x-qF-TY5"/>
                     </constraints>
                     <state key="normal" title="导入钱包">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,7 +75,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="com-eN-X1e">
-                    <rect key="frame" x="15" y="74" width="345" height="553"/>
+                    <rect key="frame" x="15" y="74" width="345" height="548"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="j3I-NJ-x5r"/>

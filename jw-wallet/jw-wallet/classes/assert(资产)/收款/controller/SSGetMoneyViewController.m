@@ -7,7 +7,7 @@
 //
 
 #import "SSGetMoneyViewController.h"
-
+#import "SGQRCode.h"
 @interface SSGetMoneyViewController ()
 
 /**
@@ -15,14 +15,24 @@
  */
 @property (weak, nonatomic) IBOutlet UILabel *address;
 
+/**
+ 二维码
+ */
+@property (weak, nonatomic) IBOutlet UIImageView *codeImg;
+
 @end
 
 @implementation SSGetMoneyViewController
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"收款";
+    self.fd_prefersNavigationBarHidden = YES;
+    // 生成二维码(Default)
+    [self setupGenerateQRCode];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,14 +47,9 @@
    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 生成二维码
+- (void)setupGenerateQRCode {
+    _codeImg.image = [SGQRCodeGenerateManager generateWithDefaultQRCodeData:@"https://www.baidu.com" imageViewWidth:_codeImg.width];
 }
-*/
 
 @end

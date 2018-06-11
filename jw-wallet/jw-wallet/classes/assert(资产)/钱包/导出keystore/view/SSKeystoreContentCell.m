@@ -25,6 +25,7 @@
     SSKeystoreContentCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"SSKeystoreContentCell" owner:nil options:nil] lastObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;
 }

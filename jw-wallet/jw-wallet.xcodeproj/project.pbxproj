@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		002CF42B8F8ECDB403EEFB1D /* libPods-jw-wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */; };
+		2E046BBE20CEC18700F5B22D /* SSLanguageSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046BC020CEC18700F5B22D /* SSLanguageSetVC.xib */; };
 		2E32EE2720C927E400D00CFB /* hobby.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE2620C927E400D00CFB /* hobby.plist */; };
 		2E32EE3C20C988A700D00CFB /* SSTransRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */; };
 		2E32EE3D20C988A700D00CFB /* SSTransRecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE3B20C988A700D00CFB /* SSTransRecordVC.xib */; };
@@ -108,7 +109,6 @@
 		2E6C89D120BEFEF900C0B37E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C89D320BEFEF900C0B37E /* InfoPlist.strings */; };
 		2E6C89D820BF01D500C0B37E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C89DA20BF01D500C0B37E /* Localizable.strings */; };
 		2E6C89F720C03F1000C0B37E /* SSLanguageSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C89F520C03F1000C0B37E /* SSLanguageSetVC.m */; };
-		2E6C89F820C03F1000C0B37E /* SSLanguageSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C89F620C03F1000C0B37E /* SSLanguageSetVC.xib */; };
 		2E6C89FC20C041A200C0B37E /* SSLanguageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C89FA20C041A200C0B37E /* SSLanguageCell.m */; };
 		2E6C89FD20C041A200C0B37E /* SSLanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C89FB20C041A200C0B37E /* SSLanguageCell.xib */; };
 		2E6C8A0020C0534400C0B37E /* HXLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C89FF20C0534400C0B37E /* HXLanguageManager.m */; };
@@ -244,6 +244,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E046BBF20CEC18700F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SSLanguageSetVC.xib; sourceTree = "<group>"; };
+		2E046BC220CEC19100F5B22D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SSLanguageSetVC.strings"; sourceTree = "<group>"; };
+		2E046BC420CEC19300F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSLanguageSetVC.strings"; sourceTree = "<group>"; };
 		2E32EE2620C927E400D00CFB /* hobby.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hobby.plist; sourceTree = "<group>"; };
 		2E32EE3920C988A700D00CFB /* SSTransRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTransRecordVC.h; sourceTree = "<group>"; };
 		2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTransRecordVC.m; sourceTree = "<group>"; };
@@ -415,7 +418,6 @@
 		2E6C89DC20BF01D800C0B37E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2E6C89F420C03F1000C0B37E /* SSLanguageSetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSLanguageSetVC.h; sourceTree = "<group>"; };
 		2E6C89F520C03F1000C0B37E /* SSLanguageSetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSLanguageSetVC.m; sourceTree = "<group>"; };
-		2E6C89F620C03F1000C0B37E /* SSLanguageSetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSLanguageSetVC.xib; sourceTree = "<group>"; };
 		2E6C89F920C041A200C0B37E /* SSLanguageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSLanguageCell.h; sourceTree = "<group>"; };
 		2E6C89FA20C041A200C0B37E /* SSLanguageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSLanguageCell.m; sourceTree = "<group>"; };
 		2E6C89FB20C041A200C0B37E /* SSLanguageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSLanguageCell.xib; sourceTree = "<group>"; };
@@ -1137,7 +1139,7 @@
 				2E6C89FF20C0534400C0B37E /* HXLanguageManager.m */,
 				2E6C89F420C03F1000C0B37E /* SSLanguageSetVC.h */,
 				2E6C89F520C03F1000C0B37E /* SSLanguageSetVC.m */,
-				2E6C89F620C03F1000C0B37E /* SSLanguageSetVC.xib */,
+				2E046BC020CEC18700F5B22D /* SSLanguageSetVC.xib */,
 				2E6C89F920C041A200C0B37E /* SSLanguageCell.h */,
 				2E6C89FA20C041A200C0B37E /* SSLanguageCell.m */,
 				2E6C89FB20C041A200C0B37E /* SSLanguageCell.xib */,
@@ -1953,7 +1955,7 @@
 				2E3F35AF20C5944C001C78CB /* SSCreateWalletView.xib in Resources */,
 				2E6C89D120BEFEF900C0B37E /* InfoPlist.strings in Resources */,
 				2E48163920B983AC00AFCBBB /* me@3x.png in Resources */,
-				2E6C89F820C03F1000C0B37E /* SSLanguageSetVC.xib in Resources */,
+				2E046BBE20CEC18700F5B22D /* SSLanguageSetVC.xib in Resources */,
 				2EA596D920CA701F00A25951 /* SSAppCollectionHeaderView.xib in Resources */,
 				2E60DD8D20C43FF000A20429 /* SSEdiMarketsViewController.xib in Resources */,
 				2E6C891920BC522900C0B37E /* SSAsertCell.xib in Resources */,
@@ -2257,6 +2259,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2E046BC020CEC18700F5B22D /* SSLanguageSetVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E046BBF20CEC18700F5B22D /* en */,
+				2E046BC220CEC19100F5B22D /* zh-Hans */,
+				2E046BC420CEC19300F5B22D /* zh-Hant */,
+			);
+			name = SSLanguageSetVC.xib;
+			sourceTree = "<group>";
+		};
 		2E48153620B91FB800AFCBBB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2429,7 +2441,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "jw-wallet/jw-wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SU3Y433YRH;
+				DEVELOPMENT_TEAM = DYK3K8MU62;
+				ENABLE_ONLY_ACTIVE_RESOURCES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/jw-wallet/classes/Global/Libraries",
@@ -2442,7 +2455,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SH.jw-wallet";
+				PRODUCT_BUNDLE_IDENTIFIER = "SH.jw-wallet1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2455,7 +2468,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "jw-wallet/jw-wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SU3Y433YRH;
+				DEVELOPMENT_TEAM = DYK3K8MU62;
+				ENABLE_ONLY_ACTIVE_RESOURCES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/jw-wallet/classes/Global/Libraries",
@@ -2468,7 +2482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SH.jw-wallet";
+				PRODUCT_BUNDLE_IDENTIFIER = "SH.jw-wallet1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

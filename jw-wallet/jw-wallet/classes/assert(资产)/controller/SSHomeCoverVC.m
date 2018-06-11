@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirstLaunch"];
 }
 
 - (void)didReceiveMemoryWarning {

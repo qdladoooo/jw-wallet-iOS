@@ -36,13 +36,24 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDP-lu-Msx">
+                            <rect key="frame" x="329" y="28.5" width="31" height="30"/>
+                            <state key="normal" title="分享">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="share:" destination="-1" eventType="touchUpInside" id="fZH-ml-Q1z"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="8CB-A2-7mE" firstAttribute="leading" secondItem="kth-HA-TLz" secondAttribute="leading" constant="15" id="Ajw-89-EIe"/>
+                        <constraint firstItem="UDP-lu-Msx" firstAttribute="centerY" secondItem="T4O-6j-eEo" secondAttribute="centerY" id="DEV-Ej-KMv"/>
                         <constraint firstItem="8CB-A2-7mE" firstAttribute="centerY" secondItem="T4O-6j-eEo" secondAttribute="centerY" id="I2A-HA-nmI"/>
                         <constraint firstItem="T4O-6j-eEo" firstAttribute="centerX" secondItem="kth-HA-TLz" secondAttribute="centerX" id="WhE-nn-Lb1"/>
                         <constraint firstAttribute="bottom" secondItem="T4O-6j-eEo" secondAttribute="bottom" constant="10" id="XuB-xm-HMC"/>
+                        <constraint firstAttribute="trailing" secondItem="UDP-lu-Msx" secondAttribute="trailing" constant="15" id="ZsW-jV-lYe"/>
                         <constraint firstAttribute="height" constant="64" id="ba4-LB-YDX"/>
                     </constraints>
                 </view>

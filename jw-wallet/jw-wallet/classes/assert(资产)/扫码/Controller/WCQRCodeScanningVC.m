@@ -9,7 +9,7 @@
 #import "WCQRCodeScanningVC.h"
 #import "SGQRCode.h"
 #import "ScanSuccessJumpVC.h"
-
+#import "SSTranferViewController.h"
 @interface WCQRCodeScanningVC () <SGQRCodeScanManagerDelegate, SGQRCodeAlbumManagerDelegate>
 @property (nonatomic, strong) SGQRCodeScanManager *manager;
 @property (nonatomic, strong) SGQRCodeScanningView *scanningView;
@@ -119,10 +119,13 @@
         [scanManager videoPreviewLayerRemoveFromSuperlayer];
         
         AVMetadataMachineReadableCodeObject *obj = metadataObjects[0];
-        ScanSuccessJumpVC *jumpVC = [[ScanSuccessJumpVC alloc] init];
-        jumpVC.comeFromVC = ScanSuccessJumpComeFromWC;
-        jumpVC.jump_URL = [obj stringValue];
-        [self.navigationController pushViewController:jumpVC animated:YES];
+//        ScanSuccessJumpVC *jumpVC = [[ScanSuccessJumpVC alloc] init];
+//        jumpVC.comeFromVC = ScanSuccessJumpComeFromWC;
+//        jumpVC.jump_URL = [obj stringValue]; // 地址
+//        [self.navigationController pushViewController:jumpVC animated:YES];
+        SSTranferViewController *transVC = [[SSTranferViewController alloc] init];
+        transVC.jump_URL = [obj stringValue];
+        [self.navigationController pushViewController:transVC animated:YES];
     } else {
         NSLog(@"暂未识别出扫描的二维码");
     }

@@ -34,4 +34,5 @@
 #import "UIView+Category.h"
 #import <Masonry.h>
 #import "SJAlert.h"
+#import "HXLanguageManager.h"
 #endif /* SHSF_pch */

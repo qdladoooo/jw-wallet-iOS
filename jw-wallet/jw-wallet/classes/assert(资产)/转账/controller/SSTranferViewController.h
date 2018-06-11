@@ -10,4 +10,8 @@
 
 @interface SSTranferViewController : UIViewController
 
+/**
+ 扫描二维码获取地址
+ */
+@property(nonatomic,copy) NSString *jump_URL;
 @end

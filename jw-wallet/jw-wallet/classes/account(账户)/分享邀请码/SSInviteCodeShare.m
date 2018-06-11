@@ -7,7 +7,7 @@
 //
 
 #import "SSInviteCodeShare.h"
-
+#import "JSHAREService.h"
 @interface SSInviteCodeShare ()
 
 @end
@@ -20,6 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden =  YES;
+}
+// 分享
+- (IBAction)share:(id)sender {
+    JSHAREMessage *message = [JSHAREMessage message];
+    message.text = @"JShare SDK 支持主流社交平台、帮助开发者轻松实现社会化功能！";
+    message.platform = JSHAREPlatformWechatSession;
+    message.mediaType = JSHAREText;
+    [JSHAREService share:message handler:^(JSHAREState state, NSError *error) {
+        NSLog(@"分享回调");
+        [MBProgressHUD showText:[NSString stringWithFormat:@"%@\n%lu\n%@",message,(unsigned long)state,error]];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

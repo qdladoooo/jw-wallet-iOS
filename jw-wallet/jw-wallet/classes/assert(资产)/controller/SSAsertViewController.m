@@ -117,6 +117,7 @@
     WCQRCodeScanningVC *WCScan = [[WCQRCodeScanningVC alloc] init];
     [self QRCodeScanVC:WCScan];
 }
+
 - (void)QRCodeScanVC:(UIViewController *)scanVC {
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if (device) {
@@ -191,7 +192,7 @@
 -(void)checkVersion{
     BOOL isFirstLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"isFirstLaunch"];
     BOOL endNewFeature = [[NSUserDefaults standardUserDefaults] boolForKey:@"EndNewFeature"];
-    if (isFirstLaunch && endNewFeature) {
+    if (!isFirstLaunch && endNewFeature ) {
         SSHomeCoverVC *vc = [[SSHomeCoverVC alloc] init];
         [self.navigationController pushViewController:vc animated:NO];
 

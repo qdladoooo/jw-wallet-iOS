@@ -30,5 +30,8 @@ pod 'SDWebImage', '~> 4.4.0'
 pod 'Masonry', '~> 1.1.0'
 
 #极光推送
-pod 'JPush-iOS-SDK', '~> 3.0.5'
+#pod 'JPush-iOS-SDK', '~> 3.0.5'
+
+#极光分享
+pod 'JShare', '~> 1.5.0'
 end

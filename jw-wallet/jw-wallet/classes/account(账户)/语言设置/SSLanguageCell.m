@@ -26,7 +26,7 @@
     SSLanguageCell *cell = [tableview dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"SSLanguageCell" owner:nil options:nil] lastObject];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;
 }
