@@ -12,6 +12,9 @@
 #import "SSWalletHeaderTop.h"
 #import "SSExportPrivatePassWord.h"
 #import "SSChangePasswordVC.h"
+#import "LZPageViewController.h"
+#import "SSKeystoreFileVC.h"
+#import "SSMatrixCodeVC.h"
 
 @interface SSWalletDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
@@ -23,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.deleteBtn.layer setBorderWidth:1];
     [self.deleteBtn.layer setBorderColor:rgba(15, 117, 230, 1).CGColor];
     [self.deleteBtn setTitleColor:rgba(15, 117, 230, 1) forState:UIControlStateNormal];
@@ -161,6 +165,8 @@
                 [self.view addSubview:view];
             }else{
                 // 导出keystore
+                LZPageViewController *pageVc = [[LZPageViewController alloc] initWithTitles:@[@"导出Keystore",@"二维码"] controllersClass:@[[SSKeystoreFileVC class],[SSMatrixCodeVC class]]];
+                [self.navigationController pushViewController:pageVc animated:YES];
                 
             }
         }
