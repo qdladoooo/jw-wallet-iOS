@@ -16,6 +16,9 @@
 		2E046C3220CFC04D00F5B22D /* SSInviteCodeShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C3420CFC04D00F5B22D /* SSInviteCodeShareCell.xib */; };
 		2E046C4020CFFBB000F5B22D /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */; };
 		2E046C4420D00F0F00F5B22D /* XRDragTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C4220D00F0F00F5B22D /* XRDragTableView.m */; };
+		2E046C4820D017DD00F5B22D /* SSLogin&RigisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C4620D017DD00F5B22D /* SSLogin&RigisterVC.m */; };
+		2E046C4920D017DD00F5B22D /* SSLogin&RigisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C4720D017DD00F5B22D /* SSLogin&RigisterVC.xib */; };
+		2E046C4C20D01CA900F5B22D /* SSGlobalWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C4B20D01CA900F5B22D /* SSGlobalWebView.m */; };
 		2E32EE2720C927E400D00CFB /* hobby.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE2620C927E400D00CFB /* hobby.plist */; };
 		2E32EE3C20C988A700D00CFB /* SSTransRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */; };
 		2E32EE3D20C988A700D00CFB /* SSTransRecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE3B20C988A700D00CFB /* SSTransRecordVC.xib */; };
@@ -32,8 +35,6 @@
 		2E3F35A220C57A53001C78CB /* SSInviteCodeShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35A020C57A53001C78CB /* SSInviteCodeShareCell.m */; };
 		2E3F35A920C5869D001C78CB /* SSTouchIDSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35A720C5869D001C78CB /* SSTouchIDSetCell.m */; };
 		2E3F35AA20C5869D001C78CB /* SSTouchIDSetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F35A820C5869D001C78CB /* SSTouchIDSetCell.xib */; };
-		2E3F35AD20C5943F001C78CB /* SSCreateWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35AC20C5943F001C78CB /* SSCreateWalletView.m */; };
-		2E3F35AF20C5944C001C78CB /* SSCreateWalletView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F35AE20C5944C001C78CB /* SSCreateWalletView.xib */; };
 		2E48153220B91FB800AFCBBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48153120B91FB800AFCBBB /* AppDelegate.m */; };
 		2E48153520B91FB800AFCBBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48153420B91FB800AFCBBB /* ViewController.m */; };
 		2E48153820B91FB800AFCBBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E48153620B91FB800AFCBBB /* Main.storyboard */; };
@@ -271,6 +272,11 @@
 		2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		2E046C4220D00F0F00F5B22D /* XRDragTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRDragTableView.m; sourceTree = "<group>"; };
 		2E046C4320D00F0F00F5B22D /* XRDragTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRDragTableView.h; sourceTree = "<group>"; };
+		2E046C4520D017DD00F5B22D /* SSLogin&RigisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSLogin&RigisterVC.h"; sourceTree = "<group>"; };
+		2E046C4620D017DD00F5B22D /* SSLogin&RigisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SSLogin&RigisterVC.m"; sourceTree = "<group>"; };
+		2E046C4720D017DD00F5B22D /* SSLogin&RigisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "SSLogin&RigisterVC.xib"; sourceTree = "<group>"; };
+		2E046C4A20D01CA900F5B22D /* SSGlobalWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSGlobalWebView.h; sourceTree = "<group>"; };
+		2E046C4B20D01CA900F5B22D /* SSGlobalWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSGlobalWebView.m; sourceTree = "<group>"; };
 		2E32EE2620C927E400D00CFB /* hobby.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hobby.plist; sourceTree = "<group>"; };
 		2E32EE3920C988A700D00CFB /* SSTransRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTransRecordVC.h; sourceTree = "<group>"; };
 		2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTransRecordVC.m; sourceTree = "<group>"; };
@@ -296,9 +302,6 @@
 		2E3F35A620C5869D001C78CB /* SSTouchIDSetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTouchIDSetCell.h; sourceTree = "<group>"; };
 		2E3F35A720C5869D001C78CB /* SSTouchIDSetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTouchIDSetCell.m; sourceTree = "<group>"; };
 		2E3F35A820C5869D001C78CB /* SSTouchIDSetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSTouchIDSetCell.xib; sourceTree = "<group>"; };
-		2E3F35AB20C5943F001C78CB /* SSCreateWalletView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSCreateWalletView.h; sourceTree = "<group>"; };
-		2E3F35AC20C5943F001C78CB /* SSCreateWalletView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCreateWalletView.m; sourceTree = "<group>"; };
-		2E3F35AE20C5944C001C78CB /* SSCreateWalletView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSCreateWalletView.xib; sourceTree = "<group>"; };
 		2E48152D20B91FB800AFCBBB /* jw-wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jw-wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E48153020B91FB800AFCBBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E48153120B91FB800AFCBBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -670,8 +673,8 @@
 		2E046C4120D00F0F00F5B22D /* XRDragTableView */ = {
 			isa = PBXGroup;
 			children = (
-				2E046C4220D00F0F00F5B22D /* XRDragTableView.m */,
 				2E046C4320D00F0F00F5B22D /* XRDragTableView.h */,
+				2E046C4220D00F0F00F5B22D /* XRDragTableView.m */,
 			);
 			path = XRDragTableView;
 			sourceTree = "<group>";
@@ -878,9 +881,8 @@
 				2E4815B220B9765200AFCBBB /* SHSF.pch */,
 				2E4815A020B9734900AFCBBB /* CommonMethods.h */,
 				2E48159420B9734900AFCBBB /* CommonMethods.m */,
-				2E3F35AB20C5943F001C78CB /* SSCreateWalletView.h */,
-				2E3F35AC20C5943F001C78CB /* SSCreateWalletView.m */,
-				2E3F35AE20C5944C001C78CB /* SSCreateWalletView.xib */,
+				2E046C4A20D01CA900F5B22D /* SSGlobalWebView.h */,
+				2E046C4B20D01CA900F5B22D /* SSGlobalWebView.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1042,6 +1044,9 @@
 				2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */,
 				2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */,
 				2E046C2D20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib */,
+				2E046C4520D017DD00F5B22D /* SSLogin&RigisterVC.h */,
+				2E046C4620D017DD00F5B22D /* SSLogin&RigisterVC.m */,
+				2E046C4720D017DD00F5B22D /* SSLogin&RigisterVC.xib */,
 			);
 			path = "Login&Register";
 			sourceTree = "<group>";
@@ -1975,12 +1980,12 @@
 			files = (
 				2EB9974B20CD5FA900694110 /* dayData.plist in Resources */,
 				2EB989D420CC040400694110 /* SSCreatePurseViewController.xib in Resources */,
+				2E046C4920D017DD00F5B22D /* SSLogin&RigisterVC.xib in Resources */,
 				2E48163720B983AC00AFCBBB /* home_blue@3x.png in Resources */,
 				2E60DDA220C4DB1C00A20429 /* SSAddAssertsCell.xib in Resources */,
 				2E6C8ADA20C26CB900C0B37E /* SSHelpCenterViewController.xib in Resources */,
 				2E046C2B20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib in Resources */,
 				2EB989DF20CC040400694110 /* SSExportPrivatePassWord.xib in Resources */,
-				2E3F35AF20C5944C001C78CB /* SSCreateWalletView.xib in Resources */,
 				2E6C89D120BEFEF900C0B37E /* InfoPlist.strings in Resources */,
 				2E48163920B983AC00AFCBBB /* me@3x.png in Resources */,
 				2E046BBE20CEC18700F5B22D /* SSLanguageSetVC.xib in Resources */,
@@ -2152,6 +2157,7 @@
 				2E32EE3C20C988A700D00CFB /* SSTransRecordVC.m in Sources */,
 				2EB989E320CC040400694110 /* SSPurseListCell.m in Sources */,
 				2E6C8ACE20C267F900C0B37E /* SSUnitSetViewController.m in Sources */,
+				2E046C4820D017DD00F5B22D /* SSLogin&RigisterVC.m in Sources */,
 				2E4815AB20B9734900AFCBBB /* CommonMethods.m in Sources */,
 				2EB9977820CE070300694110 /* LZPageViewController.m in Sources */,
 				2E48165320B9A95500AFCBBB /* UIBarButtonItem+Category.m in Sources */,
@@ -2171,6 +2177,7 @@
 				2EB9973520CD5F9A00694110 /* YYStock.m in Sources */,
 				2E48168020BAD7CF00AFCBBB /* SSMarktViewController.m in Sources */,
 				2E6C892A20BC539E00C0B37E /* SSTranferViewController.m in Sources */,
+				2E046C4C20D01CA900F5B22D /* SSGlobalWebView.m in Sources */,
 				2EA596DE20CA7B1300A25951 /* YYBHorizontalCollectionCell.m in Sources */,
 				2EB9974220CD5F9A00694110 /* YYKlineView.m in Sources */,
 				2EB9973F20CD5F9A00694110 /* YYStockView_Kline.m in Sources */,
@@ -2249,7 +2256,6 @@
 				2E6C897620BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m in Sources */,
 				2EB989CF20CC040400694110 /* GTButtonTagsView.m in Sources */,
 				2E6C896A20BDB39400C0B37E /* UIImage+Image.m in Sources */,
-				2E3F35AD20C5943F001C78CB /* SSCreateWalletView.m in Sources */,
 				2EB989EB20CC040400694110 /* SSTagCollectionViewCell.m in Sources */,
 				2E6C891520BC522900C0B37E /* SSAsertHearView.m in Sources */,
 				2E48153220B91FB800AFCBBB /* AppDelegate.m in Sources */,

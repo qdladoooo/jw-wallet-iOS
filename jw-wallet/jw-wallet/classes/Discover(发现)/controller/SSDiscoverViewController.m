@@ -114,7 +114,6 @@
     }
     else{
         
-        
             _NormalHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 45)];
             _NormalHeaderView.backgroundColor = [UIColor colorFromHexRGB:@"f2f6ff"];
             _NormalHeaderTitle = [[UILabel alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(_NormalHeaderView.frame) -5-12, SCREEN_WIDTH, 12)];
@@ -136,7 +135,11 @@
     return nil;
     
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SSGlobalWebView *web = [[SSGlobalWebView alloc] init];
+    web.urlString = @"https://www.baidu.com";
+    [self.navigationController pushViewController:web animated:YES];
+}
 //#pragma mark - 轮播图
 //-(SDCycleScrollView *)cycleScrollView{
 //    if (_cycleScrollView == nil) {

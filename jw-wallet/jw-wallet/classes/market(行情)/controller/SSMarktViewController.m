@@ -21,11 +21,7 @@
 
 @implementation SSMarktViewController
 
-//-(void)viewWillAppear:(BOOL)animated{
-//    [super viewWillAppear:animated];
-//    [kLanguageManager setUserlanguage:kLanguageManager.currentLanguage];
-//    [self.tableView reloadData];
-//}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
