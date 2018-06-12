@@ -15,6 +15,7 @@
 		2E046C2B20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C2D20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib */; };
 		2E046C3220CFC04D00F5B22D /* SSInviteCodeShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C3420CFC04D00F5B22D /* SSInviteCodeShareCell.xib */; };
 		2E046C4020CFFBB000F5B22D /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */; };
+		2E046C4420D00F0F00F5B22D /* XRDragTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C4220D00F0F00F5B22D /* XRDragTableView.m */; };
 		2E32EE2720C927E400D00CFB /* hobby.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE2620C927E400D00CFB /* hobby.plist */; };
 		2E32EE3C20C988A700D00CFB /* SSTransRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */; };
 		2E32EE3D20C988A700D00CFB /* SSTransRecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE3B20C988A700D00CFB /* SSTransRecordVC.xib */; };
@@ -268,6 +269,8 @@
 		2E046C3D20CFCC7500F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSLanguageSetVC.strings; sourceTree = "<group>"; };
 		2E046C3E20CFFBB000F5B22D /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		2E046C4220D00F0F00F5B22D /* XRDragTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRDragTableView.m; sourceTree = "<group>"; };
+		2E046C4320D00F0F00F5B22D /* XRDragTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRDragTableView.h; sourceTree = "<group>"; };
 		2E32EE2620C927E400D00CFB /* hobby.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hobby.plist; sourceTree = "<group>"; };
 		2E32EE3920C988A700D00CFB /* SSTransRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTransRecordVC.h; sourceTree = "<group>"; };
 		2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTransRecordVC.m; sourceTree = "<group>"; };
@@ -664,6 +667,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E046C4120D00F0F00F5B22D /* XRDragTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2E046C4220D00F0F00F5B22D /* XRDragTableView.m */,
+				2E046C4320D00F0F00F5B22D /* XRDragTableView.h */,
+			);
+			path = XRDragTableView;
+			sourceTree = "<group>";
+		};
 		2E3F359220C517E0001C78CB /* 分享邀请码 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1487,6 +1499,7 @@
 		2EB98BB920CC05D700694110 /* MYTools */ = {
 			isa = PBXGroup;
 			children = (
+				2E046C4120D00F0F00F5B22D /* XRDragTableView */,
 				2EB9978420CE113100694110 /* SJAlert.h */,
 				2EB9978320CE113100694110 /* SJAlert.m */,
 				2EB9975020CD7D4900694110 /* segment */,
@@ -2208,6 +2221,7 @@
 				2EB9977920CE070300694110 /* LZPageMainCell.m in Sources */,
 				2E4815AF20B9734900AFCBBB /* RootTabViewController.m in Sources */,
 				2EB9978120CE0F9000694110 /* SSKeystoreContentCell.m in Sources */,
+				2E046C4420D00F0F00F5B22D /* XRDragTableView.m in Sources */,
 				2EB9974320CD5F9A00694110 /* YYKline.m in Sources */,
 				2E6C8AD320C26AFA00C0B37E /* SSUnitSetTableViewCell.m in Sources */,
 				2EB9973620CD5F9A00694110 /* YYLinePositionModel.m in Sources */,

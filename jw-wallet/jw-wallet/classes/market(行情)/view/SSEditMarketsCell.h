@@ -10,4 +10,7 @@
 
 @interface SSEditMarketsCell : UITableViewCell
 +(instancetype)cellWithTableView:(UITableView *)tableView;
+@property (weak, nonatomic) IBOutlet UILabel *network;
+@property (weak, nonatomic) IBOutlet UILabel *Name;
+
 @end

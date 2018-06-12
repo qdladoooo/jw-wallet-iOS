@@ -8,6 +8,7 @@
 
 #import "SSEditMarketsCell.h"
 #import "SSMarketRemindViewController.h"
+
 @implementation SSEditMarketsCell
 
 - (void)awakeFromNib {

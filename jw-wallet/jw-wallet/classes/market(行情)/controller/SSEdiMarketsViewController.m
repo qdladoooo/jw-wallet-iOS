@@ -9,31 +9,47 @@
 #import "SSEdiMarketsViewController.h"
 #import "SSSectionHeaderView.h"
 #import "SSEditMarketsCell.h"
+#import "XRDragTableView.h"
 @interface SSEdiMarketsViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (weak, nonatomic) IBOutlet XRDragTableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 @end
 
 @implementation SSEdiMarketsViewController
-
+- (NSMutableArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray arrayWithObjects:@"a", @"b", @"c", @"d", @"e", @"f", @"g", @"h", @"i", @"j", @"k", @"l", @"m", @"n", @"o", @"p", @"q", @"r", @"s", @"t", @"u", @"v", @"w", @"x", @"y", @"z", nil];
+    }
+    return _dataArray;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
     self.tableView.backgroundColor = MAIN_GROUNDCOLOR;
+//    self.tableView.isExchange = YES; // 交换的方式，默认为插入
+    self.tableView.dataArray = self.dataArray;
+    //当cell拖动到tableView边缘时，tableView自动滚动的速度
+    self.tableView.scrollSpeed = 10;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+// 返回
 - (IBAction)backAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+// 复原
+- (IBAction)reset:(id)sender {
+    [self.tableView resetCellLocation];
 }
 
 #pragma mark - <UITableViewDelegate,UITableViewDataSource>
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return _dataArray.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -44,6 +60,7 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SSEditMarketsCell *cell = [SSEditMarketsCell cellWithTableView:tableView];
+    cell.Name.text = _dataArray[indexPath.row];
     return cell;
 }
 
