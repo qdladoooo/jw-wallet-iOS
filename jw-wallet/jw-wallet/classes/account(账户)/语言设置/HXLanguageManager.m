@@ -55,6 +55,8 @@
     else if([language rangeOfString:@"zh-Hant"].location != NSNotFound)
     {
         return @"zh-Hant";
+    }else if ([language rangeOfString:@"en"].location != NSNotFound){
+        return @"en";
     }
     else
     {

@@ -15,7 +15,8 @@
 
 @interface HXLanguageManager : NSObject
 
-@property (nonatomic,copy) void (^completion)(NSString *currentLanguage);
+@property (nonatomic,copy) void (^completion
+)(NSString *currentLanguage);
 
 - (NSString *)currentLanguage; //当前语言
 - (NSString *)languageFormat:(NSString*)language;

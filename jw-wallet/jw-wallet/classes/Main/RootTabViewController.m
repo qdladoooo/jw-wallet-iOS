@@ -23,7 +23,10 @@
     [self buildUI];
     // Do any additional setup after loading the view.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+}
 /**构建视图*/
 - (void)buildUI{
     
@@ -55,7 +58,8 @@
         [homeview.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
         [homeview.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
         // 设置tabbaritem 的title
-        navigation.tabBarItem.title                     = itemTitles[i];
+//        navigation.tabBarItem.title                     = itemTitles[i];
+        navigation.tabBarItem.title =  kLocalizedTableString(itemTitles[i], gy_LocalizableName);
     }
     self.viewControllers = controllers;
 }

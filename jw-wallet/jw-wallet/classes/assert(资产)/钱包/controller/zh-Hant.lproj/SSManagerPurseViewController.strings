@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "createPurse"; ObjectID = "PQc-GE-9Pf"; */
+"PQc-GE-9Pf.normalTitle" = "創建錢包";
+
+/* Class = "UIButton"; normalTitle = "addPurse"; ObjectID = "zTk-ae-KOM"; */
+"zTk-ae-KOM.normalTitle" = "導入錢包";
+
+/* Class = "UILabel"; text = "managerPurse"; ObjectID = "zYb-M3-Hwq"; */
+"zYb-M3-Hwq.text" = "管理錢包";

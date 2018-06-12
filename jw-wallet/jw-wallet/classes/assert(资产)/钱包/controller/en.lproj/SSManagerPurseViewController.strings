@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "createPurse"; ObjectID = "PQc-GE-9Pf"; */
+"PQc-GE-9Pf.normalTitle" = "Create wallet";
+
+/* Class = "UIButton"; normalTitle = "addPurse"; ObjectID = "zTk-ae-KOM"; */
+"zTk-ae-KOM.normalTitle" = "Import wallet";
+
+/* Class = "UILabel"; text = "managerPurse"; ObjectID = "zYb-M3-Hwq"; */
+"zYb-M3-Hwq.text" = "manager wallet";

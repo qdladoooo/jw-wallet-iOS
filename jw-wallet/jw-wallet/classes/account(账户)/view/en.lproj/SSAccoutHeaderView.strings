@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "账户"; ObjectID = "3Nd-G6-ZoV"; */
+"3Nd-G6-ZoV.text" = "Account";
+
+/* Class = "UILabel"; text = "ID: 1234"; ObjectID = "Rde-Th-VXP"; */
+"Rde-Th-VXP.text" = "ID: 1234";
+
+/* Class = "UILabel"; text = "账户名称"; ObjectID = "lrU-Nr-Mqw"; */
+"lrU-Nr-Mqw.text" = "Account Name";
+
+/* Class = "UIButton"; normalTitle = "button"; ObjectID = "tST-vK-uNd"; */
+"tST-vK-uNd.normalTitle" = "button";

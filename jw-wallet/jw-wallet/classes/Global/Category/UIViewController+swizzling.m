@@ -24,11 +24,14 @@
 
 // 我们自己实现的方法，也就是和self的viewDidLoad方法进行交换的方法。
 - (void)swizzlingViewDidLoad {
+
     NSString *str = [NSString stringWithFormat:@"%@", self.class];
     // 我们在这里加一个判断，将系统的UIViewController的对象剔除掉
     if(![str containsString:@"UI"]){
         NSLog(@"统计打点 : %@", self.class);
+
     }
+
     [self swizzlingViewDidLoad];
 }
 

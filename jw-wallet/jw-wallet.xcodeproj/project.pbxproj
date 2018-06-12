@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		002CF42B8F8ECDB403EEFB1D /* libPods-jw-wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */; };
 		2E046BBE20CEC18700F5B22D /* SSLanguageSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046BC020CEC18700F5B22D /* SSLanguageSetVC.xib */; };
+		2E046C0F20CFB7BC00F5B22D /* SSSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C1120CFB7BC00F5B22D /* SSSectionHeaderView.xib */; };
+		2E046C1820CFBC0200F5B22D /* SSAccoutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C1A20CFBC0200F5B22D /* SSAccoutHeaderView.xib */; };
+		2E046C2420CFBE0600F5B22D /* SSAsertHearView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C2620CFBE0600F5B22D /* SSAsertHearView.xib */; };
+		2E046C2B20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C2D20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib */; };
+		2E046C3220CFC04D00F5B22D /* SSInviteCodeShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C3420CFC04D00F5B22D /* SSInviteCodeShareCell.xib */; };
+		2E046C4020CFFBB000F5B22D /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */; };
 		2E32EE2720C927E400D00CFB /* hobby.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE2620C927E400D00CFB /* hobby.plist */; };
 		2E32EE3C20C988A700D00CFB /* SSTransRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */; };
 		2E32EE3D20C988A700D00CFB /* SSTransRecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE3B20C988A700D00CFB /* SSTransRecordVC.xib */; };
@@ -23,7 +29,6 @@
 		2E3F359D20C51A6A001C78CB /* SSAppShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F359B20C51A6A001C78CB /* SSAppShareViewController.m */; };
 		2E3F359E20C51A6A001C78CB /* SSAppShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F359C20C51A6A001C78CB /* SSAppShareViewController.xib */; };
 		2E3F35A220C57A53001C78CB /* SSInviteCodeShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35A020C57A53001C78CB /* SSInviteCodeShareCell.m */; };
-		2E3F35A320C57A53001C78CB /* SSInviteCodeShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F35A120C57A53001C78CB /* SSInviteCodeShareCell.xib */; };
 		2E3F35A920C5869D001C78CB /* SSTouchIDSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35A720C5869D001C78CB /* SSTouchIDSetCell.m */; };
 		2E3F35AA20C5869D001C78CB /* SSTouchIDSetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3F35A820C5869D001C78CB /* SSTouchIDSetCell.xib */; };
 		2E3F35AD20C5943F001C78CB /* SSCreateWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F35AC20C5943F001C78CB /* SSCreateWalletView.m */; };
@@ -67,12 +72,10 @@
 		2E48166D20BA868300AFCBBB /* SSAccoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48166B20BA868300AFCBBB /* SSAccoutCell.m */; };
 		2E48166E20BA868300AFCBBB /* SSAccoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E48166C20BA868300AFCBBB /* SSAccoutCell.xib */; };
 		2E48167120BA888500AFCBBB /* SSAccoutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48167020BA888500AFCBBB /* SSAccoutHeaderView.m */; };
-		2E48167320BA889000AFCBBB /* SSAccoutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E48167220BA889000AFCBBB /* SSAccoutHeaderView.xib */; };
 		2E48168020BAD7CF00AFCBBB /* SSMarktViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48167F20BAD7CF00AFCBBB /* SSMarktViewController.m */; };
 		2E48168320BAD82400AFCBBB /* SSSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48168220BAD82400AFCBBB /* SSSectionHeaderView.m */; };
 		2E48168720BAD88D00AFCBBB /* SSMarketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48168520BAD88D00AFCBBB /* SSMarketCell.m */; };
 		2E48168820BAD88D00AFCBBB /* SSMarketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E48168620BAD88D00AFCBBB /* SSMarketCell.xib */; };
-		2E48168A20BAD89900AFCBBB /* SSSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E48168920BAD89900AFCBBB /* SSSectionHeaderView.xib */; };
 		2E48168D20BAD8B900AFCBBB /* SSMarketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48168C20BAD8B900AFCBBB /* SSMarketModel.m */; };
 		2E48169020BAD8CE00AFCBBB /* SSAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48168F20BAD8CE00AFCBBB /* SSAccountModel.m */; };
 		2E60DD8720C3F71300A20429 /* SSMarketsDetalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E60DD8520C3F71300A20429 /* SSMarketsDetalViewController.m */; };
@@ -96,7 +99,6 @@
 		2E6C891720BC522900C0B37E /* SSTradingRecordsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C890D20BC522900C0B37E /* SSTradingRecordsCell.m */; };
 		2E6C891820BC522900C0B37E /* SSTradingRecordsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C890E20BC522900C0B37E /* SSTradingRecordsCell.xib */; };
 		2E6C891920BC522900C0B37E /* SSAsertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C890F20BC522900C0B37E /* SSAsertCell.xib */; };
-		2E6C891A20BC522900C0B37E /* SSAsertHearView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C891020BC522900C0B37E /* SSAsertHearView.xib */; };
 		2E6C891B20BC522900C0B37E /* SSAserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C891320BC522900C0B37E /* SSAserModel.m */; };
 		2E6C891E20BC526400C0B37E /* SSTradeRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C891D20BC526400C0B37E /* SSTradeRecordModel.m */; };
 		2E6C892A20BC539E00C0B37E /* SSTranferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C892820BC539E00C0B37E /* SSTranferViewController.m */; };
@@ -120,7 +122,6 @@
 		2E6C8A1720C0EECE00C0B37E /* SGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A1520C0EECE00C0B37E /* SGWebView.m */; };
 		2E6C8A4520C122E400C0B37E /* MBProgressHUD+HYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8A4320C122E300C0B37E /* MBProgressHUD+HYExtension.m */; };
 		2E6C8AC120C25B7A00C0B37E /* SSAuthorizedLoginCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */; };
-		2E6C8AC220C25B7A00C0B37E /* SSAuthorizedLoginCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AC020C25B7A00C0B37E /* SSAuthorizedLoginCV.xib */; };
 		2E6C8AC720C2619000C0B37E /* SSChangePasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AC520C2619000C0B37E /* SSChangePasswordVC.m */; };
 		2E6C8AC820C2619000C0B37E /* SSChangePasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AC620C2619000C0B37E /* SSChangePasswordVC.xib */; };
 		2E6C8ACE20C267F900C0B37E /* SSUnitSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8ACC20C267F900C0B37E /* SSUnitSetViewController.m */; };
@@ -244,9 +245,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E046BBF20CEC18700F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SSLanguageSetVC.xib; sourceTree = "<group>"; };
-		2E046BC220CEC19100F5B22D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SSLanguageSetVC.strings"; sourceTree = "<group>"; };
 		2E046BC420CEC19300F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSLanguageSetVC.strings"; sourceTree = "<group>"; };
+		2E046C1020CFB7BC00F5B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SSSectionHeaderView.xib; sourceTree = "<group>"; };
+		2E046C1320CFB7C000F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSSectionHeaderView.strings; sourceTree = "<group>"; };
+		2E046C1520CFB7C200F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSSectionHeaderView.strings"; sourceTree = "<group>"; };
+		2E046C1920CFBC0200F5B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SSAccoutHeaderView.xib; sourceTree = "<group>"; };
+		2E046C1C20CFBC0600F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSAccoutHeaderView.strings; sourceTree = "<group>"; };
+		2E046C1E20CFBC0800F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSAccoutHeaderView.strings"; sourceTree = "<group>"; };
+		2E046C2820CFBE0B00F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSAsertHearView.strings"; sourceTree = "<group>"; };
+		2E046C2920CFBE2800F5B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SSAsertHearView.xib; sourceTree = "<group>"; };
+		2E046C2A20CFBE4500F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSAsertHearView.strings; sourceTree = "<group>"; };
+		2E046C2C20CFBF2500F5B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SSAuthorizedLoginCV.xib; sourceTree = "<group>"; };
+		2E046C2F20CFBF2800F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSAuthorizedLoginCV.strings; sourceTree = "<group>"; };
+		2E046C3120CFBF2A00F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSAuthorizedLoginCV.strings"; sourceTree = "<group>"; };
+		2E046C3320CFC04D00F5B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SSInviteCodeShareCell.xib; sourceTree = "<group>"; };
+		2E046C3620CFC05100F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSInviteCodeShareCell.strings; sourceTree = "<group>"; };
+		2E046C3820CFC05200F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSInviteCodeShareCell.strings"; sourceTree = "<group>"; };
+		2E046C3920CFC18600F5B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SSManagerPurseViewController.xib; sourceTree = "<group>"; };
+		2E046C3A20CFC1DD00F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSManagerPurseViewController.strings; sourceTree = "<group>"; };
+		2E046C3B20CFC1E200F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSManagerPurseViewController.strings"; sourceTree = "<group>"; };
+		2E046C3C20CFCC7100F5B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SSLanguageSetVC.xib; sourceTree = "<group>"; };
+		2E046C3D20CFCC7500F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSLanguageSetVC.strings; sourceTree = "<group>"; };
+		2E046C3E20CFFBB000F5B22D /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		2E32EE2620C927E400D00CFB /* hobby.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hobby.plist; sourceTree = "<group>"; };
 		2E32EE3920C988A700D00CFB /* SSTransRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTransRecordVC.h; sourceTree = "<group>"; };
 		2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTransRecordVC.m; sourceTree = "<group>"; };
@@ -269,7 +290,6 @@
 		2E3F359C20C51A6A001C78CB /* SSAppShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAppShareViewController.xib; sourceTree = "<group>"; };
 		2E3F359F20C57A53001C78CB /* SSInviteCodeShareCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSInviteCodeShareCell.h; sourceTree = "<group>"; };
 		2E3F35A020C57A53001C78CB /* SSInviteCodeShareCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSInviteCodeShareCell.m; sourceTree = "<group>"; };
-		2E3F35A120C57A53001C78CB /* SSInviteCodeShareCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSInviteCodeShareCell.xib; sourceTree = "<group>"; };
 		2E3F35A620C5869D001C78CB /* SSTouchIDSetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTouchIDSetCell.h; sourceTree = "<group>"; };
 		2E3F35A720C5869D001C78CB /* SSTouchIDSetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTouchIDSetCell.m; sourceTree = "<group>"; };
 		2E3F35A820C5869D001C78CB /* SSTouchIDSetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSTouchIDSetCell.xib; sourceTree = "<group>"; };
@@ -341,7 +361,6 @@
 		2E48166C20BA868300AFCBBB /* SSAccoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAccoutCell.xib; sourceTree = "<group>"; };
 		2E48166F20BA888500AFCBBB /* SSAccoutHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAccoutHeaderView.h; sourceTree = "<group>"; };
 		2E48167020BA888500AFCBBB /* SSAccoutHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAccoutHeaderView.m; sourceTree = "<group>"; };
-		2E48167220BA889000AFCBBB /* SSAccoutHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAccoutHeaderView.xib; sourceTree = "<group>"; };
 		2E48167E20BAD7CF00AFCBBB /* SSMarktViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMarktViewController.h; sourceTree = "<group>"; };
 		2E48167F20BAD7CF00AFCBBB /* SSMarktViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMarktViewController.m; sourceTree = "<group>"; };
 		2E48168120BAD82400AFCBBB /* SSSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSSectionHeaderView.h; sourceTree = "<group>"; };
@@ -349,7 +368,6 @@
 		2E48168420BAD88D00AFCBBB /* SSMarketCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMarketCell.h; sourceTree = "<group>"; };
 		2E48168520BAD88D00AFCBBB /* SSMarketCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMarketCell.m; sourceTree = "<group>"; };
 		2E48168620BAD88D00AFCBBB /* SSMarketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSMarketCell.xib; sourceTree = "<group>"; };
-		2E48168920BAD89900AFCBBB /* SSSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSSectionHeaderView.xib; sourceTree = "<group>"; };
 		2E48168B20BAD8B900AFCBBB /* SSMarketModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMarketModel.h; sourceTree = "<group>"; };
 		2E48168C20BAD8B900AFCBBB /* SSMarketModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMarketModel.m; sourceTree = "<group>"; };
 		2E48168E20BAD8CE00AFCBBB /* SSAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAccountModel.h; sourceTree = "<group>"; };
@@ -388,7 +406,6 @@
 		2E6C890D20BC522900C0B37E /* SSTradingRecordsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTradingRecordsCell.m; sourceTree = "<group>"; };
 		2E6C890E20BC522900C0B37E /* SSTradingRecordsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSTradingRecordsCell.xib; sourceTree = "<group>"; };
 		2E6C890F20BC522900C0B37E /* SSAsertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSAsertCell.xib; sourceTree = "<group>"; };
-		2E6C891020BC522900C0B37E /* SSAsertHearView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSAsertHearView.xib; sourceTree = "<group>"; };
 		2E6C891120BC522900C0B37E /* SSAsertHearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAsertHearView.h; sourceTree = "<group>"; };
 		2E6C891320BC522900C0B37E /* SSAserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAserModel.m; sourceTree = "<group>"; };
 		2E6C891420BC522900C0B37E /* SSAserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAserModel.h; sourceTree = "<group>"; };
@@ -439,7 +456,6 @@
 		2E6C8A4420C122E400C0B37E /* MBProgressHUD+HYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HYExtension.h"; sourceTree = "<group>"; };
 		2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SSAuthorizedLoginCV.h; path = "jw-wallet/classes/Login&Register/SSAuthorizedLoginCV.h"; sourceTree = SOURCE_ROOT; };
 		2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SSAuthorizedLoginCV.m; path = "jw-wallet/classes/Login&Register/SSAuthorizedLoginCV.m"; sourceTree = SOURCE_ROOT; };
-		2E6C8AC020C25B7A00C0B37E /* SSAuthorizedLoginCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SSAuthorizedLoginCV.xib; path = "jw-wallet/classes/Login&Register/SSAuthorizedLoginCV.xib"; sourceTree = SOURCE_ROOT; };
 		2E6C8AC420C2619000C0B37E /* SSChangePasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSChangePasswordVC.h; sourceTree = "<group>"; };
 		2E6C8AC520C2619000C0B37E /* SSChangePasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSChangePasswordVC.m; sourceTree = "<group>"; };
 		2E6C8AC620C2619000C0B37E /* SSChangePasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSChangePasswordVC.xib; sourceTree = "<group>"; };
@@ -493,9 +509,7 @@
 		2EB9898D20CC040400694110 /* HZQTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZQTagCell.m; sourceTree = "<group>"; };
 		2EB9898E20CC040400694110 /* GTButtonTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTButtonTagsView.m; sourceTree = "<group>"; };
 		2EB9899120CC040400694110 /* SSBackupWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBackupWalletViewController.m; sourceTree = "<group>"; };
-		2EB9899320CC040400694110 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SSManagerPurseViewController.xib"; sourceTree = "<group>"; };
 		2EB9899420CC040400694110 /* SSBackupMemorizingWordsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSBackupMemorizingWordsVC.xib; sourceTree = "<group>"; };
-		2EB9899520CC040400694110 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SSManagerPurseViewController.xib; sourceTree = "<group>"; };
 		2EB9899620CC040400694110 /* SSWalletDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSWalletDetailVC.m; sourceTree = "<group>"; };
 		2EB9899720CC040400694110 /* SSCreatePurseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSCreatePurseViewController.xib; sourceTree = "<group>"; };
 		2EB9899820CC040400694110 /* SSCreatePurseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCreatePurseViewController.h; sourceTree = "<group>"; };
@@ -503,7 +517,6 @@
 		2EB9899A20CC040400694110 /* SSAddPurseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAddPurseViewController.h; sourceTree = "<group>"; };
 		2EB9899B20CC040400694110 /* SSManagerPurseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSManagerPurseViewController.h; sourceTree = "<group>"; };
 		2EB9899C20CC040400694110 /* SSBackupMemorizingWordsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBackupMemorizingWordsVC.m; sourceTree = "<group>"; };
-		2EB9899D20CC040400694110 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/SSManagerPurseViewController.xib"; sourceTree = "<group>"; };
 		2EB9899E20CC040400694110 /* SSBackupWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBackupWalletViewController.h; sourceTree = "<group>"; };
 		2EB9899F20CC040400694110 /* SSWalletDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSWalletDetailVC.h; sourceTree = "<group>"; };
 		2EB989A020CC040400694110 /* SSAddPurseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAddPurseViewController.m; sourceTree = "<group>"; };
@@ -811,6 +824,8 @@
 		2E48158920B9734900AFCBBB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2E046C3E20CFFBB000F5B22D /* NSBundle+Language.h */,
+				2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */,
 				2E6C8A4420C122E400C0B37E /* MBProgressHUD+HYExtension.h */,
 				2E6C8A4320C122E300C0B37E /* MBProgressHUD+HYExtension.m */,
 				2E6C8A0520C05C7200C0B37E /* UIView+TNAppLib.h */,
@@ -936,10 +951,10 @@
 				2E48166C20BA868300AFCBBB /* SSAccoutCell.xib */,
 				2E48166F20BA888500AFCBBB /* SSAccoutHeaderView.h */,
 				2E48167020BA888500AFCBBB /* SSAccoutHeaderView.m */,
-				2E48167220BA889000AFCBBB /* SSAccoutHeaderView.xib */,
+				2E046C1A20CFBC0200F5B22D /* SSAccoutHeaderView.xib */,
 				2E3F359F20C57A53001C78CB /* SSInviteCodeShareCell.h */,
 				2E3F35A020C57A53001C78CB /* SSInviteCodeShareCell.m */,
-				2E3F35A120C57A53001C78CB /* SSInviteCodeShareCell.xib */,
+				2E046C3420CFC04D00F5B22D /* SSInviteCodeShareCell.xib */,
 				2E3F35A620C5869D001C78CB /* SSTouchIDSetCell.h */,
 				2E3F35A720C5869D001C78CB /* SSTouchIDSetCell.m */,
 				2E3F35A820C5869D001C78CB /* SSTouchIDSetCell.xib */,
@@ -961,7 +976,7 @@
 			children = (
 				2E48168120BAD82400AFCBBB /* SSSectionHeaderView.h */,
 				2E48168220BAD82400AFCBBB /* SSSectionHeaderView.m */,
-				2E48168920BAD89900AFCBBB /* SSSectionHeaderView.xib */,
+				2E046C1120CFB7BC00F5B22D /* SSSectionHeaderView.xib */,
 				2E48168420BAD88D00AFCBBB /* SSMarketCell.h */,
 				2E48168520BAD88D00AFCBBB /* SSMarketCell.m */,
 				2E48168620BAD88D00AFCBBB /* SSMarketCell.xib */,
@@ -1014,7 +1029,7 @@
 			children = (
 				2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */,
 				2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */,
-				2E6C8AC020C25B7A00C0B37E /* SSAuthorizedLoginCV.xib */,
+				2E046C2D20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib */,
 			);
 			path = "Login&Register";
 			sourceTree = "<group>";
@@ -1030,7 +1045,7 @@
 				2E6C890F20BC522900C0B37E /* SSAsertCell.xib */,
 				2E6C891120BC522900C0B37E /* SSAsertHearView.h */,
 				2E6C890B20BC522900C0B37E /* SSAsertHearView.m */,
-				2E6C891020BC522900C0B37E /* SSAsertHearView.xib */,
+				2E046C2620CFBE0600F5B22D /* SSAsertHearView.xib */,
 				2E60DD9E20C4DB1C00A20429 /* SSAddAssertsCell.h */,
 				2E60DD9F20C4DB1C00A20429 /* SSAddAssertsCell.m */,
 				2E60DDA020C4DB1C00A20429 /* SSAddAssertsCell.xib */,
@@ -1950,13 +1965,14 @@
 				2E48163720B983AC00AFCBBB /* home_blue@3x.png in Resources */,
 				2E60DDA220C4DB1C00A20429 /* SSAddAssertsCell.xib in Resources */,
 				2E6C8ADA20C26CB900C0B37E /* SSHelpCenterViewController.xib in Resources */,
-				2E6C8AC220C25B7A00C0B37E /* SSAuthorizedLoginCV.xib in Resources */,
+				2E046C2B20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib in Resources */,
 				2EB989DF20CC040400694110 /* SSExportPrivatePassWord.xib in Resources */,
 				2E3F35AF20C5944C001C78CB /* SSCreateWalletView.xib in Resources */,
 				2E6C89D120BEFEF900C0B37E /* InfoPlist.strings in Resources */,
 				2E48163920B983AC00AFCBBB /* me@3x.png in Resources */,
 				2E046BBE20CEC18700F5B22D /* SSLanguageSetVC.xib in Resources */,
 				2EA596D920CA701F00A25951 /* SSAppCollectionHeaderView.xib in Resources */,
+				2E046C2420CFBE0600F5B22D /* SSAsertHearView.xib in Resources */,
 				2E60DD8D20C43FF000A20429 /* SSEdiMarketsViewController.xib in Resources */,
 				2E6C891920BC522900C0B37E /* SSAsertCell.xib in Resources */,
 				2EB9976C20CD81DF00694110 /* SSMatrixCodeVC.xib in Resources */,
@@ -1966,7 +1982,6 @@
 				2E48163820B983AC00AFCBBB /* u=2796464312,3280625818&fm=11&gp=0.jpg in Resources */,
 				2EB989DB20CC040400694110 /* SSAddPurseViewController.xib in Resources */,
 				2E6C893520BC5ECC00C0B37E /* SSGetMoneyViewController.xib in Resources */,
-				2E6C891A20BC522900C0B37E /* SSAsertHearView.xib in Resources */,
 				2E6C8AF520C2C13600C0B37E /* SSArticleTableViewCell.xib in Resources */,
 				2EB9974C20CD5FA900694110 /* fiveData.plist in Resources */,
 				2E6C89FD20C041A200C0B37E /* SSLanguageCell.xib in Resources */,
@@ -1989,7 +2004,7 @@
 				2E3571EF20CE4CE6009C4CE9 /* SSHomeCoverVC.xib in Resources */,
 				2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */,
 				2EB989D220CC040400694110 /* SSBackupMemorizingWordsVC.xib in Resources */,
-				2E48167320BA889000AFCBBB /* SSAccoutHeaderView.xib in Resources */,
+				2E046C1820CFBC0200F5B22D /* SSAccoutHeaderView.xib in Resources */,
 				2E48163D20B983AC00AFCBBB /* circle_blue@3x.png in Resources */,
 				2E6C8ACF20C267F900C0B37E /* SSUnitSetViewController.xib in Resources */,
 				2E48153D20B91FB900AFCBBB /* LaunchScreen.storyboard in Resources */,
@@ -2018,11 +2033,11 @@
 				2E6C8AC820C2619000C0B37E /* SSChangePasswordVC.xib in Resources */,
 				2E48164020B983AC00AFCBBB /* circle_gray@2x.png in Resources */,
 				2E48163E20B983AC00AFCBBB /* home_gray@2x.png in Resources */,
-				2E3F35A320C57A53001C78CB /* SSInviteCodeShareCell.xib in Resources */,
+				2E046C3220CFC04D00F5B22D /* SSInviteCodeShareCell.xib in Resources */,
 				2E60DD9720C44A0900A20429 /* SSMarketRemindViewController.xib in Resources */,
 				2EB989E420CC040400694110 /* SSWalletHeaderTop.xib in Resources */,
 				2E48163A20B983AC00AFCBBB /* circle_blue@2x.png in Resources */,
-				2E48168A20BAD89900AFCBBB /* SSSectionHeaderView.xib in Resources */,
+				2E046C0F20CFB7BC00F5B22D /* SSSectionHeaderView.xib in Resources */,
 				2E48153820B91FB800AFCBBB /* Main.storyboard in Resources */,
 				2E48163C20B983AC00AFCBBB /* me_blue@3x.png in Resources */,
 			);
@@ -2101,6 +2116,7 @@
 				2EA596CE20CA29BB00A25951 /* SJ_NewfeatureViewController.m in Sources */,
 				2E48168320BAD82400AFCBBB /* SSSectionHeaderView.m in Sources */,
 				2E3F35A220C57A53001C78CB /* SSInviteCodeShareCell.m in Sources */,
+				2E046C4020CFFBB000F5B22D /* NSBundle+Language.m in Sources */,
 				2E6C8A1020C0EEB600C0B37E /* QRCodeGenerateVC.m in Sources */,
 				2E6C891620BC522900C0B37E /* SSAsertCell.m in Sources */,
 				2E60DDA120C4DB1C00A20429 /* SSAddAssertsCell.m in Sources */,
@@ -2262,11 +2278,62 @@
 		2E046BC020CEC18700F5B22D /* SSLanguageSetVC.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E046BBF20CEC18700F5B22D /* en */,
-				2E046BC220CEC19100F5B22D /* zh-Hans */,
 				2E046BC420CEC19300F5B22D /* zh-Hant */,
+				2E046C3C20CFCC7100F5B22D /* Base */,
+				2E046C3D20CFCC7500F5B22D /* en */,
 			);
 			name = SSLanguageSetVC.xib;
+			sourceTree = "<group>";
+		};
+		2E046C1120CFB7BC00F5B22D /* SSSectionHeaderView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E046C1020CFB7BC00F5B22D /* Base */,
+				2E046C1320CFB7C000F5B22D /* en */,
+				2E046C1520CFB7C200F5B22D /* zh-Hant */,
+			);
+			name = SSSectionHeaderView.xib;
+			sourceTree = "<group>";
+		};
+		2E046C1A20CFBC0200F5B22D /* SSAccoutHeaderView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E046C1920CFBC0200F5B22D /* Base */,
+				2E046C1C20CFBC0600F5B22D /* en */,
+				2E046C1E20CFBC0800F5B22D /* zh-Hant */,
+			);
+			name = SSAccoutHeaderView.xib;
+			sourceTree = "<group>";
+		};
+		2E046C2620CFBE0600F5B22D /* SSAsertHearView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E046C2820CFBE0B00F5B22D /* zh-Hant */,
+				2E046C2920CFBE2800F5B22D /* Base */,
+				2E046C2A20CFBE4500F5B22D /* en */,
+			);
+			name = SSAsertHearView.xib;
+			sourceTree = "<group>";
+		};
+		2E046C2D20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E046C2C20CFBF2500F5B22D /* Base */,
+				2E046C2F20CFBF2800F5B22D /* en */,
+				2E046C3120CFBF2A00F5B22D /* zh-Hant */,
+			);
+			name = SSAuthorizedLoginCV.xib;
+			path = "jw-wallet/classes/Login&Register";
+			sourceTree = SOURCE_ROOT;
+		};
+		2E046C3420CFC04D00F5B22D /* SSInviteCodeShareCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E046C3320CFC04D00F5B22D /* Base */,
+				2E046C3620CFC05100F5B22D /* en */,
+				2E046C3820CFC05200F5B22D /* zh-Hant */,
+			);
+			name = SSInviteCodeShareCell.xib;
 			sourceTree = "<group>";
 		};
 		2E48153620B91FB800AFCBBB /* Main.storyboard */ = {
@@ -2312,9 +2379,9 @@
 		2EB9899220CC040400694110 /* SSManagerPurseViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2EB9899320CC040400694110 /* zh-Hans */,
-				2EB9899520CC040400694110 /* en */,
-				2EB9899D20CC040400694110 /* zh-Hant */,
+				2E046C3920CFC18600F5B22D /* Base */,
+				2E046C3A20CFC1DD00F5B22D /* en */,
+				2E046C3B20CFC1E200F5B22D /* zh-Hant */,
 			);
 			name = SSManagerPurseViewController.xib;
 			sourceTree = "<group>";

@@ -8,6 +8,7 @@
 
 #import "SSUnitSetViewController.h"
 #import "SSUnitSetTableViewCell.h"
+#import "RootTabViewController.h"
 @interface SSUnitSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic,copy) NSArray *titleArr;
@@ -73,5 +74,16 @@
     [self.tableview reloadData];
     
     NSLog(@"当前货币：%@",_titleArr[indexPath.row]);
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.navigationController popViewControllerAnimated:YES];
+    } completion:^(BOOL finished) {
+        // 我们要把系统windown的rootViewController替换掉
+        RootTabViewController *tab = [[RootTabViewController alloc] init];
+        [UIApplication sharedApplication].keyWindow.rootViewController = tab;
+        // 跳转到设置页
+        tab.selectedIndex = 3;
+    }];
+
 }
 @end

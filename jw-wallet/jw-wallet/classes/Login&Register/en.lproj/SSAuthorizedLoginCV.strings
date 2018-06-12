@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "拒绝"; ObjectID = "EwD-a5-tfQ"; */
+"EwD-a5-tfQ.normalTitle" = "refuse";
+
+/* Class = "UIButton"; normalTitle = "允许"; ObjectID = "Uv2-kk-dUE"; */
+"Uv2-kk-dUE.normalTitle" = "allow";
+
+/* Class = "UILabel"; text = "申请登录时获取以下权限"; ObjectID = "aze-8I-6nF"; */
+"aze-8I-6nF.text" = "Obtain the following rights when applying for login";
+
+/* Class = "UILabel"; text = "xxx"; ObjectID = "gCT-xT-LLs"; */
+"gCT-xT-LLs.text" = "xxx";
+
+/* Class = "UILabel"; text = "授权登录"; ObjectID = "mj1-6z-n3T"; */
+"mj1-6z-n3T.text" = "Authorized login";
+
+/* Class = "UILabel"; text = "获得您的公开信息（昵称、头像等）"; ObjectID = "rDL-l5-iaY"; */
+"rDL-l5-iaY.text" = "Get your public information (nickname, head image, etc.)";

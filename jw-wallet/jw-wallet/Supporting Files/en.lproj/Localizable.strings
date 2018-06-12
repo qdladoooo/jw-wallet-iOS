@@ -5,4 +5,17 @@
   Created by 王冠阳 on 2018/5/30.
   Copyright © 2018年 SHSF. All rights reserved.
 */
+"资产" = "Assets";
+"行情" = "Markets";
+"发现" = "Discover";
+"账户" = "Account";
+"帮助中心"= "Help center";
+"语言设置" = "Language Settings";
+"货币单位" =  "Currency unit";
+"启用指纹登录" = "Use Touchid Login";
+"启用指纹支付" = "Use Touchid Pay";
+"基本信息" = "Basic information";
+"设置" = "Settings";
+
+
 

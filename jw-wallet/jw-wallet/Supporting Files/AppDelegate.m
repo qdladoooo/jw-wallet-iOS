@@ -8,7 +8,7 @@
 #import "SJ_NewfeatureViewController.h"
 #import "AppDelegate.h"
 #import "RootTabViewController.h"
-
+#import "HXLanguageManager.h"
 // 引入JPush功能所需头文件-----****------
 //#import "JPUSHService.h"
 // iOS10注册APNs所需头文件
@@ -32,6 +32,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      // Override point for customization after application launch.
+    //当前语言
+    NSString *currentLanguage = kLanguageManager.currentLanguage;
+    
+    if([currentLanguage rangeOfString:currentLanguage].location == NSNotFound)
+    {
+        [kLanguageManager setUserlanguage:@"zh-hant"];
+    }
+    
     // 极光推送
 //    [self Add_JPUSH_APNs]; //初始化APNs代码
 //    [self Init_JPUSH:launchOptions]; //初始化JPush代码
@@ -42,6 +50,7 @@
     [self setAppWindows];
     [self setRootViewController];
     
+
     
     // 2.新特性--(引导页)--
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -59,6 +68,7 @@
         
         RootTabViewController *tabBarVc = [[RootTabViewController alloc] init];
         self.window.rootViewController = tabBarVc;
+        tabBarVc.selectedIndex = 0;
         
     } else { // 新版本，进入导航页界面
         self.window.rootViewController = [[SJ_NewfeatureViewController alloc] init];

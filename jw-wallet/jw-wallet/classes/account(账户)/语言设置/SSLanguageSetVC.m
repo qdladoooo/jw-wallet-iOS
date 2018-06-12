@@ -9,6 +9,7 @@
 #import "SSLanguageSetVC.h"
 #import "SSLanguageCell.h"
 #import "HXLanguageManager.h"
+#import "RootTabViewController.h"
 @interface SSLanguageSetVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic,strong) NSArray *dataAry;
@@ -27,7 +28,7 @@
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
     _dataAry = @[ @"zh-Hant", //中文繁体
-                  @"en-CN"];// 英语
+                  @"en"];// 英语
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,22 +72,24 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
  
-    if (indexPath.row == 0) {
-        
-    }
+   
     NSString *language = self.dataAry[indexPath.row];
     [kLanguageManager setUserlanguage:language];
     [self.tableview reloadData];
     NSLog(@"当前语言:%@",language);
     
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.navigationController popViewControllerAnimated:YES];
+    } completion:^(BOOL finished) {
+        // 我们要把系统windown的rootViewController替换掉
+        RootTabViewController *tab = [[RootTabViewController alloc] init];
+        [UIApplication sharedApplication].keyWindow.rootViewController = tab;
+        // 跳转到设置页
+        tab.selectedIndex = 3;
+    }];
+    
 }
 
-////对应国家的语言
-- (NSString *)ittemCountryLanguage:(NSString *)lang {
-    NSString *language = [kLanguageManager languageFormat:lang];
-    NSString *countryLanguage = [[[NSLocale alloc] initWithLocaleIdentifier:language] displayNameForKey:NSLocaleIdentifier value:language];
-    return countryLanguage;
-}
 
 
 

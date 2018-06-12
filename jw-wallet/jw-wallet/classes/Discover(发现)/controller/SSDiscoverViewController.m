@@ -25,6 +25,11 @@
 
 @implementation SSDiscoverViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
@@ -119,15 +124,17 @@
             [_NormalHeaderView addSubview:_NormalHeaderTitle];
 
             if (section == 1) {
-                _NormalHeaderTitle.text = @"应用";
+                _NormalHeaderTitle.text = kLocalizedTableString(@"应用", gy_LocalizableName);
             }else if(section == 3){
-                _NormalHeaderTitle.text = @"文章";
+                _NormalHeaderTitle.text = kLocalizedTableString(@"文章", gy_LocalizableName);
             }
         
         return _NormalHeaderView;
         
     }
+
     return nil;
+    
 }
 
 //#pragma mark - 轮播图

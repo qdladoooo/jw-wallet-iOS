@@ -46,8 +46,10 @@
     NSString *currentLanguage = kLanguageManager.currentLanguage;
     if ([currentLanguage isEqualToString:@"zh-Hant"]) {
         _launguageShow = @"繁体中文";
-    }else{
+    }else if([currentLanguage isEqualToString:@"en"]){
         _launguageShow = @"EngLish";
+    }else{
+        _launguageShow = @"";
     }
     // 货币设置
     BOOL USD = [[NSUserDefaults standardUserDefaults] boolForKey:@"USD"];
@@ -123,17 +125,17 @@
         SSAccoutCell *cell = [SSAccoutCell cellWithTableView:tableView];
         switch (index) {
             case 0:
-                cell.title.text = @"帮助中心";
+                cell.title.text = kLocalizedTableString(@"帮助中心", gy_LocalizableName);
                 break;
             case 1:
             
-                cell.title.text = @"语言设置";
+                cell.title.text = kLocalizedTableString(@"语言设置", gy_LocalizableName);
                 cell.title2.hidden = NO;
                 cell.title2.text = _launguageShow;
                 break;
             
             case 2:
-                cell.title.text = @"货币单位";
+                cell.title.text = kLocalizedTableString(@"货币单位", gy_LocalizableName);
                 cell.title2.hidden = NO;
                 cell.title2.text = _unitShow;
                 break;
@@ -147,10 +149,10 @@
         SSTouchIDSetCell *cell = [SSTouchIDSetCell cellWithTableView:tableView];
         switch (index) {
             case 0:
-                cell.title.text = @"启用指纹登录";
+                cell.title.text = kLocalizedTableString(@"启用指纹登录", gy_LocalizableName);
                 break;
             case 1:
-                cell.title.text = @"启用指纹支付";
+                cell.title.text = kLocalizedTableString(@"启用指纹支付", gy_LocalizableName);
                 break;
                 
             default:
@@ -167,11 +169,11 @@
     }else{
         UIView *sectionHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
         sectionHeader.backgroundColor = rgba(242, 246, 255, 1);
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15, sectionHeader.bounds.size.height-14-10, 100, 14)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15, sectionHeader.bounds.size.height-14-10, 200, 14)];
         if (section==1) {
-            label.text = @"基本信息";
+            label.text = kLocalizedTableString(@"基本信息", gy_LocalizableName);
         }else if (section==2){
-            label.text = @"设置";
+            label.text = kLocalizedTableString(@"设置", gy_LocalizableName);
         }
         [label setFont:[UIFont systemFontOfSize:14]];
         [sectionHeader addSubview:label];

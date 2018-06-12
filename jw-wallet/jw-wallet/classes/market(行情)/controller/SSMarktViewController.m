@@ -16,35 +16,41 @@
 @interface SSMarktViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) UIView *nav_view;
 @end
 
 @implementation SSMarktViewController
 
+//-(void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    [kLanguageManager setUserlanguage:kLanguageManager.currentLanguage];
+//    [self.tableView reloadData];
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.fd_prefersNavigationBarHidden = YES;
-//    UIView  *nav = [SSNavigationBar creatNavigationBar];
-//    nav.frame = CGRectMake(0, 0, SCREEN_WIDTH, 64);
-//    [self.view addSubview:nav];
-    
-    self.title = @"行情";
-    [self buildTableView];
-//    if (@available(iOS 11.0, *)) {
-//        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-//    } else {
-//        self.automaticallyAdjustsScrollViewInsets = NO;
-//    }
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"..." style:UIBarButtonItemStylePlain target:self action:@selector(marketsControll)];
+    self.fd_prefersNavigationBarHidden = YES;
+
+   
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"..." style:UIBarButtonItemStylePlain target:self action:@selector(marketsControll)];
+     [self buildTableView];
+    [self navigationView];
 
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 #pragma mark - TableView
 - (void)buildTableView {
-    self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+//    self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor colorWithRed:24 green:244 blue:255 alpha:1];
@@ -107,6 +113,41 @@
     [self  presentViewController:alertController animated:YES completion:nil];
 }
 
+#pragma mark - 导航栏view
+-(void)navigationView{
+    
+    if (_nav_view==nil) {
+        _nav_view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+        _nav_view.backgroundColor = MAIN_GROUNDCOLOR;
+    }
+    
+    UILabel *title = [[UILabel alloc] init];
+    title.frame = CGRectMake(0, 40, SCREEN_WIDTH/2, 15);
+    title.centerX = _nav_view.centerX;
+    title.textAlignment = NSTextAlignmentCenter;
+    title.textColor = [UIColor whiteColor];
+    title.font = [UIFont systemFontOfSize:15];
+    title.text = kLocalizedTableString(@"行情", gy_LocalizableName);
+
+    [_nav_view addSubview:title];
+    // 扫描按钮
+//    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(10, 20, 40, 40)];
+//    btn1.tintColor = [UIColor whiteColor];
+//    [btn1 setImage:[UIImage imageNamed:@"nav_white"] forState:UIControlStateNormal];
+//    [_nav_view addSubview:btn1];
+    // 钱包按钮
+    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-50, 20, 40, 40)];
+    btn2.tintColor = [UIColor whiteColor];
+//    [btn2 setImage:[UIImage imageNamed:@"钱包"] forState:UIControlStateNormal];
+    [btn2 setTitle:@"..." forState:UIControlStateNormal];
+    [btn2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    [_nav_view addSubview:btn2];
+//    [btn1 addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [btn2 addTarget:self action:@selector(marketsControll) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:_nav_view];
+}
 
 @end
 
