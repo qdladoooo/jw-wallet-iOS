@@ -13,6 +13,8 @@
 @interface SSEdiMarketsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet XRDragTableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+
 @end
 
 @implementation SSEdiMarketsViewController
@@ -30,6 +32,8 @@
     self.tableView.dataArray = self.dataArray;
     //当cell拖动到tableView边缘时，tableView自动滚动的速度
     self.tableView.scrollSpeed = 10;
+    
+    self.nav_title.text = kLocalizedTableString(@"编辑行情", gy_LocalizableName);
     
 }
 
@@ -66,9 +70,9 @@
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     SSSectionHeaderView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"SSSectionHeaderView" owner:nil options:nil] lastObject];
-    headerView.title1.text = @"资产名称";
-    headerView.title2.text = @"提醒";
-    headerView.title3.text = @"拖动排序";
+    headerView.title1.text = kLocalizedTableString( @"资产名称", gy_LocalizableName);
+    headerView.title2.text = kLocalizedTableString(@"提醒", gy_LocalizableName);
+    headerView.title3.text = kLocalizedTableString(@"拖动排序", gy_LocalizableName);
     return headerView;
 }
 

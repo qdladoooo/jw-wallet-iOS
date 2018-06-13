@@ -9,6 +9,11 @@
 #import "SSGetMoneyViewController.h"
 #import "SGQRCode.h"
 @interface SSGetMoneyViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+
+@property (weak, nonatomic) IBOutlet UILabel *getMoneyFromOthers_title;
+
+@property (weak, nonatomic) IBOutlet UIButton *clickBtnToCopyAddress;
 
 /**
  收款地址
@@ -29,7 +34,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.nav_title.text = kLocalizedTableString(@"收款", gy_LocalizableName);
+    self.getMoneyFromOthers_title.text = kLocalizedTableString(@"向他人扫码收款", gy_LocalizableName);
+    [self.clickBtnToCopyAddress setTitle:kLocalizedTableString(@"复制收款地址", gy_LocalizableName) forState:UIControlStateNormal];
     self.fd_prefersNavigationBarHidden = YES;
     // 生成二维码(Default)
     [self setupGenerateQRCode];
@@ -39,11 +47,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-#pragma  mark - 赋值收款地址
+#pragma  mark - 复制收款地址
 - (IBAction)copy:(id)sender {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = self.address.text;
-    NSLog(@"%@",pasteboard.string);
+    
+    [MBProgressHUD showText:kLocalizedTableString(@"复制成功", gy_LocalizableName)];
    
 }
 

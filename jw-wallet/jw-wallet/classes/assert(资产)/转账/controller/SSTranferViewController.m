@@ -15,13 +15,30 @@
 @property (weak, nonatomic) IBOutlet UILabel *value;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 
+
+@property (weak, nonatomic) IBOutlet UILabel *transferInformation_title;
+@property (weak, nonatomic) IBOutlet UILabel *personFees_title;
+@property (weak, nonatomic) IBOutlet UILabel *slowly_title;
+@property (weak, nonatomic) IBOutlet UILabel *fast_title;
+@property (weak, nonatomic) IBOutlet UIButton *sureBtn;
+
 @end
 
 @implementation SSTranferViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"转账";
+    // 国际化
+    self.title = kLocalizedTableString(@"转账", gy_LocalizableName);
+    self.transferInformation_title.text = kLocalizedTableString(@"转账信息", gy_LocalizableName);
+    self.personFees_title.text = kLocalizedTableString(@"矿工费用", gy_LocalizableName);
+    self.address.placeholder = kLocalizedTableString(@"收款人钱包地址", gy_LocalizableName);
+    self.transMoney.placeholder = kLocalizedTableString(@"转账金额", gy_LocalizableName);
+    self.remark.placeholder = kLocalizedTableString(@"备注", gy_LocalizableName);
+    self.slowly_title.text = kLocalizedTableString(@"慢", gy_LocalizableName);
+    self.fast_title.text = kLocalizedTableString(@"快", gy_LocalizableName);
+    [self.sureBtn setTitle:kLocalizedTableString(@"确认", gy_LocalizableName) forState:UIControlStateNormal];
+    
     [self setTextField];
     
     // 扫描结果不为空，用解析地址填充第一栏信息

@@ -9,6 +9,10 @@
 #import "SSBackupWalletViewController.h"
 #import "SSBackupMemorizingWordsVC.h"
 @interface SSBackupWalletViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+@property (weak, nonatomic) IBOutlet UILabel *backupYourWallet_title;
+@property (weak, nonatomic) IBOutlet UILabel *backupTips_label;
+@property (weak, nonatomic) IBOutlet UIButton *sureBtn;
 
 @end
 
@@ -18,6 +22,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.fd_prefersNavigationBarHidden = YES;
+    self.nav_title.text = kLocalizedTableString(@"备份钱包", gy_LocalizableName);
+    self.backupYourWallet_title.text = kLocalizedTableString(@"立即备份你的钱包！", gy_LocalizableName);
+    self.backupTips_label.text = kLocalizedTableString(_backupTips_label.text, gy_LocalizableName);
+    [self.sureBtn setTitle:kLocalizedTableString(@"确认", gy_LocalizableName) forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {

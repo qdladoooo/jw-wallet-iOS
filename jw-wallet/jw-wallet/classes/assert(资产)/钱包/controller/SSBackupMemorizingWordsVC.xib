@@ -12,7 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSBackupMemorizingWordsVC">
             <connections>
+                <outlet property="nav_title" destination="t3k-Tb-byv" id="Qlz-f6-qnb"/>
+                <outlet property="nextStep" destination="KBJ-Jp-x91" id="d5l-aq-dXJ"/>
+                <outlet property="tips" destination="puE-rC-cGh" id="NnE-yy-NRo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="writeYourWords" destination="yPx-0h-Xxg" id="JIN-dI-gbj"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

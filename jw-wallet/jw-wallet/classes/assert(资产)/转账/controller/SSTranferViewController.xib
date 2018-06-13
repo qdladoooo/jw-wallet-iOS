@@ -13,9 +13,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSTranferViewController">
             <connections>
                 <outlet property="address" destination="2Ys-uf-ZcX" id="hnZ-qX-kP4"/>
+                <outlet property="fast_title" destination="PvW-pf-s7D" id="42p-1a-U8T"/>
+                <outlet property="personFees_title" destination="yu5-us-tgP" id="rDI-N9-JgM"/>
                 <outlet property="remark" destination="qkS-WQ-4V1" id="vyl-yM-A8j"/>
                 <outlet property="slider" destination="CId-H3-nUh" id="EAI-0Q-Fsz"/>
+                <outlet property="slowly_title" destination="FT0-CG-fuA" id="dkz-Ur-Vbd"/>
+                <outlet property="sureBtn" destination="9Ue-ab-1fr" id="jJi-aT-aWI"/>
                 <outlet property="transMoney" destination="vsC-ic-u6b" id="O9q-X6-Sxp"/>
+                <outlet property="transferInformation_title" destination="Ly2-iV-OsS" id="VDj-Xu-WWy"/>
                 <outlet property="value" destination="DaD-Of-CTr" id="zeh-gN-IEe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

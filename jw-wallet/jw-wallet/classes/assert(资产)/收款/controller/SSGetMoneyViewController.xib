@@ -14,7 +14,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSGetMoneyViewController">
             <connections>
                 <outlet property="address" destination="mcb-PT-as5" id="nD6-dD-scD"/>
+                <outlet property="clickBtnToCopyAddress" destination="HnM-o9-MPe" id="i9n-RZ-rlX"/>
                 <outlet property="codeImg" destination="v1h-Jd-280" id="7Ww-tB-nMb"/>
+                <outlet property="getMoneyFromOthers_title" destination="cAD-YG-Vn4" id="l8J-9d-8g2"/>
+                <outlet property="nav_title" destination="3BN-Hg-1dL" id="AMK-f2-Adw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

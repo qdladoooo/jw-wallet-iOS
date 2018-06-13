@@ -25,6 +25,11 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewHeight;
 @property (weak, nonatomic) IBOutlet GTButtonTagsView *labelsView;
 
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+@property (weak, nonatomic) IBOutlet UILabel *makeSureYourHelpWords;
+@property (weak, nonatomic) IBOutlet UILabel *tips;
+@property (weak, nonatomic) IBOutlet UIButton *nextStep;
+
 
 @end
 
@@ -34,14 +39,11 @@
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
     _titles = [NSMutableArray array];
-    
-//    [_titles addObject:@"三年级1班"];
-//    [_titles addObject:@"三年级2班"];
-//    [_titles addObject:@"三年级3班"];
-//    [_titles addObject:@"三年级4班"];
-//    [_titles addObject:@"三年级5班"];
-//    [_titles addObject:@"三年级6班"];
-//    [_titles addObject:@"三年级7班"];
+    // 国际化
+    self.nav_title.text = kLocalizedTableString(@"确认助记词", gy_LocalizableName);
+    self.makeSureYourHelpWords.text = kLocalizedTableString(@"确认你的钱包助记词", gy_LocalizableName);
+    self.tips.text = kLocalizedTableString(_tips.text, gy_LocalizableName);
+    [self.nextStep setTitle:@"下一步" forState:UIControlStateNormal];
     
     [self setupColloctionView];
     

@@ -10,6 +10,7 @@
 #import "SSAddMarketsListCell.h"
 @interface SSAddMarketsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
 
 @end
 
@@ -22,6 +23,7 @@
     self.tableView.separatorColor = [UIColor grayColor];
     self.tableView.separatorInset = UIEdgeInsetsZero;
     self.tableView.backgroundColor = MAIN_GROUNDCOLOR;
+    self.nav_title.text = kLocalizedTableString(@"添加行情", gy_LocalizableName);
 }
 
 - (void)didReceiveMemoryWarning {

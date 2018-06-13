@@ -47,6 +47,27 @@
 "请输入钱包名称" = "Please enter the name of the wallet";
 "请输入验证码" = "Please enter the verification code";
 "密码用于保护私钥和交易授权，GRE不存储密码，也无法帮您找回，请务必牢记！我已阅读以上风险提示。" = "Password is used to protect the private key and transaction authorization. GRE does not store passwords, nor can it help you find it. Remember that! I have read the above risk tips.";
+"备份钱包" = "Back up wallet";
+"立即备份你的钱包！" = "Back up your wallet immediately!";
+"导出“助记词”并抄写到安全的地方，千万不要保存到网络上。然后尝试转入、转出小额资产开始使用。" = "Export the word 'mnemonic' and copy it to a safe place. Do not save it to the Internet. Then try to turn in and turn out small assets to start using.";
+"备份助记词" = "Backup help words";
+"抄写下你的助记词" = "Copy your notes";
+"助记词用于恢复钱包或重置钱包密码，准确的抄写在纸上，并存放在只有你知道的安全场所。" = "Mnemonics are used to restore the wallet or reset the wallet password, copy it on paper accurately, and store it in a safe place only you know.。";
+"下一步" = "Next step";
+"确认助记词" = "Confirmation of help words";
+"请按顺序点击助记词，以确认你的备份助记词正确" = "Please click the mnemonic word in order to confirm your backup mnemonic words correctly.";
+"确认你的钱包助记词" = "Confirm your wallet help words";
+"转账" = "Transfer";
+"转账信息" = "Transfer information";
+"矿工费用" = "Miner's cost";
+"收款人钱包地址" = "Payee's wallet address";
+"转账金额" = "Transfer amount";
+"备注" = "Remarks";
+"慢" = "slow";
+"快" = "fast";
+"向他人扫码收款" = "Scavenging money to others";
+"复制收款地址" = "Replicating receivables";
+"编辑行情" = "Edit Markets";
 /*
  SSMarketRemindViewController.m
  */
@@ -146,6 +167,7 @@
 "安全警告：私钥未经加密，导出存在风险，建议使用助记词和keystore进行备份。" = "Security warning: the private key is not encrypted and there is a risk of exporting. It is recommended to use backup words and keystore for backup.";
 "复制" = "copy";
 "复制成功" = "Replicating success";
+
 /*
  SSAddPurseViewController.m
  */

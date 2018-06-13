@@ -15,6 +15,10 @@
                 <outlet property="collectionView" destination="tsy-Zs-gC1" id="qaZ-KC-jIJ"/>
                 <outlet property="collectionViewHeight" destination="B9k-98-mhC" id="7mz-qW-qnF"/>
                 <outlet property="labelsView" destination="nLb-oK-XoR" id="vQ8-Ge-OWt"/>
+                <outlet property="makeSureYourHelpWords" destination="ugp-N4-Zv1" id="de2-hl-1nG"/>
+                <outlet property="nav_title" destination="Ofb-aL-dQ0" id="EFR-dZ-DU3"/>
+                <outlet property="nextStep" destination="nX5-fn-YYq" id="szI-dK-owN"/>
+                <outlet property="tips" destination="9zP-KM-7zJ" id="4EX-tN-rAf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSBackupWalletViewController">
             <connections>
+                <outlet property="backupTips_label" destination="pv7-Mm-qlx" id="ywD-DD-6JU"/>
+                <outlet property="backupYourWallet_title" destination="cDa-xF-Dge" id="eJN-aK-Cz9"/>
+                <outlet property="nav_title" destination="V8M-d2-aW6" id="xfY-8d-a25"/>
+                <outlet property="sureBtn" destination="J5l-E1-zRL" id="4eT-7t-fWg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

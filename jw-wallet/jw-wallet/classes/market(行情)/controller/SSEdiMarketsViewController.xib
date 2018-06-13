@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSEdiMarketsViewController">
             <connections>
+                <outlet property="nav_title" destination="3f7-Ra-CQp" id="H7E-rX-OXI"/>
                 <outlet property="tableView" destination="hpg-sL-Qqz" id="wD2-4i-sra"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

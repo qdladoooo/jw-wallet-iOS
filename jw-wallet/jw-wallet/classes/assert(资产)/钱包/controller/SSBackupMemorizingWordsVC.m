@@ -9,6 +9,10 @@
 #import "SSBackupMemorizingWordsVC.h"
 #import "SSConfirmHelpWordsVC.h"
 @interface SSBackupMemorizingWordsVC ()
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+@property (weak, nonatomic) IBOutlet UILabel *writeYourWords;
+@property (weak, nonatomic) IBOutlet UILabel *tips;
+@property (weak, nonatomic) IBOutlet UIButton *nextStep;
 
 @end
 
@@ -30,6 +34,11 @@
     // Do any additional setup after loading the view from its nib.
     
     self.fd_prefersNavigationBarHidden = YES;
+    
+    self.nav_title.text = kLocalizedTableString(@"备份助记词", gy_LocalizableName);
+    self.writeYourWords.text = kLocalizedTableString(@"抄写下你的助记词", gy_LocalizableName);
+    self.tips.text = kLocalizedTableString(_tips.text, gy_LocalizableName);
+    [self.nextStep setTitle:@"下一步" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {

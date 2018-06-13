@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSAddMarketsViewController">
             <connections>
+                <outlet property="nav_title" destination="xWj-lO-hGT" id="hOt-UO-0AG"/>
                 <outlet property="tableView" destination="auS-tT-g5c" id="hIq-oC-vWu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -1358,8 +1358,8 @@
 			isa = PBXGroup;
 			children = (
 				2EB9898420CC040400694110 /* SSConfirmHelpWordsVC.h */,
-				2EB9898520CC040400694110 /* SSConfirmHelpWordsVC.xib */,
 				2EB9898620CC040400694110 /* SSConfirmHelpWordsVC.m */,
+				2EB9898520CC040400694110 /* SSConfirmHelpWordsVC.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
