@@ -190,8 +190,12 @@
     
     if (indexPath.section == 1) {
         if (indexPath.row == 0) {
-            SSHelpCenterViewController *vc = [[SSHelpCenterViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
+//            SSHelpCenterViewController *vc = [[SSHelpCenterViewController alloc] init];
+//            [self.navigationController pushViewController:vc animated:YES];
+            SSGlobalWebView *helpWeb = [[SSGlobalWebView alloc] init];
+            helpWeb.titleName = kLocalizedTableString(@"帮助中心", gy_LocalizableName);
+            helpWeb.urlString = @"https://help-center.token.im/hc?locale=zh-cn";
+            [self.navigationController pushViewController:helpWeb animated:YES];
         }else if (indexPath.row == 1){
             SSLanguageSetVC *vc = [[SSLanguageSetVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];

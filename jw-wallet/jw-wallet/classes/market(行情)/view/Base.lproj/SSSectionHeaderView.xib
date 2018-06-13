@@ -47,7 +47,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="dhN-WR-3ze"/>
             <connections>
-                <outlet property="title1" destination="rKp-6A-rjy" id="Sci-Iw-LdH"/>
+                <outlet property="title1" destination="rKp-6A-rjy" id="Rj2-NP-yta"/>
                 <outlet property="title2" destination="GNa-Zf-qiO" id="qOh-pn-hbz"/>
                 <outlet property="title3" destination="XPA-Op-Y1K" id="swO-JZ-FVb"/>
             </connections>

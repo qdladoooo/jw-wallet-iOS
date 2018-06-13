@@ -67,7 +67,7 @@ static NSString *mainCell = @"mainCellmainCell";
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    self.title = @"导出keystore";
+    self.title = kLocalizedTableString(@"导出keystore", gy_LocalizableName);
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;
     

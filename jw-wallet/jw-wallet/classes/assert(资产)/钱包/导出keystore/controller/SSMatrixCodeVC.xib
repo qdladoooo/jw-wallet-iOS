@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="codeImage" destination="x9m-je-0Dm" id="Ovw-5K-6i9"/>
                 <outlet property="coverView" destination="dE1-MA-gNp" id="CYn-4e-Irq"/>
+                <outlet property="img_Label" destination="gJp-fk-JfO" id="P80-tO-xcY"/>
                 <outlet property="showCode" destination="dmq-YW-pOF" id="If9-KA-KfD"/>
                 <outlet property="tableView" destination="J3U-Pt-f7B" id="S4F-nC-Ik6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -42,8 +43,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dE1-MA-gNp">
                             <rect key="frame" x="0.0" y="0.0" width="275" height="275"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已确认周围无人及摄像头" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJp-fk-JfO">
-                                    <rect key="frame" x="70" y="130" width="135" height="15"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已确认周围无人及摄像头" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJp-fk-JfO">
+                                    <rect key="frame" x="20" y="130.5" width="235" height="14.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -67,7 +68,9 @@
                             <constraints>
                                 <constraint firstItem="dmq-YW-pOF" firstAttribute="centerX" secondItem="gJp-fk-JfO" secondAttribute="centerX" id="AKX-wg-HJO"/>
                                 <constraint firstItem="dmq-YW-pOF" firstAttribute="top" secondItem="gJp-fk-JfO" secondAttribute="bottom" constant="40" id="HGp-k7-cr5"/>
+                                <constraint firstItem="gJp-fk-JfO" firstAttribute="leading" secondItem="dE1-MA-gNp" secondAttribute="leading" constant="20" id="IbU-cf-5xz"/>
                                 <constraint firstItem="gJp-fk-JfO" firstAttribute="centerX" secondItem="dE1-MA-gNp" secondAttribute="centerX" id="Se2-hX-z4p"/>
+                                <constraint firstAttribute="trailing" secondItem="gJp-fk-JfO" secondAttribute="trailing" constant="20" id="Ubr-ix-eLW"/>
                                 <constraint firstItem="gJp-fk-JfO" firstAttribute="centerY" secondItem="dE1-MA-gNp" secondAttribute="centerY" id="gsV-33-3XX"/>
                             </constraints>
                         </view>

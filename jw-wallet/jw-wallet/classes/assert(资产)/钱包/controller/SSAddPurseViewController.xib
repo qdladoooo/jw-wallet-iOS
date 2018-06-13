@@ -14,7 +14,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSAddPurseViewController">
             <connections>
                 <outlet property="helpMemoryBtn" destination="RFQ-64-Cha" id="57G-rc-RW3"/>
+                <outlet property="nav_title" destination="Jaz-yN-3Yv" id="f3x-Vr-qNw"/>
+                <outlet property="password1" destination="KMF-tM-IgT" id="enF-kv-HeV"/>
+                <outlet property="password2" destination="wBW-ue-4G0" id="fRc-TG-KeF"/>
+                <outlet property="password_title" destination="5wA-Wo-M5p" id="0uK-H1-hN9"/>
                 <outlet property="privateKey" destination="9Yc-Vc-9H7" id="Gxt-NG-ZwT"/>
+                <outlet property="repeatPassword_title" destination="4KV-qf-VAN" id="lna-96-F8y"/>
+                <outlet property="startImport" destination="kfW-h4-3h2" id="P1D-R8-z86"/>
                 <outlet property="textView" destination="U9K-X6-DP5" id="hJm-Yb-3oJ"/>
                 <outlet property="textViewPlaceHolderText" destination="WXR-ao-z96" id="zfk-E4-Nyi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

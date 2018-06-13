@@ -12,6 +12,7 @@
 @interface SSUnitSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic,copy) NSArray *titleArr;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
 
 @end
 
@@ -24,6 +25,7 @@
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
     _titleArr = @[@"USD",@"CNY"];
+    self.nav_title.text = kLocalizedTableString(@"货币单位", gy_LocalizableName);
 }
 
 - (void)didReceiveMemoryWarning {

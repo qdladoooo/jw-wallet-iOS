@@ -13,6 +13,8 @@
 @interface SSLanguageSetVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic,strong) NSArray *dataAry;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+
 @end
 
 @implementation SSLanguageSetVC
@@ -29,6 +31,7 @@
     self.fd_prefersNavigationBarHidden = YES;
     _dataAry = @[ @"zh-Hant", //中文繁体
                   @"en"];// 英语
+    self.nav_title.text = kLocalizedTableString(@"语言设置", gy_LocalizableName);
 }
 
 - (void)didReceiveMemoryWarning {

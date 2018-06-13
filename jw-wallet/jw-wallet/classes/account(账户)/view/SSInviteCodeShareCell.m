@@ -8,11 +8,18 @@
 
 #import "SSInviteCodeShareCell.h"
 
-@implementation SSInviteCodeShareCell
+@interface SSInviteCodeShareCell()
+@property (weak, nonatomic) IBOutlet UILabel *inviteCode;
+@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
 
+@end
+@implementation SSInviteCodeShareCell
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.inviteCode.text = kLocalizedTableString(@"分享邀请码", gy_LocalizableName);
+    self.bottomLabel.text = kLocalizedTableString(@"副标题(可配置)", gy_LocalizableName);
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -1428,22 +1428,22 @@
 		2EB989A920CC040400694110 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				2EB989AA20CC040400694110 /* SSWalletHeader.xib */,
-				2EB989AB20CC040400694110 /* SSPurseListCell.h */,
-				2EB989AC20CC040400694110 /* SSExportPrivatePassWord.m */,
-				2EB989AD20CC040400694110 /* SSWalletListCell.h */,
-				2EB989AE20CC040400694110 /* SSExportPrivatePassWord.xib */,
-				2EB989AF20CC040400694110 /* SSPurseListCell.xib */,
-				2EB989B020CC040400694110 /* SSWalletHeaderTop.h */,
-				2EB989B120CC040400694110 /* SSWalletHeader.m */,
-				2EB989B220CC040400694110 /* SSWalletListCell.xib */,
-				2EB989B320CC040400694110 /* SSPurseListCell.m */,
-				2EB989B420CC040400694110 /* SSWalletHeaderTop.xib */,
-				2EB989B520CC040400694110 /* tagView */,
 				2EB989C720CC040400694110 /* SSExportPrivatePassWord.h */,
+				2EB989AC20CC040400694110 /* SSExportPrivatePassWord.m */,
+				2EB989AE20CC040400694110 /* SSExportPrivatePassWord.xib */,
+				2EB989AB20CC040400694110 /* SSPurseListCell.h */,
+				2EB989B320CC040400694110 /* SSPurseListCell.m */,
+				2EB989AF20CC040400694110 /* SSPurseListCell.xib */,
+				2EB989AD20CC040400694110 /* SSWalletListCell.h */,
 				2EB989C820CC040400694110 /* SSWalletListCell.m */,
-				2EB989C920CC040400694110 /* SSWalletHeader.h */,
+				2EB989B220CC040400694110 /* SSWalletListCell.xib */,
+				2EB989B020CC040400694110 /* SSWalletHeaderTop.h */,
 				2EB989CA20CC040400694110 /* SSWalletHeaderTop.m */,
+				2EB989B420CC040400694110 /* SSWalletHeaderTop.xib */,
+				2EB989C920CC040400694110 /* SSWalletHeader.h */,
+				2EB989B120CC040400694110 /* SSWalletHeader.m */,
+				2EB989AA20CC040400694110 /* SSWalletHeader.xib */,
+				2EB989B520CC040400694110 /* tagView */,
 			);
 			path = view;
 			sourceTree = "<group>";

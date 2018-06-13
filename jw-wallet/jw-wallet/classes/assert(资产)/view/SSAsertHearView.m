@@ -8,8 +8,19 @@
 #import "SSAddAssertsVC.h"
 #import "SSAsertHearView.h"
 #import "SSGetMoneyViewController.h"
+@interface SSAsertHearView()
+@property (weak, nonatomic) IBOutlet UILabel *walletName;
+@property (weak, nonatomic) IBOutlet UIButton *addNewAssets;
+
+
+@end
 @implementation SSAsertHearView
 
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    self.walletName.text = kLocalizedTableString(@"钱包名称", gy_LocalizableName);
+    [self.addNewAssets setTitle:kLocalizedTableString(@"添加新资产", gy_LocalizableName) forState:UIControlStateNormal];
+}
 +(UIView *)createAsertHearView{
     UIView *view = [[[NSBundle mainBundle] loadNibNamed:@"SSAsertHearView" owner:self options:nil] lastObject];
     return view;

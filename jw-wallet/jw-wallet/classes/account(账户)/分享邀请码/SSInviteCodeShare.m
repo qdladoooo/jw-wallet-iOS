@@ -9,6 +9,8 @@
 #import "SSInviteCodeShare.h"
 #import "JSHAREService.h"
 @interface SSInviteCodeShare ()
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+@property (weak, nonatomic) IBOutlet UIButton *share;
 
 @end
 
@@ -20,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden =  YES;
+    self.nav_title.text = kLocalizedTableString(@"分享邀请码", gy_LocalizableName);
 }
 // 分享
 - (IBAction)share:(id)sender {

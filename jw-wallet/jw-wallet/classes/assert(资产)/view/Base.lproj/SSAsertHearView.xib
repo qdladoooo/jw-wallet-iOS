@@ -72,6 +72,10 @@
                 <constraint firstItem="Gyf-ue-q9A" firstAttribute="trailing" secondItem="ILq-Oo-oc5" secondAttribute="trailing" id="jcX-qK-JoW"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addNewAssets" destination="q8o-w8-Ikk" id="nes-dp-H0Y"/>
+                <outlet property="walletName" destination="MlD-dC-PX8" id="5oB-HX-Nco"/>
+            </connections>
             <point key="canvasLocation" x="149" y="-398.5"/>
         </view>
     </objects>

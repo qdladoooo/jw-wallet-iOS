@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="OpJ-WL-0LH">
+        <view contentMode="scaleToFill" id="OpJ-WL-0LH" customClass="SSAccoutHeaderView">
             <rect key="frame" x="0.0" y="0.0" width="483" height="207"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -51,6 +51,10 @@
                 <constraint firstItem="Rde-Th-VXP" firstAttribute="centerX" secondItem="OpJ-WL-0LH" secondAttribute="centerX" id="ynh-k5-y6m"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="accountName" destination="lrU-Nr-Mqw" id="7K9-US-gKs"/>
+                <outlet property="accoutLabel" destination="3Nd-G6-ZoV" id="RUk-un-sLV"/>
+            </connections>
             <point key="canvasLocation" x="27" y="-364"/>
         </view>
     </objects>

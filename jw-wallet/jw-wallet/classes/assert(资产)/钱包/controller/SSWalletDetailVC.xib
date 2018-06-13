@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSWalletDetailVC">
             <connections>
                 <outlet property="deleteBtn" destination="12D-l0-DHT" id="aeC-FP-fwx"/>
+                <outlet property="nav_title" destination="gV4-AT-ZWo" id="gPw-hS-YZc"/>
                 <outlet property="tabelView" destination="YHo-WS-hqz" id="4Kg-f6-GQm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

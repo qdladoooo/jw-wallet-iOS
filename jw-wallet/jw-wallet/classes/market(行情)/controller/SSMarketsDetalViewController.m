@@ -56,6 +56,7 @@
  */
 @property (assign, nonatomic) BOOL isShowFiveRecord;
 
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
 
 @end
 
@@ -85,7 +86,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.fd_prefersNavigationBarHidden = YES;
-    
+    self.nav_title.text = kLocalizedTableString(@"行情详情", gy_LocalizableName);
     [self.bluePoint.layer setCornerRadius:4];
     [self.grayPoint.layer setCornerRadius:4];
     //测试数据

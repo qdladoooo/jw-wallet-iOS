@@ -7,9 +7,17 @@
 //
 
 #import "SSWalletHeaderTop.h"
+@interface SSWalletHeaderTop()
+@property (weak, nonatomic) IBOutlet UILabel *walletName_label;
 
+@end
 @implementation SSWalletHeaderTop
 
+
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    self.walletName_label.text = kLocalizedTableString(@"钱包名称", gy_LocalizableName);
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

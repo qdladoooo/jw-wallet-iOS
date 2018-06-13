@@ -13,7 +13,18 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSCreatePurseViewController">
             <connections>
                 <outlet property="bottomTipView" destination="SIO-SD-7Em" id="a99-ac-u5b"/>
+                <outlet property="checkCode_title" destination="quA-zw-JCi" id="837-3j-4ct"/>
+                <outlet property="inputCode_title" destination="5qj-Rc-rrb" id="nNf-b2-au6"/>
+                <outlet property="nav_title" destination="4KR-bW-ezm" id="56X-La-lBp"/>
+                <outlet property="passWord_title" destination="Qrb-9C-frP" id="jtx-T9-sgY"/>
+                <outlet property="repeatpassword_title" destination="hoB-X4-l2Z" id="FaX-FC-dmv"/>
+                <outlet property="sureBtn" destination="xzr-nM-yvz" id="2U8-ID-mIy"/>
+                <outlet property="tf1" destination="oo5-QJ-uUR" id="VWw-3G-fQC"/>
+                <outlet property="tf2" destination="8hs-nU-UgT" id="bsC-hK-caZ"/>
+                <outlet property="tf3" destination="cwB-QR-yRJ" id="4Vy-tk-IiP"/>
+                <outlet property="tips" destination="E3w-e9-25F" id="NCU-AJ-qML"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="walletName_title" destination="x25-zV-kZu" id="ggB-Wu-nGb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

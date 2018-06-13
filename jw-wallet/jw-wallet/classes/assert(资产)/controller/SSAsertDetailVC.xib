@@ -13,7 +13,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSAsertDetailVC">
             <connections>
+                <outlet property="banlance_title" destination="oOb-JO-1Ws" id="Dem-vL-mCC"/>
+                <outlet property="getMoney" destination="qVg-XE-0K9" id="onD-vs-13r"/>
+                <outlet property="nav_title" destination="JKq-8z-7nq" id="NPW-Vh-vyu"/>
                 <outlet property="tablewView" destination="XKf-n8-Eaa" id="j4v-w3-cef"/>
+                <outlet property="transfer" destination="Gzz-yM-SEY" id="4gy-Dn-hRK"/>
                 <outlet property="view" destination="Mu8-Jd-RuK" id="H4m-Ut-a7Y"/>
             </connections>
         </placeholder>
@@ -38,8 +42,8 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQV-iP-JFx">
-                            <rect key="frame" x="167" y="96" width="41" height="12"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="213131231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQV-iP-JFx">
+                            <rect key="frame" x="162" y="96" width="51" height="12"/>
                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>

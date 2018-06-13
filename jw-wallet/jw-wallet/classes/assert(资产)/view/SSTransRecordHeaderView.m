@@ -8,7 +8,14 @@
 //
 
 #import "SSTransRecordHeaderView.h"
+@interface SSTransRecordHeaderView()
 
+/**
+ 交易状态
+ */
+@property (weak, nonatomic) IBOutlet UILabel *transStatus;
+
+@end
 @implementation SSTransRecordHeaderView
 
 /*

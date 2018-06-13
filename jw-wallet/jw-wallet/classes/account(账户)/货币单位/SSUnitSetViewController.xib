@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSUnitSetViewController">
             <connections>
+                <outlet property="nav_title" destination="dE2-oI-p6f" id="4VM-tN-94r"/>
                 <outlet property="tableview" destination="QVR-ji-Izh" id="r7u-j4-E79"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

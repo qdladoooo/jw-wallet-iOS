@@ -13,6 +13,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSManagerPurseViewController">
             <connections>
+                <outlet property="addBtn" destination="zTk-ae-KOM" id="62P-Jb-Kym"/>
+                <outlet property="createBtn" destination="PQc-GE-9Pf" id="ai2-iQ-KAz"/>
+                <outlet property="nav_title" destination="zYb-M3-Hwq" id="HaI-Ei-paU"/>
                 <outlet property="tableView" destination="com-eN-X1e" id="0Lc-WH-3aY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -83,17 +83,17 @@
 
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *Action1 = [UIAlertAction actionWithTitle:@"编辑行情" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *Action1 = [UIAlertAction actionWithTitle:kLocalizedTableString(@"编辑行情", gy_LocalizableName) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         SSEdiMarketsViewController *vc = [[SSEdiMarketsViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }];
-    UIAlertAction *Action2 = [UIAlertAction actionWithTitle:@"添加行情" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *Action2 = [UIAlertAction actionWithTitle:kLocalizedTableString(@"添加行情", gy_LocalizableName) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         SSAddMarketsViewController *vc = [[SSAddMarketsViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }];
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:kLocalizedTableString(@"取消", gy_LocalizableName) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     //修改按钮

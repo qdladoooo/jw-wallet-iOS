@@ -10,6 +10,7 @@
 #import "SSAddAssertsCell.h"
 @interface SSAddAssertsVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
 
 @end
 
@@ -20,6 +21,7 @@
     self.fd_prefersNavigationBarHidden = YES;
     self.tableView.backgroundColor = BACKGROUNDCOLOR;
     self.tableView.separatorColor = BACKGROUNDCOLOR;
+    self.nav_title.text = kLocalizedTableString(@"添加新资产", gy_LocalizableName);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -161,8 +161,8 @@
         return;
     }
     
-    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"未检测到您的摄像头" preferredStyle:(UIAlertControllerStyleAlert)];
-    UIAlertAction *alertA = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:kLocalizedTableString(@"温馨提示", gy_LocalizableName)  message:kLocalizedTableString(@"未检测到您的摄像头", gy_LocalizableName) preferredStyle:(UIAlertControllerStyleAlert)];
+    UIAlertAction *alertA = [UIAlertAction actionWithTitle:kLocalizedTableString(@"确定", gy_LocalizableName)  style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     

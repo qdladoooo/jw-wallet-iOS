@@ -87,6 +87,7 @@
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="setBtn" destination="6Lq-m2-gLw" id="Cb9-yL-asV"/>
+                <outlet property="walletName_title" destination="atw-rB-dy8" id="YlS-GN-vz9"/>
             </connections>
             <point key="canvasLocation" x="50" y="-164.5"/>
         </tableViewCell>

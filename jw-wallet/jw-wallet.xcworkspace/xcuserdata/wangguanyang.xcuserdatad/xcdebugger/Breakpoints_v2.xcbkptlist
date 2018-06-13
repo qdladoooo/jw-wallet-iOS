@@ -84,7 +84,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x626b;&#x7801;/Controller/WCQRCodeScanningVC.m"
-            timestampString = "550514233.335237"
+            timestampString = "550564310.052534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "114"
@@ -100,28 +100,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x626b;&#x7801;/Controller/WCQRCodeScanningVC.m"
-            timestampString = "550514233.335308"
+            timestampString = "550564310.0526"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
             endingLineNumber = "95"
             landmarkName = "-QRCodeAlbumManager:didFinishPickingMediaWithResult:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "jw-wallet/classes/market(&#x884c;&#x60c5;)/controller/SSMarktViewController.m"
-            timestampString = "550514233.335434"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "-tableView:didDeselectRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

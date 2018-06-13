@@ -13,12 +13,16 @@
  设置按钮
  */
 @property (weak, nonatomic) IBOutlet UIButton *setBtn;
+@property (weak, nonatomic) IBOutlet UILabel *walletName_title;
 
 @end
 @implementation SSPurseListCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.walletName_title.text = kLocalizedTableString(@"钱包名称", gy_LocalizableName);
+    [self.setBtn setTitle:kLocalizedTableString(@"设置默认", gy_LocalizableName) forState:UIControlStateNormal];
+    [self.setBtn setTitle:kLocalizedTableString(@"设置默认", gy_LocalizableName) forState:UIControlStateSelected];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -13,6 +13,10 @@
 #import "SSTransRecordVC.h"
 @interface SSAsertDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tablewView;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+@property (weak, nonatomic) IBOutlet UILabel *banlance_title;
+@property (weak, nonatomic) IBOutlet UIButton *transfer; // 转账
+@property (weak, nonatomic) IBOutlet UIButton *getMoney; // 收款
 
 @end
 
@@ -24,6 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
+    self.nav_title.text = kLocalizedTableString(@"资产详情", gy_LocalizableName);
+    self.banlance_title.text = kLocalizedTableString(@"账户余额",gy_LocalizableName);
+    [self.transfer setTitle:kLocalizedTableString(@"转账", gy_LocalizableName) forState:UIControlStateNormal];
+    [self.getMoney setTitle:kLocalizedTableString(@"收款", gy_LocalizableName) forState:UIControlStateNormal];
 //    self.title = @"资产详情";
 //    if (@available(iOS 11.0, *)) {
 //        self.tablewView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -55,7 +63,7 @@
     headerView.backgroundColor = WHITCOLOR;
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 30)];
-    label.text = @"交易记录";
+    label.text = kLocalizedTableString(@"交易记录", gy_LocalizableName);
     label.font = [UIFont systemFontOfSize:10];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor darkGrayColor];

@@ -38,6 +38,9 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="walletName_label" destination="Leu-Pk-HYr" id="O6e-K5-XVc"/>
+            </connections>
             <point key="canvasLocation" x="41.5" y="-54.5"/>
         </view>
     </objects>

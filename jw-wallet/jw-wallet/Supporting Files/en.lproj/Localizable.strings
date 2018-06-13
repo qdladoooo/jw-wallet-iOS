@@ -12,10 +12,198 @@
 "帮助中心"= "Help center";
 "语言设置" = "Language Settings";
 "货币单位" =  "Currency unit";
-"启用指纹登录" = "Use Touchid Login";
-"启用指纹支付" = "Use Touchid Pay";
+"启用指纹登录" = "Use TouchID Login";
+"启用指纹支付" = "Use TouchID Pay";
 "基本信息" = "Basic information";
 "设置" = "Settings";
+"删除钱包" = "Delete the wallet";
+"添加新资产" = "Add new assets";
+"最新价" = "Latest price";
+"涨跌幅" = "Rise and fall";
+"资产名称" = "Asset name";
+"应用" = "Applications";
+"文章" = "Articles";
+"账户名称" = "Account Name";
+"分享邀请码" = "Sharing invitation code";
+"副标题(可配置)"= "Subtitle(configurable)";
+"账户余额" = "Account balance";
+"收款" = "Receivables";
+"转账" = "Transfer";
+"设置默认" = "Set default";
+"钱包详情" = "Wallet details";
+"管理钱包" = "Wallet manage";
+"创建钱包" = "Creat wallet";
+"导入钱包" = "Import wallet";
+"请输入当前密码" = "Please enter the current password";
+"行情详情" = "Details of the market";
+"助记词" = "Memorizing words";
+"私钥" = "Private key";
+"请填写助记词，按空格分隔" = "Please fill in the notes and divide the space by space";
+"密码" = "Password";
+"重复密码" = "Duplicate password";
+"6位纯数字" = "6 bit pure digits";
+"开始导入"= "Start importing";
+"验证码" = "Verification Code";
+"请输入钱包名称" = "Please enter the name of the wallet";
+"请输入验证码" = "Please enter the verification code";
+"密码用于保护私钥和交易授权，GRE不存储密码，也无法帮您找回，请务必牢记！我已阅读以上风险提示。" = "Password is used to protect the private key and transaction authorization. GRE does not store passwords, nor can it help you find it. Remember that! I have read the above risk tips.";
+/*
+ SSMarketRemindViewController.m
+ */
+"保存成功"="Save success";
 
+
+
+/*
+ SSEdiMarketsViewController.m
+ */
+"资产名称"="Asset name";
+"提醒"="Reminding";
+"拖动排序"="Drag sort";
+
+
+/*
+ SSMarktViewController.m
+ */
+"行情"="Market";
+"编辑行情"="Edit Market";
+"添加行情"="Add Market";
+"取消"="Cancel";
+
+
+
+/*
+ SSAuthorizedLoginCV.m
+ */
+"允许"="Permission";
+"拒绝"="Refusal";
+
+
+/*
+ MBProgressHUD+HYExtension.m
+ */
+"努力加载中..."="Try to load in...";
+"没有相关数据..."="No relevant data...";
+"加载失败!"="Load failed!!";
+"请检查您的网络是否正常"="Please check if your network is normal";
+"刷  新"="Refresh";
+
+
+/*
+ SJ_NewfeatureViewController.m
+ */
+"开始体验"="Start";
+
+/*
+ SJAlert.m
+ */
+"温馨提示"="warning";
+"我知道了"="got it";
+
+/*
+ LZPageViewController.m
+ */
+"导出keystore"="export keystore";
+
+
+/*
+ SSKeystoreFileVC.m
+ */
+"离线保存"="Offline save";
+"请勿使用网络传输"="Do not use network transmission";
+"密码保险箱保存"="Password safe storage";
+"请复制黏贴 Keystore 文件到安全、离线的地方保存。切勿保存至邮箱、记事本、网盘、聊天工具等，非常危险"="Please copy and paste Keystore files to secure and offline places. Do not save to the mailbox, Notepad, SkyDrive, chat tools, etc., very dangerous";
+"请勿通过网络工具传输 Keystore文件，一旦被黑客获取将造成不可挽回的资产损失。建议离线设备通过扫描二维码方式传输。"="Do not transmit Keystore files through network tools. Once acquired by hackers, irreparable assets will be lost. It is recommended that off-line devices be transmitted by scanning two-dimensional code.";
+"如需在线保存，则建议使用安全等级更高的 1Password 等密码保管软件保存 Keystore"="If you need to keep it online, it is recommended to use a more secure 1Password and other password keeping software to save Keystore";
+"请勿截图"="Do not screenshot";
+"请确保四周无人及无任何摄像头！勿用截图或拍照的方式保存Keystore文件或对应二维码"="Please make sure there are no cameras around and no cameras!";
+"知道了"="Got it";
+"已复制"="Has been copied";
+
+/*
+ SSMatrixCodeVC.m
+ */
+"仅供直接扫描"="For direct scanning only";
+"在安全环境下使用"="Use in a safe environment";
+"二维码禁止保存、截图、以及拍照。仅供用户在安全环境下直接扫描来方便的导入钱包"="Two Dimensional codes are forbidden to be saved, screenshot, and photographed. It is only for users to scan directly in the security environment to conveniently import the wallet";
+"请在确保四周无人及无摄像头的情况下使用，二维码一旦被他人获取将造成不可挽回的资产损失"="Please make sure that no one and no camera can be used around it. Once a two-dimensional code is obtained, it will cause irreparable loss of assets";
+
+
+/*
+ SSWalletDetailVC.m
+ */
+"钱包信息"="Wallet information";
+"导出信息"="Export information";
+"钱包名称"="wallet name";
+"修改密码"="Modify the password";
+"导出私钥"="Export private key";
+"请输入密码"="Please enter the password";
+"确认"="Confirmation";
+"导出Keystore"="Export Keystore";
+"二维码"="Two-dimensional code";
+"已确认周围无人及摄像头" = "It has been confirmed that the surrounding unmanned and the camera";
+"显示二维码" = "Display two-dimensional code";
+"安全警告：私钥未经加密，导出存在风险，建议使用助记词和keystore进行备份。" = "Security warning: the private key is not encrypted and there is a risk of exporting. It is recommended to use backup words and keystore for backup.";
+"复制" = "copy";
+"复制成功" = "Replicating success";
+/*
+ SSAddPurseViewController.m
+ */
+"请填写助记词，按空格分隔"="Please fill in the mnemonic word, separated by space";
+"请填写明文私钥"="Please fill in the private key of the plaintext";
+
+/*
+ SSExportPrivatePassWord.m
+ */
+"复制成功"="Replicating success";
+
+
+/*
+ WBQRCodeScanningVC.m
+ */
+"扫一扫"="sweep";
+"相册"="Photo album";
+"暂未识别出二维码"="No two-dimensional code has been identified";
+"暂未识别出扫描的二维码"="No two-dimensional code has been identified";
+"将二维码/条码放入框内, 即可自动扫描"="The two-dimensional code / bar code can be automatically scanned in the box";
+/*
+ ScanSuccessJumpVC.m
+ */
+"您扫描的条形码结果如下： "="The bar code you scanned is the result of the following: ";
+
+/*
+ SSTranferViewController.m
+ */
+"转账"="Transfer accounts";
+
+/*
+ SSTransRecordVC.m
+ */
+"发款方"="Payer";
+"收款方"="Receivables";
+"手续费"="Fee";
+"交易号"="Transaction number";
+"区块"="Block";
+"交易时间"="Trading time";
+"账户信息"="Account information";
+"交易信息"="Transaction information";
+
+/*
+ SSAsertViewController.m
+ */
+"用户第一次同意了访问相机权限 - - %@"="Users agreed for the first time to access camera rights -% @ =";
+"用户第一次拒绝了访问相机权限 - - %@"="The user denied the access to the camera for the first time -% @";
+"请去-> [设置 - 隐私 - 相机 - SGQRCodeExample] 打开访问开关"="Please go > > set privacy - camera SGQRCodeExample] open access switch";
+"确定"="Determination";
+"因为系统原因, 无法访问相册"="Unable to access album because of system reasons";
+"未检测到您的摄像头"="Your camera is not detected";
+"扫描"="scan";
+"钱包"="wallet";
+
+/*
+ SSAsertDetailVC.m
+ */
+"资产详情"="Asset details";
+"交易记录"="Transaction records";
 
 

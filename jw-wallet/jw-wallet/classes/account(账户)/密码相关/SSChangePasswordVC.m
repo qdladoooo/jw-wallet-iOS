@@ -10,6 +10,8 @@
 
 @interface SSChangePasswordVC ()
 @property (weak, nonatomic) IBOutlet UITextField *currentPassword;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+@property (weak, nonatomic) IBOutlet UIButton *sure;
 
 @end
 
@@ -21,6 +23,11 @@
     self.currentPassword.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 12, 45)];
     self.currentPassword.leftViewMode = UITextFieldViewModeAlways;
      self.fd_prefersNavigationBarHidden =  YES;
+    
+    self.nav_title.text = kLocalizedTableString(@"修改密码", gy_LocalizableName);
+    [self.sure setTitle:kLocalizedTableString(@"确认", gy_LocalizableName) forState:UIControlStateNormal];
+    self.currentPassword.placeholder = kLocalizedTableString(@"请输入当前密码", gy_LocalizableName);
+    
     
 }
 

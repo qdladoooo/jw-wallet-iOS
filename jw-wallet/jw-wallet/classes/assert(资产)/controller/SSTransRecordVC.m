@@ -11,6 +11,7 @@
 #import "SSTransRecordHeaderView.h"
 @interface SSTransRecordVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
 
 @end
 
@@ -22,6 +23,7 @@
     self.fd_prefersNavigationBarHidden = YES;
     self.tableView.backgroundColor = BACKGROUNDCOLOR;
     self.tableView.separatorColor = BACKGROUNDCOLOR;
+    self.nav_title.text = kLocalizedTableString(@"交易记录", gy_LocalizableName);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,16 +63,16 @@
     if (indexPath.section == 1) {
         switch (indexPath.row) {
             case 0:
-                cell.title1.text = @"发款方";
+                cell.title1.text = kLocalizedTableString(@"发款方", gy_LocalizableName) ;
                 cell.title2.text = @"";
                 
                 break;
             case 1:
-                cell.title1.text = @"收款方";
+                cell.title1.text = kLocalizedTableString(@"收款方", gy_LocalizableName);
                 cell.title2.text = @"";
                 break;
             case 2:
-                cell.title1.text = @"手续费";
+                cell.title1.text = kLocalizedTableString(@"手续费", gy_LocalizableName);
                 cell.title2.text = @"";
                 break;
                 
@@ -80,16 +82,16 @@
     }else if (indexPath.section == 2){
         switch (indexPath.row) {
             case 0:
-                cell.title1.text = @"交易号";
+                cell.title1.text = kLocalizedTableString( @"交易号", gy_LocalizableName);
                 cell.title2.text = @"";
                 cell.title2.textColor = Bluecolor;
                 break;
             case 1:
-                cell.title1.text = @"区块";
+                cell.title1.text = kLocalizedTableString(@"区块", gy_LocalizableName);
                 cell.title2.text = @"";
                 break;
             case 2:
-                cell.title1.text = @"交易时间";
+                cell.title1.text = kLocalizedTableString(@"交易时间", gy_LocalizableName);
                 cell.title2.text = @"";
                 break;
                 
@@ -115,9 +117,9 @@
         label.font = [UIFont systemFontOfSize:14];
         
         if (section == 0) {
-            label.text = @"账户信息";
+            label.text = kLocalizedTableString(@"账户信息", gy_LocalizableName) ;
         }else{
-            label.text = @"交易信息";
+            label.text = kLocalizedTableString(@"交易信息", gy_LocalizableName);
         }
         [view addSubview:label];
         return view;

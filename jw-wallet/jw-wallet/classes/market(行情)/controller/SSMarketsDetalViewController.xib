@@ -16,6 +16,7 @@
                 <outlet property="KLineBackView" destination="49U-GT-HjD" id="c2d-ma-Dmq"/>
                 <outlet property="bluePoint" destination="WGf-aH-0A9" id="Ini-4z-suQ"/>
                 <outlet property="grayPoint" destination="G8D-SU-DPg" id="uT6-v7-Lyg"/>
+                <outlet property="nav_title" destination="XTd-PS-CIH" id="Hb9-2P-agb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

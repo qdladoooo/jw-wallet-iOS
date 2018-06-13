@@ -7,8 +7,18 @@
 //
 
 #import "SSAccoutHeaderView.h"
+@interface SSAccoutHeaderView()
+@property (weak, nonatomic) IBOutlet UILabel *accoutLabel;
+@property (weak, nonatomic) IBOutlet UILabel *accountName;
 
+@end
 @implementation SSAccoutHeaderView
+
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    self.accoutLabel.text = kLocalizedTableString(@"账户", gy_LocalizableName);
+    self.accountName.text = kLocalizedTableString(@"账户名称", gy_LocalizableName);
+}
 +(UIView *)creatHeaderView{
     UIView *view = [[[NSBundle mainBundle] loadNibNamed:@"SSAccoutHeaderView" owner:self options:nil] lastObject];
     return view;

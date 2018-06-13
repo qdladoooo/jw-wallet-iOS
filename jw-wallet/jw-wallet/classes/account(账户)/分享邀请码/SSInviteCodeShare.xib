@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSInviteCodeShare">
             <connections>
+                <outlet property="nav_title" destination="T4O-6j-eEo" id="e6O-BE-Ska"/>
+                <outlet property="share" destination="UDP-lu-Msx" id="eif-ID-kJQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

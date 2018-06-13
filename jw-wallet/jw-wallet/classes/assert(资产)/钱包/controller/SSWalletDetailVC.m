@@ -19,6 +19,7 @@
 @interface SSWalletDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
 @property (weak, nonatomic) IBOutlet UITableView *tabelView;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
 
 @end
 
@@ -30,7 +31,8 @@
     [self.deleteBtn.layer setBorderWidth:1];
     [self.deleteBtn.layer setBorderColor:rgba(15, 117, 230, 1).CGColor];
     [self.deleteBtn setTitleColor:rgba(15, 117, 230, 1) forState:UIControlStateNormal];
-    
+    [self.deleteBtn setTitle:kLocalizedTableString(@"删除钱包", gy_LocalizableName) forState:UIControlStateNormal];
+    self.nav_title.text = kLocalizedTableString(@"钱包详情", gy_LocalizableName);
     self.fd_prefersNavigationBarHidden = YES;
 }
 
@@ -76,9 +78,9 @@
     }else{
         SSWalletHeader *sectionHeader = [[[NSBundle mainBundle] loadNibNamed:@"SSWalletHeader" owner:nil options:nil] lastObject];
         if(section == 1){
-            sectionHeader.headerTitle.text = @"钱包信息";
+            sectionHeader.headerTitle.text =kLocalizedTableString(@"钱包信息", gy_LocalizableName) ;
         }else{
-             sectionHeader.headerTitle.text = @"导出信息";
+             sectionHeader.headerTitle.text = kLocalizedTableString( @"导出信息", gy_LocalizableName);
         }
         return sectionHeader;
     }
@@ -89,17 +91,17 @@
     SSWalletListCell *cell = [SSWalletListCell cellWithTableView:tableView];
     if (indexPath.section==1) {
         if (indexPath.row == 0) {
-            cell.title1.text = @"钱包名称";
+            cell.title1.text = kLocalizedTableString(@"钱包名称", gy_LocalizableName);
             cell.navR.hidden = YES;
             cell.title2.hidden = NO;
         }else{
-            cell.title1.text = @"修改密码";
+            cell.title1.text = kLocalizedTableString(@"修改密码", gy_LocalizableName);
         }
     }else if (indexPath.section ==  2){
         if (indexPath.row==0) {
-            cell.title1.text = @"导出私钥";
+            cell.title1.text = kLocalizedTableString(@"导出私钥", gy_LocalizableName);
         }else{
-             cell.title1.text = @"导出keystore";
+             cell.title1.text = kLocalizedTableString(@"导出keystore", gy_LocalizableName);
         }
     }
     return cell;
@@ -139,9 +141,9 @@
 
 #pragma mark - 密码输入框
 -(void)passwordAlert:(NSIndexPath*)pach{
-    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"" message: @"请输入密码" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"" message:kLocalizedTableString(@"请输入密码", gy_LocalizableName) preferredStyle:UIAlertControllerStyleAlert];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.placeholder = @"请输入密码";
+        textField.placeholder = kLocalizedTableString(@"请输入密码", gy_LocalizableName);
         textField.layer.borderColor = Bluecolor.CGColor;
         textField.layer.borderWidth = 1.0f;
         textField.textColor = [UIColor darkGrayColor];
@@ -152,7 +154,7 @@
 
 
     }];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    [alertController addAction:[UIAlertAction actionWithTitle:kLocalizedTableString(@"确认", gy_LocalizableName)  style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         NSArray * textfields = alertController.textFields;
         UITextField * passwordfiled = textfields[0];
         NSLog(@"%@",passwordfiled.text);
@@ -165,7 +167,7 @@
                 [self.view addSubview:view];
             }else{
                 // 导出keystore
-                LZPageViewController *pageVc = [[LZPageViewController alloc] initWithTitles:@[@"导出Keystore",@"二维码"] controllersClass:@[[SSKeystoreFileVC class],[SSMatrixCodeVC class]]];
+                LZPageViewController *pageVc = [[LZPageViewController alloc] initWithTitles:@[kLocalizedTableString(@"导出Keystore", gy_LocalizableName) ,kLocalizedTableString( @"二维码", gy_LocalizableName)] controllersClass:@[[SSKeystoreFileVC class],[SSMatrixCodeVC class]]];
                 [self.navigationController pushViewController:pageVc animated:YES];
                 
             }
@@ -173,7 +175,7 @@
         
         
     }]];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+    [alertController addAction:[UIAlertAction actionWithTitle:kLocalizedTableString(@"取消", gy_LocalizableName) style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         // 取消
     }]];
     [self presentViewController:alertController animated:YES completion:nil];

@@ -25,6 +25,8 @@
  */
 @property (weak, nonatomic) IBOutlet UIImageView *codeImage;
 
+@property (weak, nonatomic) IBOutlet UILabel *img_Label;
+
 @end
 
 @implementation SSMatrixCodeVC
@@ -34,11 +36,14 @@
     self.tableView.backgroundColor = WHITCOLOR;
     self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.scrollEnabled = NO;
+    self.img_Label.text = kLocalizedTableString(@"已确认周围无人及摄像头", gy_LocalizableName);
+    [self.showCode setTitle:kLocalizedTableString(@"显示二维码", gy_LocalizableName) forState:UIControlStateNormal];
     _titleArr = @[@"仅供直接扫描",@"在安全环境下使用"];
     _contentArr = @[@"二维码禁止保存、截图、以及拍照。仅供用户在安全环境下直接扫描来方便的导入钱包",
                     @"请在确保四周无人及无摄像头的情况下使用，二维码一旦被他人获取将造成不可挽回的资产损失"];
      // 生成二维码(Default)
     [self setupGenerateQRCode];
+    
     
 }
 // 生成二维码
@@ -70,8 +75,8 @@
     if (cell==nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"SSKeyStoreTipsCell" owner:nil options:nil] lastObject];
     }
-    cell.title.text = _titleArr[indexPath.row];
-    cell.content.text = _contentArr[indexPath.row];
+    cell.title.text = [NSString stringWithFormat:@"%@",kLocalizedTableString(_titleArr[indexPath.row], gy_LocalizableName)];
+    cell.content.text = [NSString stringWithFormat:@"%@",kLocalizedTableString(_contentArr[indexPath.row], gy_LocalizableName)];
     return cell;
 }
 // 显示二维码

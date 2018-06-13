@@ -13,9 +13,9 @@
 + (void)createAlertWithMessage: (NSString *)message controller:(UIViewController *)viewController
 {
     
-    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"温馨提示" message: message preferredStyle: UIAlertControllerStyleAlert];
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: kLocalizedTableString(@"温馨提示", gy_LocalizableName) message: message preferredStyle: UIAlertControllerStyleAlert];
     
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"我知道了" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {}];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:kLocalizedTableString(@"我知道了", gy_LocalizableName) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {}];
     [alertController addAction: action];
     [viewController presentViewController: alertController animated: YES completion: nil];
 

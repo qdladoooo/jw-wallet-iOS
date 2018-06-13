@@ -13,6 +13,9 @@
 #import "SSWalletDetailVC.h"
 @interface SSManagerPurseViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
+@property (weak, nonatomic) IBOutlet UIButton *createBtn;
+@property (weak, nonatomic) IBOutlet UIButton *addBtn;
 
 @end
 
@@ -25,7 +28,9 @@
     self.tableView.backgroundColor = [UIColor colorFromHexRGB:@"f2f6ff"];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    
+    self.nav_title.text = kLocalizedTableString(@"管理钱包", gy_LocalizableName);
+    [self.createBtn setTitle:kLocalizedTableString(@"创建钱包", gy_LocalizableName) forState:UIControlStateNormal];
+    [self.addBtn setTitle:kLocalizedTableString(@"导入钱包", gy_LocalizableName) forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,8 +42,6 @@
     return 2;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
     SSPurseListCell *cell = [SSPurseListCell cellWithTableView:tableView];
 
     return cell;
