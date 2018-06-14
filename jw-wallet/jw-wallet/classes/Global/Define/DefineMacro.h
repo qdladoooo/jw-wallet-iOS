@@ -31,6 +31,11 @@
 //当前设备的ios版本
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
-
+// 自定义Log
+#ifdef DEBUG
+#define SSLog(...) NSLog(__VA_ARGS__)
+#else
+#define SSLog(...)
+#endif
 
 #endif /* DefineMacro_h */

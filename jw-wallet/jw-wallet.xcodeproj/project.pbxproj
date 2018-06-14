@@ -227,6 +227,16 @@
 		2EB9978120CE0F9000694110 /* SSKeystoreContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9977F20CE0F9000694110 /* SSKeystoreContentCell.m */; };
 		2EB9978220CE0F9000694110 /* SSKeystoreContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9978020CE0F9000694110 /* SSKeystoreContentCell.xib */; };
 		2EB9978520CE113100694110 /* SJAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9978320CE113100694110 /* SJAlert.m */; };
+		2EE4146120D23C300022E976 /* GYAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4146020D23C300022E976 /* GYAsyncSocket.m */; };
+		2EE4149B20D258200022E976 /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4146620D258200022E976 /* NSDictionary+Category.m */; };
+		2EE4149C20D258200022E976 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4146720D258200022E976 /* NSString+Password.m */; };
+		2EE4149D20D258200022E976 /* NetWorkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4146920D258200022E976 /* NetWorkStatus.m */; };
+		2EE4149E20D258200022E976 /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4147020D258200022E976 /* TMDiskCache.m */; };
+		2EE4149F20D258200022E976 /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4147120D258200022E976 /* TMMemoryCache.m */; };
+		2EE414A020D258200022E976 /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4147220D258200022E976 /* TMCache.m */; };
+		2EE414A120D258200022E976 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4147420D258200022E976 /* Reachability.m */; };
+		2EE414B120D258200022E976 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4149A20D258200022E976 /* HttpTool.m */; };
+		2EE414C320D27C700022E976 /* SSHelpWordsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE414C220D27C700022E976 /* SSHelpWordsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -639,6 +649,27 @@
 		2EB9978020CE0F9000694110 /* SSKeystoreContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSKeystoreContentCell.xib; sourceTree = "<group>"; };
 		2EB9978320CE113100694110 /* SJAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJAlert.m; sourceTree = "<group>"; };
 		2EB9978420CE113100694110 /* SJAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJAlert.h; sourceTree = "<group>"; };
+		2EE4145F20D23C300022E976 /* GYAsyncSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYAsyncSocket.h; sourceTree = "<group>"; };
+		2EE4146020D23C300022E976 /* GYAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYAsyncSocket.m; sourceTree = "<group>"; };
+		2EE4146420D258200022E976 /* NSDictionary+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Category.h"; sourceTree = "<group>"; };
+		2EE4146520D258200022E976 /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
+		2EE4146620D258200022E976 /* NSDictionary+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Category.m"; sourceTree = "<group>"; };
+		2EE4146720D258200022E976 /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
+		2EE4146820D258200022E976 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		2EE4146920D258200022E976 /* NetWorkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkStatus.m; sourceTree = "<group>"; };
+		2EE4146C20D258200022E976 /* TMCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCache.h; sourceTree = "<group>"; };
+		2EE4146D20D258200022E976 /* TMDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDiskCache.h; sourceTree = "<group>"; };
+		2EE4146E20D258200022E976 /* TMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMemoryCache.h; sourceTree = "<group>"; };
+		2EE4146F20D258200022E976 /* TMCacheBackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCacheBackgroundTaskManager.h; sourceTree = "<group>"; };
+		2EE4147020D258200022E976 /* TMDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDiskCache.m; sourceTree = "<group>"; };
+		2EE4147120D258200022E976 /* TMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMemoryCache.m; sourceTree = "<group>"; };
+		2EE4147220D258200022E976 /* TMCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCache.m; sourceTree = "<group>"; };
+		2EE4147420D258200022E976 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2EE4147520D258200022E976 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		2EE4149920D258200022E976 /* NetWorkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkStatus.h; sourceTree = "<group>"; };
+		2EE4149A20D258200022E976 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		2EE414C120D27C700022E976 /* SSHelpWordsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSHelpWordsModel.h; sourceTree = "<group>"; };
+		2EE414C220D27C700022E976 /* SSHelpWordsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSHelpWordsModel.m; sourceTree = "<group>"; };
 		45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.release.xcconfig"; sourceTree = "<group>"; };
 		CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -826,10 +857,10 @@
 		2E48158820B9734900AFCBBB /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				2EE4145E20D23BA50022E976 /* NetWorkRequest */,
 				2EB98BB920CC05D700694110 /* MYTools */,
 				2E48169F20BB9BE300AFCBBB /* Define */,
 				2E48158920B9734900AFCBBB /* Category */,
-				2E48159520B9734900AFCBBB /* NetWork */,
 				2E48159820B9734900AFCBBB /* Other */,
 				2E4815A120B9734900AFCBBB /* DataManage */,
 			);
@@ -865,13 +896,6 @@
 				2E6C897520BDC43C00C0B37E /* UIColor+WLZ_HexRGB.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		2E48159520B9734900AFCBBB /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetWork;
 			sourceTree = "<group>";
 		};
 		2E48159820B9734900AFCBBB /* Other */ = {
@@ -1419,8 +1443,10 @@
 		2EB989A620CC040400694110 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				2EB989A720CC040400694110 /* SSPurseListModel.m */,
 				2EB989A820CC040400694110 /* SSPurseListModel.h */,
+				2EB989A720CC040400694110 /* SSPurseListModel.m */,
+				2EE414C120D27C700022E976 /* SSHelpWordsModel.h */,
+				2EE414C220D27C700022E976 /* SSHelpWordsModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1848,6 +1874,72 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
+		2EE4145E20D23BA50022E976 /* NetWorkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4146220D258200022E976 /* HttpToll */,
+				2EE4145F20D23C300022E976 /* GYAsyncSocket.h */,
+				2EE4146020D23C300022E976 /* GYAsyncSocket.m */,
+			);
+			path = NetWorkRequest;
+			sourceTree = "<group>";
+		};
+		2EE4146220D258200022E976 /* HttpToll */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4146320D258200022E976 /* Category */,
+				2EE4146A20D258200022E976 /* Lib */,
+				2EE4149920D258200022E976 /* NetWorkStatus.h */,
+				2EE4146920D258200022E976 /* NetWorkStatus.m */,
+				2EE4146820D258200022E976 /* HttpTool.h */,
+				2EE4149A20D258200022E976 /* HttpTool.m */,
+			);
+			path = HttpToll;
+			sourceTree = "<group>";
+		};
+		2EE4146320D258200022E976 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4146520D258200022E976 /* NSString+Password.h */,
+				2EE4146720D258200022E976 /* NSString+Password.m */,
+				2EE4146420D258200022E976 /* NSDictionary+Category.h */,
+				2EE4146620D258200022E976 /* NSDictionary+Category.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2EE4146A20D258200022E976 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4146B20D258200022E976 /* TMCache */,
+				2EE4147320D258200022E976 /* Reachability */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		2EE4146B20D258200022E976 /* TMCache */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4146C20D258200022E976 /* TMCache.h */,
+				2EE4146D20D258200022E976 /* TMDiskCache.h */,
+				2EE4146E20D258200022E976 /* TMMemoryCache.h */,
+				2EE4146F20D258200022E976 /* TMCacheBackgroundTaskManager.h */,
+				2EE4147020D258200022E976 /* TMDiskCache.m */,
+				2EE4147120D258200022E976 /* TMMemoryCache.m */,
+				2EE4147220D258200022E976 /* TMCache.m */,
+			);
+			path = TMCache;
+			sourceTree = "<group>";
+		};
+		2EE4147320D258200022E976 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4147520D258200022E976 /* Reachability.h */,
+				2EE4147420D258200022E976 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		37CAACB097E5C8DDF8007802 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2145,12 +2237,15 @@
 				2EB9973920CD5F9A00694110 /* YYFiveRecordTableViewCell.m in Sources */,
 				2E6C8A1720C0EECE00C0B37E /* SGWebView.m in Sources */,
 				2EA78EF620C397E200593E7B /* SSAddMarketsViewController.m in Sources */,
+				2EE414C320D27C700022E976 /* SSHelpWordsModel.m in Sources */,
 				2E6C89F720C03F1000C0B37E /* SSLanguageSetVC.m in Sources */,
 				2E6C8A0620C05C7200C0B37E /* UIView+TNAppLib.m in Sources */,
+				2EE414A120D258200022E976 /* Reachability.m in Sources */,
 				2E6C891E20BC526400C0B37E /* SSTradeRecordModel.m in Sources */,
 				2EB989DE20CC040400694110 /* SSExportPrivatePassWord.m in Sources */,
 				2E6C8A0020C0534400C0B37E /* HXLanguageManager.m in Sources */,
 				2EB9973B20CD5F9A00694110 /* YYFiveRecordView.m in Sources */,
+				2EE414B120D258200022E976 /* HttpTool.m in Sources */,
 				2E4815A620B9734900AFCBBB /* UIViewController+swizzling.m in Sources */,
 				2E32EE4520C9FFDE00D00CFB /* SSTransRecordHeaderView.m in Sources */,
 				2E60DD9120C4437C00A20429 /* SSEditMarketsCell.m in Sources */,
@@ -2163,11 +2258,14 @@
 				2E48165320B9A95500AFCBBB /* UIBarButtonItem+Category.m in Sources */,
 				2EB9976B20CD81DF00694110 /* SSMatrixCodeVC.m in Sources */,
 				2EB989CC20CC040400694110 /* SSConfirmHelpWordsVC.m in Sources */,
+				2EE4149F20D258200022E976 /* TMMemoryCache.m in Sources */,
 				2E3F35A920C5869D001C78CB /* SSTouchIDSetCell.m in Sources */,
 				2E6C897920BE32C300C0B37E /* SJNavigationBar.m in Sources */,
+				2EE4149E20D258200022E976 /* TMDiskCache.m in Sources */,
 				2E4815FB20B97D6400AFCBBB /* PathManager.m in Sources */,
 				2EB9974020CD5F9A00694110 /* YYStockScrollView.m in Sources */,
 				2EA78EFB20C3990600593E7B /* SSAddMarketsListCell.m in Sources */,
+				2EE4146120D23C300022E976 /* GYAsyncSocket.m in Sources */,
 				2E6C891B20BC522900C0B37E /* SSAserModel.m in Sources */,
 				2E6C8AE920C26F6D00C0B37E /* SSApplicationsShareView.m in Sources */,
 				2EB9974D20CD5FA900694110 /* AppServer.m in Sources */,
@@ -2194,11 +2292,13 @@
 				2E48166920BA843B00AFCBBB /* SSAccountViewController.m in Sources */,
 				2E60DD9620C44A0900A20429 /* SSMarketRemindViewController.m in Sources */,
 				2E48168720BAD88D00AFCBBB /* SSMarketCell.m in Sources */,
+				2EE4149C20D258200022E976 /* NSString+Password.m in Sources */,
 				2E6C8AC120C25B7A00C0B37E /* SSAuthorizedLoginCV.m in Sources */,
 				2E4815FC20B97D6400AFCBBB /* UserDefaultUtil.m in Sources */,
 				2EB9974520CD5F9A00694110 /* YYKlineMaskView.m in Sources */,
 				2E6C8AD920C26CB900C0B37E /* SSHelpCenterViewController.m in Sources */,
 				2EB9974120CD5F9A00694110 /* YYStockViewMaskView.m in Sources */,
+				2EE4149B20D258200022E976 /* NSDictionary+Category.m in Sources */,
 				2E48165420B9A95500AFCBBB /* UIView+Category.m in Sources */,
 				2E6C8AC720C2619000C0B37E /* SSChangePasswordVC.m in Sources */,
 				2EB9973320CD5F9A00694110 /* YYStockVariable.m in Sources */,
@@ -2218,6 +2318,7 @@
 				2E6C8A1320C0EEB600C0B37E /* ScanSuccessJumpVC.m in Sources */,
 				2EB989D020CC040400694110 /* SSBackupWalletViewController.m in Sources */,
 				2E48153520B91FB800AFCBBB /* ViewController.m in Sources */,
+				2EE4149D20D258200022E976 /* NetWorkStatus.m in Sources */,
 				2E6C89FC20C041A200C0B37E /* SSLanguageCell.m in Sources */,
 				2E6C8AE120C26DDF00C0B37E /* SSDiscoverViewController.m in Sources */,
 				2E4815AA20B9734900AFCBBB /* NSArray+swiArray.m in Sources */,
@@ -2238,6 +2339,7 @@
 				2E6C8AF420C2C13600C0B37E /* SSArticleTableViewCell.m in Sources */,
 				2E6C8A4520C122E400C0B37E /* MBProgressHUD+HYExtension.m in Sources */,
 				2EB989D820CC040400694110 /* SSCreatePurseViewController.m in Sources */,
+				2EE414A020D258200022E976 /* TMCache.m in Sources */,
 				2EB989ED20CC040400694110 /* SSWalletListCell.m in Sources */,
 				2E6C893420BC5ECC00C0B37E /* SSGetMoneyViewController.m in Sources */,
 				2E6C8AEF20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.m in Sources */,
@@ -2542,7 +2644,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SH.jw-wallet1";
+				PRODUCT_BUNDLE_IDENTIFIER = io.gref.tokenpal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2569,7 +2671,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SH.jw-wallet1";
+				PRODUCT_BUNDLE_IDENTIFIER = io.gref.tokenpal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

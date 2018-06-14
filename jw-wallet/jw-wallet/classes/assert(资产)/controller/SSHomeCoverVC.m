@@ -49,5 +49,8 @@
         [self.navigationController popViewControllerAnimated:NO];
     }];
 }
+- (IBAction)dismiss:(id)sender {
+    [self.navigationController popViewControllerAnimated:NO];
+}
 
 @end

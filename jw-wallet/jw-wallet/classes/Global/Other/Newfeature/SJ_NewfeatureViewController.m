@@ -68,7 +68,7 @@
         UIImageView *imageView = [[UIImageView alloc] init];
         
         // 设置图片
-        NSString *name = [NSString stringWithFormat:@"2018guide_%d", index];
+        NSString *name = [NSString stringWithFormat:@"guide_%d", index];
         imageView.image = [UIImage imageNamed:name];
         
         // 设置frame

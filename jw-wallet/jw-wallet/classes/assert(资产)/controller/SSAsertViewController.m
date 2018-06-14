@@ -13,6 +13,7 @@
 #import "SSManagerPurseViewController.h"
 #import "WCQRCodeScanningVC.h"
 #import "SSHomeCoverVC.h"
+#import "GYAsyncSocket.h"
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView* tableView;
 @property(nonatomic, strong) NSArray* dataArr;/**< array */
@@ -39,6 +40,8 @@
     self.fd_prefersNavigationBarHidden = YES;
     
     [self navigationView];
+    
+    [self requestSocketData];
 }
 #pragma mark - 设置导航栏透明
 - (void)viewWillAppear:(BOOL)animated {
@@ -198,5 +201,15 @@
 
     }
 
+}
+#pragma mark - 请求数据
+-(void)requestSocketData{
+//    NSMutableArray *params = [NSMutableDictionary dictionary];
+//    //请求登陆
+//    GYAsyncSocket *socket = [GYAsyncSocket shareAsncSocket];
+//    [socket sendDataWithType: 111  //功能号
+//                     withDic: params];// 发送的数据
+//    [socket reciveData:^(NSString  *data, NSString *type) {
+//    }];
 }
 @end

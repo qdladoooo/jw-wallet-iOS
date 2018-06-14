@@ -11,21 +11,22 @@
 #define RequestTimeOut 30
 
 #if DEVELOPMENT //***************开发版本*************
+
 //****************测试环境***********
-//app服务重构测试
-//#define BaseURLString   @"http://www-test.baidu.com/rest/post"//beta
-//#define BaseURLString @"http://docker-branch02-web-tomcat.baidu.com:8080/rest/post"//分之域名
+
 //****************开发环境(个人服务器)************
-//后台XXX
-#define BaseURLString  @"http://192.168.1.175:8080/baidu/rest/post"
+#define BaseURLString  @"http://faucet.testnet.gref.io/index.php"
 #else          //**************生产版本**************
-#define BaseURLString @"https://www.baidu.com/rest/post"
+#define BaseURLString @"http://faucet.testnet.gref.io/index.php"
 #endif
 
 //****************接口说明************
-//获取用户信息
-#define Request_type_getUserInfo @"getUserInfo"
-//首页广告
-#define Request_type_queryBannerByType @"queryBannerByType"
+
+// 获取助记词
+#define GetHelpWords @"/index/suggest-brain-key"
+
+
+
+
 
 #endif /* DefineRequest_h */

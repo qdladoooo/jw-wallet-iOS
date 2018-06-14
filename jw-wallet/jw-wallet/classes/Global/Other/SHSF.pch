@@ -12,6 +12,7 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "SSGlobalWebView.h"
+#import "HttpTool.h"
 #import "CommonMethods.h"
 #import "DefineMacro.h"
 #import "DefineRequest.h"
@@ -36,4 +37,8 @@
 #import <Masonry.h>
 #import "SJAlert.h"
 #import "HXLanguageManager.h"
+#import <GCDAsyncSocket.h>
+#import <AFNetworking.h>
+#import "SJ_NetworkRequest.h"
+#import <MJExtension.h>
 #endif /* SHSF_pch */

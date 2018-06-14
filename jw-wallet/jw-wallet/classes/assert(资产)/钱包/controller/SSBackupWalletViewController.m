@@ -34,7 +34,7 @@
 }
 // 返回
 - (IBAction)backAction:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 // 确认
 - (IBAction)sure:(id)sender {

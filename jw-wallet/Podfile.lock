@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.3)
   - FDFullscreenPopGesture (1.1)
   - JCore (1.2.0)
   - JShare (1.5.0):
@@ -32,6 +33,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
+  - CocoaAsyncSocket (~> 7.6.3)
   - FDFullscreenPopGesture (= 1.1)
   - JShare (~> 1.5.0)
   - Masonry (~> 1.1.0)
@@ -46,6 +48,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CocoaAsyncSocket
     - FDFullscreenPopGesture
     - JCore
     - JShare
@@ -60,6 +63,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JCore: b52e3dd73625eec70afd1244bb9c41038aa06087
   JShare: 81eb931687063fc4a20e097d82ba33039ccf635c
@@ -72,6 +76,6 @@ SPEC CHECKSUMS:
   SGQRCode: 6cd7f03ea6b74d1267820d427b07d1451b387c79
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: 444c9ee5b2ba6b9b322a9fbaa12fa3b8a2e7b47b
+PODFILE CHECKSUM: c00f70b5448a3e1e920ee0dd665894372e974677
 
 COCOAPODS: 1.5.3
