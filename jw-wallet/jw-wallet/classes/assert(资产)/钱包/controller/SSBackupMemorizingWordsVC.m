@@ -15,6 +15,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *tips;
 @property (weak, nonatomic) IBOutlet UIButton *nextStep;
 @property (weak, nonatomic) IBOutlet UILabel *helpwords;
+
+/**
+ 助记词数组
+ */
+@property (nonatomic, copy) NSArray *strArr;
 @property (nonatomic, strong) SSHelpWordsModel *model;
 @end
 
@@ -23,6 +28,7 @@
 - (IBAction)next:(id)sender {
     
     SSConfirmHelpWordsVC *vc = [[SSConfirmHelpWordsVC alloc] init];
+    vc.dataArr = self.strArr;
     [self.navigationController pushViewController:vc animated:YES];
     
 }
@@ -34,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    _strArr = [NSArray array]; // 初始化助记词数组
     self.fd_prefersNavigationBarHidden = YES;
     
     self.nav_title.text = kLocalizedTableString(@"备份助记词", gy_LocalizableName);
@@ -64,6 +70,8 @@
             if ([json[@"result_code"] integerValue] == 10000 ) {
                 self.model = [SSHelpWordsModel mj_objectWithKeyValues:data];
                 self.helpwords.text = self.model.brain_priv_key;
+                // 把助记词包装成数组
+                [self makeArrayFromString];
             }
         }else{
             [MBProgressHUD showError:@"获取失败"];
@@ -75,6 +83,13 @@
     }];
 
 
+}
+#pragma mark - 用字符串组装成一个数组
+-(void)makeArrayFromString{
+    NSString *str = self.model.brain_priv_key;
+    self.strArr = [str componentsSeparatedByString:@" "];
+    SSLog(@"%@",self.strArr);
+    
 }
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SSTagModel.h"
 @protocol GTButtonTagsViewDelegate;
 @interface GTButtonTagsView : UIView
 
@@ -21,6 +21,7 @@
  *  数据集合
  */
 @property (nonatomic, strong) NSArray *dataArr;
+
 
 @end
 

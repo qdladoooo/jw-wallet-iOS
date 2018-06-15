@@ -10,4 +10,8 @@
 
 @interface SSBackupWalletViewController : UIViewController
 
+/**
+ 用户名
+ */
+@property (nonatomic, copy) NSString *userName;
 @end

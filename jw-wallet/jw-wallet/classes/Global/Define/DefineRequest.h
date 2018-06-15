@@ -24,7 +24,7 @@
 
 // 获取助记词
 #define GetHelpWords @"/index/suggest-brain-key"
-
+#define CreatWallet @"/index/create-account"
 
 
 

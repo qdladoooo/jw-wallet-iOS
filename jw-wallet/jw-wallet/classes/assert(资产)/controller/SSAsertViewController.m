@@ -42,6 +42,7 @@
     [self navigationView];
     
     [self requestSocketData];
+    
 }
 #pragma mark - 设置导航栏透明
 - (void)viewWillAppear:(BOOL)animated {
@@ -211,5 +212,8 @@
 //                     withDic: params];// 发送的数据
 //    [socket reciveData:^(NSString  *data, NSString *type) {
 //    }];
+}
+-(void)vertifyPersonAndMathion{
+    
 }
 @end

@@ -19,6 +19,7 @@
 #import "DefineTheme.h"
 #import "PathManager.h"
 #import "UserDefaultUtil.h"
+#import "PassWordTool.h"
 #import "UIViewController+swizzling.h"
 #import "NSArray+swiArray.h"
 #import "AppDelegate+AppService.h"
@@ -39,6 +40,6 @@
 #import "HXLanguageManager.h"
 #import <GCDAsyncSocket.h>
 #import <AFNetworking.h>
-#import "SJ_NetworkRequest.h"
 #import <MJExtension.h>
+
 #endif /* SHSF_pch */

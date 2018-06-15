@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *tf1;
 @property (weak, nonatomic) IBOutlet UITextField *tf2;
 @property (weak, nonatomic) IBOutlet UITextField *tf3;
+@property (weak, nonatomic) IBOutlet UITextField *codeTF;
 
 @property (weak, nonatomic) IBOutlet UILabel *inputCode_title;
 // 提示
@@ -30,6 +31,7 @@
  */
 @property (weak, nonatomic) IBOutlet UIView *bottomTipView;
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
+@property (weak, nonatomic) IBOutlet UIButton *check_box;
 
 @end
 
@@ -54,7 +56,7 @@
     self.tips.text = kLocalizedTableString(self.tips.text, gy_LocalizableName);
     [self.sureBtn setTitle:kLocalizedTableString(@"确认", gy_LocalizableName) forState:UIControlStateNormal];
     
-    
+    self.sureBtn.backgroundColor = [UIColor lightGrayColor];
     
 }
 
@@ -73,10 +75,59 @@
 }
 #pragma mark - 确认操作
 - (IBAction)sure:(id)sender {
+
+    if (self.check_box.selected == NO) {
+        return;
+    }
+    if (_tf1.text.length==0) {
+        [MBProgressHUD showText:_tf1.placeholder];
+        return;
+    }
+    if (_tf2.text.length==0) {
+        [MBProgressHUD showText:_tf2.placeholder];
+        return;
+        return;
+    }else{
+        if (_tf2.text.length>6) {
+            [MBProgressHUD showText:_tf2.placeholder];
+            return;
+        }
+    }
+    
+    if (_tf3.text.length == 0 ) {
+        
+        [MBProgressHUD showText:_tf3.placeholder];
+        return;
+    }else{
+        
+        if (![_tf3.text isEqualToString:_tf2.text]) {
+            [MBProgressHUD showText:kLocalizedTableString(@"两次输入的密码不一致", gy_LocalizableName)];
+            return;
+        }
+        
+    }
+    if (_codeTF.text.length == 0) {
+        [MBProgressHUD showText:_inputCode_title.text];
+        return;
+    }
+    // 存储密码到钥匙串
+    [PassWordTool savePassWord:self.tf2.text];
+    NSString *psw = [PassWordTool readPassWord];
+    SSLog(@"%@",psw);
+    // 跳转
     SSBackupWalletViewController *vc =[[SSBackupWalletViewController alloc] init];
+    vc.userName = self.tf1.text;
     [self.navigationController pushViewController:vc animated:YES];
     
 }
-
+// 复选框点击
+- (IBAction)check_box_click:(id)sender {
+    self.check_box.selected = !self.check_box.selected;
+    if (_check_box.selected) {
+        _sureBtn.backgroundColor = Bluecolor;
+    }else{
+        _sureBtn.backgroundColor = [UIColor grayColor];
+    }
+}
 
 @end

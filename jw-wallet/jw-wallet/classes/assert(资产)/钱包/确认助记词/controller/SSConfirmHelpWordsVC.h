@@ -10,4 +10,8 @@
 
 @interface SSConfirmHelpWordsVC : UIViewController
 
+/**
+ 助记词数据源
+ */
+@property (nonatomic, copy) NSArray *dataArr;
 @end

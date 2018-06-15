@@ -14,6 +14,8 @@
             <connections>
                 <outlet property="bottomTipView" destination="SIO-SD-7Em" id="a99-ac-u5b"/>
                 <outlet property="checkCode_title" destination="quA-zw-JCi" id="837-3j-4ct"/>
+                <outlet property="check_box" destination="rbs-r1-orm" id="oFs-0Z-97G"/>
+                <outlet property="codeTF" destination="3mH-wx-IJn" id="f6t-mb-3f6"/>
                 <outlet property="inputCode_title" destination="5qj-Rc-rrb" id="nNf-b2-au6"/>
                 <outlet property="nav_title" destination="4KR-bW-ezm" id="56X-La-lBp"/>
                 <outlet property="passWord_title" destination="Qrb-9C-frP" id="jtx-T9-sgY"/>
@@ -113,7 +115,11 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="35" id="lgD-Rx-6xH"/>
                                             </constraints>
-                                            <state key="normal" image="提示_"/>
+                                            <state key="normal" image="checkbox_no.png"/>
+                                            <state key="selected" image="checkbox_yes.png"/>
+                                            <connections>
+                                                <action selector="check_box_click:" destination="-1" eventType="touchUpInside" id="AD1-3S-sYm"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -331,7 +337,8 @@
         </view>
     </objects>
     <resources>
+        <image name="checkbox_no.png" width="16" height="16"/>
+        <image name="checkbox_yes.png" width="16" height="16"/>
         <image name="nav_white" width="10" height="17"/>
-        <image name="提示_" width="10" height="10"/>
     </resources>
 </document>

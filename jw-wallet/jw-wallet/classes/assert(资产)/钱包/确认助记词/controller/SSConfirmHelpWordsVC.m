@@ -9,7 +9,7 @@
 #import "SSConfirmHelpWordsVC.h"
 #import "HZQTagCell.h"
 #import "GTButtonTagsView.h"
-
+#import "SSTagModel.h"
 
 // 每行个数
 #define RowCount 4
@@ -30,7 +30,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *tips;
 @property (weak, nonatomic) IBOutlet UIButton *nextStep;
 
-
+/**
+ 最后得到的助记词
+ */
+@property (nonatomic, copy)NSString *finalStr;
+/**
+ 数据源模型
+ */
+@property (nonatomic, strong)SSTagModel *tagModel;
 @end
 
 @implementation SSConfirmHelpWordsVC
@@ -49,9 +56,13 @@
     
     
     // --------bottomview
-    
+
     self.labelsView.delegate = self;
-    self.labelsView.dataArr = @[@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh",@"fghjkfgh"];
+    
+    [self randomArr:self.dataArr];
+
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -154,10 +165,12 @@
 
 -(void)GTButtonTagsView:(GTButtonTagsView *)view selectIndex:(NSInteger)index selectText:(NSString *)text {
     NSLog(@"第: %ld 文本: %@", index, text);
-    if (_titles.count>=12) {
+  
+    if (_titles.count>=_dataArr.count) {
         return;
     }
-  
+      [self randomArr:_dataArr];
+    [self.labelsView layoutIfNeeded];
     [_titles addObject:text];
     [self.collectionView reloadData];
     [self settingCollectionViewHeight];
@@ -166,7 +179,41 @@
 }
 #pragma mark - 下一步
 - (IBAction)nextStep:(id)sender {
+    SSLog(@"助记词顺序--%@",_titles);
+    _finalStr = [_titles componentsJoinedByString:@""]; // 为分隔符
+    SSLog(@"%@",_finalStr);
+    [self requestData];
+}
+#pragma mark - 网络请求
+-(void)requestData{
+    
+    //  参数：brain_key:助记词   username：用户名
+    NSDictionary *params = @{
+                             @"brain_key":_finalStr,
+                             @"username":@"123"
+                             };
+    
+    NSString *url = [NSString stringWithFormat:@"%@%@",BaseURLString,CreatWallet];
+    [HttpTool postWithURL:url params:params success:^(id json) {
+        SSLog(@"%@",json);
+        [MBProgressHUD showText:json[@"reason"]];
+    } failure:^(NSError *error) {
+         SSLog(@"%@",error);
+    }];
     
 }
-
+#pragma mark - 随机打乱的数组
+-(void)randomArr:(NSArray *)arr{
+//    NSArray* arr = self.dataArr;
+    arr = [arr sortedArrayUsingComparator:^NSComparisonResult(NSString *str1, NSString *str2) {
+        int seed = arc4random_uniform(2);
+        if (seed) {
+            return [str1 compare:str2];
+        } else {
+            return [str2 compare:str1];
+        }
+    }];
+    SSLog(@"随机打乱的数组%@",arr);
+    self.labelsView.dataArr = arr;
+}
 @end
