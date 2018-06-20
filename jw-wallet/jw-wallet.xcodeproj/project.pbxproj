@@ -2665,6 +2665,7 @@
 				CODE_SIGN_ENTITLEMENTS = "jw-wallet/jw-wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYK3K8MU62;
+				ENABLE_BITCODE = NO;
 				ENABLE_ONLY_ACTIVE_RESOURCES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2749,6 +2750,7 @@
 				CODE_SIGN_ENTITLEMENTS = "jw-wallet/jw-wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYK3K8MU62;
+				ENABLE_BITCODE = NO;
 				ENABLE_ONLY_ACTIVE_RESOURCES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

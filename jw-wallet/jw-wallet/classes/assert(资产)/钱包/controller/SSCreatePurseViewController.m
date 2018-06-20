@@ -35,6 +35,9 @@
 
 @property (nonatomic, strong) GT3CaptchaManager *manager;
 @property (strong, nonatomic) IBOutlet GT3CaptchaButton *vertifyBtn;
+@property (nonatomic, strong) GT3CaptchaButton *captchaButton;
+@property (weak, nonatomic) IBOutlet UIView *captchaView;
+
 //网站主部署的用于验证登录的接口 (api_1)
 #define api_1 @"http://www.geetest.com/demo/gt/register-slide"
 //网站主部署的二次验证的接口 (api_2)
@@ -89,7 +92,7 @@
         //成功请调用decisionHandler(GT3SecondaryCaptchaPolicyAllow)
         decisionHandler(GT3SecondaryCaptchaPolicyAllow);
         //失败请调用decisionHandler(GT3SecondaryCaptchaPolicyForbidden)
-        decisionHandler(GT3SecondaryCaptchaPolicyForbidden);
+//        decisionHandler(GT3SecondaryCaptchaPolicyForbidden);
     }
     else {
         //二次验证发生错误
@@ -126,6 +129,8 @@
     [self.sureBtn setTitle:kLocalizedTableString(@"确认", gy_LocalizableName) forState:UIControlStateNormal];
     
     self.sureBtn.backgroundColor = [UIColor lightGrayColor];
+    
+    [self createDefaultButton];
     
 }
 
@@ -206,5 +211,35 @@
         _sureBtn.backgroundColor = [UIColor grayColor];
     }
 }
+- (void)createDefaultButton {
+    //添加验证按钮到父视图上
+//    self.captchaButton.center = CGPointMake(self.view.center.x, self.view.center.y + 76);
+    self.captchaButton.center = CGPointMake(self.view.center.x , self.view.center.y-94);
+    //推荐直接开启验证
+    [self.captchaButton startCaptcha];
+    [self.view addSubview:self.captchaButton];
+}
+- (GT3CaptchaButton *)captchaButton {
+    if (!_captchaButton) {
+        //创建验证管理器实例
+        GT3CaptchaManager *captchaManager = [[GT3CaptchaManager alloc] initWithAPI1:api_1 API2:api_2 timeout:5.0];
+        captchaManager.delegate = self;
+        captchaManager.maskColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.6];
+        
+        //debug mode
+        //        [captchaManager enableDebugMode:YES];
+        //创建验证视图的实例
+        _captchaButton = [[GT3CaptchaButton alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 45) captchaManager:captchaManager];
+    }
+    return _captchaButton;
+}
 
+/** 修改API1的请求 */
+- (void)gtCaptcha:(GT3CaptchaManager *)manager willSendRequestAPI1:(NSURLRequest *)originalRequest withReplacedHandler:(void (^)(NSURLRequest *))replacedHandler {
+    NSMutableURLRequest *mRequest = [originalRequest mutableCopy];
+    NSString *newURL = [NSString stringWithFormat:@"%@?t=%.0f", originalRequest.URL.absoluteString, [[[NSDate alloc] init]timeIntervalSince1970]];
+    mRequest.URL = [NSURL URLWithString:newURL];
+    
+    replacedHandler(mRequest);
+}
 @end
