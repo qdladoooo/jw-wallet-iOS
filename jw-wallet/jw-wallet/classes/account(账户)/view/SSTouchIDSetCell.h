@@ -12,5 +12,5 @@
 +(instancetype)cellWithTableView:(UITableView *)tableView;
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UISwitch *switchStatus;
-
+@property (nonatomic, strong) void (^switchclickBlock)(BOOL onOrOff);
 @end

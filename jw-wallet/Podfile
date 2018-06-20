@@ -30,7 +30,7 @@ pod 'SDWebImage', '~> 4.4.0'
 pod 'Masonry', '~> 1.1.0'
 
 #极光推送
-#pod 'JPush-iOS-SDK', '~> 3.0.5'
+pod 'JPush', '~> 3.0.9'
 
 #极光分享
 pod 'JShare', '~> 1.5.0'
@@ -38,6 +38,7 @@ pod 'JShare', '~> 1.5.0'
 #网络请求框架
 pod 'AFNetworking', '~> 3.2.1'
 
-#Socket框架
-pod 'CocoaAsyncSocket', '~> 7.6.3'
+#webSocket框架
+pod 'SocketRocket'
+
 end

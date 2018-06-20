@@ -13,7 +13,6 @@
 #import "SSManagerPurseViewController.h"
 #import "WCQRCodeScanningVC.h"
 #import "SSHomeCoverVC.h"
-#import "GYAsyncSocket.h"
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView* tableView;
 @property(nonatomic, strong) NSArray* dataArr;/**< array */
@@ -43,6 +42,8 @@
     
     [self requestSocketData];
     
+    
+    
 }
 #pragma mark - 设置导航栏透明
 - (void)viewWillAppear:(BOOL)animated {
@@ -52,7 +53,7 @@
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -205,13 +206,24 @@
 }
 #pragma mark - 请求数据
 -(void)requestSocketData{
-//    NSMutableArray *params = [NSMutableDictionary dictionary];
-//    //请求登陆
-//    GYAsyncSocket *socket = [GYAsyncSocket shareAsncSocket];
-//    [socket sendDataWithType: 111  //功能号
-//                     withDic: params];// 发送的数据
-//    [socket reciveData:^(NSString  *data, NSString *type) {
-//    }];
+    [[SocketRocketUtility instance] SRWebSocketOpenWithURLString:SocketBaseURLString];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidOpen) name:kWebSocketDidOpenNote object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidReceiveMsg:) name:kWebSocketDidCloseNote object:nil];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[SocketRocketUtility instance] SRWebSocketClose]; // 在需要得地方 关闭socket
+    });
+}
+
+- (void)SRWebSocketDidOpen {
+    NSLog(@"开启成功");
+    //在成功后需要做的操作。。。
+    
+}
+
+- (void)SRWebSocketDidReceiveMsg:(NSNotification *)note {
+    //收到服务端发送过来的消息
+    NSString * message = note.object;
+    NSLog(@"%@",message);
 }
 -(void)vertifyPersonAndMathion{
     

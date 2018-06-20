@@ -14,6 +14,13 @@
     [super awakeFromNib];
     // Initialization code
 }
+// 开关
+- (IBAction)switchONAndOff:(UISwitch *)sender {
+    
+    if (_switchclickBlock) {
+        _switchclickBlock(sender.isOn);
+    }
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

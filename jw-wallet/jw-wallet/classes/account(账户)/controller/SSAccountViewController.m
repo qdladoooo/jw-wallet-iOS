@@ -17,14 +17,24 @@
 #import "SSInviteCodeShare.h"
 #import "SSInviteCodeShareCell.h"
 #import "SSTouchIDSetCell.h"
+#import "SSTouchIDVC.h"
+#import <LocalAuthentication/LocalAuthentication.h>
 @interface SSAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView* tableView;
 @property (nonatomic, strong) NSString *launguageShow;
 @property (nonatomic, strong) NSString *unitShow;
+@property (nonatomic, strong) NSString *status1;
+@property (nonatomic, strong) NSString *status2;
+
+/**
+ 开关状态数据源
+ */
+@property (nonatomic, copy) NSArray *statusArr;
 @end
 
 @implementation SSAccountViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -61,6 +71,15 @@
     }else{
         _unitShow = @"";
     }
+    
+    // 开关状态
+    BOOL status1 = [UserDefaultUtil boolValueForKey:TouchIdLogIn];
+    BOOL status2 = [UserDefaultUtil boolValueForKey:TouchIdPay];
+  
+    _status1 = status1?@"1":@"0";
+    _status2 = status2?@"1":@"0";
+    
+    _statusArr = @[_status1,_status2];
     
     [self.tableView reloadData];
 }
@@ -147,17 +166,36 @@
         
     }else if (indexPath.section == 2){
         SSTouchIDSetCell *cell = [SSTouchIDSetCell cellWithTableView:tableView];
+        // 开关状态
+        [cell.switchStatus setOn:[_statusArr[index] boolValue]];
+        // 点击开关
+        cell.switchclickBlock = ^(BOOL onOrOff) {
+            if (index==0) {// 指纹登录开关
+                [UserDefaultUtil saveBoolValue:onOrOff forKey:TouchIdLogIn];
+                if (onOrOff) {
+//                    [self verifyTouchId];
+                }
+            }else{
+                // 指纹支付
+                [UserDefaultUtil saveBoolValue:onOrOff forKey:TouchIdPay];
+            }
+        };
+        
         switch (index) {
             case 0:
+                
                 cell.title.text = kLocalizedTableString(@"启用指纹登录", gy_LocalizableName);
+                
                 break;
             case 1:
                 cell.title.text = kLocalizedTableString(@"启用指纹支付", gy_LocalizableName);
+                
                 break;
                 
             default:
                 break;
-    }
+        }
+
         return cell;
     }
     return nil;
@@ -208,4 +246,91 @@
     }
     
 }
+
+#pragma mark - 弹出Touch ID系统框
+- (void)verifyTouchId
+{
+    [[SSTouchIDVC shareInstance] verifyTouchId:^(BOOL success, NSError * _Nullable error) {
+        if (success) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSLog(@"TouchID 验证成功");// 登录成功
+                
+            });
+        }else if(error){
+            switch (error.code) {
+                case LAErrorAuthenticationFailed:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"TouchID 验证失败");// 验证手势密码
+                        
+                    });
+                    break;
+                }
+                case LAErrorUserCancel:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"TouchID 被用户手动取消");//验证手势密码
+                    });
+                }
+                    break;
+                case LAErrorUserFallback:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"用户不使用TouchID,选择手动输入密码");
+//                        [MBProgressHUD showNoImageMessage:@"用户不使用TouchID，重新验证手势"];
+                    });
+                }
+                    break;
+                case LAErrorSystemCancel:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"TouchID 被系统取消 (如遇到来电,锁屏,按了Home键等)");//验证手势密码
+//                        [MBProgressHUD showNoImageMessage:@"TouchID 被系统取消，重新验证手势"];
+                    });
+                }
+                    break;
+                case LAErrorPasscodeNotSet:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"TouchID 无法启动,因为用户没有设置密码");
+//                        [MBProgressHUD showNoImageMessage:@"TouchID 无法启动，重新验证手势"];
+                    });
+                }
+                    break;
+                case LAErrorTouchIDNotEnrolled:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"TouchID 无法启动,因为用户没有设置TouchID");
+//                        [MBProgressHUD showNoImageMessage:@"用户没有设置TouchID，重新验证手势"];
+                    });
+                }
+                    break;
+                case LAErrorTouchIDNotAvailable:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"TouchID 无效");
+//                        [MBProgressHUD showNoImageMessage:@"TouchID 无效，重新验证手势"];
+                    });
+                }
+                    break;
+                case LAErrorTouchIDLockout:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"TouchID 被锁定(连续多次验证TouchID失败,系统需要用户手动输入密码)");
+//                        [MBProgressHUD showNoImageMessage:@"TouchID 被锁定，重新验证手势"];
+                    });
+                }
+                    break;
+                case LAErrorAppCancel:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"当前软件被挂起并取消了授权 (如App进入了后台等)");
+                    });
+                }
+                    break;
+                case LAErrorInvalidContext:{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"当前软件被挂起并取消了授权 (LAContext对象无效)");
+                    });
+                }
+                    break;
+                default:
+                    break;
+            }
+            
+        }
+    }];
+}
+
 @end

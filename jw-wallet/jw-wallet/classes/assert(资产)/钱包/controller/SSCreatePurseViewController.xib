@@ -25,6 +25,7 @@
                 <outlet property="tf2" destination="8hs-nU-UgT" id="bsC-hK-caZ"/>
                 <outlet property="tf3" destination="cwB-QR-yRJ" id="4Vy-tk-IiP"/>
                 <outlet property="tips" destination="E3w-e9-25F" id="NCU-AJ-qML"/>
+                <outlet property="vertifyBtn" destination="IPv-fH-nh3" id="gmw-5b-CwJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="walletName_title" destination="x25-zV-kZu" id="ggB-Wu-nGb"/>
             </connections>
@@ -253,12 +254,20 @@
                                             <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPv-fH-nh3">
+                                            <rect key="frame" x="315" y="8.5" width="30" height="30"/>
+                                            <connections>
+                                                <action selector="vertify:" destination="-1" eventType="touchUpInside" id="gL7-Oz-sBI"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="quA-zw-JCi" firstAttribute="centerY" secondItem="2dF-D8-lmI" secondAttribute="centerY" id="430-kp-xOE"/>
+                                        <constraint firstItem="IPv-fH-nh3" firstAttribute="centerX" secondItem="3mH-wx-IJn" secondAttribute="centerX" id="9xe-yq-ine"/>
                                         <constraint firstItem="quA-zw-JCi" firstAttribute="leading" secondItem="2dF-D8-lmI" secondAttribute="leading" constant="15" id="BFL-fr-MZO"/>
                                         <constraint firstItem="3mH-wx-IJn" firstAttribute="centerY" secondItem="2dF-D8-lmI" secondAttribute="centerY" id="Rtm-Z1-ySV"/>
+                                        <constraint firstItem="IPv-fH-nh3" firstAttribute="centerY" secondItem="3mH-wx-IJn" secondAttribute="centerY" id="XDZ-Yg-M4Z"/>
                                         <constraint firstItem="5qj-Rc-rrb" firstAttribute="centerY" secondItem="2dF-D8-lmI" secondAttribute="centerY" id="cF6-hZ-WV3"/>
                                         <constraint firstAttribute="trailing" secondItem="3mH-wx-IJn" secondAttribute="trailing" constant="15" id="ka6-Ai-66c"/>
                                         <constraint firstItem="3mH-wx-IJn" firstAttribute="leading" secondItem="5qj-Rc-rrb" secondAttribute="trailing" constant="10" id="m4y-f4-pSo"/>
@@ -333,7 +342,7 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="GJe-pp-uEI" secondAttribute="bottom" id="oPB-uX-APU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="-62" y="-202"/>
+            <point key="canvasLocation" x="-62.5" y="-202.5"/>
         </view>
     </objects>
     <resources>

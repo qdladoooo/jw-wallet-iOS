@@ -31,6 +31,11 @@
 //当前设备的ios版本
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
+// 是否设置指纹登录
+#define  TouchIdLogIn @"TouchIdLogIn"
+// 是否设置指纹支付
+#define TouchIdPay @"TouchIdPay"
+
 // 自定义Log
 #ifdef DEBUG
 #define SSLog(...) NSLog(__VA_ARGS__)

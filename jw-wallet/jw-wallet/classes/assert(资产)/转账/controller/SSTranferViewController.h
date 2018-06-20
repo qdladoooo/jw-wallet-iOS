@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSTranferViewController : UIViewController
+@interface SSTranferViewController : SSBaseViewController
 
 /**
  扫描二维码获取地址

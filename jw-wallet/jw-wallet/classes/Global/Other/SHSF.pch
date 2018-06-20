@@ -11,8 +11,10 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "SSBaseViewController.h"
 #import "SSGlobalWebView.h"
 #import "HttpTool.h"
+#import "SocketRocketUtility.h"
 #import "CommonMethods.h"
 #import "DefineMacro.h"
 #import "DefineRequest.h"
@@ -38,8 +40,10 @@
 #import <Masonry.h>
 #import "SJAlert.h"
 #import "HXLanguageManager.h"
-#import <GCDAsyncSocket.h>
+#import "UserDefaultUtil.h"
 #import <AFNetworking.h>
 #import <MJExtension.h>
+#import <GT3Captcha/GT3Captcha.h>
+#import <JPUSHService.h>
 
 #endif /* SHSF_pch */

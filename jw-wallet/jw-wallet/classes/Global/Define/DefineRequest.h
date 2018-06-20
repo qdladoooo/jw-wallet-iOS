@@ -15,9 +15,15 @@
 //****************测试环境***********
 
 //****************开发环境(个人服务器)************
+//**************** http 接口 ****************
 #define BaseURLString  @"http://faucet.testnet.gref.io/index.php"
+//**************** websocket 接口 ****************
+#define SocketBaseURLString  @"ws://115.28.54.7:11011"
+
 #else          //**************生产版本**************
-#define BaseURLString @"http://faucet.testnet.gref.io/index.php"
+#define BaseURLString  @"http://faucet.testnet.gref.io/index.php"
+//**************** websocket 接口 ****************
+#define SocketBaseURLString  @"ws://115.28.54.7:11011"
 #endif
 
 //****************接口说明************

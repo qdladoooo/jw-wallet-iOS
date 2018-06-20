@@ -180,7 +180,7 @@
 #pragma mark - 下一步
 - (IBAction)nextStep:(id)sender {
     SSLog(@"助记词顺序--%@",_titles);
-    _finalStr = [_titles componentsJoinedByString:@""]; // 为分隔符
+    _finalStr = [_titles componentsJoinedByString:@" "]; // 为分隔符
     SSLog(@"%@",_finalStr);
     [self requestData];
 }

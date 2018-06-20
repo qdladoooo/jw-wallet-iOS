@@ -14,4 +14,5 @@
  助记词数据源
  */
 @property (nonatomic, copy) NSArray *dataArr;
+@property (nonatomic,copy) NSString *helpwords;
 @end

@@ -29,6 +29,7 @@
     
     SSConfirmHelpWordsVC *vc = [[SSConfirmHelpWordsVC alloc] init];
     vc.dataArr = self.strArr;
+    vc.helpwords = self.model.brain_priv_key;
     [self.navigationController pushViewController:vc animated:YES];
     
 }

@@ -25,8 +25,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIR-a4-cdV">
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vIR-a4-cdV">
                         <rect key="frame" x="265" y="18" width="51" height="31"/>
+                        <connections>
+                            <action selector="switchONAndOff:" destination="KGk-i7-Jjw" eventType="valueChanged" id="f4m-1h-ilJ"/>
+                        </connections>
                     </switch>
                 </subviews>
                 <constraints>

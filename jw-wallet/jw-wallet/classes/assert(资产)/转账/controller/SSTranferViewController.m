@@ -72,6 +72,28 @@
 }
 #pragma mark - 确认
 - (IBAction)sureBtn:(id)sender {
+    // 地址
+    if (self.address.text.length==0) {
+        [MBProgressHUD showText:_address.placeholder];
+        return;
+    }
+    // 转账金额
+    if (self.transMoney.text.length == 0) {
+        [MBProgressHUD showText:_transMoney.placeholder];
+        return;
+    }
+    // 点击确认开始转账
+    NSString *url = [NSString stringWithFormat:@"%@%@",BaseURLString,@"转账url"];
+    NSDictionary *params = @{
+                             @"地址":@"xxx",
+                             @"金额":@"xxx",
+                             @"矿工费用":self.value.text
+                             };
+    [HttpTool postWithURL:url params:params success:^(id json) {
+        // 成功
+    } failure:^(NSError *error) {
+        [MBProgressHUD showText:[NSString stringWithFormat:@"%@",error]];
+    }];
 }
 
 @end
