@@ -60,7 +60,7 @@
         make.height.equalTo(@YYStockTopBarViewHeight);
     }];
     _topBarView.delegate = self;
-    _topBarView.hidden = YES; // 不要顶部条子
+//    _topBarView.hidden = YES; // 不要顶部条子
 }
 
 - (void)initUI_StockContainerView {
@@ -84,7 +84,8 @@
                 stockView =  [[YYStockView_TimeLine alloc]initWithTimeLineModels:[self.dataSource YYStock:self stockDatasOfIndex:i] isShowFiveRecord: NO fiveRecordModel:[self.dataSource fiveRecordModelOfIndex:i]];
             }
             ((YYStockView_TimeLine *)stockView).delegate = self;
-        } else {
+        }
+        else {
             stockView =  [[YYStockView_Kline alloc]initWithLineModels:[self.dataSource YYStock:self stockDatasOfIndex:i]];
             ((YYStockView_Kline *)stockView).delegate = self;
             stockView.hidden = YES;
@@ -112,9 +113,9 @@
     if ([self.stockViewArray[index] isKindOfClass:[YYStockView_TimeLine class]]) {
         YYStockView_TimeLine *stockView = (YYStockView_TimeLine *)(self.stockViewArray[index]);
         if ([self.dataSource respondsToSelector:@selector(isShowfiveRecordModelOfIndex:)]) {
-            [stockView reDrawWithTimeLineModels:[self.dataSource YYStock:self stockDatasOfIndex:index] isShowFiveRecord:[self.dataSource isShowfiveRecordModelOfIndex:0] fiveRecordModel:[self.dataSource fiveRecordModelOfIndex:index]];
+            [stockView reDrawWithTimeLineModels:[self.dataSource YYStock:self stockDatasOfIndex:index] isShowFiveRecord:[self.dataSource isShowfiveRecordModelOfIndex:0] fiveRecordModel:[self.dataSource fiveRecordModelOfIndex:0]];
         } else {
-            [stockView reDrawWithTimeLineModels:[self.dataSource YYStock:self stockDatasOfIndex:index] isShowFiveRecord:NO fiveRecordModel:nil];
+            [stockView reDrawWithTimeLineModels:[self.dataSource YYStock:self stockDatasOfIndex:0] isShowFiveRecord:NO fiveRecordModel:nil];
         }
     }
 }
@@ -129,6 +130,7 @@
     self.stockViewArray[self.currentIndex].hidden = YES;
     self.stockViewArray[index].hidden = NO;
     self.currentIndex = index;
+    SSLog(@"点击了第%ld个",index);
     [self draw];
 }
 

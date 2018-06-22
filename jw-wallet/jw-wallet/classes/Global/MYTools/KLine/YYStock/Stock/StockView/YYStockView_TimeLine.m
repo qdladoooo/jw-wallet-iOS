@@ -31,6 +31,16 @@
 @property (nonatomic, strong) YYTimeLineVolumeView *volumeView;
 
 /**
+ 水平线
+ */
+@property (nonatomic, strong) UIView *LineH;
+
+/**
+ 垂直的线
+ */
+@property (nonatomic, strong) UIView *LineV;
+
+/**
  是否显示五档图
  */
 @property (nonatomic, assign) BOOL isShowFiveRecord;
@@ -125,6 +135,7 @@
             self.drawLinePositionModels = [self.timeLineView drawViewWithXPosition:0 drawModels:self.drawLineModels maxValue:maxValue minValue:minValue];
             //绘制成交量
             [self.volumeView drawViewWithXPosition:0 drawModels:self.drawLineModels];
+            
             //更新背景线
             self.stockScrollView.isShowBgLine = YES;
             [self.stockScrollView setNeedsDisplay];
@@ -134,7 +145,7 @@
             }
         }
         //绘制左侧文字部分
-        [self drawLeftRightDesc];
+//        [self drawLeftRightDesc];
     }
 }
 
@@ -239,12 +250,39 @@
     _volumeView = [YYTimeLineVolumeView new];
     _volumeView.backgroundColor = [UIColor clearColor];
     [_stockScrollView.contentView addSubview:_volumeView];
-    
+
     [_volumeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(_stockScrollView.contentView);
         make.top.equalTo(_timeLineView.mas_bottom);
         make.height.equalTo(_stockScrollView.contentView).multipliedBy(1-[YYStockVariable lineMainViewRadio]);
     }];
+    
+    // 水平的线
+    _LineH = [UIView new];
+    _LineH.backgroundColor = [UIColor grayColor];
+    [_stockScrollView  addSubview:_LineH];
+//    [_LineH mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.equalTo((self.stockScrollView.contentView));
+////        make.top.mas_equalTo(self.stockScrollView.mas_bottom).mas_offset(1);
+//        make.top.equalTo(self.stockScrollView.mas_bottom);
+//        make.height.mas_equalTo(@1);
+//    }];
+    _LineH.frame = CGRectMake(0,162, SCREEN_WIDTH, 1);
+    
+    //垂直的线
+    _LineV = [UIView new];
+    _LineV.backgroundColor = [UIColor grayColor];
+    [self.stockScrollView addSubview:_LineV];
+    _LineV.frame = CGRectMake(0, 0, 1, 162);
+//    [_LineV mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.stockScrollView.mas_top);
+//        make.left.equalTo(self.stockScrollView.mas_left);
+//        make.right.mas_equalTo(self.stockScrollView.mas_left).mas_offset(1);
+//        make.bottom.equalTo(self.stockScrollView.mas_bottom);
+//        make.width.mas_equalTo(@1);
+//
+//    }];
+    
 }
 
 - (void)initUI_stockScrollView {
@@ -255,13 +293,13 @@
     
     [self addSubview:_stockScrollView];
     [_stockScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self);
-        make.left.equalTo(self).offset(YYStockTimeLineViewLeftGap);
-        make.top.equalTo(self).offset(YYStockScrollViewTopGap);
+        make.bottom.equalTo(self.mas_bottom);
+        make.left.equalTo(self.mas_left).offset(YYStockTimeLineViewLeftGap);
+        make.top.equalTo(self.mas_top).offset(YYStockScrollViewTopGap);
         if (self.isShowFiveRecord) {
             make.right.equalTo(self.fiveRecordView.mas_left).offset(-12);
         } else {
-            make.right.equalTo(self).offset(-12);
+            make.right.equalTo(self.mas_right).offset(-12);
         }
     }];
 }

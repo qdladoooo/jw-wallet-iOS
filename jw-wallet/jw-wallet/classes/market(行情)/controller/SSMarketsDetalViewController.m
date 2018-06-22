@@ -204,7 +204,7 @@
 - (NSArray *)stockTopBarTitleArray {
     if (!_stockTopBarTitleArray) {
         _stockTopBarTitleArray = @[@"分",@"时",@"天",@"周",];
-        //        _stockTopBarTitleArray = @[@"分时",@"日K",@"周K",@"月K"];
+//                _stockTopBarTitleArray = @[@"分时",@"日K",@"周K",@"月K"];
     }
     return _stockTopBarTitleArray;
 }
@@ -221,6 +221,14 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+#pragma mark - 顶部条子点击
+- (IBAction)TopBarBtnClick:(UIButton *)sender {
+//    NSInteger index = sender.tag-100;
+    [UIView animateWithDuration:1 animations:^{
+        [self.stock draw];
+    }];
+    
 }
 
 @end

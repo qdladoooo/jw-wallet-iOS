@@ -209,15 +209,14 @@
     [[SocketRocketUtility instance] SRWebSocketOpenWithURLString:SocketBaseURLString];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidOpen) name:kWebSocketDidOpenNote object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidReceiveMsg:) name:kWebSocketDidCloseNote object:nil];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [[SocketRocketUtility instance] SRWebSocketClose]; // 在需要得地方 关闭socket
     });
 }
 
 - (void)SRWebSocketDidOpen {
     NSLog(@"开启成功");
-    //在成功后需要做的操作。。。
-    
+    //在成功后需要做的操作。。。    
 }
 
 - (void)SRWebSocketDidReceiveMsg:(NSNotification *)note {
@@ -225,6 +224,7 @@
     NSString * message = note.object;
     NSLog(@"%@",message);
 }
+
 -(void)vertifyPersonAndMathion{
     
 }

@@ -34,7 +34,7 @@
      // Override point for customization after application launch.
     //当前语言
     NSString *currentLanguage = kLanguageManager.currentLanguage;
-    
+    // 如果没有设置语言,默认为繁体中文
     if([currentLanguage rangeOfString:currentLanguage].location == NSNotFound)
     {
         [kLanguageManager setUserlanguage:@"zh-hant"];

@@ -8,6 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		002CF42B8F8ECDB403EEFB1D /* libPods-jw-wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */; };
+		2E0001BC20DB528200CD5C49 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0001BA20DB528200CD5C49 /* ShareView.m */; };
+		2E0001D120DB6FA900CD5C49 /* qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001BD20DB6FA600CD5C49 /* qq@3x.png */; };
+		2E0001D220DB6FA900CD5C49 /* wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001BE20DB6FA600CD5C49 /* wechat@2x.png */; };
+		2E0001D320DB6FA900CD5C49 /* weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001BF20DB6FA600CD5C49 /* weibo@2x.png */; };
+		2E0001D420DB6FA900CD5C49 /* wechat_moment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C020DB6FA600CD5C49 /* wechat_moment@2x.png */; };
+		2E0001D520DB6FA900CD5C49 /* twitter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C120DB6FA600CD5C49 /* twitter@3x.png */; };
+		2E0001D620DB6FA900CD5C49 /* wechat_moment@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C220DB6FA600CD5C49 /* wechat_moment@3x.png */; };
+		2E0001D720DB6FA900CD5C49 /* messenger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C320DB6FA700CD5C49 /* messenger@3x.png */; };
+		2E0001D820DB6FA900CD5C49 /* weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C420DB6FA700CD5C49 /* weibo@3x.png */; };
+		2E0001D920DB6FA900CD5C49 /* res6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C520DB6FA700CD5C49 /* res6.gif */; };
+		2E0001DA20DB6FA900CD5C49 /* wechat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C620DB6FA700CD5C49 /* wechat@3x.png */; };
+		2E0001DB20DB6FA900CD5C49 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C720DB6FA700CD5C49 /* twitter@2x.png */; };
+		2E0001DC20DB6FA900CD5C49 /* wechat_fav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C820DB6FA800CD5C49 /* wechat_fav@2x.png */; };
+		2E0001DD20DB6FA900CD5C49 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001C920DB6FA800CD5C49 /* facebook@2x.png */; };
+		2E0001DE20DB6FA900CD5C49 /* qzone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001CA20DB6FA800CD5C49 /* qzone@2x.png */; };
+		2E0001DF20DB6FA900CD5C49 /* qzone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001CB20DB6FA800CD5C49 /* qzone@3x.png */; };
+		2E0001E020DB6FA900CD5C49 /* messenger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001CC20DB6FA800CD5C49 /* messenger@2x.png */; };
+		2E0001E120DB6FA900CD5C49 /* 勾选@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001CD20DB6FA900CD5C49 /* 勾选@3x.png */; };
+		2E0001E220DB6FA900CD5C49 /* facebook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001CE20DB6FA900CD5C49 /* facebook@3x.png */; };
+		2E0001E320DB6FA900CD5C49 /* qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001CF20DB6FA900CD5C49 /* qq@2x.png */; };
+		2E0001E420DB6FA900CD5C49 /* wechat_fav@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001D020DB6FA900CD5C49 /* wechat_fav@3x.png */; };
 		2E046BBE20CEC18700F5B22D /* SSLanguageSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046BC020CEC18700F5B22D /* SSLanguageSetVC.xib */; };
 		2E046C0F20CFB7BC00F5B22D /* SSSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C1120CFB7BC00F5B22D /* SSSectionHeaderView.xib */; };
 		2E046C1820CFBC0200F5B22D /* SSAccoutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C1A20CFBC0200F5B22D /* SSAccoutHeaderView.xib */; };
@@ -16,8 +37,6 @@
 		2E046C3220CFC04D00F5B22D /* SSInviteCodeShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C3420CFC04D00F5B22D /* SSInviteCodeShareCell.xib */; };
 		2E046C4020CFFBB000F5B22D /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */; };
 		2E046C4420D00F0F00F5B22D /* XRDragTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C4220D00F0F00F5B22D /* XRDragTableView.m */; };
-		2E046C4820D017DD00F5B22D /* SSLogin&RigisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C4620D017DD00F5B22D /* SSLogin&RigisterVC.m */; };
-		2E046C4920D017DD00F5B22D /* SSLogin&RigisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E046C4720D017DD00F5B22D /* SSLogin&RigisterVC.xib */; };
 		2E046C4C20D01CA900F5B22D /* SSGlobalWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E046C4B20D01CA900F5B22D /* SSGlobalWebView.m */; };
 		2E32EE2720C927E400D00CFB /* hobby.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E32EE2620C927E400D00CFB /* hobby.plist */; };
 		2E32EE3C20C988A700D00CFB /* SSTransRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E32EE3A20C988A700D00CFB /* SSTransRecordVC.m */; };
@@ -263,6 +282,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0001BA20DB528200CD5C49 /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
+		2E0001BB20DB528200CD5C49 /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
+		2E0001BD20DB6FA600CD5C49 /* qq@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq@3x.png"; sourceTree = "<group>"; };
+		2E0001BE20DB6FA600CD5C49 /* wechat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat@2x.png"; sourceTree = "<group>"; };
+		2E0001BF20DB6FA600CD5C49 /* weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo@2x.png"; sourceTree = "<group>"; };
+		2E0001C020DB6FA600CD5C49 /* wechat_moment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat_moment@2x.png"; sourceTree = "<group>"; };
+		2E0001C120DB6FA600CD5C49 /* twitter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@3x.png"; sourceTree = "<group>"; };
+		2E0001C220DB6FA600CD5C49 /* wechat_moment@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat_moment@3x.png"; sourceTree = "<group>"; };
+		2E0001C320DB6FA700CD5C49 /* messenger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messenger@3x.png"; sourceTree = "<group>"; };
+		2E0001C420DB6FA700CD5C49 /* weibo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo@3x.png"; sourceTree = "<group>"; };
+		2E0001C520DB6FA700CD5C49 /* res6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = res6.gif; sourceTree = "<group>"; };
+		2E0001C620DB6FA700CD5C49 /* wechat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat@3x.png"; sourceTree = "<group>"; };
+		2E0001C720DB6FA700CD5C49 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		2E0001C820DB6FA800CD5C49 /* wechat_fav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat_fav@2x.png"; sourceTree = "<group>"; };
+		2E0001C920DB6FA800CD5C49 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
+		2E0001CA20DB6FA800CD5C49 /* qzone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qzone@2x.png"; sourceTree = "<group>"; };
+		2E0001CB20DB6FA800CD5C49 /* qzone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qzone@3x.png"; sourceTree = "<group>"; };
+		2E0001CC20DB6FA800CD5C49 /* messenger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messenger@2x.png"; sourceTree = "<group>"; };
+		2E0001CD20DB6FA900CD5C49 /* 勾选@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "勾选@3x.png"; sourceTree = "<group>"; };
+		2E0001CE20DB6FA900CD5C49 /* facebook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@3x.png"; sourceTree = "<group>"; };
+		2E0001CF20DB6FA900CD5C49 /* qq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq@2x.png"; sourceTree = "<group>"; };
+		2E0001D020DB6FA900CD5C49 /* wechat_fav@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat_fav@3x.png"; sourceTree = "<group>"; };
 		2E046BC420CEC19300F5B22D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SSLanguageSetVC.strings"; sourceTree = "<group>"; };
 		2E046C1020CFB7BC00F5B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SSSectionHeaderView.xib; sourceTree = "<group>"; };
 		2E046C1320CFB7C000F5B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSSectionHeaderView.strings; sourceTree = "<group>"; };
@@ -288,9 +329,6 @@
 		2E046C3F20CFFBB000F5B22D /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		2E046C4220D00F0F00F5B22D /* XRDragTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRDragTableView.m; sourceTree = "<group>"; };
 		2E046C4320D00F0F00F5B22D /* XRDragTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRDragTableView.h; sourceTree = "<group>"; };
-		2E046C4520D017DD00F5B22D /* SSLogin&RigisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSLogin&RigisterVC.h"; sourceTree = "<group>"; };
-		2E046C4620D017DD00F5B22D /* SSLogin&RigisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SSLogin&RigisterVC.m"; sourceTree = "<group>"; };
-		2E046C4720D017DD00F5B22D /* SSLogin&RigisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "SSLogin&RigisterVC.xib"; sourceTree = "<group>"; };
 		2E046C4A20D01CA900F5B22D /* SSGlobalWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSGlobalWebView.h; sourceTree = "<group>"; };
 		2E046C4B20D01CA900F5B22D /* SSGlobalWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSGlobalWebView.m; sourceTree = "<group>"; };
 		2E32EE2620C927E400D00CFB /* hobby.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hobby.plist; sourceTree = "<group>"; };
@@ -727,6 +765,8 @@
 		2E3F359220C517E0001C78CB /* 分享邀请码 */ = {
 			isa = PBXGroup;
 			children = (
+				2E0001BB20DB528200CD5C49 /* ShareView.h */,
+				2E0001BA20DB528200CD5C49 /* ShareView.m */,
 				2E3F359320C5180F001C78CB /* SSInviteCodeShare.h */,
 				2E3F359420C5180F001C78CB /* SSInviteCodeShare.m */,
 				2E3F359520C5180F001C78CB /* SSInviteCodeShare.xib */,
@@ -965,6 +1005,26 @@
 		2E48162720B983AC00AFCBBB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2E0001CD20DB6FA900CD5C49 /* 勾选@3x.png */,
+				2E0001C920DB6FA800CD5C49 /* facebook@2x.png */,
+				2E0001CE20DB6FA900CD5C49 /* facebook@3x.png */,
+				2E0001CC20DB6FA800CD5C49 /* messenger@2x.png */,
+				2E0001C320DB6FA700CD5C49 /* messenger@3x.png */,
+				2E0001CF20DB6FA900CD5C49 /* qq@2x.png */,
+				2E0001BD20DB6FA600CD5C49 /* qq@3x.png */,
+				2E0001CA20DB6FA800CD5C49 /* qzone@2x.png */,
+				2E0001CB20DB6FA800CD5C49 /* qzone@3x.png */,
+				2E0001C520DB6FA700CD5C49 /* res6.gif */,
+				2E0001C720DB6FA700CD5C49 /* twitter@2x.png */,
+				2E0001C120DB6FA600CD5C49 /* twitter@3x.png */,
+				2E0001C820DB6FA800CD5C49 /* wechat_fav@2x.png */,
+				2E0001D020DB6FA900CD5C49 /* wechat_fav@3x.png */,
+				2E0001C020DB6FA600CD5C49 /* wechat_moment@2x.png */,
+				2E0001C220DB6FA600CD5C49 /* wechat_moment@3x.png */,
+				2E0001BE20DB6FA600CD5C49 /* wechat@2x.png */,
+				2E0001C620DB6FA700CD5C49 /* wechat@3x.png */,
+				2E0001BF20DB6FA600CD5C49 /* weibo@2x.png */,
+				2E0001C420DB6FA700CD5C49 /* weibo@3x.png */,
 				2EE414D120D3AC170022E976 /* checkbox_no.png */,
 				2EE414D020D3AC170022E976 /* checkbox_yes.png */,
 				2E48162820B983AC00AFCBBB /* me@2x.png */,
@@ -1089,9 +1149,6 @@
 				2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */,
 				2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */,
 				2E046C2D20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib */,
-				2E046C4520D017DD00F5B22D /* SSLogin&RigisterVC.h */,
-				2E046C4620D017DD00F5B22D /* SSLogin&RigisterVC.m */,
-				2E046C4720D017DD00F5B22D /* SSLogin&RigisterVC.xib */,
 			);
 			path = "Login&Register";
 			sourceTree = "<group>";
@@ -1639,8 +1696,8 @@
 		2EB996F620CD5F9A00694110 /* YYTopBar */ = {
 			isa = PBXGroup;
 			children = (
-				2EB996F720CD5F9A00694110 /* YYTopBarView.m */,
 				2EB996F820CD5F9A00694110 /* YYTopBarView.h */,
+				2EB996F720CD5F9A00694110 /* YYTopBarView.m */,
 			);
 			path = YYTopBar;
 			sourceTree = "<group>";
@@ -1679,8 +1736,8 @@
 		2EB9970020CD5F9A00694110 /* StockLinePositionModel */ = {
 			isa = PBXGroup;
 			children = (
-				2EB9970120CD5F9A00694110 /* YYLinePositionModel.m */,
 				2EB9970220CD5F9A00694110 /* YYLinePositionModel.h */,
+				2EB9970120CD5F9A00694110 /* YYLinePositionModel.m */,
 			);
 			path = StockLinePositionModel;
 			sourceTree = "<group>";
@@ -1753,8 +1810,8 @@
 		2EB9971620CD5F9A00694110 /* VolumeView[成交量] */ = {
 			isa = PBXGroup;
 			children = (
-				2EB9971720CD5F9A00694110 /* YYTimeLineVolumeView.m */,
 				2EB9971820CD5F9A00694110 /* YYTimeLineVolumeView.h */,
+				2EB9971720CD5F9A00694110 /* YYTimeLineVolumeView.m */,
 			);
 			path = "VolumeView[成交量]";
 			sourceTree = "<group>";
@@ -2101,8 +2158,9 @@
 			files = (
 				2EB9974B20CD5FA900694110 /* dayData.plist in Resources */,
 				2EB989D420CC040400694110 /* SSCreatePurseViewController.xib in Resources */,
-				2E046C4920D017DD00F5B22D /* SSLogin&RigisterVC.xib in Resources */,
+				2E0001E120DB6FA900CD5C49 /* 勾选@3x.png in Resources */,
 				2E48163720B983AC00AFCBBB /* home_blue@3x.png in Resources */,
+				2E0001D320DB6FA900CD5C49 /* weibo@2x.png in Resources */,
 				2E60DDA220C4DB1C00A20429 /* SSAddAssertsCell.xib in Resources */,
 				2E6C8ADA20C26CB900C0B37E /* SSHelpCenterViewController.xib in Resources */,
 				2E046C2B20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib in Resources */,
@@ -2117,8 +2175,12 @@
 				2EB9976C20CD81DF00694110 /* SSMatrixCodeVC.xib in Resources */,
 				2E6C8AD420C26AFA00C0B37E /* SSUnitSetTableViewCell.xib in Resources */,
 				2E60DD9D20C4D73400A20429 /* SSAddAssertsVC.xib in Resources */,
+				2E0001D520DB6FA900CD5C49 /* twitter@3x.png in Resources */,
 				2E6C8AE620C26F4100C0B37E /* SSBannerView.xib in Resources */,
+				2E0001DC20DB6FA900CD5C49 /* wechat_fav@2x.png in Resources */,
 				2E48163820B983AC00AFCBBB /* u=2796464312,3280625818&fm=11&gp=0.jpg in Resources */,
+				2E0001E220DB6FA900CD5C49 /* facebook@3x.png in Resources */,
+				2E0001DE20DB6FA900CD5C49 /* qzone@2x.png in Resources */,
 				2EB989DB20CC040400694110 /* SSAddPurseViewController.xib in Resources */,
 				2E6C893520BC5ECC00C0B37E /* SSGetMoneyViewController.xib in Resources */,
 				2E6C8AF520C2C13600C0B37E /* SSArticleTableViewCell.xib in Resources */,
@@ -2130,6 +2192,8 @@
 				2E60DD9220C4437C00A20429 /* SSEditMarketsCell.xib in Resources */,
 				2EB9977120CD84D700694110 /* SSKeyStoreTipsCell.xib in Resources */,
 				2EB989CB20CC040400694110 /* SSConfirmHelpWordsVC.xib in Resources */,
+				2E0001D220DB6FA900CD5C49 /* wechat@2x.png in Resources */,
+				2E0001E420DB6FA900CD5C49 /* wechat_fav@3x.png in Resources */,
 				2EA78EFC20C3990600593E7B /* SSAddMarketsListCell.xib in Resources */,
 				2E6C892B20BC539E00C0B37E /* SSTranferViewController.xib in Resources */,
 				2E60DD8820C3F71300A20429 /* SSMarketsDetalViewController.xib in Resources */,
@@ -2143,9 +2207,11 @@
 				2E60DDA720C4E14700A20429 /* SSNavigationBar.xib in Resources */,
 				2E48163F20B983AC00AFCBBB /* home_gray@3x.png in Resources */,
 				2E3571EF20CE4CE6009C4CE9 /* SSHomeCoverVC.xib in Resources */,
+				2E0001D720DB6FA900CD5C49 /* messenger@3x.png in Resources */,
 				2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */,
 				2EB989D220CC040400694110 /* SSBackupMemorizingWordsVC.xib in Resources */,
 				2E046C1820CFBC0200F5B22D /* SSAccoutHeaderView.xib in Resources */,
+				2E0001E020DB6FA900CD5C49 /* messenger@2x.png in Resources */,
 				2E48163D20B983AC00AFCBBB /* circle_blue@3x.png in Resources */,
 				2E6C8ACF20C267F900C0B37E /* SSUnitSetViewController.xib in Resources */,
 				2E48153D20B91FB900AFCBBB /* LaunchScreen.storyboard in Resources */,
@@ -2158,6 +2224,7 @@
 				2EB9976220CD812A00694110 /* SSKeystoreFileVC.xib in Resources */,
 				2E6C890220BC2E9900C0B37E /* SSAsertDetailVC.xib in Resources */,
 				2E3F35AA20C5869D001C78CB /* SSTouchIDSetCell.xib in Resources */,
+				2E0001E320DB6FA900CD5C49 /* qq@2x.png in Resources */,
 				2E32EE4720C9FFEA00D00CFB /* SSTransRecordHeaderView.xib in Resources */,
 				2E32EE2720C927E400D00CFB /* hobby.plist in Resources */,
 				2EB9973A20CD5F9A00694110 /* YYFiveRecordTableViewCell.xib in Resources */,
@@ -2170,17 +2237,26 @@
 				2EB989D520CC040400694110 /* SSWalletDetailVC.xib in Resources */,
 				2E3F359E20C51A6A001C78CB /* SSAppShareViewController.xib in Resources */,
 				2E48168820BAD88D00AFCBBB /* SSMarketCell.xib in Resources */,
+				2E0001DD20DB6FA900CD5C49 /* facebook@2x.png in Resources */,
 				2EB989EA20CC040400694110 /* SSTagCollectionViewCell.xib in Resources */,
+				2E0001D920DB6FA900CD5C49 /* res6.gif in Resources */,
 				2EE414D320D3AC170022E976 /* checkbox_no.png in Resources */,
 				2E6C8AC820C2619000C0B37E /* SSChangePasswordVC.xib in Resources */,
 				2E48164020B983AC00AFCBBB /* circle_gray@2x.png in Resources */,
+				2E0001D620DB6FA900CD5C49 /* wechat_moment@3x.png in Resources */,
+				2E0001D420DB6FA900CD5C49 /* wechat_moment@2x.png in Resources */,
 				2E48163E20B983AC00AFCBBB /* home_gray@2x.png in Resources */,
+				2E0001D120DB6FA900CD5C49 /* qq@3x.png in Resources */,
+				2E0001DB20DB6FA900CD5C49 /* twitter@2x.png in Resources */,
+				2E0001DA20DB6FA900CD5C49 /* wechat@3x.png in Resources */,
 				2E046C3220CFC04D00F5B22D /* SSInviteCodeShareCell.xib in Resources */,
 				2E60DD9720C44A0900A20429 /* SSMarketRemindViewController.xib in Resources */,
 				2EB989E420CC040400694110 /* SSWalletHeaderTop.xib in Resources */,
 				2E48163A20B983AC00AFCBBB /* circle_blue@2x.png in Resources */,
 				2E046C0F20CFB7BC00F5B22D /* SSSectionHeaderView.xib in Resources */,
 				2E48153820B91FB800AFCBBB /* Main.storyboard in Resources */,
+				2E0001DF20DB6FA900CD5C49 /* qzone@3x.png in Resources */,
+				2E0001D820DB6FA900CD5C49 /* weibo@3x.png in Resources */,
 				2E48163C20B983AC00AFCBBB /* me_blue@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2255,6 +2331,7 @@
 				2E6C8A1120C0EEB600C0B37E /* WBQRCodeScanningVC.m in Sources */,
 				2EB9974620CD5F9A00694110 /* YYKlineVolumeView.m in Sources */,
 				2E60DD8C20C43FF000A20429 /* SSEdiMarketsViewController.m in Sources */,
+				2E0001BC20DB528200CD5C49 /* ShareView.m in Sources */,
 				2EA596CE20CA29BB00A25951 /* SJ_NewfeatureViewController.m in Sources */,
 				2E48168320BAD82400AFCBBB /* SSSectionHeaderView.m in Sources */,
 				2E3F35A220C57A53001C78CB /* SSInviteCodeShareCell.m in Sources */,
@@ -2285,7 +2362,6 @@
 				2E32EE3C20C988A700D00CFB /* SSTransRecordVC.m in Sources */,
 				2EB989E320CC040400694110 /* SSPurseListCell.m in Sources */,
 				2E6C8ACE20C267F900C0B37E /* SSUnitSetViewController.m in Sources */,
-				2E046C4820D017DD00F5B22D /* SSLogin&RigisterVC.m in Sources */,
 				2E4815AB20B9734900AFCBBB /* CommonMethods.m in Sources */,
 				2EB9977820CE070300694110 /* LZPageViewController.m in Sources */,
 				2E48165320B9A95500AFCBBB /* UIBarButtonItem+Category.m in Sources */,

@@ -27,13 +27,12 @@
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
 
-   
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"..." style:UIBarButtonItemStylePlain target:self action:@selector(marketsControll)];
+
      [self buildTableView];
     [self navigationView];
 
@@ -74,7 +73,8 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     SSMarketsDetalViewController *detailVC = [[SSMarketsDetalViewController alloc] init];
     [self.navigationController pushViewController:detailVC animated:YES];
 }
