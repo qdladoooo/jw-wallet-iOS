@@ -15,6 +15,7 @@
 #import "YYBHCModel.h"
 #import "YYBHorizontalCollectionCell.h"
 
+
 @interface SSDiscoverViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate,YYBHorizontalCollectionViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong) UIView *NormalHeaderView;
@@ -86,21 +87,28 @@
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section == 0) {
         if (_cycleScrollView == nil) {
-            _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 275) delegate:self placeholderImage:[UIImage imageNamed:@"banner"]];
-            _cycleScrollView.backgroundColor = [UIColor blackColor];
+            _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 275) delegate:self placeholderImage:[UIImage imageNamed:@""]];
+            _cycleScrollView.backgroundColor = MAIN_GROUNDCOLOR;
         }
         _cycleScrollView.imageURLStringsGroup = @[@"https://img.zcool.cn/community/017a40596eea61a8012193a3e8f019.jpg@2o.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527967337152&di=e3686479ec94c4f3e7c5a1a87835d572&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015aeb591d13cfb5b3086ed4c94464.png",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527967337151&di=2d527d16eb9ceeb6b5318716e3bc4c49&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F011d75596ccb8da8012193a3569662.jpg%401280w_1l_2o_100sh.jpg"];
+//        _cycleScrollView.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+//        _cycleScrollView.currentPageDotColor = [UIColor whiteColor];
+//        _cycleScrollView.pageDotColor = [UIColor colorWithWhite:1 alpha:0.5];
+//        _cycleScrollView.pageControlDotSize = CGSizeMake(20, 6);  // pageControl小点的大小
+        _cycleScrollView.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         _cycleScrollView.autoScrollTimeInterval = 3;
-        _cycleScrollView.titlesGroup = @[@"哈哈",@"呵呵",@"嘻嘻"];
-        _cycleScrollView.pageControlRightOffset = 100;
-        
+        _cycleScrollView.zoomType = YES;
+        _cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
+        //        _cycleScrollView.pageControlRightOffset = 100;
+        //        _cycleScrollView.titlesGroup = @[@"哈哈",@"呵呵",@"嘻嘻"];
+
         return _cycleScrollView;
        
     }else if (section == 2){ // app
-        NSMutableArray *dataArray = [NSMutableArray arrayWithCapacity:10];
-        for (int i = 0; i < 10; i ++) {
+        NSMutableArray *dataArray = [NSMutableArray arrayWithCapacity:20];
+        for (int i = 0; i < 20; i ++) {
             YYBHCModel *model = [[YYBHCModel alloc]init];
-            model.imagestring = @"u=2796464312,3280625818&fm=11&gp=0.jpg";
+            model.imagestring = @"eos";
             model.labelstring = [NSString stringWithFormat:@"应用%d",i];
             [dataArray addObject:model];
         }

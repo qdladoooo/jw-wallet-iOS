@@ -21,7 +21,7 @@ pod 'FDFullscreenPopGesture', '1.1'
 pod 'SGQRCode', '~> 2.2.0'
 
 # 轮播图
-pod 'SDCycleScrollView','~> 1.75'
+#pod 'SDCycleScrollView','~> 1.75'
 
 #加载图片
 pod 'SDWebImage', '~> 4.4.0'

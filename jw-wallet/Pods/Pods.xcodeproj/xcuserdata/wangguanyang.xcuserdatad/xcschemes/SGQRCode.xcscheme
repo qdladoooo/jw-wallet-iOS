@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EF1CFB884AB040D1B6CA699DB3C0232"
+               BlueprintIdentifier = "833ED30298F306E20C66C87542D26A68"
                BlueprintName = "SGQRCode"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libSGQRCode.a">

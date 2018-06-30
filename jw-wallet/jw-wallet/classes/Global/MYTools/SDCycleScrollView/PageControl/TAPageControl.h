@@ -44,6 +44,8 @@
 
 @property (nonatomic, strong) UIColor *dotColor;
 
+@property (nonatomic, strong) UIColor *normalColor;
+
 /**
  *  Spacing between two dot views. Default is 8.
  */

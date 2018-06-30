@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A44DF404CDE5ABCF3857675D142D51D"
+               BlueprintIdentifier = "47693C5CC114CD4A8B93944D637DDFD2"
                BlueprintName = "Pods-jw-wallet"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-jw-wallet.a">

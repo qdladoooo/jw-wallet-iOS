@@ -33,6 +33,7 @@
 #import "SDCollectionViewCell.h"
 #import "UIView+SDExtension.h"
 
+
 @implementation SDCollectionViewCell
 {
     __weak UILabel *_titleLabel;
@@ -70,6 +71,8 @@
 - (void)setupImageView
 {
     UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.layer.cornerRadius = 5;
+    imageView.layer.masksToBounds = YES;
     _imageView = imageView;
     [self.contentView addSubview:imageView];
 }
@@ -91,11 +94,6 @@
     }
 }
 
--(void)setTitleLabelTextAlignment:(NSTextAlignment)titleLabelTextAlignment
-{
-    _titleLabelTextAlignment = titleLabelTextAlignment;
-    _titleLabel.textAlignment = titleLabelTextAlignment;
-}
 
 - (void)layoutSubviews
 {
@@ -104,7 +102,10 @@
     if (self.onlyDisplayText) {
         _titleLabel.frame = self.bounds;
     } else {
-        _imageView.frame = self.bounds;
+        if (!self.zoomType) {
+            _imageView.frame = self.bounds;
+        }
+
         CGFloat titleLabelW = self.sd_width;
         CGFloat titleLabelH = _titleLabelHeight;
         CGFloat titleLabelX = 0;

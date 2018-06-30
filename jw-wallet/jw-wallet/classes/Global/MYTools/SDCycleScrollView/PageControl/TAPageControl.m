@@ -217,6 +217,7 @@ static CGSize const kDefaultDotSize = {8, 8};
         dotView = [[self.dotViewClass alloc] initWithFrame:CGRectMake(0, 0, self.dotSize.width, self.dotSize.height)];
         if ([dotView isKindOfClass:[TAAnimatedDotView class]] && self.dotColor) {
             ((TAAnimatedDotView *)dotView).dotColor = self.dotColor;
+            ((TAAnimatedDotView *)dotView).normalColor = self.normalColor;
         }
     } else {
         dotView = [[UIImageView alloc] initWithImage:self.dotImage];
