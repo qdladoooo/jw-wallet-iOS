@@ -11,5 +11,9 @@
 @interface SSAsertCell : UITableViewCell
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 @property (weak, nonatomic) IBOutlet UIView *darkView;
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UILabel *name1;
+@property (weak, nonatomic) IBOutlet UILabel *name2;
+@property (weak, nonatomic) IBOutlet UILabel *value;
 
 @end

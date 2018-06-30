@@ -120,9 +120,9 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if (section==0) {
         if (SCREEN_HEIGHT == 812) {
-            return 177;
+            return 179;
         }else{
-            return 155;
+            return 157;
         }
     }else{
         return 44;

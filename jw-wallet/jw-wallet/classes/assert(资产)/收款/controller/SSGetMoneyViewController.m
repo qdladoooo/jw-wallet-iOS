@@ -24,6 +24,7 @@
  二维码
  */
 @property (weak, nonatomic) IBOutlet UIImageView *codeImg;
+@property (weak, nonatomic) IBOutlet UIView *backview;
 
 @end
 
@@ -41,6 +42,7 @@
     self.fd_prefersNavigationBarHidden = YES;
     // 生成二维码(Default)
     [self setupGenerateQRCode];
+    [self addGradualLayer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,5 +62,14 @@
 - (void)setupGenerateQRCode {
     _codeImg.image = [SGQRCodeGenerateManager generateWithDefaultQRCodeData:@"https://www.baidu.com" imageViewWidth:_codeImg.width];
 }
-
+- (void)addGradualLayer{
+    //渐变图层
+    CAGradientLayer *gradientlayer1 = [CAGradientLayer layer];
+    gradientlayer1.startPoint = CGPointMake(0.5, 0);
+    gradientlayer1.endPoint = CGPointMake(0.5, 1);
+    gradientlayer1.frame = self.backview.bounds;
+    NSArray *colorAry1 = [NSArray arrayWithObjects:(id)rgba(28  , 43, 79, 1).CGColor,rgba(7, 12, 47, 1).CGColor, nil];
+    gradientlayer1.colors = colorAry1;
+    [self.backview.layer insertSublayer:gradientlayer1 atIndex:0];
+}
 @end

@@ -14,4 +14,9 @@
  用户名
  */
 @property (nonatomic, copy) NSString *userName;
+
+/**
+ 密码
+ */
+@property (nonatomic, copy) NSString *password;
 @end

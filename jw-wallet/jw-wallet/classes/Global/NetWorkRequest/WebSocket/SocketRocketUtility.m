@@ -45,8 +45,7 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
 }
 
 #pragma mark - **************** public methods
--(void)SRWebSocketOpenWithURLString:(NSString *)urlString {
-    
+-(void)SRWebSocketOpenWithURLString:(NSString *)urlString;{
     //如果是同一个url return
     if (self.socket) {
         return;
@@ -64,8 +63,8 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
     NSLog(@"请求的websocket地址：%@",self.socket.url.absoluteString);
 
     self.socket.delegate = self;   //SRWebSocketDelegate 协议
-    
     [self.socket open];     //开始连接
+   
 }
 
 -(void)SRWebSocketClose{
@@ -78,9 +77,17 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
 }
 
 #define WeakSelf(ws) __weak __typeof(&*self)weakSelf = self
-- (void)sendData:(id)data {
+- (void)sendData:(id)data withMethod:(NSString *)method IDStr:(NSString *)IDStr {
     NSLog(@"socketSendData --------------- %@",data);
-    
+    NSDictionary *dict = @{
+                           @"id":IDStr!=nil?IDStr:@"",
+                           @"method": method!=nil?method:@"",
+                           @"params": data!=nil?data:@""
+                           };
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    SSLog(@"%@",jsonString);
     WeakSelf(ws);
     dispatch_queue_t queue =  dispatch_queue_create("zy", NULL);
     
@@ -88,7 +95,7 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
         if (weakSelf.socket != nil) {
             // 只有 SR_OPEN 开启状态才能调 send 方法啊，不然要崩
             if (weakSelf.socket.readyState == SR_OPEN) {
-                [weakSelf.socket send:data];    // 发送数据
+                [weakSelf.socket send:jsonString];    // 发送数据
                 
             } else if (weakSelf.socket.readyState == SR_CONNECTING) {
                 NSLog(@"正在连接中，重连后其他方法会去自动同步数据");
@@ -168,7 +175,8 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
 
 -(void)sentheart{
     //发送心跳 和后台可以约定发送什么内容  一般可以调用ping  我这里根据后台的要求 发送了data给他
-    [self sendData:@"heart"];
+//    [self sendData:@"heart"];
+    
 }
 
 //pingPong
@@ -187,6 +195,7 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
     if (webSocket == self.socket) {
         NSLog(@"************************** socket 连接成功************************** ");
         [[NSNotificationCenter defaultCenter] postNotificationName:kWebSocketDidOpenNote object:nil];
+
     }
 }
 
@@ -228,6 +237,8 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
         NSLog(@"message:%@",message);
         
         [[NSNotificationCenter defaultCenter] postNotificationName:kWebSocketdidReceiveMessageNote object:message];
+        
+        
     }
 }
 

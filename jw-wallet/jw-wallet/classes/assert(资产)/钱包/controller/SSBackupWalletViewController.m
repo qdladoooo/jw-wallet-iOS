@@ -39,6 +39,8 @@
 // 确认
 - (IBAction)sure:(id)sender {
     SSBackupMemorizingWordsVC *vc = [[SSBackupMemorizingWordsVC alloc] init];
+    vc.userName = self.userName;
+    vc.password = self.password;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

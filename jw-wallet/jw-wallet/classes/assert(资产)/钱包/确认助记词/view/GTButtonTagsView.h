@@ -28,6 +28,7 @@
 
 @protocol GTButtonTagsViewDelegate <NSObject>
 
+
 - (void)GTButtonTagsView:(GTButtonTagsView *)view selectIndex:(NSInteger)index selectText:(NSString *)text;
 
 @end

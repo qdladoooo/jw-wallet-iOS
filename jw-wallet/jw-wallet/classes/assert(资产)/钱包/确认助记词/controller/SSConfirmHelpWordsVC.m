@@ -10,7 +10,9 @@
 #import "HZQTagCell.h"
 #import "GTButtonTagsView.h"
 #import "SSTagModel.h"
-
+#import "BGFMDB.h"
+#import "SSWalletInfo.h"
+#import "SSManagerPurseViewController.h"
 // 每行个数
 #define RowCount 4
 
@@ -23,7 +25,7 @@
 }
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewHeight;
-@property (weak, nonatomic) IBOutlet GTButtonTagsView *labelsView;
+@property (strong, nonatomic) IBOutlet GTButtonTagsView *labelsView;
 
 @property (weak, nonatomic) IBOutlet UILabel *nav_title;
 @property (weak, nonatomic) IBOutlet UILabel *makeSureYourHelpWords;
@@ -61,7 +63,8 @@
     
     [self randomArr:self.dataArr];
 
-    
+    // 数据库操作
+     bg_setDebug(YES);//打开调试模式,打印输出调试信息.
     
 }
 
@@ -165,12 +168,14 @@
 
 -(void)GTButtonTagsView:(GTButtonTagsView *)view selectIndex:(NSInteger)index selectText:(NSString *)text {
     NSLog(@"第: %ld 文本: %@", index, text);
-  
+    
     if (_titles.count>=_dataArr.count) {
         return;
     }
       [self randomArr:_dataArr];
+    
     [self.labelsView layoutIfNeeded];
+
     [_titles addObject:text];
     [self.collectionView reloadData];
     [self settingCollectionViewHeight];
@@ -190,13 +195,31 @@
     //  参数：brain_key:助记词   username：用户名
     NSDictionary *params = @{
                              @"brain_key":_finalStr,
-                             @"username":@"123"
+                             @"username":_userName
                              };
     
     NSString *url = [NSString stringWithFormat:@"%@%@",BaseURLString,CreatWallet];
     [HttpTool postWithURL:url params:params success:^(id json) {
         SSLog(@"%@",json);
-        [MBProgressHUD showText:json[@"reason"]];
+        
+        if ([json[@"result_code"] integerValue] == 10000) {
+            [MBProgressHUD showText:@"创建钱包成功！"];
+            [self SaveWalletInfoArray]; // 保存用户信息
+            // 保存（助记词）私钥
+            [UserDefaultUtil saveValue:self.helpwords forKey:private_password];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+               
+                for (UIViewController *controller in self.navigationController.viewControllers) {
+                    if ([controller isKindOfClass:[SSManagerPurseViewController class]]) {
+                        [self.navigationController popToRootViewControllerAnimated:YES];
+                    }
+                }
+
+            });
+        }else{
+            [MBProgressHUD showText:json[@"reason"]];
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:wallet_password];
+        }
     } failure:^(NSError *error) {
          SSLog(@"%@",error);
     }];
@@ -215,5 +238,60 @@
     }];
     SSLog(@"随机打乱的数组%@",arr);
     self.labelsView.dataArr = arr;
+    
+}
+
+
+#pragma mark - 保存用户信息数组到数据库
+-(void)SaveWalletInfoArray{
+    
+    NSMutableArray* walletInfoArr = [NSMutableArray array];
+    NSDictionary *dict = @{
+                           @"walletName":self.userName,
+                           @"privatePassword":self.helpwords,
+                           @"walletPassword":self.password
+                           };
+    [walletInfoArr addObject:dict];
+//    SSWalletInfo *infoModel = [[SSWalletInfo alloc] init];
+//    infoModel.walletName = self.userName;
+//    infoModel.privatePassword = self.helpwords;
+//    infoModel.walletPassword = self.password;
+//    [walletInfoArr addObject:infoModel];
+    /**
+     存储标识名为wallet_Info数组.
+     */
+    [walletInfoArr bg_saveArrayWithName:wallet_Info];
+    
+    /**
+     往标识名为@"testA"的数组中添加元素.
+     */
+    //[NSArray bg_addObjectWithName:@"testA" object:@[@(1),@"哈哈"]];
+    
+    /**
+     更新标识名为testA的数组某个位置上的元素.
+     */
+    //[NSArray bg_updateObjectWithName:@"testA" Object:@"人妖" Index:0];
+    
+    /**
+     删除标识名为testA的数组某个位置上的元素.
+     */
+    //[NSArray bg_deleteObjectWithName:@"testA" Index:3];
+    
+    /**
+     查询标识名为testA的数组全部元素.
+     */
+    NSArray* testResult = [NSArray bg_arrayWithName:wallet_Info];
+    
+    /**
+     获取标识名为testA的数组某个位置上的元素.
+     */
+//    id arrObject = [NSArray bg_objectWithName:@"testA" Index:3];
+    
+    /**
+     清除标识名为testA的数组所有元素.
+     */
+    //[NSArray bg_clearArrayWithName:@"testA"];
+    
+    NSLog(@"结果 = %@",testResult);
 }
 @end

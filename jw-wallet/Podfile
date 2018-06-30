@@ -1,4 +1,4 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
 
 target 'jw-wallet' do
     
@@ -40,5 +40,7 @@ pod 'AFNetworking', '~> 3.2.1'
 
 #webSocket框架
 pod 'SocketRocket'
+#数据库二次封装
+pod 'BGFMDB', '~> 2.0.10'
 
 end

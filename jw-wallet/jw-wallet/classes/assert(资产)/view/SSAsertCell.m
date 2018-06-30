@@ -8,12 +8,16 @@
 //
 
 #import "SSAsertCell.h"
+@interface SSAsertCell()
 
+@end
 @implementation SSAsertCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.icon.layer.cornerRadius = 15;
+    self.icon.layer.masksToBounds = YES;
 }
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     static NSString *ID = @"SSAsertCell";

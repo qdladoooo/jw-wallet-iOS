@@ -10,4 +10,8 @@
 
 @interface SSChangePasswordVC : UIViewController
 
+/**
+ 元素在数组的位置
+ */
+@property (nonatomic, assign) NSInteger index;
 @end

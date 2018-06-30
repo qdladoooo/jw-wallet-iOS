@@ -49,7 +49,7 @@
     BOOL hasVertify; //是否已经通过验证
 }
 - (void)viewWillAppear:(BOOL)animated {
-    [self createCaptcha];
+//    [self createCaptcha];
 }
 
 - (IBAction)vertify:(id)sender {
@@ -192,13 +192,14 @@
         return;
     }
     // 存储密码到钥匙串
-    [PassWordTool savePassWord:self.tf2.text];
-    NSString *psw = [PassWordTool readPassWord];
-    SSLog(@"%@",psw);
-    
+//    [PassWordTool savePassWord:self.tf2.text];
+//    NSString *psw = [PassWordTool readPassWord];
+//    SSLog(@"%@",psw);
+    [UserDefaultUtil saveValue:self.tf2.text forKey:wallet_password];
     // 跳转
     SSBackupWalletViewController *vc =[[SSBackupWalletViewController alloc] init];
     vc.userName = self.tf1.text;
+    vc.password = self.tf2.text;
     [self.navigationController pushViewController:vc animated:YES];
     
 }

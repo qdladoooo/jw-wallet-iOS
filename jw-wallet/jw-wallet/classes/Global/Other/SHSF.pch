@@ -45,5 +45,9 @@
 #import <MJExtension.h>
 #import <GT3Captcha/GT3Captcha.h>
 #import <JPUSHService.h>
-
+#import <SocketRocket.h>
+#import "BGFMDB.h"
+#import "SSWalletInfo.h"
+#import "SJGradientView.h"
+#import "SSGrandientView.h"
 #endif /* SHSF_pch */

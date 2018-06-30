@@ -23,6 +23,7 @@ extern NSString * const kWebSocketdidReceiveMessageNote;
 
 -(void)SRWebSocketOpenWithURLString:(NSString *)urlString;//开启连接
 -(void)SRWebSocketClose;//关闭连接
-- (void)sendData:(id)data;//发送数据
+//- (void)sendData:(id)data;//发送数据
+- (void)sendData:(id)data withMethod:(NSString *)method IDStr:(NSString *)IDStr;
 
 @end

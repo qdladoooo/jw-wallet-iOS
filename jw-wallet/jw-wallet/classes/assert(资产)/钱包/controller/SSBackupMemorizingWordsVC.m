@@ -28,8 +28,10 @@
 - (IBAction)next:(id)sender {
     
     SSConfirmHelpWordsVC *vc = [[SSConfirmHelpWordsVC alloc] init];
+    vc.userName = self.userName;
     vc.dataArr = self.strArr;
     vc.helpwords = self.model.brain_priv_key;
+    vc.password = self.password;
     [self.navigationController pushViewController:vc animated:YES];
     
 }
@@ -71,6 +73,8 @@
             if ([json[@"result_code"] integerValue] == 10000 ) {
                 self.model = [SSHelpWordsModel mj_objectWithKeyValues:data];
                 self.helpwords.text = self.model.brain_priv_key;
+//                // 保存（助记词）私钥
+//                [UserDefaultUtil saveValue:self.model.brain_priv_key forKey:private_password];
                 // 把助记词包装成数组
                 [self makeArrayFromString];
             }

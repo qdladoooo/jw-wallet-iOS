@@ -246,6 +246,9 @@
 		2EB9978120CE0F9000694110 /* SSKeystoreContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9977F20CE0F9000694110 /* SSKeystoreContentCell.m */; };
 		2EB9978220CE0F9000694110 /* SSKeystoreContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9978020CE0F9000694110 /* SSKeystoreContentCell.xib */; };
 		2EB9978520CE113100694110 /* SJAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9978320CE113100694110 /* SJAlert.m */; };
+		2ECBF14820E72C15008C87E1 /* SJGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBF14620E72C15008C87E1 /* SJGradientView.m */; };
+		2ECBF14B20E747A2008C87E1 /* SSGrandientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBF14A20E747A2008C87E1 /* SSGrandientView.m */; };
+		2EE1E1CD20E52E53003957A6 /* SSWalletInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1E1CC20E52E53003957A6 /* SSWalletInfo.m */; };
 		2EE4149B20D258200022E976 /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4146620D258200022E976 /* NSDictionary+Category.m */; };
 		2EE4149C20D258200022E976 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4146720D258200022E976 /* NSString+Password.m */; };
 		2EE4149D20D258200022E976 /* NetWorkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4146920D258200022E976 /* NetWorkStatus.m */; };
@@ -693,6 +696,12 @@
 		2EB9978020CE0F9000694110 /* SSKeystoreContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSKeystoreContentCell.xib; sourceTree = "<group>"; };
 		2EB9978320CE113100694110 /* SJAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJAlert.m; sourceTree = "<group>"; };
 		2EB9978420CE113100694110 /* SJAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJAlert.h; sourceTree = "<group>"; };
+		2ECBF14620E72C15008C87E1 /* SJGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJGradientView.m; sourceTree = "<group>"; };
+		2ECBF14720E72C15008C87E1 /* SJGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJGradientView.h; sourceTree = "<group>"; };
+		2ECBF14920E747A2008C87E1 /* SSGrandientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSGrandientView.h; sourceTree = "<group>"; };
+		2ECBF14A20E747A2008C87E1 /* SSGrandientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSGrandientView.m; sourceTree = "<group>"; };
+		2EE1E1CB20E52E53003957A6 /* SSWalletInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWalletInfo.h; sourceTree = "<group>"; };
+		2EE1E1CC20E52E53003957A6 /* SSWalletInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWalletInfo.m; sourceTree = "<group>"; };
 		2EE4146420D258200022E976 /* NSDictionary+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Category.h"; sourceTree = "<group>"; };
 		2EE4146520D258200022E976 /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
 		2EE4146620D258200022E976 /* NSDictionary+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Category.m"; sourceTree = "<group>"; };
@@ -1149,6 +1158,8 @@
 				2E6C8ABE20C25B7A00C0B37E /* SSAuthorizedLoginCV.h */,
 				2E6C8ABF20C25B7A00C0B37E /* SSAuthorizedLoginCV.m */,
 				2E046C2D20CFBF2500F5B22D /* SSAuthorizedLoginCV.xib */,
+				2EE1E1CB20E52E53003957A6 /* SSWalletInfo.h */,
+				2EE1E1CC20E52E53003957A6 /* SSWalletInfo.m */,
 			);
 			path = "Login&Register";
 			sourceTree = "<group>";
@@ -1602,6 +1613,10 @@
 		2EB98BB920CC05D700694110 /* MYTools */ = {
 			isa = PBXGroup;
 			children = (
+				2ECBF14720E72C15008C87E1 /* SJGradientView.h */,
+				2ECBF14620E72C15008C87E1 /* SJGradientView.m */,
+				2ECBF14920E747A2008C87E1 /* SSGrandientView.h */,
+				2ECBF14A20E747A2008C87E1 /* SSGrandientView.m */,
 				2EE414C720D398E90022E976 /* iOS-keychain-master */,
 				2E046C4120D00F0F00F5B22D /* XRDragTableView */,
 				2EB9978420CE113100694110 /* SJAlert.h */,
@@ -2356,9 +2371,11 @@
 				2E6C8A0020C0534400C0B37E /* HXLanguageManager.m in Sources */,
 				2EB9973B20CD5F9A00694110 /* YYFiveRecordView.m in Sources */,
 				2EE414B120D258200022E976 /* HttpTool.m in Sources */,
+				2ECBF14B20E747A2008C87E1 /* SSGrandientView.m in Sources */,
 				2E4815A620B9734900AFCBBB /* UIViewController+swizzling.m in Sources */,
 				2E32EE4520C9FFDE00D00CFB /* SSTransRecordHeaderView.m in Sources */,
 				2E60DD9120C4437C00A20429 /* SSEditMarketsCell.m in Sources */,
+				2EE1E1CD20E52E53003957A6 /* SSWalletInfo.m in Sources */,
 				2E32EE3C20C988A700D00CFB /* SSTransRecordVC.m in Sources */,
 				2EB989E320CC040400694110 /* SSPurseListCell.m in Sources */,
 				2E6C8ACE20C267F900C0B37E /* SSUnitSetViewController.m in Sources */,
@@ -2461,6 +2478,7 @@
 				2E6C8A1220C0EEB600C0B37E /* WCQRCodeScanningVC.m in Sources */,
 				2E48160520B9818900AFCBBB /* SSAsertViewController.m in Sources */,
 				2E32EE4120C98A8300D00CFB /* SSTransRecordCell.m in Sources */,
+				2ECBF14820E72C15008C87E1 /* SJGradientView.m in Sources */,
 				2EB989EE20CC040400694110 /* SSWalletHeaderTop.m in Sources */,
 				2EB989DC20CC040400694110 /* SSPurseListModel.m in Sources */,
 				2E3F359D20C51A6A001C78CB /* SSAppShareViewController.m in Sources */,

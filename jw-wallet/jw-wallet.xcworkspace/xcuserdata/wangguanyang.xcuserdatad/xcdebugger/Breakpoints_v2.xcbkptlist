@@ -112,11 +112,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/controller/SSCreatePurseViewController.m"
-            timestampString = "551251890.253263"
+            timestampString = "552030558.770937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
@@ -132,7 +132,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/Global/MYTools/KLine/YYStock/Stock/YYStock.m"
-            timestampString = "551284824.0458601"
+            timestampString = "551597636.119826"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "162"
@@ -148,7 +148,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/Global/MYTools/KLine/YYStock/Stock/YYStock.m"
-            timestampString = "551284824.045944"
+            timestampString = "551597636.1199059"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "161"
@@ -164,7 +164,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/Global/MYTools/KLine/YYStock/Stock/YYStock.m"
-            timestampString = "551284824.046235"
+            timestampString = "551597636.120132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -180,7 +180,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/Global/MYTools/KLine/YYStock/Stock/YYStock.m"
-            timestampString = "551284824.0462821"
+            timestampString = "551597636.120186"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
@@ -196,12 +196,140 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/Global/MYTools/KLine/YYStock/Stock/YYStock.m"
-            timestampString = "551284824.046325"
+            timestampString = "551597636.1202331"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
             endingLineNumber = "79"
             landmarkName = "-initUI_StockContainerView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/&#x786e;&#x8ba4;&#x52a9;&#x8bb0;&#x8bcd;/view/GTButtonTagsView.m"
+            timestampString = "551952987.924252"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-setDataArr:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/Global/NetWorkRequest/WebSocket/SocketRocketUtility.m"
+            timestampString = "551864306.66054"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "-webSocket:didReceivePong:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/Global/NetWorkRequest/WebSocket/SocketRocketUtility.m"
+            timestampString = "551864306.660591"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "-sendData:withMethod:IDStr:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/&#x786e;&#x8ba4;&#x52a9;&#x8bb0;&#x8bcd;/controller/SSConfirmHelpWordsVC.m"
+            timestampString = "552030558.771263"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "-requestData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/&#x786e;&#x8ba4;&#x52a9;&#x8bb0;&#x8bcd;/controller/SSConfirmHelpWordsVC.m"
+            timestampString = "552030558.7713341"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "-requestData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/controller/SSManagerPurseViewController.m"
+            timestampString = "552030558.771399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/controller/SSManagerPurseViewController.m"
+            timestampString = "552030558.771466"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/account(&#x8d26;&#x6237;)/&#x5bc6;&#x7801;&#x76f8;&#x5173;/SSChangePasswordVC.m"
+            timestampString = "552030558.771524"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-sureAction:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

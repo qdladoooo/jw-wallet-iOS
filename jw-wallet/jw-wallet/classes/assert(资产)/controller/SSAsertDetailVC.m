@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *banlance_title;
 @property (weak, nonatomic) IBOutlet UIButton *transfer; // 转账
 @property (weak, nonatomic) IBOutlet UIButton *getMoney; // 收款
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
 
 @end
 
@@ -32,6 +33,8 @@
     self.banlance_title.text = kLocalizedTableString(@"账户余额",gy_LocalizableName);
     [self.transfer setTitle:kLocalizedTableString(@"转账", gy_LocalizableName) forState:UIControlStateNormal];
     [self.getMoney setTitle:kLocalizedTableString(@"收款", gy_LocalizableName) forState:UIControlStateNormal];
+    self.icon.layer.cornerRadius = 15;
+    self.icon.layer.masksToBounds = YES;
 //    self.title = @"资产详情";
 //    if (@available(iOS 11.0, *)) {
 //        self.tablewView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;

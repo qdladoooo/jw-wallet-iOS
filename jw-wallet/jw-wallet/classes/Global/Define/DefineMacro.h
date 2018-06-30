@@ -35,7 +35,8 @@
 #define  TouchIdLogIn @"TouchIdLogIn"
 // 是否设置指纹支付
 #define TouchIdPay @"TouchIdPay"
-
+// 钱宝信息数组标识
+#define wallet_Info @"walletInfo"
 // 自定义Log
 #ifdef DEBUG
 #define SSLog(...) NSLog(__VA_ARGS__)

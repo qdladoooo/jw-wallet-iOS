@@ -8,7 +8,9 @@
 // NSUserDefault
 
 #import <Foundation/Foundation.h>
-
+#define private_password @"private_password"
+#define wallet_name @"wallet_name"
+#define wallet_password  @"wallet_password"
 @interface UserDefaultUtil : NSObject
 
 +(void)saveValue:(id) value forKey:(NSString *)key;

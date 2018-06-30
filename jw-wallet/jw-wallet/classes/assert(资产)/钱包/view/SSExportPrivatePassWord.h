@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SSExportPrivatePassWord : UIView
-
+@property (nonatomic, strong) SSWalletInfo *model;
 @end

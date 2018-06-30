@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *fast_title;
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
 
+@property (weak, nonatomic) IBOutlet UIButton *wenhao;
+
 @end
 
 @implementation SSTranferViewController
@@ -65,10 +67,13 @@
 }
 
 - (IBAction)sliderChangeValue:(id)sender {
-    self.value.text = [NSString stringWithFormat:@"%f",self.slider.value];
+    self.value.text = [NSString stringWithFormat:@"%f ether",self.slider.value];
 }
 #pragma mark - 矿工费用说明
 - (IBAction)question:(id)sender {
+    SSGlobalWebView *web = [[SSGlobalWebView alloc] init];
+    web.urlString = @"https://help-center.token.im/hc/article/115000957653";
+    [self.navigationController pushViewController:web animated:YES];
 }
 #pragma mark - 确认
 - (IBAction)sureBtn:(id)sender {

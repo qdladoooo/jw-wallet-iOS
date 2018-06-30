@@ -15,4 +15,7 @@
  */
 @property (nonatomic, copy) NSArray *dataArr;
 @property (nonatomic,copy) NSString *helpwords;
+@property (nonatomic, copy) NSString *userName;
+@property (nonatomic, copy) NSString *password;
+-(void)draw;
 @end

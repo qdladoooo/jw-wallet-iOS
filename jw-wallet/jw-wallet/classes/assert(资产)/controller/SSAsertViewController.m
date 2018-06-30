@@ -13,7 +13,7 @@
 #import "SSManagerPurseViewController.h"
 #import "WCQRCodeScanningVC.h"
 #import "SSHomeCoverVC.h"
-@interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate,SRWebSocketDelegate>
 @property(nonatomic, strong) UITableView* tableView;
 @property(nonatomic, strong) NSArray* dataArr;/**< array */
 //@property (nonatomic, strong) UIView *navgationView;
@@ -26,7 +26,7 @@
     [super viewDidLoad];
    
     [self buildTableView];
-    _dataArr = @[@"1",@"2",@"3",@"4"];
+    _dataArr = @[@"1",@"2",@"3",@"4",@"1",@"2",@"3",@"4"];
 
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -78,14 +78,22 @@
 
 //tableView代理方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return _dataArr.count;
-    return 10;
+    return _dataArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SSAsertCell *cell = [SSAsertCell cellWithTableView:tableView];
     if (indexPath.row!=0) {
         cell.darkView.hidden = YES;
+    }
+    if (indexPath.row==0 || indexPath.row == 2) {
+        cell.icon.image = [UIImage imageNamed:@"btc"];
+        cell.name1.text = @"BTC";
+        cell.name2.text = cell.name1.text;
+    }else{
+        cell.icon.image = [UIImage imageNamed:@"eth"];
+        cell.name1.text = @"ETH";
+        cell.name2.text = cell.name1.text;
     }
     return cell;
 }
@@ -95,7 +103,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
+    return 90;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -179,12 +187,12 @@
     _nav_view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
     _nav_view.backgroundColor = [UIColor clearColor];
     // 扫描按钮
-    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(10, 20, 40, 40)];
+    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(15, 30, 20, 20)];
     btn1.tintColor = [UIColor whiteColor];
     [btn1 setImage:[UIImage imageNamed:@"扫描"] forState:UIControlStateNormal];
     [_nav_view addSubview:btn1];
     // 钱包按钮
-    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-50, 20, 40, 40)];
+    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-35, 30, 20, 20)];
     btn2.tintColor = [UIColor whiteColor];
     [btn2 setImage:[UIImage imageNamed:@"钱包"] forState:UIControlStateNormal];
     [_nav_view addSubview:btn2];
@@ -206,26 +214,94 @@
 }
 #pragma mark - 请求数据
 -(void)requestSocketData{
-    [[SocketRocketUtility instance] SRWebSocketOpenWithURLString:SocketBaseURLString];
+    NSString *url = [NSString stringWithFormat:@"%@",BiteSharesURL];
+
+    [[SocketRocketUtility instance] SRWebSocketOpenWithURLString:url];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidOpen) name:kWebSocketDidOpenNote object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidReceiveMsg:) name:kWebSocketDidCloseNote object:nil];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[SocketRocketUtility instance] SRWebSocketClose]; // 在需要得地方 关闭socket
-    });
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidReceiveMsg:) name:kWebSocketdidReceiveMessageNote object:nil];
+    
+//        [[SocketRocketUtility instance] SRWebSocketClose]; // 在需要得地方 关闭socket
+    
 }
 
 - (void)SRWebSocketDidOpen {
     NSLog(@"开启成功");
-    //在成功后需要做的操作。。。    
+    //在成功后需要做的操作。。。
+    
+    // 如果需要发送数据到服务器使用下面代码
+//     { “id”：1，“method”：“call”，“params”：[ 0，“get_accounts”，[[ “1.2.0” ]]]}
+    // "id":2,"method":"call","params":[1,"login",["",""]]} 登录
+    //  message:{"id":2,"jsonrpc":"2.0","result":true} 登录成功
+//    现在我们可以database通过:: 调用API的任何方法
+//
+//    >  { “id” ：1 ， “method” ：“call” ， “params” ：[ DATABASE_API_ID ，“get_accounts” ，[[ “1.2.0” ]]]}
+
+//    NSArray *param = @[@0,@"get_accounts",@[@[@"1.2.0"]]];
+//    [[SocketRocketUtility instance] sendData:param withMethod:@"call" IDStr:@"1"];
+  
+    // 登录
+//    NSArray *arr = @[@1,@"login",@[@"buybuybuy",@"123456"]];
+//    [[SocketRocketUtility instance] sendData:arr withMethod:@"call" IDStr:@"2"];
+//    // get——account
+//    NSArray *arr1 = @[@0,@"get_accounts",@[@[@"1.2.0"]]];
+//    [[SocketRocketUtility instance] sendData:arr1 withMethod:@"call" IDStr:@"1"];
+    
 }
+
 
 - (void)SRWebSocketDidReceiveMsg:(NSNotification *)note {
     //收到服务端发送过来的消息
     NSString * message = note.object;
-    NSLog(@"%@",message);
+    NSLog(@"message:%@",message);
+    
+    /*
+     [{
+     "id": "1.2.0",
+     "membership_expiration_date": "1969-12-31T23:59:59",
+     "registrar": "1.2.0",
+     "referrer": "1.2.0",
+     "lifetime_referrer": "1.2.0",
+     "network_fee_percentage": 2000,
+     "lifetime_referrer_fee_percentage": 8000,
+     "referrer_rewards_percentage": 0,
+     "name": "committee-account",
+     "owner": {
+     "weight_threshold": 1,
+     "account_auths": [],
+     "key_auths": [],
+     "address_auths": []
+     },
+     "active": {
+     "weight_threshold": 1,
+     "account_auths": [],
+     "key_auths": [],
+     "address_auths": []
+     },
+     "options": {
+     "memo_key": "KRIS1111111111111111111111111111111114T1Anm",
+     "voting_account": "1.2.5",
+     "num_witness": 0,
+     "num_committee": 0,
+     "votes": [],
+     "extensions": []
+     },
+     "statistics": "2.6.0",
+     "whitelisting_accounts": [],
+     "blacklisting_accounts": [],
+     "whitelisted_accounts": [],
+     "blacklisted_accounts": [],
+     "owner_special_authority": [0, {}],
+     "active_special_authority": [0, {}],
+     "top_n_control_flags": 0
+     }]
+     }
+     */
 }
+
 
 -(void)vertifyPersonAndMathion{
     
 }
+
+
 @end

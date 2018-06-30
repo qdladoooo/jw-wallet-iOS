@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,6 +14,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSGetMoneyViewController">
             <connections>
                 <outlet property="address" destination="mcb-PT-as5" id="nD6-dD-scD"/>
+                <outlet property="backview" destination="0IF-Ro-X2y" id="h18-k0-4v9"/>
                 <outlet property="clickBtnToCopyAddress" destination="HnM-o9-MPe" id="i9n-RZ-rlX"/>
                 <outlet property="codeImg" destination="v1h-Jd-280" id="7Ww-tB-nMb"/>
                 <outlet property="getMoneyFromOthers_title" destination="cAD-YG-Vn4" id="l8J-9d-8g2"/>
@@ -27,10 +28,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IF-Ro-X2y">
-                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09r-Ak-XlQ">
-                            <rect key="frame" x="15" y="30" width="345" height="473"/>
+                            <rect key="frame" x="15" y="100" width="345" height="467"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="向他人扫码收款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-YG-Vn4">
                                     <rect key="frame" x="112" y="50" width="121.5" height="21"/>
@@ -60,7 +61,7 @@
                                     </connections>
                                 </button>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v1h-Jd-280">
-                                    <rect key="frame" x="50" y="178" width="245" height="245"/>
+                                    <rect key="frame" x="50" y="172" width="245" height="245"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="v1h-Jd-280" secondAttribute="height" multiplier="1:1" id="wg9-Fh-qR2"/>
                                     </constraints>
@@ -80,54 +81,42 @@
                                 <constraint firstItem="HnM-o9-MPe" firstAttribute="top" secondItem="mcb-PT-as5" secondAttribute="bottom" constant="10" id="xO3-9r-Ycd"/>
                             </constraints>
                         </view>
-                    </subviews>
-                    <color key="backgroundColor" red="0.0" green="0.043137254901960784" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstItem="09r-Ak-XlQ" firstAttribute="top" secondItem="0IF-Ro-X2y" secondAttribute="top" constant="30" id="LEb-hu-D5V"/>
-                        <constraint firstItem="09r-Ak-XlQ" firstAttribute="leading" secondItem="0IF-Ro-X2y" secondAttribute="leading" constant="15" id="eNh-75-WgH"/>
-                        <constraint firstAttribute="trailing" secondItem="09r-Ak-XlQ" secondAttribute="trailing" constant="15" id="oxT-bE-ef8"/>
-                        <constraint firstAttribute="bottom" secondItem="09r-Ak-XlQ" secondAttribute="bottom" constant="100" id="xas-JH-RsM"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRG-Vq-rrY">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                    <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-Hg-1dL">
-                            <rect key="frame" x="170" y="33" width="35" height="21"/>
+                            <rect key="frame" x="170" y="37" width="35" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vI-Zi-ieG">
-                            <rect key="frame" x="15" y="32" width="10" height="22"/>
+                            <rect key="frame" x="15" y="36.5" width="10" height="22"/>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="back:" destination="-1" eventType="touchUpInside" id="NAH-O4-LqC"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.043137254901960784" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="64" id="Npj-Nm-FgY"/>
-                        <constraint firstItem="6vI-Zi-ieG" firstAttribute="centerY" secondItem="3BN-Hg-1dL" secondAttribute="centerY" id="PvA-se-4Cg"/>
-                        <constraint firstAttribute="bottom" secondItem="3BN-Hg-1dL" secondAttribute="bottom" constant="10" id="Vz7-DA-7ez"/>
-                        <constraint firstItem="6vI-Zi-ieG" firstAttribute="leading" secondItem="VRG-Vq-rrY" secondAttribute="leading" constant="15" id="pYT-Vc-FHA"/>
-                        <constraint firstItem="3BN-Hg-1dL" firstAttribute="centerX" secondItem="VRG-Vq-rrY" secondAttribute="centerX" id="xqN-FU-VWc"/>
+                        <constraint firstItem="09r-Ak-XlQ" firstAttribute="top" secondItem="0IF-Ro-X2y" secondAttribute="top" constant="100" id="LEb-hu-D5V"/>
+                        <constraint firstItem="09r-Ak-XlQ" firstAttribute="leading" secondItem="0IF-Ro-X2y" secondAttribute="leading" constant="15" id="eNh-75-WgH"/>
+                        <constraint firstItem="3BN-Hg-1dL" firstAttribute="top" secondItem="0IF-Ro-X2y" secondAttribute="top" constant="37" id="eq4-Lp-1cF"/>
+                        <constraint firstAttribute="trailing" secondItem="09r-Ak-XlQ" secondAttribute="trailing" constant="15" id="oxT-bE-ef8"/>
+                        <constraint firstItem="6vI-Zi-ieG" firstAttribute="centerY" secondItem="3BN-Hg-1dL" secondAttribute="centerY" id="pmd-vW-Uju"/>
+                        <constraint firstItem="3BN-Hg-1dL" firstAttribute="centerX" secondItem="0IF-Ro-X2y" secondAttribute="centerX" id="wfw-pu-6nc"/>
+                        <constraint firstAttribute="bottom" secondItem="09r-Ak-XlQ" secondAttribute="bottom" constant="100" id="xas-JH-RsM"/>
+                        <constraint firstItem="6vI-Zi-ieG" firstAttribute="leading" secondItem="0IF-Ro-X2y" secondAttribute="leading" constant="15" id="y7z-mX-cAa"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="0IF-Ro-X2y" firstAttribute="top" secondItem="VRG-Vq-rrY" secondAttribute="bottom" id="GxE-bE-NRO"/>
                 <constraint firstItem="0IF-Ro-X2y" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="dRe-cp-0zh"/>
-                <constraint firstItem="VRG-Vq-rrY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ghl-XE-3Rc"/>
-                <constraint firstItem="VRG-Vq-rrY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="mDX-wi-o4C"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VRG-Vq-rrY" secondAttribute="trailing" id="n2U-gN-qwV"/>
+                <constraint firstItem="0IF-Ro-X2y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lUQ-i1-gbg"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="0IF-Ro-X2y" secondAttribute="trailing" id="nI0-P2-1IJ"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="0IF-Ro-X2y" secondAttribute="bottom" id="whX-Wa-AZj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="86.5" y="65.5"/>
+            <point key="canvasLocation" x="98.5" y="9.5"/>
         </view>
     </objects>
     <resources>

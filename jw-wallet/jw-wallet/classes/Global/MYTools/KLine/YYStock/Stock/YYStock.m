@@ -60,7 +60,7 @@
         make.height.equalTo(@YYStockTopBarViewHeight);
     }];
     _topBarView.delegate = self;
-//    _topBarView.hidden = YES; // 不要顶部条子
+    _topBarView.hidden = YES; // 不要顶部条子
 }
 
 - (void)initUI_StockContainerView {

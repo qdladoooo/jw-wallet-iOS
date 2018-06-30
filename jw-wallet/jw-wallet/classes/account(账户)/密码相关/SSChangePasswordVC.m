@@ -37,6 +37,21 @@
 }
 #pragma mark - 确认
 - (IBAction)sureAction:(id)sender {
+    NSArray *arr = [NSArray bg_arrayWithName:wallet_Info];
+    SSLog(@"%@",arr);
+    if (self.currentPassword.text.length==0) {
+        [MBProgressHUD showText:kLocalizedTableString(self.currentPassword.placeholder, gy_LocalizableName)];
+        return;
+    }else if (self.currentPassword.text.length<6){
+        [MBProgressHUD showText:kLocalizedTableString(@"密码位数不足", gy_LocalizableName)];
+        return;
+    }
+    
+
+
+    // 删除元素
+    
+    
     
 }
 #pragma mark - 返回

@@ -11,12 +11,18 @@
 #import "SSCreatePurseViewController.h"
 #import "SSAddPurseViewController.h"
 #import "SSWalletDetailVC.h"
+
 @interface SSManagerPurseViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *nav_title;
 @property (weak, nonatomic) IBOutlet UIButton *createBtn;
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
-
+@property (nonatomic, strong) SSWalletInfo *model;
+/**
+ 钱包数据
+ */
+@property (nonatomic, copy) NSArray *walletDataArr;
+@property (nonatomic, copy) NSMutableArray *data;
 @end
 
 @implementation SSManagerPurseViewController
@@ -31,6 +37,17 @@
     self.nav_title.text = kLocalizedTableString(@"管理钱包", gy_LocalizableName);
     [self.createBtn setTitle:kLocalizedTableString(@"创建钱包", gy_LocalizableName) forState:UIControlStateNormal];
     [self.addBtn setTitle:kLocalizedTableString(@"导入钱包", gy_LocalizableName) forState:UIControlStateNormal];
+    
+    
+    // 读取数据库，查看钱包列表
+    self.walletDataArr = [NSArray bg_arrayWithName:wallet_Info];
+    
+    SSLog(@"%@",self.walletDataArr);
+
+    // 初始化
+    self.data = [NSMutableArray array];
+    
+    self.data = [SSWalletInfo mj_objectArrayWithKeyValuesArray:self.walletDataArr];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,17 +56,23 @@
 }
 #pragma mark -  UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return self.walletDataArr.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SSPurseListCell *cell = [SSPurseListCell cellWithTableView:tableView];
 
+    self.model = self.data[indexPath.row];
+    cell.walletName_title.text = self.model.walletName;
     return cell;
   
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    self.model = self.data[indexPath.row];
     SSWalletDetailVC *vc = [[SSWalletDetailVC alloc] init];
+    vc.model = self.model;
+    vc.index = indexPath.row;
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - UITableViewDelegate

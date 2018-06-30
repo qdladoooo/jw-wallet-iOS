@@ -14,6 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BGFMDB (2.0.10):
+    - BGFMDB/BG (= 2.0.10)
+    - BGFMDB/FMDB (= 2.0.10)
+  - BGFMDB/BG (2.0.10):
+    - BGFMDB/FMDB
+  - BGFMDB/FMDB (2.0.10)
   - FDFullscreenPopGesture (1.1)
   - JCore (1.2.0)
   - JPush (3.0.9):
@@ -35,6 +41,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
+  - BGFMDB (~> 2.0.10)
   - FDFullscreenPopGesture (= 1.1)
   - JPush (~> 3.0.9)
   - JShare (~> 1.5.0)
@@ -51,6 +58,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - BGFMDB
     - FDFullscreenPopGesture
     - JCore
     - JPush
@@ -67,6 +75,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BGFMDB: d749a11ec2406576c2a52e47fec0b14ab7fe14e2
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JCore: b52e3dd73625eec70afd1244bb9c41038aa06087
   JPush: 48041e8c5ad2ef9b48709eb0888af9640b36e9b0
@@ -81,6 +90,6 @@ SPEC CHECKSUMS:
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: 74949da5c3eb70bf7c1958b6f00d0bddc7e2efb1
+PODFILE CHECKSUM: 891c1d2dc08f191dabe46493d35b9fe6e5a2cbe9
 
 COCOAPODS: 1.5.3

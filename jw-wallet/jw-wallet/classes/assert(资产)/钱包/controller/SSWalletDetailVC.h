@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SSWalletDetailVC : UIViewController
+@property (nonatomic, strong) SSWalletInfo *model;
 
+/**
+ 元素位置
+ */
+@property (nonatomic, assign) NSInteger index;
 @end

@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.tabelView.separatorColor = BACKGROUNDCOLOR;
     [self.deleteBtn.layer setBorderWidth:1];
     [self.deleteBtn.layer setBorderColor:rgba(15, 117, 230, 1).CGColor];
     [self.deleteBtn setTitleColor:rgba(15, 117, 230, 1) forState:UIControlStateNormal];
@@ -94,6 +94,7 @@
             cell.title1.text = kLocalizedTableString(@"钱包名称", gy_LocalizableName);
             cell.navR.hidden = YES;
             cell.title2.hidden = NO;
+            cell.title2.text = self.model.walletName;
         }else{
             cell.title1.text = kLocalizedTableString(@"修改密码", gy_LocalizableName);
         }
@@ -110,9 +111,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section==1) {
         if (indexPath.row == 1) {
+            NSIndexPath *path = [NSIndexPath indexPathForRow:1 inSection:1];
+            [self passwordAlert:path];
             // 修改密码
-            SSChangePasswordVC *vc = [[SSChangePasswordVC alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
         }
     }else if (indexPath.section==2){
         if (indexPath.row == 0) {
@@ -133,6 +134,9 @@
  */
 - (IBAction)deleteWallet:(id)sender {
     [self passwordAlert:nil];
+    
+    [NSArray bg_deleteObjectWithName:wallet_Info Index:self.index];
+
  
 }
 - (IBAction)back:(id)sender {
@@ -158,11 +162,28 @@
         NSArray * textfields = alertController.textFields;
         UITextField * passwordfiled = textfields[0];
         NSLog(@"%@",passwordfiled.text);
+        // 导出私钥
+        if (![passwordfiled.text isEqualToString:self.model.walletPassword]) {
+            [MBProgressHUD showText:kLocalizedTableString(@"密码输入错误", gy_LocalizableName)];
+            return ;
+        }
+        if (pach.section==1) {
+            if (pach.row==1) {
+                
+                    // 修改密码
+                    SSChangePasswordVC *vc = [[SSChangePasswordVC alloc] init];
+                    vc.index = self.index;
+                    [self.navigationController pushViewController:vc animated:YES];
+            
+            }
+        }
+        
         
         if (pach.section==2) {
             if (pach.row==0) {
-                // 导出私钥
+               
                 SSExportPrivatePassWord *view = [[[NSBundle mainBundle] loadNibNamed:@"SSExportPrivatePassWord" owner:nil options:nil] lastObject];
+                view.model = self.model;
                 view.frame = [UIScreen mainScreen].bounds;
                 [self.view addSubview:view];
             }else{
