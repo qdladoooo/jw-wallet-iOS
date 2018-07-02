@@ -43,6 +43,7 @@
 //    }
     self.tablewView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tablewView.backgroundColor = BACKGROUNDCOLOR;
+    self.tablewView.separatorColor = BACKGROUNDCOLOR;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,6 +59,7 @@
 #pragma mark - UITableViewDelegate
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SSTradingRecordsCell *cell = [SSTradingRecordsCell cellWithTablewView:tableView];
+    cell.topLine.hidden = indexPath.row==0?NO:YES;
     return cell;
 }
 
@@ -70,6 +72,7 @@
     label.font = [UIFont systemFontOfSize:10];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor darkGrayColor];
+    
     [headerView addSubview:label];
     return headerView;
 }

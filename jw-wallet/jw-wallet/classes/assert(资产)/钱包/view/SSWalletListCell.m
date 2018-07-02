@@ -22,7 +22,7 @@
 }
 +(instancetype)cellWithTableView:(UITableView *)tableView{
     static NSString *ID = @"SSWalletListCell";
-    SSWalletListCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:ID];
+    SSWalletListCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"SSWalletListCell" owner:nil options:nil] lastObject];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;

@@ -82,7 +82,7 @@
 }
 #pragma mark - UITableViewDelegate
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 90;
 }
 
 #pragma mark - 创建钱包

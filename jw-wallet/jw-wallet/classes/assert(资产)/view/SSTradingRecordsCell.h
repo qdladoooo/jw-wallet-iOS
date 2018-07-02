@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SSTradingRecordsCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIView *topLine;
 +(instancetype)cellWithTablewView:(UITableView *)tableView;
 @end

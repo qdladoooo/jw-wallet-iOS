@@ -129,7 +129,7 @@
             _NormalHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 45)];
             _NormalHeaderView.backgroundColor = [UIColor colorFromHexRGB:@"f2f6ff"];
             _NormalHeaderTitle = [[UILabel alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(_NormalHeaderView.frame) -5-12, SCREEN_WIDTH, 12)];
-            _NormalHeaderTitle.textColor = [UIColor darkGrayColor];
+            _NormalHeaderTitle.textColor = DARKGRAYCOLOR;
             _NormalHeaderTitle.font = [UIFont systemFontOfSize:12];
             _NormalHeaderTitle.textAlignment = NSTextAlignmentLeft;
             [_NormalHeaderView addSubview:_NormalHeaderTitle];

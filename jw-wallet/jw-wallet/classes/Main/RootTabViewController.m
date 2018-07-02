@@ -34,12 +34,18 @@
     self.tabBar.backgroundImage = [CommonMethods createImageWithColor:[UIColor clearColor]];
     self.tabBar.shadowImage     = [CommonMethods createImageWithColor:[UIColor grayColor]];
     
-    NSArray * normalItems       = @[@"assets",@"markets",@"discover",@"mine"];
-    NSArray * selectItmes       = @[@"assets_selected",@"markets_selected",@"discover_selected",@"mine_selected"];
+//    NSArray * normalItems       = @[@"assets",@"markets",@"discover",@"mine"];
+//    NSArray * selectItmes       = @[@"assets_selected",@"markets_selected",@"discover_selected",@"mine_selected"];
+//
+//    NSArray * controllClass     = @[@"SSAsertViewController",@"SSMarktViewController",@"SSDiscoverViewController",@"SSAccountViewController"];
+//    self.delegate               = self;
+//    NSArray * itemTitles        = @[@"资产",@"行情",@"发现",@"账户"];
+    NSArray * normalItems       = @[@"assets",@"discover",@"mine"];
+    NSArray * selectItmes       = @[@"assets_selected",@"discover_selected",@"mine_selected"];
     
-    NSArray * controllClass     = @[@"SSAsertViewController",@"SSMarktViewController",@"SSDiscoverViewController",@"SSAccountViewController"];
+    NSArray * controllClass     = @[@"SSAsertViewController",@"SSDiscoverViewController",@"SSAccountViewController"];
     self.delegate               = self;
-    NSArray * itemTitles        = @[@"资产",@"行情",@"发现",@"账户"];
+    NSArray * itemTitles        = @[@"资产",@"发现",@"账户"];
     NSMutableArray * controllers = [[NSMutableArray alloc]init];
     for (int i = 0; i < normalItems.count; i++)
     {

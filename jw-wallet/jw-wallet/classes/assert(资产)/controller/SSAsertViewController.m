@@ -187,12 +187,12 @@
     _nav_view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
     _nav_view.backgroundColor = [UIColor clearColor];
     // 扫描按钮
-    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(15, 30, 20, 20)];
+    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(15, 43, 20, 20)];
     btn1.tintColor = [UIColor whiteColor];
     [btn1 setImage:[UIImage imageNamed:@"扫描"] forState:UIControlStateNormal];
     [_nav_view addSubview:btn1];
     // 钱包按钮
-    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-35, 30, 20, 20)];
+    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-35, 43, 20, 20)];
     btn2.tintColor = [UIColor whiteColor];
     [btn2 setImage:[UIImage imageNamed:@"钱包"] forState:UIControlStateNormal];
     [_nav_view addSubview:btn2];

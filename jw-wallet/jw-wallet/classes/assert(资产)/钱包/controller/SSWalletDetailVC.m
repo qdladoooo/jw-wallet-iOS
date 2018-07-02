@@ -191,7 +191,7 @@
         
         if (pach.section==2) {
             if (pach.row==0) {
-               
+               // 导出私钥
                 SSExportPrivatePassWord *view = [[[NSBundle mainBundle] loadNibNamed:@"SSExportPrivatePassWord" owner:nil options:nil] lastObject];
                 view.model = self.model;
                 view.frame = [UIScreen mainScreen].bounds;

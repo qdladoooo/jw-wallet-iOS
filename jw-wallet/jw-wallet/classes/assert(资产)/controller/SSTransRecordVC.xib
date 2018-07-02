@@ -32,7 +32,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAB-vf-ZHD">
-                            <rect key="frame" x="15" y="23.5" width="40" height="40"/>
+                            <rect key="frame" x="0.0" y="23.5" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="77i-Zs-V4P"/>
                                 <constraint firstAttribute="height" constant="40" id="i8s-1f-24D"/>
@@ -47,7 +47,7 @@
                     <constraints>
                         <constraint firstItem="VAB-vf-ZHD" firstAttribute="centerY" secondItem="sIB-Ck-nxq" secondAttribute="centerY" id="9j4-om-KBY"/>
                         <constraint firstItem="sIB-Ck-nxq" firstAttribute="centerX" secondItem="wOo-Hx-e6T" secondAttribute="centerX" id="VMN-Gc-Xue"/>
-                        <constraint firstItem="VAB-vf-ZHD" firstAttribute="leading" secondItem="wOo-Hx-e6T" secondAttribute="leading" constant="15" id="a8n-6Q-mmx"/>
+                        <constraint firstItem="VAB-vf-ZHD" firstAttribute="leading" secondItem="wOo-Hx-e6T" secondAttribute="leading" id="a8n-6Q-mmx"/>
                         <constraint firstAttribute="bottom" secondItem="sIB-Ck-nxq" secondAttribute="bottom" constant="10" id="nT4-gb-Tox"/>
                         <constraint firstAttribute="height" constant="64" id="x42-XZ-mdA"/>
                     </constraints>
