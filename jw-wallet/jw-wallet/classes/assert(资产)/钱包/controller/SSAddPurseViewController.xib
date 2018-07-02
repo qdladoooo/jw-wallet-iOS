@@ -41,7 +41,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nq-eO-uwM">
-                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <rect key="frame" x="15" y="23.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="1P9-Q4-GhE"/>
+                                <constraint firstAttribute="height" constant="40" id="NcM-zM-efb"/>
+                            </constraints>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="back:" destination="-1" eventType="touchUpInside" id="Bsq-lc-FD8"/>
@@ -152,7 +156,7 @@
                             <rect key="frame" x="64" y="0.0" width="296" height="50"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

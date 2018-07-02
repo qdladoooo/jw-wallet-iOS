@@ -70,6 +70,8 @@
 "编辑行情" = "Edit Markets";
 "用户名" = "UserName";
 "请输入用户名" = "enter one user name";
+"密码输入错误" = "error password";
+"删除成功" = "Delete success";
 /*
  SSMarketRemindViewController.m
  */

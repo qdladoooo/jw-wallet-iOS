@@ -1,0 +1,6 @@
+framework module Pods_jw_wallet {
+  umbrella header "Pods-jw-wallet-umbrella.h"
+
+  export *
+  module * { export * }
+}

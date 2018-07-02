@@ -39,17 +39,22 @@
     [self.addBtn setTitle:kLocalizedTableString(@"导入钱包", gy_LocalizableName) forState:UIControlStateNormal];
     
     
+
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     // 读取数据库，查看钱包列表
     self.walletDataArr = [NSArray bg_arrayWithName:wallet_Info];
     
     SSLog(@"%@",self.walletDataArr);
-
+    
     // 初始化
     self.data = [NSMutableArray array];
     
     self.data = [SSWalletInfo mj_objectArrayWithKeyValuesArray:self.walletDataArr];
+    
+    [self.tableView reloadData];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

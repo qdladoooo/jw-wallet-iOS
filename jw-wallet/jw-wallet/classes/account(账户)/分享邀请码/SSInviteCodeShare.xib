@@ -26,7 +26,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CB-A2-7mE">
-                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <rect key="frame" x="0.0" y="23.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="KaK-D3-8VJ"/>
+                                <constraint firstAttribute="height" constant="40" id="bx6-qi-1QS"/>
+                            </constraints>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="back:" destination="-1" eventType="touchUpInside" id="5aW-3I-4yt"/>
@@ -50,7 +54,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="8CB-A2-7mE" firstAttribute="leading" secondItem="kth-HA-TLz" secondAttribute="leading" constant="15" id="Ajw-89-EIe"/>
+                        <constraint firstItem="8CB-A2-7mE" firstAttribute="leading" secondItem="kth-HA-TLz" secondAttribute="leading" id="Ajw-89-EIe"/>
                         <constraint firstItem="UDP-lu-Msx" firstAttribute="centerY" secondItem="T4O-6j-eEo" secondAttribute="centerY" id="DEV-Ej-KMv"/>
                         <constraint firstItem="8CB-A2-7mE" firstAttribute="centerY" secondItem="T4O-6j-eEo" secondAttribute="centerY" id="I2A-HA-nmI"/>
                         <constraint firstItem="T4O-6j-eEo" firstAttribute="centerX" secondItem="kth-HA-TLz" secondAttribute="centerX" id="WhE-nn-Lb1"/>

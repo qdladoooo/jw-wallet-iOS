@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-jp-Dbu">
-                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <rect key="frame" x="0.0" y="32.5" width="40" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Jng-Zg-R0Q"/>
+                            </constraints>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="backAction:" destination="-1" eventType="touchUpInside" id="1F6-oe-Fj4"/>
@@ -54,7 +57,7 @@
                         <constraint firstItem="uJO-NR-wZb" firstAttribute="centerY" secondItem="3f7-Ra-CQp" secondAttribute="centerY" id="LOq-2k-NXm"/>
                         <constraint firstItem="3f7-Ra-CQp" firstAttribute="centerX" secondItem="Ecg-wX-qSc" secondAttribute="centerX" id="Q8S-rM-F7B"/>
                         <constraint firstAttribute="trailing" secondItem="uJO-NR-wZb" secondAttribute="trailing" constant="15" id="Toh-Tz-l2w"/>
-                        <constraint firstItem="2OB-jp-Dbu" firstAttribute="leading" secondItem="Ecg-wX-qSc" secondAttribute="leading" constant="15" id="Uaz-QP-XRS"/>
+                        <constraint firstItem="2OB-jp-Dbu" firstAttribute="leading" secondItem="Ecg-wX-qSc" secondAttribute="leading" id="Uaz-QP-XRS"/>
                         <constraint firstAttribute="height" constant="64" id="ZYm-Ic-pSf"/>
                         <constraint firstItem="2OB-jp-Dbu" firstAttribute="centerY" secondItem="3f7-Ra-CQp" secondAttribute="centerY" id="sst-yK-zng"/>
                     </constraints>

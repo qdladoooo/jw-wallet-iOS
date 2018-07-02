@@ -197,7 +197,7 @@
                              @"brain_key":_finalStr,
                              @"username":_userName
                              };
-    
+     [MBProgressHUD showHUDOnView:self.view];
     NSString *url = [NSString stringWithFormat:@"%@%@",BaseURLString,CreatWallet];
     [HttpTool postWithURL:url params:params success:^(id json) {
         SSLog(@"%@",json);
@@ -209,19 +209,18 @@
             [UserDefaultUtil saveValue:self.helpwords forKey:private_password];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                
-                for (UIViewController *controller in self.navigationController.viewControllers) {
-                    if ([controller isKindOfClass:[SSManagerPurseViewController class]]) {
-                        [self.navigationController popToRootViewControllerAnimated:YES];
-                    }
-                }
+                [self.navigationController popToViewController:self.navigationController.viewControllers[1] animated:YES];
 
             });
+            
         }else{
             [MBProgressHUD showText:json[@"reason"]];
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:wallet_password];
         }
+        [MBProgressHUD hiddenForView:self.view];
     } failure:^(NSError *error) {
          SSLog(@"%@",error);
+        [MBProgressHUD hiddenForView:self.view];
     }];
     
 }

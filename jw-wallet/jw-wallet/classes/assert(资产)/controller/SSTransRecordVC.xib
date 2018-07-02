@@ -32,7 +32,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAB-vf-ZHD">
-                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <rect key="frame" x="15" y="23.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="77i-Zs-V4P"/>
+                                <constraint firstAttribute="height" constant="40" id="i8s-1f-24D"/>
+                            </constraints>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="backAction:" destination="-1" eventType="touchUpInside" id="ovi-rs-iXK"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -35,7 +35,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7l-54-3nj">
-                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <rect key="frame" x="0.0" y="23.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="UTp-Xu-tcf"/>
+                                <constraint firstAttribute="width" constant="40" id="u38-pY-B82"/>
+                            </constraints>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="backAction:" destination="-1" eventType="touchUpInside" id="TwD-dB-pqI"/>
@@ -44,7 +48,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="A7l-54-3nj" firstAttribute="leading" secondItem="9u2-y0-zoA" secondAttribute="leading" constant="15" id="7Cu-5T-MOC"/>
+                        <constraint firstItem="A7l-54-3nj" firstAttribute="leading" secondItem="9u2-y0-zoA" secondAttribute="leading" id="7Cu-5T-MOC"/>
                         <constraint firstAttribute="bottom" secondItem="t3k-Tb-byv" secondAttribute="bottom" constant="10" id="PBv-HP-8p0"/>
                         <constraint firstAttribute="height" constant="64" id="bRx-NE-Jk2"/>
                         <constraint firstItem="t3k-Tb-byv" firstAttribute="centerX" secondItem="9u2-y0-zoA" secondAttribute="centerX" id="bzb-fH-tLp"/>

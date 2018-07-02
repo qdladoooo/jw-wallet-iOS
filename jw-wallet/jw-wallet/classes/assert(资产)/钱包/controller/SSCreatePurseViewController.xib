@@ -46,7 +46,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-qP-03I">
-                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <rect key="frame" x="0.0" y="23.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6fA-b7-jU9"/>
+                                <constraint firstAttribute="width" constant="40" id="R2W-cW-ygq"/>
+                            </constraints>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="back:" destination="-1" eventType="touchUpInside" id="vFE-iD-3P9"/>
@@ -55,7 +59,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="sbU-qP-03I" firstAttribute="leading" secondItem="n8k-9w-8bn" secondAttribute="leading" constant="15" id="1Kg-DC-zU9"/>
+                        <constraint firstItem="sbU-qP-03I" firstAttribute="leading" secondItem="n8k-9w-8bn" secondAttribute="leading" id="1Kg-DC-zU9"/>
                         <constraint firstAttribute="bottom" secondItem="4KR-bW-ezm" secondAttribute="bottom" constant="10" id="9Om-zs-qbi"/>
                         <constraint firstAttribute="height" constant="64" id="Yab-pS-cS3"/>
                         <constraint firstItem="sbU-qP-03I" firstAttribute="centerY" secondItem="4KR-bW-ezm" secondAttribute="centerY" id="n4Q-dL-8ks"/>

@@ -135,7 +135,7 @@
 - (IBAction)deleteWallet:(id)sender {
     [self passwordAlert:nil];
     
-    [NSArray bg_deleteObjectWithName:wallet_Info Index:self.index];
+ 
 
  
 }
@@ -162,10 +162,20 @@
         NSArray * textfields = alertController.textFields;
         UITextField * passwordfiled = textfields[0];
         NSLog(@"%@",passwordfiled.text);
+  
         // 导出私钥
         if (![passwordfiled.text isEqualToString:self.model.walletPassword]) {
-            [MBProgressHUD showText:kLocalizedTableString(@"密码输入错误", gy_LocalizableName)];
+
+            [SJAlert createAlertWithMessage:kLocalizedTableString(@"密码输入错误", gy_LocalizableName) controller:self];
             return ;
+        }
+        // 删除钱包
+        if (pach==nil) {
+            [SJAlert createAlertWithMessage:kLocalizedTableString(@"删除成功", gy_LocalizableName) controller:self];
+            [NSArray bg_deleteObjectWithName:wallet_Info Index:self.index];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self.navigationController popViewControllerAnimated:YES];
+            });
         }
         if (pach.section==1) {
             if (pach.row==1) {

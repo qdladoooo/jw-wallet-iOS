@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyH-cM-Spw">
-                            <rect key="frame" x="15" y="32.5" width="10" height="22"/>
+                            <rect key="frame" x="0.0" y="23.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="MbK-Ye-rYa"/>
+                                <constraint firstAttribute="height" constant="40" id="uWx-Ff-t3W"/>
+                            </constraints>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="back:" destination="-1" eventType="touchUpInside" id="XDo-cp-HPT"/>
@@ -41,7 +45,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.039215686274509803" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="nyH-cM-Spw" firstAttribute="leading" secondItem="6cE-QJ-cRG" secondAttribute="leading" constant="15" id="UfZ-5z-heJ"/>
+                        <constraint firstItem="nyH-cM-Spw" firstAttribute="leading" secondItem="6cE-QJ-cRG" secondAttribute="leading" id="UfZ-5z-heJ"/>
                         <constraint firstAttribute="bottom" secondItem="dE2-oI-p6f" secondAttribute="bottom" constant="10" id="qF7-Id-V3g"/>
                         <constraint firstItem="nyH-cM-Spw" firstAttribute="centerY" secondItem="dE2-oI-p6f" secondAttribute="centerY" id="xKT-Q4-9xA"/>
                         <constraint firstAttribute="height" constant="64" id="yoB-8G-YMV"/>

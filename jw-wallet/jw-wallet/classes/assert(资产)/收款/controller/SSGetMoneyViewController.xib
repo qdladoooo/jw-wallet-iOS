@@ -88,7 +88,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vI-Zi-ieG">
-                            <rect key="frame" x="15" y="36.5" width="10" height="22"/>
+                            <rect key="frame" x="0.0" y="27.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="jqu-Pm-PX2"/>
+                                <constraint firstAttribute="width" constant="40" id="wot-Os-8fR"/>
+                            </constraints>
                             <state key="normal" image="nav_white"/>
                             <connections>
                                 <action selector="back:" destination="-1" eventType="touchUpInside" id="NAH-O4-LqC"/>
@@ -104,7 +108,7 @@
                         <constraint firstItem="6vI-Zi-ieG" firstAttribute="centerY" secondItem="3BN-Hg-1dL" secondAttribute="centerY" id="pmd-vW-Uju"/>
                         <constraint firstItem="3BN-Hg-1dL" firstAttribute="centerX" secondItem="0IF-Ro-X2y" secondAttribute="centerX" id="wfw-pu-6nc"/>
                         <constraint firstAttribute="bottom" secondItem="09r-Ak-XlQ" secondAttribute="bottom" constant="100" id="xas-JH-RsM"/>
-                        <constraint firstItem="6vI-Zi-ieG" firstAttribute="leading" secondItem="0IF-Ro-X2y" secondAttribute="leading" constant="15" id="y7z-mX-cAa"/>
+                        <constraint firstItem="6vI-Zi-ieG" firstAttribute="leading" secondItem="0IF-Ro-X2y" secondAttribute="leading" id="y7z-mX-cAa"/>
                     </constraints>
                 </view>
             </subviews>

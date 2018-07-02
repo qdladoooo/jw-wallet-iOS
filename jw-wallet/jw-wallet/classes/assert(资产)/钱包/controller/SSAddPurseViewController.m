@@ -108,11 +108,6 @@
     if (self.userName.text.length == 0 ) {
         [MBProgressHUD showText:kLocalizedTableString(self.userName.placeholder, gy_LocalizableName)];
         return;
-    }else{
-        if (self.password1.text.length != 6) {
-            [MBProgressHUD showText:kLocalizedTableString(self.userName.placeholder, gy_LocalizableName)];
-            return;
-        }
     }
     if (self.password1.text.length == 0 ) {
         [MBProgressHUD showText:kLocalizedTableString(self.password1.placeholder, gy_LocalizableName)];
@@ -127,6 +122,8 @@
     
     // 开始导入
     [self SaveWalletInfoArray];
+    // 返回
+    [self.navigationController popViewControllerAnimated:YES];
 }
 #pragma mark - UITextViewDelegate
 -(void)textViewDidChange:(UITextView *)textView{

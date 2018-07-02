@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002CF42B8F8ECDB403EEFB1D /* libPods-jw-wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */; };
 		2E0001BC20DB528200CD5C49 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0001BA20DB528200CD5C49 /* ShareView.m */; };
 		2E0001D120DB6FA900CD5C49 /* qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001BD20DB6FA600CD5C49 /* qq@3x.png */; };
 		2E0001D220DB6FA900CD5C49 /* wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0001BE20DB6FA600CD5C49 /* wechat@2x.png */; };
@@ -165,6 +164,7 @@
 		2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AEE20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib */; };
 		2E6C8AF420C2C13600C0B37E /* SSArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */; };
 		2E6C8AF520C2C13600C0B37E /* SSArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */; };
+		2E6E634320EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E634220EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift */; };
 		2EA596CE20CA29BB00A25951 /* SJ_NewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596CD20CA29BB00A25951 /* SJ_NewfeatureViewController.m */; };
 		2EA596D720CA6FE500A25951 /* SSAppCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596D620CA6FE500A25951 /* SSAppCollectionHeaderView.m */; };
 		2EA596D920CA701F00A25951 /* SSAppCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA596D820CA701F00A25951 /* SSAppCollectionHeaderView.xib */; };
@@ -271,6 +271,7 @@
 		2EE414FB20DA39730022E976 /* GT3Captcha.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EE414F920DA39730022E976 /* GT3Captcha.bundle */; };
 		2EE414FC20DA39730022E976 /* GT3Captcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE414FA20DA39730022E976 /* GT3Captcha.framework */; };
 		2EED5F4520E881B200B45955 /* Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EED5F4420E881B200B45955 /* Keychain.m */; };
+		C930C104EE24A7B58462AB50 /* libPods-jw-wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F59D186901F07E07CAE8CD7 /* libPods-jw-wallet.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -562,7 +563,10 @@
 		2E6C8AF120C2C13600C0B37E /* SSArticleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSArticleTableViewCell.h; sourceTree = "<group>"; };
 		2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSArticleTableViewCell.m; sourceTree = "<group>"; };
 		2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSArticleTableViewCell.xib; sourceTree = "<group>"; };
-		2E89FBA820E9084400F1989E /* jw-wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jw-wallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E6E634120EA15B6005A7917 /* jw-wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jw-wallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E6E634220EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHelpWordsTransToPrivateKey.swift; sourceTree = "<group>"; };
+		2E89FDBD20EA06D800F1989E /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = ../../Desktop/CryptoSwift.framework; sourceTree = "<group>"; };
+		2E89FDBF20EA080400F1989E /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		2EA596CC20CA29BB00A25951 /* SJ_NewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJ_NewfeatureViewController.h; sourceTree = "<group>"; };
 		2EA596CD20CA29BB00A25951 /* SJ_NewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJ_NewfeatureViewController.m; sourceTree = "<group>"; };
 		2EA596D520CA6FE500A25951 /* SSAppCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppCollectionHeaderView.h; sourceTree = "<group>"; };
@@ -751,8 +755,8 @@
 		2EED5F4320E881B100B45955 /* Keychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keychain.h; sourceTree = "<group>"; };
 		2EED5F4420E881B200B45955 /* Keychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keychain.m; sourceTree = "<group>"; };
 		45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		4F59D186901F07E07CAE8CD7 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.release.xcconfig"; sourceTree = "<group>"; };
-		CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -761,7 +765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EE414FC20DA39730022E976 /* GT3Captcha.framework in Frameworks */,
-				002CF42B8F8ECDB403EEFB1D /* libPods-jw-wallet.a in Frameworks */,
+				C930C104EE24A7B58462AB50 /* libPods-jw-wallet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,9 +843,10 @@
 			isa = PBXGroup;
 			children = (
 				2E3571F020CE5400009C4CE9 /* jw-wallet.entitlements */,
+				2E6E634220EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift */,
 				2E48156520B96FD000AFCBBB /* classes */,
 				2E48158720B9701400AFCBBB /* Supporting Files */,
-				2E89FBA820E9084400F1989E /* jw-wallet-Bridging-Header.h */,
+				2E6E634120EA15B6005A7917 /* jw-wallet-Bridging-Header.h */,
 			);
 			path = "jw-wallet";
 			sourceTree = "<group>";
@@ -2103,7 +2108,9 @@
 		54DC894A045ECA55A50D29FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */,
+				2E89FDBF20EA080400F1989E /* libc++.1.tbd */,
+				2E89FDBD20EA06D800F1989E /* CryptoSwift.framework */,
+				4F59D186901F07E07CAE8CD7 /* libPods-jw-wallet.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2119,7 +2126,7 @@
 				2E48152920B91FB800AFCBBB /* Sources */,
 				2E48152A20B91FB800AFCBBB /* Frameworks */,
 				2E48152B20B91FB800AFCBBB /* Resources */,
-				0BBACA510C439D4A6923A8AE /* [CP] Copy Pods Resources */,
+				C80A5D749CE4BB1CFC130543 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2343,7 +2350,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BBACA510C439D4A6923A8AE /* [CP] Copy Pods Resources */ = {
+		932A0B30651648D6609C089E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jw-wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C80A5D749CE4BB1CFC130543 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2361,24 +2386,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		932A0B30651648D6609C089E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-jw-wallet-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2502,6 +2509,7 @@
 				2E48153520B91FB800AFCBBB /* ViewController.m in Sources */,
 				2EE4149D20D258200022E976 /* NetWorkStatus.m in Sources */,
 				2E6C89FC20C041A200C0B37E /* SSLanguageCell.m in Sources */,
+				2E6E634320EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift in Sources */,
 				2E6C8AE120C26DDF00C0B37E /* SSDiscoverViewController.m in Sources */,
 				2E4815AA20B9734900AFCBBB /* NSArray+swiArray.m in Sources */,
 				2EB989D620CC040400694110 /* SSBackupMemorizingWordsVC.m in Sources */,
@@ -2733,6 +2741,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -2795,6 +2804,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2992,6 +3002,7 @@
 		2E48155D20B91FB900AFCBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "jw-walletTests/Info.plist";
@@ -3010,6 +3021,7 @@
 		2E48155E20B91FB900AFCBBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "jw-walletTests/Info.plist";
@@ -3028,6 +3040,7 @@
 		2E48156020B91FB900AFCBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYK3K8MU62;
 				INFOPLIST_FILE = "jw-walletUITests/Info.plist";
@@ -3046,6 +3059,7 @@
 		2E48156120B91FB900AFCBBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYK3K8MU62;
 				INFOPLIST_FILE = "jw-walletUITests/Info.plist";
