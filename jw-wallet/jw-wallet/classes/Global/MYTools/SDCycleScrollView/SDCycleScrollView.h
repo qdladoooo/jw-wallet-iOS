@@ -174,8 +174,15 @@ typedef enum {
 /** 轮播文字label高度 */
 @property (nonatomic, assign) CGFloat titleLabelHeight;
 
+/**
+ 缩放样式
+ */
 @property (assign, nonatomic) BOOL zoomType;
 
+/**
+ 展示渐变图层
+ */
+@property (assign, nonatomic) BOOL ShowGradientLayer;
 @property (nonatomic, weak) UICollectionView *mainView; // 显示图片的collectionView
 
 //////////////////////  清除缓存接口  //////////////////////

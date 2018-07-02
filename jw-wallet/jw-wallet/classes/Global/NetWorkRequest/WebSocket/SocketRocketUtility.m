@@ -234,7 +234,7 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
     if (webSocket == self.socket) {
         NSLog(@"************************** socket收到数据了************************** ");
         NSLog(@"我这后台约定的 message 是 json 格式数据收到数据，就按格式解析吧，然后把数据发给调用层");
-        NSLog(@"message:%@",message);
+//        NSLog(@"message:%@",message);
         
         [[NSNotificationCenter defaultCenter] postNotificationName:kWebSocketdidReceiveMessageNote object:message];
         

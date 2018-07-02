@@ -74,6 +74,7 @@
     SSKeyStoreTipsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell==nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"SSKeyStoreTipsCell" owner:nil options:nil] lastObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     cell.title.text = [NSString stringWithFormat:@"%@",kLocalizedTableString(_titleArr[indexPath.row], gy_LocalizableName)];
     cell.content.text = [NSString stringWithFormat:@"%@",kLocalizedTableString(_contentArr[indexPath.row], gy_LocalizableName)];

@@ -34,7 +34,7 @@
 "管理钱包" = "Wallet manage";
 "创建钱包" = "Creat wallet";
 "导入钱包" = "Import wallet";
-"请输入当前密码" = "Please enter the current password";
+"请输入新密码" = "Please enter the new password";
 "行情详情" = "Details of the market";
 "助记词" = "Memorizing words";
 "私钥" = "Private key";
@@ -68,6 +68,8 @@
 "向他人扫码收款" = "Scavenging money to others";
 "复制收款地址" = "Replicating receivables";
 "编辑行情" = "Edit Markets";
+"用户名" = "UserName";
+"请输入用户名" = "enter one user name";
 /*
  SSMarketRemindViewController.m
  */

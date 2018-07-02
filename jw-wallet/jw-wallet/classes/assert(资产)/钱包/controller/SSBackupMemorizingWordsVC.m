@@ -93,7 +93,7 @@
 -(void)makeArrayFromString{
     NSString *str = self.model.brain_priv_key;
     self.strArr = [str componentsSeparatedByString:@" "];
-    SSLog(@"%@",self.strArr);
+    SSLog(@"助记词：%@",self.strArr);
     
 }
 

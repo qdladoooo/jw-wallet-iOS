@@ -214,7 +214,8 @@
 }
 #pragma mark - 请求数据
 -(void)requestSocketData{
-    NSString *url = [NSString stringWithFormat:@"%@",BiteSharesURL];
+//    NSString *url = [NSString stringWithFormat:@"%@",BiteSharesURL];
+    NSString *url = [NSString stringWithFormat:@"%@",SocketBaseURLString];
 
     [[SocketRocketUtility instance] SRWebSocketOpenWithURLString:url];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidOpen) name:kWebSocketDidOpenNote object:nil];
@@ -242,7 +243,7 @@
     // 登录
 //    NSArray *arr = @[@1,@"login",@[@"buybuybuy",@"123456"]];
 //    [[SocketRocketUtility instance] sendData:arr withMethod:@"call" IDStr:@"2"];
-//    // get——account
+////    // get——account
 //    NSArray *arr1 = @[@0,@"get_accounts",@[@[@"1.2.0"]]];
 //    [[SocketRocketUtility instance] sendData:arr1 withMethod:@"call" IDStr:@"1"];
     
@@ -253,7 +254,7 @@
     //收到服务端发送过来的消息
     NSString * message = note.object;
     NSLog(@"message:%@",message);
-    
+
     /*
      [{
      "id": "1.2.0",

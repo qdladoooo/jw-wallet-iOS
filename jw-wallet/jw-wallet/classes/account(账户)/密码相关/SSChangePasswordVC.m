@@ -26,7 +26,7 @@
     
     self.nav_title.text = kLocalizedTableString(@"修改密码", gy_LocalizableName);
     [self.sure setTitle:kLocalizedTableString(@"确认", gy_LocalizableName) forState:UIControlStateNormal];
-    self.currentPassword.placeholder = kLocalizedTableString(@"请输入当前密码", gy_LocalizableName);
+    self.currentPassword.placeholder = kLocalizedTableString(@"请输入新密码", gy_LocalizableName);
     
     
 }

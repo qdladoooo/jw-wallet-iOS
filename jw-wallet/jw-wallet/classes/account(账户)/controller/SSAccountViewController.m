@@ -49,6 +49,8 @@
     
     // 去除多余的cell
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.separatorColor = BACKGROUNDCOLOR;
+    self.tableView.backgroundColor = BACKGROUNDCOLOR;
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

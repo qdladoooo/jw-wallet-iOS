@@ -159,8 +159,6 @@
 		2E6C8AD920C26CB900C0B37E /* SSHelpCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AD720C26CB900C0B37E /* SSHelpCenterViewController.m */; };
 		2E6C8ADA20C26CB900C0B37E /* SSHelpCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AD820C26CB900C0B37E /* SSHelpCenterViewController.xib */; };
 		2E6C8AE120C26DDF00C0B37E /* SSDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AE020C26DDF00C0B37E /* SSDiscoverViewController.m */; };
-		2E6C8AE420C26F3400C0B37E /* SSBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AE320C26F3400C0B37E /* SSBannerView.m */; };
-		2E6C8AE620C26F4100C0B37E /* SSBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AE520C26F4100C0B37E /* SSBannerView.xib */; };
 		2E6C8AE920C26F6D00C0B37E /* SSApplicationsShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AE820C26F6D00C0B37E /* SSApplicationsShareView.m */; };
 		2E6C8AEB20C2B6AB00C0B37E /* SSApplicationsShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AEA20C2B6AB00C0B37E /* SSApplicationsShareView.xib */; };
 		2E6C8AEF20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AED20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.m */; };
@@ -272,6 +270,7 @@
 		2EE414E820D9FE140022E976 /* SSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE414E720D9FE140022E976 /* SSBaseViewController.m */; };
 		2EE414FB20DA39730022E976 /* GT3Captcha.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EE414F920DA39730022E976 /* GT3Captcha.bundle */; };
 		2EE414FC20DA39730022E976 /* GT3Captcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE414FA20DA39730022E976 /* GT3Captcha.framework */; };
+		2EED5F4520E881B200B45955 /* Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EED5F4420E881B200B45955 /* Keychain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -554,9 +553,6 @@
 		2E6C8AD820C26CB900C0B37E /* SSHelpCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSHelpCenterViewController.xib; sourceTree = "<group>"; };
 		2E6C8ADF20C26DDF00C0B37E /* SSDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDiscoverViewController.h; sourceTree = "<group>"; };
 		2E6C8AE020C26DDF00C0B37E /* SSDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDiscoverViewController.m; sourceTree = "<group>"; };
-		2E6C8AE220C26F3400C0B37E /* SSBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBannerView.h; sourceTree = "<group>"; };
-		2E6C8AE320C26F3400C0B37E /* SSBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBannerView.m; sourceTree = "<group>"; };
-		2E6C8AE520C26F4100C0B37E /* SSBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSBannerView.xib; sourceTree = "<group>"; };
 		2E6C8AE720C26F6D00C0B37E /* SSApplicationsShareView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSApplicationsShareView.h; sourceTree = "<group>"; };
 		2E6C8AE820C26F6D00C0B37E /* SSApplicationsShareView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSApplicationsShareView.m; sourceTree = "<group>"; };
 		2E6C8AEA20C2B6AB00C0B37E /* SSApplicationsShareView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSApplicationsShareView.xib; sourceTree = "<group>"; };
@@ -566,6 +562,7 @@
 		2E6C8AF120C2C13600C0B37E /* SSArticleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSArticleTableViewCell.h; sourceTree = "<group>"; };
 		2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSArticleTableViewCell.m; sourceTree = "<group>"; };
 		2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSArticleTableViewCell.xib; sourceTree = "<group>"; };
+		2E89FBA820E9084400F1989E /* jw-wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jw-wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		2EA596CC20CA29BB00A25951 /* SJ_NewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJ_NewfeatureViewController.h; sourceTree = "<group>"; };
 		2EA596CD20CA29BB00A25951 /* SJ_NewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJ_NewfeatureViewController.m; sourceTree = "<group>"; };
 		2EA596D520CA6FE500A25951 /* SSAppCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppCollectionHeaderView.h; sourceTree = "<group>"; };
@@ -751,6 +748,8 @@
 		2EE414E720D9FE140022E976 /* SSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBaseViewController.m; sourceTree = "<group>"; };
 		2EE414F920DA39730022E976 /* GT3Captcha.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GT3Captcha.bundle; sourceTree = "<group>"; };
 		2EE414FA20DA39730022E976 /* GT3Captcha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GT3Captcha.framework; sourceTree = "<group>"; };
+		2EED5F4320E881B100B45955 /* Keychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keychain.h; sourceTree = "<group>"; };
+		2EED5F4420E881B200B45955 /* Keychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keychain.m; sourceTree = "<group>"; };
 		45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.release.xcconfig"; sourceTree = "<group>"; };
 		CA5C7852F4DA627422A36587 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -842,6 +841,7 @@
 				2E3571F020CE5400009C4CE9 /* jw-wallet.entitlements */,
 				2E48156520B96FD000AFCBBB /* classes */,
 				2E48158720B9701400AFCBBB /* Supporting Files */,
+				2E89FBA820E9084400F1989E /* jw-wallet-Bridging-Header.h */,
 			);
 			path = "jw-wallet";
 			sourceTree = "<group>";
@@ -1177,10 +1177,10 @@
 			isa = PBXGroup;
 			children = (
 				2E51070C20E770A00023E281 /* UIView+SDExtension.h */,
-				2E51070D20E770A00023E281 /* SDCycleScrollView.h */,
-				2E51070E20E770A00023E281 /* SDCollectionViewCell.h */,
-				2E51070F20E770A00023E281 /* SDCycleScrollView.m */,
 				2E51071020E770A00023E281 /* UIView+SDExtension.m */,
+				2E51070D20E770A00023E281 /* SDCycleScrollView.h */,
+				2E51070F20E770A00023E281 /* SDCycleScrollView.m */,
+				2E51070E20E770A00023E281 /* SDCollectionViewCell.h */,
 				2E51071120E770A00023E281 /* SDCollectionViewCell.m */,
 				2E51071220E770A00023E281 /* PageControl */,
 			);
@@ -1416,9 +1416,6 @@
 				2EA596DA20CA7B1100A25951 /* YYBHorizontalCollectionCell.m */,
 				2EA596DC20CA7B1200A25951 /* YYBHorizontalCollectionView.h */,
 				2EA596DD20CA7B1300A25951 /* YYBHorizontalCollectionView.m */,
-				2E6C8AE220C26F3400C0B37E /* SSBannerView.h */,
-				2E6C8AE320C26F3400C0B37E /* SSBannerView.m */,
-				2E6C8AE520C26F4100C0B37E /* SSBannerView.xib */,
 				2E6C8AE720C26F6D00C0B37E /* SSApplicationsShareView.h */,
 				2E6C8AE820C26F6D00C0B37E /* SSApplicationsShareView.m */,
 				2E6C8AEA20C2B6AB00C0B37E /* SSApplicationsShareView.xib */,
@@ -2066,6 +2063,8 @@
 		2EE414C720D398E90022E976 /* iOS-keychain-master */ = {
 			isa = PBXGroup;
 			children = (
+				2EED5F4320E881B100B45955 /* Keychain.h */,
+				2EED5F4420E881B200B45955 /* Keychain.m */,
 				2EE414C820D398E90022E976 /* PassWordTool.h */,
 				2EE414CC20D398E90022E976 /* PassWordTool.m */,
 				2EE414C920D398E90022E976 /* KeychainTool.h */,
@@ -2179,6 +2178,7 @@
 				TargetAttributes = {
 					2E48152C20B91FB800AFCBBB = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0940;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -2242,7 +2242,6 @@
 				2E6C8AD420C26AFA00C0B37E /* SSUnitSetTableViewCell.xib in Resources */,
 				2E60DD9D20C4D73400A20429 /* SSAddAssertsVC.xib in Resources */,
 				2E0001D520DB6FA900CD5C49 /* twitter@3x.png in Resources */,
-				2E6C8AE620C26F4100C0B37E /* SSBannerView.xib in Resources */,
 				2E0001DC20DB6FA900CD5C49 /* wechat_fav@2x.png in Resources */,
 				2E48163820B983AC00AFCBBB /* u=2796464312,3280625818&fm=11&gp=0.jpg in Resources */,
 				2E0001E220DB6FA900CD5C49 /* facebook@3x.png in Resources */,
@@ -2392,6 +2391,7 @@
 				2EB989CE20CC040400694110 /* HZQTagCell.m in Sources */,
 				2E51071E20E770A00023E281 /* TADotView.m in Sources */,
 				2EB989E720CC040400694110 /* AJTagsCell.m in Sources */,
+				2EED5F4520E881B200B45955 /* Keychain.m in Sources */,
 				2EB9976120CD812A00694110 /* SSKeystoreFileVC.m in Sources */,
 				2E3F359620C5180F001C78CB /* SSInviteCodeShare.m in Sources */,
 				2EB996EA20CD5F8700694110 /* YYFiveRecordModel.m in Sources */,
@@ -2461,7 +2461,6 @@
 				2E51071B20E770A00023E281 /* SDCycleScrollView.m in Sources */,
 				2EB9978520CE113100694110 /* SJAlert.m in Sources */,
 				2E4815AE20B9734900AFCBBB /* LWTNavigationViewController.m in Sources */,
-				2E6C8AE420C26F3400C0B37E /* SSBannerView.m in Sources */,
 				2EA596D720CA6FE500A25951 /* SSAppCollectionHeaderView.m in Sources */,
 				2EB9973C20CD5F9A00694110 /* YYTimeLineMaskView.m in Sources */,
 				2EE414E820D9FE140022E976 /* SSBaseViewController.m in Sources */,
@@ -2733,6 +2732,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2752,6 +2753,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "jw-wallet";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2792,7 +2794,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2804,6 +2808,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "jw-wallet";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2814,6 +2819,7 @@
 			baseConfigurationReference = 45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "jw-wallet/jw-wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYK3K8MU62;
@@ -2889,6 +2895,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.gref.tokenpal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jw-wallet/jw-wallet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2898,6 +2907,7 @@
 			baseConfigurationReference = 53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "jw-wallet/jw-wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYK3K8MU62;
@@ -2973,6 +2983,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.gref.tokenpal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jw-wallet/jw-wallet-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
