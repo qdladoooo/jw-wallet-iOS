@@ -26,13 +26,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加新资产" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWy-UU-L33">
-                            <rect key="frame" x="144" y="33" width="87" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <rect key="frame" x="149.5" y="36" width="76.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIQ-LT-cng">
-                            <rect key="frame" x="15" y="23" width="40" height="40"/>
+                            <rect key="frame" x="15" y="25" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="iWv-GU-xPK"/>
                                 <constraint firstAttribute="width" constant="40" id="rqt-Bb-jbR"/>

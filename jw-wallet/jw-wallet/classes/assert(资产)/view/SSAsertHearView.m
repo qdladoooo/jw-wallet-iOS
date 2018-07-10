@@ -20,6 +20,8 @@
     [super awakeFromNib];
     self.walletName.text = kLocalizedTableString(@"钱包名称", gy_LocalizableName);
     [self.addNewAssets setTitle:kLocalizedTableString(@"添加新资产", gy_LocalizableName) forState:UIControlStateNormal];
+    self.walletName.font = [UIFont boldSystemFontOfSize:15.0];
+    self.addNewAssets.titleLabel.font = [UIFont boldSystemFontOfSize:15];
 }
 +(UIView *)createAsertHearView{
     UIView *view = [[[NSBundle mainBundle] loadNibNamed:@"SSAsertHearView" owner:self options:nil] lastObject];

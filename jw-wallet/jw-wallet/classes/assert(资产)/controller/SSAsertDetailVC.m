@@ -30,8 +30,11 @@
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
     self.nav_title.text = kLocalizedTableString(@"资产详情", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
     self.banlance_title.text = kLocalizedTableString(@"账户余额",gy_LocalizableName);
+    self.banlance_title.font = [UIFont boldSystemFontOfSize:15];
     [self.transfer setTitle:kLocalizedTableString(@"转账", gy_LocalizableName) forState:UIControlStateNormal];
+    
     [self.getMoney setTitle:kLocalizedTableString(@"收款", gy_LocalizableName) forState:UIControlStateNormal];
     self.icon.layer.cornerRadius = 15;
     self.icon.layer.masksToBounds = YES;

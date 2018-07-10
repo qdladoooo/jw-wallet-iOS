@@ -8,6 +8,7 @@
 
 #import "SSCreatePurseViewController.h"
 #import "SSBackupWalletViewController.h"
+#import "SSHelpWordsModel.h"
 @interface SSCreatePurseViewController ()<GT3CaptchaManagerDelegate>
 // 各种标题~
 @property (weak, nonatomic) IBOutlet UILabel *nav_title;
@@ -37,6 +38,7 @@
 @property (strong, nonatomic) IBOutlet GT3CaptchaButton *vertifyBtn;
 @property (nonatomic, strong) GT3CaptchaButton *captchaButton;
 @property (weak, nonatomic) IBOutlet UIView *captchaView;
+@property (nonatomic, strong) SSHelpWordsModel *model;
 
 //网站主部署的用于验证登录的接口 (api_1)
 #define api_1 @"http://www.geetest.com/demo/gt/register-slide"
@@ -117,6 +119,7 @@
     
     // 国际化处理
     self.nav_title.text = kLocalizedTableString(@"创建钱包", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
     self.walletName_title.text = kLocalizedTableString(@"钱包名称", gy_LocalizableName);
     self.passWord_title.text = kLocalizedTableString(@"密码", gy_LocalizableName);
     self.repeatpassword_title.text = kLocalizedTableString(@"重复密码", gy_LocalizableName);
@@ -131,7 +134,8 @@
     self.sureBtn.backgroundColor = [UIColor lightGrayColor];
     
     [self createDefaultButton];
-    
+    // 获取助记词
+    [self requestHelpWords];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -195,12 +199,13 @@
 //    [PassWordTool savePassWord:self.tf2.text];
 //    NSString *psw = [PassWordTool readPassWord];
 //    SSLog(@"%@",psw);
-    [UserDefaultUtil saveValue:self.tf2.text forKey:wallet_password];
+//    [UserDefaultUtil saveValue:self.tf2.text forKey:wallet_password];
     // 跳转
-    SSBackupWalletViewController *vc =[[SSBackupWalletViewController alloc] init];
-    vc.userName = self.tf1.text;
-    vc.password = self.tf2.text;
-    [self.navigationController pushViewController:vc animated:YES];
+//    SSBackupWalletViewController *vc =[[SSBackupWalletViewController alloc] init];
+//    vc.userName = self.tf1.text;
+//    vc.password = self.tf2.text;
+//    [self.navigationController pushViewController:vc animated:YES];
+    [self requestData];
     
 }
 // 复选框点击
@@ -242,5 +247,113 @@
     mRequest.URL = [NSURL URLWithString:newURL];
     
     replacedHandler(mRequest);
+}
+#pragma mark - 获取助记词
+-(void)requestHelpWords{
+    NSString *url = [NSString  stringWithFormat:@"%@%@",BaseURLString,GetHelpWords];
+    
+    [HttpTool postWithURL:url params:nil success:^(id json) {
+        
+        SSLog(@"%@",json);
+        NSDictionary *data = json[@"result"];
+        if (![data isKindOfClass:[NSNull class]]) {
+            if ([json[@"result_code"] integerValue] == 10000 ) {
+                self.model = [SSHelpWordsModel mj_objectWithKeyValues:data];
+            }
+        }
+        
+    } failure:^(NSError *error) {
+        SSLog(@"%@",error);
+
+    }];
+    
+    
+}
+
+#pragma mark - 网络请求
+-(void)requestData{
+    
+    //  参数：brain_key:助记词   username：用户名
+    NSDictionary *params = @{
+                             @"brain_key":self.model.brain_priv_key,
+                             @"username":self.tf1.text
+                             };
+    [MBProgressHUD showHUDOnView:self.view];
+    NSString *url = [NSString stringWithFormat:@"%@%@",BaseURLString,CreatWallet];
+    [HttpTool postWithURL:url params:params success:^(id json) {
+        SSLog(@"%@",json);
+        
+        if ([json[@"result_code"] integerValue] == 10000) {
+            
+            [self SaveWalletInfoArray]; // 保存用户信息
+            
+            SSBackupWalletViewController *vc =[[SSBackupWalletViewController alloc] init];
+            vc.userName = self.tf1.text;
+            vc.password = self.tf2.text;
+            vc.model = self.model;
+
+            [self.navigationController pushViewController:vc animated:YES];
+        }else{
+            [MBProgressHUD showText:json[@"reason"]];
+        }
+        [MBProgressHUD hiddenForView:self.view];
+    } failure:^(NSError *error) {
+        SSLog(@"%@",error);
+        [MBProgressHUD hiddenForView:self.view];
+    }];
+    
+}
+
+#pragma mark - 保存用户信息数组到数据库
+-(void)SaveWalletInfoArray{
+    
+    NSMutableArray* walletInfoArr = [NSMutableArray array];
+    NSDictionary *dict = @{
+                           @"walletName":self.tf1.text,
+                           @"privatePassword":self.model.wif_priv_key,
+                           @"walletPassword":self.tf2.text
+                           };
+    [walletInfoArr addObject:dict];
+    //    SSWalletInfo *infoModel = [[SSWalletInfo alloc] init];
+    //    infoModel.walletName = self.userName;
+    //    infoModel.privatePassword = self.helpwords;
+    //    infoModel.walletPassword = self.password;
+    //    [walletInfoArr addObject:infoModel];
+    /**
+     存储标识名为wallet_Info数组.
+     */
+    [walletInfoArr bg_saveArrayWithName:wallet_Info];
+    
+    /**
+     往标识名为@"testA"的数组中添加元素.
+     */
+    //[NSArray bg_addObjectWithName:@"testA" object:@[@(1),@"哈哈"]];
+    
+    /**
+     更新标识名为testA的数组某个位置上的元素.
+     */
+//    [NSArray bg_updateObjectWithName:@"testA" Object:@"人妖" Index:0];
+    
+    /**
+     删除标识名为testA的数组某个位置上的元素.
+     */
+    //[NSArray bg_deleteObjectWithName:@"testA" Index:3];
+    
+    /**
+     查询标识名为testA的数组全部元素.
+     */
+    NSArray* testResult = [NSArray bg_arrayWithName:wallet_Info];
+    
+    /**
+     获取标识名为testA的数组某个位置上的元素.
+     */
+    //    id arrObject = [NSArray bg_objectWithName:@"testA" Index:3];
+    
+    /**
+     清除标识名为testA的数组所有元素.
+     */
+    //[NSArray bg_clearArrayWithName:@"testA"];
+    
+    NSLog(@"结果 = %@",testResult);
 }
 @end

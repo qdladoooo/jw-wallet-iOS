@@ -22,6 +22,7 @@
     self.tableView.backgroundColor = BACKGROUNDCOLOR;
     self.tableView.separatorColor = BACKGROUNDCOLOR;
     self.nav_title.text = kLocalizedTableString(@"添加新资产", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
 }
 
 - (void)didReceiveMemoryWarning {

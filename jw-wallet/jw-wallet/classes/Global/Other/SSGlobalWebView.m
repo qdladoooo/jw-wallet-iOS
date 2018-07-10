@@ -103,10 +103,11 @@
     [self.titleLabel setTextColor:WHITCOLOR];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     if (self.titleName == nil) {
-        self.titleLabel.text = @"jw-wallet";
+        self.titleLabel.text = @"GRE";
     }else{
         self.titleLabel.text = self.titleName;
     }
+    self.titleLabel.font = [UIFont boldSystemFontOfSize:15];
     [self.navigationView addSubview:self.titleLabel];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.navigationView.mas_bottom).with.offset(0);

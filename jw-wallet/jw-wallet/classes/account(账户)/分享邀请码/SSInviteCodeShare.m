@@ -25,6 +25,7 @@
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden =  YES;
     self.nav_title.text = kLocalizedTableString(@"分享邀请码", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
 }
 // 分享
 - (IBAction)share:(id)sender {

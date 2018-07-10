@@ -19,4 +19,5 @@
  密码
  */
 @property (nonatomic, copy) NSString *password;
+@property(nonatomic, strong) SSHelpWordsModel *model;
 @end

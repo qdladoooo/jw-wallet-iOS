@@ -37,8 +37,12 @@
     [super viewDidLoad];
     
     self.nav_title.text = kLocalizedTableString(@"收款", gy_LocalizableName);
+    
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
     self.getMoneyFromOthers_title.text = kLocalizedTableString(@"向他人扫码收款", gy_LocalizableName);
+    self.getMoneyFromOthers_title.font = [UIFont boldSystemFontOfSize:15];
     [self.clickBtnToCopyAddress setTitle:kLocalizedTableString(@"复制收款地址", gy_LocalizableName) forState:UIControlStateNormal];
+    self.clickBtnToCopyAddress.titleLabel.font = [UIFont boldSystemFontOfSize:12];
     self.fd_prefersNavigationBarHidden = YES;
     // 生成二维码(Default)
     [self setupGenerateQRCode];

@@ -33,6 +33,7 @@
     [self.deleteBtn setTitleColor:rgba(15, 117, 230, 1) forState:UIControlStateNormal];
     [self.deleteBtn setTitle:kLocalizedTableString(@"删除钱包", gy_LocalizableName) forState:UIControlStateNormal];
     self.nav_title.text = kLocalizedTableString(@"钱包详情", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
     self.fd_prefersNavigationBarHidden = YES;
 }
 

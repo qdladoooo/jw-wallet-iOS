@@ -123,7 +123,7 @@
                                 <constraint firstAttribute="height" constant="16" id="c6d-4B-BnK"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <state key="normal" title="?">
+                            <state key="normal" image="wenhao">
                                 <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
@@ -181,4 +181,7 @@
             <point key="canvasLocation" x="-49.5" y="-82.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="wenhao" width="27" height="27"/>
+    </resources>
 </document>

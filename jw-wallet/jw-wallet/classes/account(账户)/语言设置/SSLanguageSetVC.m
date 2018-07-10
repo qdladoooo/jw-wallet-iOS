@@ -32,6 +32,7 @@
     _dataAry = @[ @"zh-Hant", //中文繁体
                   @"en"];// 英语
     self.nav_title.text = kLocalizedTableString(@"语言设置", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
 }
 
 - (void)didReceiveMemoryWarning {

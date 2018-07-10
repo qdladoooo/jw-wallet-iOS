@@ -215,7 +215,8 @@
         }else if (section==2){
             label.text = kLocalizedTableString(@"设置", gy_LocalizableName);
         }
-        [label setFont:[UIFont systemFontOfSize:14]];
+        [label setFont:[UIFont systemFontOfSize:12]];
+        label.textColor = FONT_DARKGRAYCOLOR;
         [sectionHeader addSubview:label];
         
         return sectionHeader;

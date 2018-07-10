@@ -61,6 +61,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="RTd-Tp-JGG"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="创建钱包">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -74,6 +75,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="m7x-qF-TY5"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="导入钱包">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

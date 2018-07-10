@@ -19,25 +19,25 @@
                     <rect key="frame" x="0.0" y="0.0" width="480" height="199"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rop-dC-lMy">
-                            <rect key="frame" x="224" y="37" width="33" height="19.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="225" y="37" width="31" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7u-OZ-P8v">
-                            <rect key="frame" x="208" y="93.5" width="65.5" height="19.5"/>
+                            <rect key="frame" x="208" y="92" width="65.5" height="19.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID: 1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-RA-eeV">
-                            <rect key="frame" x="220.5" y="133" width="40.5" height="12"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="217.5" y="131.5" width="47" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhq-aS-hgW">
-                            <rect key="frame" x="283.5" y="96" width="14" height="14"/>
+                            <rect key="frame" x="283.5" y="94.5" width="14" height="14"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="14" id="ZWr-7e-KXl"/>
                                 <constraint firstAttribute="width" constant="14" id="eP0-kc-lUB"/>
@@ -67,9 +67,9 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="accountId" destination="YC6-RA-eeV" id="6EM-h1-qpg"/>
                 <outlet property="accountName" destination="d7u-OZ-P8v" id="V2g-mK-Bwn"/>
                 <outlet property="accoutLabel" destination="rop-dC-lMy" id="yxA-j7-uhA"/>
-                <outlet property="grandView" destination="Eje-vM-koN" id="LJO-lx-tNb"/>
             </connections>
             <point key="canvasLocation" x="36" y="-108.5"/>
         </view>

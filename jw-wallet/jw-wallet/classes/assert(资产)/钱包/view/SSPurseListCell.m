@@ -9,10 +9,7 @@
 #import "SSPurseListCell.h"
 @interface SSPurseListCell()
 
-/**
- 设置按钮
- */
-@property (weak, nonatomic) IBOutlet UIButton *setBtn;
+
 
 
 @end
@@ -20,8 +17,12 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self.setBtn setTitle:kLocalizedTableString(@"设置默认", gy_LocalizableName) forState:UIControlStateNormal];
-    [self.setBtn setTitle:kLocalizedTableString(@"设置默认", gy_LocalizableName) forState:UIControlStateSelected];
+    [self.setBtn setTitle:kLocalizedTableString(@" 设置默认 ", gy_LocalizableName) forState:UIControlStateNormal];
+    [self.setBtn setTitle:kLocalizedTableString(@" 设置默认 ", gy_LocalizableName) forState:UIControlStateSelected];
+    self.setBtn.titleLabel.font = [UIFont boldSystemFontOfSize:10];
+    self.setBtn.layer.borderWidth = 1;
+    self.setBtn.layer.borderColor = Bluecolor.CGColor;
+    self.walletName_title.font = [UIFont boldSystemFontOfSize:15];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -38,14 +39,21 @@
     }
     return cell;
 }
-- (IBAction)setWallet:(id)sender {
-    _setBtn.selected = !_setBtn.selected;
-    if (_IsButtonnSelectedBlock) {
-        _IsButtonnSelectedBlock(_setBtn.selected);
-    }
-    // 存储选择状态
-    [[NSUserDefaults standardUserDefaults] setBool:_setBtn.selected forKey:@"MoRenWallet"];
-}
+//- (IBAction)setWallet:(id)sender {
+//    _setBtn.selected = !_setBtn.selected;
+//    if (_setBtn.selected) {
+//        self.setBtn.layer.borderWidth = 0;
+//    }else{
+//        self.setBtn.layer.borderWidth = 1;
+//        self.setBtn.layer.borderColor = Bluecolor.CGColor;
+//    }
+//    if (_IsButtonnSelectedBlock) {
+//
+//        _IsButtonnSelectedBlock(_setBtn.selected);
+//    }
+//    // 存储选择状态
+//    [[NSUserDefaults standardUserDefaults] setBool:_setBtn.selected forKey:@"MoRenWallet"];
+//}
 
 
 @end

@@ -10,8 +10,10 @@
 
 @interface SSPurseListCell : UITableViewCell
 +(instancetype)cellWithTableView:(UITableView *)tableView;
-
+/**
+ 设置按钮
+ */
+@property (weak, nonatomic) IBOutlet UIButton *setBtn;
 @property (nonatomic, assign) BOOL SetMoRenWallet;
-@property (nonatomic, strong) void (^IsButtonnSelectedBlock)(BOOL);
 @property (weak, nonatomic) IBOutlet UILabel *walletName_title;
 @end

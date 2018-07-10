@@ -12,25 +12,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="ILq-Oo-oc5" customClass="SSAsertHearView">
-            <rect key="frame" x="0.0" y="0.0" width="606" height="293"/>
+            <rect key="frame" x="0.0" y="0.0" width="477" height="290"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyf-ue-q9A" customClass="SJGradientView">
-                    <rect key="frame" x="0.0" y="0.0" width="606" height="293"/>
+                    <rect key="frame" x="0.0" y="0.0" width="477" height="290"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="钱包名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlD-dC-PX8">
-                            <rect key="frame" x="270" y="93" width="66" height="19.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlD-dC-PX8">
+                            <rect key="frame" x="209" y="93" width="60" height="21"/>
+                            <attributedString key="attributedText">
+                                <fragment content="钱包名称">
+                                    <attributes>
+                                        <color key="NSColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8o-w8-Ikk">
-                            <rect key="frame" x="15" y="162.5" width="576" height="45"/>
+                            <rect key="frame" x="15" y="164" width="447" height="45"/>
                             <color key="backgroundColor" red="0.058823529411764705" green="0.50980392156862742" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="UBQ-Sy-JrN"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" title="添加新资产">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -39,13 +46,13 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ql-PZ-tCp">
-                            <rect key="frame" x="240.5" y="127.5" width="125" height="10"/>
+                            <rect key="frame" x="164.5" y="129" width="148" height="10"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="10" id="kaf-BL-Q7x"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <state key="normal" title="0X456789098765156789">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="getMoneyAdress:" destination="ILq-Oo-oc5" eventType="touchUpInside" id="oFH-Y3-RhS"/>
@@ -76,7 +83,7 @@
                 <outlet property="addNewAssets" destination="q8o-w8-Ikk" id="nes-dp-H0Y"/>
                 <outlet property="walletName" destination="MlD-dC-PX8" id="5oB-HX-Nco"/>
             </connections>
-            <point key="canvasLocation" x="149" y="-398.5"/>
+            <point key="canvasLocation" x="209.5" y="-396"/>
         </view>
     </objects>
 </document>

@@ -26,6 +26,7 @@
     self.fd_prefersNavigationBarHidden = YES;
     _titleArr = @[@"USD",@"CNY"];
     self.nav_title.text = kLocalizedTableString(@"货币单位", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
 }
 
 - (void)didReceiveMemoryWarning {

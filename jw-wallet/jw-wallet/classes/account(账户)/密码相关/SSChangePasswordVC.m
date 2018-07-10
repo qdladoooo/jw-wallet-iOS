@@ -25,6 +25,7 @@
      self.fd_prefersNavigationBarHidden =  YES;
     
     self.nav_title.text = kLocalizedTableString(@"修改密码", gy_LocalizableName);
+    self.nav_title.font =  [UIFont boldSystemFontOfSize:15];
     [self.sure setTitle:kLocalizedTableString(@"确认", gy_LocalizableName) forState:UIControlStateNormal];
     self.currentPassword.placeholder = kLocalizedTableString(@"请输入新密码", gy_LocalizableName);
     

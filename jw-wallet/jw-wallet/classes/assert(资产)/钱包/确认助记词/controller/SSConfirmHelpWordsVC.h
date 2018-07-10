@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SSHelpWordsModel.h"
 @interface SSConfirmHelpWordsVC : UIViewController
 
 /**
@@ -17,5 +17,6 @@
 @property (nonatomic,copy) NSString *helpwords;
 @property (nonatomic, copy) NSString *userName;
 @property (nonatomic, copy) NSString *password;
+@property (nonatomic, strong) SSHelpWordsModel *model;
 -(void)draw;
 @end

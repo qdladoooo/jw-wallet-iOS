@@ -11,4 +11,5 @@
 @interface SSBackupMemorizingWordsVC : UIViewController
 @property (nonatomic, copy) NSString *userName;
 @property (nonatomic, copy) NSString *password;
+@property (nonatomic, strong) SSHelpWordsModel *model;
 @end

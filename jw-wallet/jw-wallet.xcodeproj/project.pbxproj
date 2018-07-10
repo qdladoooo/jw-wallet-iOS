@@ -164,7 +164,6 @@
 		2E6C8AF020C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AEE20C2B9C700C0B37E /* SSApplicationsCollectionViewCell.xib */; };
 		2E6C8AF420C2C13600C0B37E /* SSArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */; };
 		2E6C8AF520C2C13600C0B37E /* SSArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */; };
-		2E6E634320EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E634220EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift */; };
 		2EA596CE20CA29BB00A25951 /* SJ_NewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596CD20CA29BB00A25951 /* SJ_NewfeatureViewController.m */; };
 		2EA596D720CA6FE500A25951 /* SSAppCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA596D620CA6FE500A25951 /* SSAppCollectionHeaderView.m */; };
 		2EA596D920CA701F00A25951 /* SSAppCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA596D820CA701F00A25951 /* SSAppCollectionHeaderView.xib */; };
@@ -564,7 +563,6 @@
 		2E6C8AF220C2C13600C0B37E /* SSArticleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSArticleTableViewCell.m; sourceTree = "<group>"; };
 		2E6C8AF320C2C13600C0B37E /* SSArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSArticleTableViewCell.xib; sourceTree = "<group>"; };
 		2E6E634120EA15B6005A7917 /* jw-wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jw-wallet-Bridging-Header.h"; sourceTree = "<group>"; };
-		2E6E634220EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHelpWordsTransToPrivateKey.swift; sourceTree = "<group>"; };
 		2E89FDBD20EA06D800F1989E /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = ../../Desktop/CryptoSwift.framework; sourceTree = "<group>"; };
 		2E89FDBF20EA080400F1989E /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		2EA596CC20CA29BB00A25951 /* SJ_NewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJ_NewfeatureViewController.h; sourceTree = "<group>"; };
@@ -843,7 +841,6 @@
 			isa = PBXGroup;
 			children = (
 				2E3571F020CE5400009C4CE9 /* jw-wallet.entitlements */,
-				2E6E634220EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift */,
 				2E48156520B96FD000AFCBBB /* classes */,
 				2E48158720B9701400AFCBBB /* Supporting Files */,
 				2E6E634120EA15B6005A7917 /* jw-wallet-Bridging-Header.h */,
@@ -2509,7 +2506,6 @@
 				2E48153520B91FB800AFCBBB /* ViewController.m in Sources */,
 				2EE4149D20D258200022E976 /* NetWorkStatus.m in Sources */,
 				2E6C89FC20C041A200C0B37E /* SSLanguageCell.m in Sources */,
-				2E6E634320EA15B6005A7917 /* SSHelpWordsTransToPrivateKey.swift in Sources */,
 				2E6C8AE120C26DDF00C0B37E /* SSDiscoverViewController.m in Sources */,
 				2E4815AA20B9734900AFCBBB /* NSArray+swiArray.m in Sources */,
 				2EB989D620CC040400694110 /* SSBackupMemorizingWordsVC.m in Sources */,
@@ -3002,7 +2998,6 @@
 		2E48155D20B91FB900AFCBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "jw-walletTests/Info.plist";
@@ -3021,7 +3016,6 @@
 		2E48155E20B91FB900AFCBBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "jw-walletTests/Info.plist";
@@ -3040,7 +3034,6 @@
 		2E48156020B91FB900AFCBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYK3K8MU62;
 				INFOPLIST_FILE = "jw-walletUITests/Info.plist";
@@ -3059,7 +3052,6 @@
 		2E48156120B91FB900AFCBBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYK3K8MU62;
 				INFOPLIST_FILE = "jw-walletUITests/Info.plist";

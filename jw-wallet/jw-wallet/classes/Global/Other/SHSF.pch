@@ -50,4 +50,5 @@
 #import "SSWalletInfo.h"
 #import "SJGradientView.h"
 #import "SSGrandientView.h"
+#import "SSHelpWordsModel.h"
 #endif /* SHSF_pch */

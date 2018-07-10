@@ -50,6 +50,7 @@
     [super viewDidLoad];
     
     self.nav_title.text = kLocalizedTableString(@"导入钱包", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
     [self.helpMemoryBtn setTitle:kLocalizedTableString(@"助记词", gy_LocalizableName) forState:UIControlStateNormal];
     [self.privateKey setTitle:kLocalizedTableString(@"私钥", gy_LocalizableName) forState:UIControlStateNormal];
     self.userName_title.text = kLocalizedTableString(@"用户名", gy_LocalizableName);

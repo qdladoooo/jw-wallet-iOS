@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *createBtn;
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
 @property (nonatomic, strong) SSWalletInfo *model;
+@property (nonatomic, assign) NSInteger indexPathRow;
 /**
  钱包数据
  */
@@ -33,13 +34,15 @@
     self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.backgroundColor = [UIColor colorFromHexRGB:@"f2f6ff"];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    
     self.nav_title.text = kLocalizedTableString(@"管理钱包", gy_LocalizableName);
+    self.nav_title.font = [UIFont boldSystemFontOfSize:15];
     [self.createBtn setTitle:kLocalizedTableString(@"创建钱包", gy_LocalizableName) forState:UIControlStateNormal];
     [self.addBtn setTitle:kLocalizedTableString(@"导入钱包", gy_LocalizableName) forState:UIControlStateNormal];
-    
-    
-
+    // 默认钱包路径
+    NSInteger walletIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"walletIndex"];
+    if (walletIndex) {
+        self.indexPathRow = walletIndex;
+    }
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -68,6 +71,14 @@
 
     self.model = self.data[indexPath.row];
     cell.walletName_title.text = self.model.walletName;
+    if (self.indexPathRow == indexPath.row) {
+        // 如果是当前cell
+        cell.setBtn.selected = YES;
+        cell.setBtn.layer.borderWidth = 0;
+    }else{
+        cell.setBtn.selected = NO;
+    }
+    
     return cell;
   
 }
@@ -99,6 +110,25 @@
 }
 - (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+#pragma mark - 改变默认钱包状态
+- (IBAction)selectStatusChange:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (sender.selected) {
+        sender.layer.borderWidth = 0;
+    }else{
+        sender.layer.borderWidth = 1;
+        sender.layer.borderColor = Bluecolor.CGColor;
+    }
+    // 根据按钮所在的cell,获取index
+    CGPoint point = sender.center;
+    point = [self.tableView convertPoint:point fromView:sender.superview];
+    NSIndexPath* indexpath = [self.tableView indexPathForRowAtPoint:point];
+    NSLog(@"点击了第%ld个钱包",(long)indexpath.row);
+    self.indexPathRow = indexpath.row;
+    [self.tableView reloadData];
+    // 存储默认index
+    [[NSUserDefaults standardUserDefaults] setInteger:self.indexPathRow forKey:@"walletIndex"];
 }
 
 

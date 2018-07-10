@@ -40,6 +40,8 @@
  数据源模型
  */
 @property (nonatomic, strong)SSTagModel *tagModel;
+
+@property (nonatomic, assign) NSInteger topIndex;
 @end
 
 @implementation SSConfirmHelpWordsVC
@@ -50,6 +52,7 @@
     _titles = [NSMutableArray array];
     // 国际化
     self.nav_title.text = kLocalizedTableString(@"确认助记词", gy_LocalizableName);
+    self.nav_title.font  = [UIFont boldSystemFontOfSize:15];
     self.makeSureYourHelpWords.text = kLocalizedTableString(@"确认你的钱包助记词", gy_LocalizableName);
     self.tips.text = kLocalizedTableString(_tips.text, gy_LocalizableName);
     [self.nextStep setTitle:@"下一步" forState:UIControlStateNormal];
@@ -153,6 +156,10 @@
 //UICollectionView被选中时调用的方法
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    // 发送通知
+    NSString *title = [_titles objectAtIndex:indexPath.row];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"changeTagStatus" object:nil userInfo:@{@"title":title}];
     [_titles removeObjectAtIndex:indexPath.row];
     
     [self.collectionView reloadData];
@@ -172,9 +179,8 @@
     if (_titles.count>=_dataArr.count) {
         return;
     }
-      [self randomArr:_dataArr];
-    
-    [self.labelsView layoutIfNeeded];
+//      [self randomArr:_dataArr];
+
 
     [_titles addObject:text];
     [self.collectionView reloadData];
@@ -187,7 +193,9 @@
     SSLog(@"助记词顺序--%@",_titles);
     _finalStr = [_titles componentsJoinedByString:@" "]; // 为分隔符
     SSLog(@"%@",_finalStr);
-    [self requestData];
+    
+//    [self requestData];
+    [self backUpAndCreateWallet]; // 备份成功
 }
 #pragma mark - 网络请求
 -(void)requestData{
@@ -205,8 +213,7 @@
         if ([json[@"result_code"] integerValue] == 10000) {
             [MBProgressHUD showText:@"创建钱包成功！"];
             [self SaveWalletInfoArray]; // 保存用户信息
-            // 保存（助记词）私钥
-            [UserDefaultUtil saveValue:self.helpwords forKey:private_password];
+        
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                
                 [self.navigationController popToViewController:self.navigationController.viewControllers[1] animated:YES];
@@ -247,7 +254,7 @@
     NSMutableArray* walletInfoArr = [NSMutableArray array];
     NSDictionary *dict = @{
                            @"walletName":self.userName,
-                           @"privatePassword":self.helpwords,
+                           @"privatePassword":self.model.wif_priv_key,
                            @"walletPassword":self.password
                            };
     [walletInfoArr addObject:dict];
@@ -292,5 +299,18 @@
     //[NSArray bg_clearArrayWithName:@"testA"];
     
     NSLog(@"结果 = %@",testResult);
+}
+#pragma mark - 备份成功，创建钱包成功
+-(void)backUpAndCreateWallet{
+    if ([_finalStr isEqualToString:self.model.brain_priv_key]) {
+        [MBProgressHUD showText:@"助记词备份成功！"];
+//        [self SaveWalletInfoArray]; // 保存用户信息
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.navigationController popToViewController:self.navigationController.viewControllers[1] animated:YES];
+        });
+    }else{
+        [MBProgressHUD showText:kLocalizedTableString(@"助记词顺序错误！", gy_LocalizableName)];
+    }
+    
 }
 @end

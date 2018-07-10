@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSCreatePurseViewController : UIViewController
+@interface SSCreatePurseViewController : SSBaseViewController
 
 /**
  如果首页弹窗进来的 返回使用dissmiss
