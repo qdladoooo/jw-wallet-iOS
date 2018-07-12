@@ -24,7 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
     [self buildTableView];
     _dataArr = @[@"1",@"2",@"3",@"4",@"1",@"2",@"3",@"4"];
 
@@ -71,7 +70,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.backgroundColor = [UIColor colorWithRed:24 green:244 blue:255 alpha:1];
+   self.tableView.backgroundColor = rgba(7,12,47,1);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
 }

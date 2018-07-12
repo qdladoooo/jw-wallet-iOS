@@ -87,7 +87,7 @@
     
     // 初始高度
     if (_titles.count == 0) {
-        self.collectionViewHeight.constant = 40.0f;
+        self.collectionViewHeight.constant = 30.0f;
         return;
     }
     

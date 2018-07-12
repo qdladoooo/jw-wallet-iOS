@@ -9,6 +9,7 @@
 
 #import "SSAsertCell.h"
 @interface SSAsertCell()
+@property (weak, nonatomic) IBOutlet UIView *CellContentView;
 
 @end
 @implementation SSAsertCell
@@ -18,6 +19,23 @@
     // Initialization code
     self.icon.layer.cornerRadius = 16;
     self.icon.layer.masksToBounds = YES;
+}
+
+-(void)layoutSubviews{
+    
+    [super layoutSubviews];
+    
+    self.CellContentView.layer.shadowOffset =CGSizeMake(2, 2);
+    
+    self.CellContentView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    
+    self.CellContentView.layer.shadowRadius = 2;
+    
+    self.CellContentView.layer.shadowOpacity = 0.3f;
+    
+    self.CellContentView.layer.masksToBounds = NO;
+    
+    
 }
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     static NSString *ID = @"SSAsertCell";

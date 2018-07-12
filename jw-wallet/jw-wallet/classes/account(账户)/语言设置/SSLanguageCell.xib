@@ -21,7 +21,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="繁体中文" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUA-xs-F9u">
-                        <rect key="frame" x="31" y="30.5" width="50" height="15"/>
+                        <rect key="frame" x="16" y="30.5" width="50" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.1764705882352941" green="0.31372549019607843" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -29,14 +29,15 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="JUA-xs-F9u" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gAk-Bg-6oT"/>
-                    <constraint firstItem="JUA-xs-F9u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="wjd-mq-3eV"/>
+                    <constraint firstItem="JUA-xs-F9u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="wjd-mq-3eV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="hp3-aY-KBA"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="title" destination="JUA-xs-F9u" id="Lkk-35-MR3"/>
             </connections>
-            <point key="canvasLocation" x="44" y="85"/>
+            <point key="canvasLocation" x="-333" y="-8"/>
         </tableViewCell>
     </objects>
 </document>

@@ -21,6 +21,7 @@
 #define BACKGROUNDCOLOR UIColorFromRGB(0xF2F6FF)//背景颜色
 #define FONT_DARKGRAYCOLOR UIColorFromRGB(0x2D5069) // 深灰主题字体
 #define FONT_LIGHTGRAYCOLOR UIColorFromRGB(0xCCCCCC) // 浅色灰主题字体
+#define BORDER_COLOR UIColorFromRGB(0xE6E6E6) // 边框
 #define Bluecolor rgba(15, 129, 255, 1) // 蓝色
 //字体大小
 #define TITLEFONT [UIFont systemFontOfSize:18]

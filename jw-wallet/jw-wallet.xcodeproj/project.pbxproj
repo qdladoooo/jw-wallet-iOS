@@ -270,6 +270,9 @@
 		2EE414FB20DA39730022E976 /* GT3Captcha.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EE414F920DA39730022E976 /* GT3Captcha.bundle */; };
 		2EE414FC20DA39730022E976 /* GT3Captcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE414FA20DA39730022E976 /* GT3Captcha.framework */; };
 		2EED5F4520E881B200B45955 /* Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EED5F4420E881B200B45955 /* Keychain.m */; };
+		2EEEE93420F7BFCD00E988BD /* HXSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEE93220F7BFCD00E988BD /* HXSearchBar.m */; };
+		2EEEE93C20F7C47F00E988BD /* SSAPPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEE93A20F7C47F00E988BD /* SSAPPCell.m */; };
+		2EEEE93D20F7C47F00E988BD /* SSAPPCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEE93B20F7C47F00E988BD /* SSAPPCell.xib */; };
 		C930C104EE24A7B58462AB50 /* libPods-jw-wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F59D186901F07E07CAE8CD7 /* libPods-jw-wallet.a */; };
 /* End PBXBuildFile section */
 
@@ -752,6 +755,11 @@
 		2EE414FA20DA39730022E976 /* GT3Captcha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GT3Captcha.framework; sourceTree = "<group>"; };
 		2EED5F4320E881B100B45955 /* Keychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keychain.h; sourceTree = "<group>"; };
 		2EED5F4420E881B200B45955 /* Keychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keychain.m; sourceTree = "<group>"; };
+		2EEEE93220F7BFCD00E988BD /* HXSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXSearchBar.m; sourceTree = "<group>"; };
+		2EEEE93320F7BFCD00E988BD /* HXSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXSearchBar.h; sourceTree = "<group>"; };
+		2EEEE93920F7C47F00E988BD /* SSAPPCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAPPCell.h; sourceTree = "<group>"; };
+		2EEEE93A20F7C47F00E988BD /* SSAPPCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAPPCell.m; sourceTree = "<group>"; };
+		2EEEE93B20F7C47F00E988BD /* SSAPPCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAPPCell.xib; sourceTree = "<group>"; };
 		45635F90D09F1EA465BFBC73 /* Pods-jw-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		4F59D186901F07E07CAE8CD7 /* libPods-jw-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jw-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53679A0EAD92FE0F63959268 /* Pods-jw-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jw-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-jw-wallet/Pods-jw-wallet.release.xcconfig"; sourceTree = "<group>"; };
@@ -1430,6 +1438,9 @@
 				2EA596D520CA6FE500A25951 /* SSAppCollectionHeaderView.h */,
 				2EA596D620CA6FE500A25951 /* SSAppCollectionHeaderView.m */,
 				2EA596D820CA701F00A25951 /* SSAppCollectionHeaderView.xib */,
+				2EEEE93920F7C47F00E988BD /* SSAPPCell.h */,
+				2EEEE93A20F7C47F00E988BD /* SSAPPCell.m */,
+				2EEEE93B20F7C47F00E988BD /* SSAPPCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1476,43 +1487,11 @@
 		2EB9897E20CC040400694110 /* 确认助记词 */ = {
 			isa = PBXGroup;
 			children = (
-				2EB9897F20CC040400694110 /* SelectTag */,
 				2EB9898320CC040400694110 /* controller */,
 				2EB9898720CC040400694110 /* model */,
 				2EB9898A20CC040400694110 /* view */,
 			);
 			path = "确认助记词";
-			sourceTree = "<group>";
-		};
-		2EB9897F20CC040400694110 /* SelectTag */ = {
-			isa = PBXGroup;
-			children = (
-				2EB9898020CC040400694110 /* Controller */,
-				2EB9898120CC040400694110 /* Model */,
-				2EB9898220CC040400694110 /* View */,
-			);
-			path = SelectTag;
-			sourceTree = "<group>";
-		};
-		2EB9898020CC040400694110 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		2EB9898120CC040400694110 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2EB9898220CC040400694110 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		2EB9898320CC040400694110 /* controller */ = {
@@ -1662,6 +1641,7 @@
 		2EB98BB920CC05D700694110 /* MYTools */ = {
 			isa = PBXGroup;
 			children = (
+				2EEEE93120F7BFCD00E988BD /* SearchBar */,
 				2E51070B20E770A00023E281 /* SDCycleScrollView */,
 				2ECBF14720E72C15008C87E1 /* SJGradientView.h */,
 				2ECBF14620E72C15008C87E1 /* SJGradientView.m */,
@@ -2093,6 +2073,15 @@
 			path = SDK;
 			sourceTree = "<group>";
 		};
+		2EEEE93120F7BFCD00E988BD /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				2EEEE93320F7BFCD00E988BD /* HXSearchBar.h */,
+				2EEEE93220F7BFCD00E988BD /* HXSearchBar.m */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
 		37CAACB097E5C8DDF8007802 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2303,6 +2292,7 @@
 				2EB989E220CC040400694110 /* SSWalletListCell.xib in Resources */,
 				2E6C8AEB20C2B6AB00C0B37E /* SSApplicationsShareView.xib in Resources */,
 				2EB9974F20CD5FB100694110 /* minuteData.plist in Resources */,
+				2EEEE93D20F7C47F00E988BD /* SSAPPCell.xib in Resources */,
 				2EB989D520CC040400694110 /* SSWalletDetailVC.xib in Resources */,
 				2E3F359E20C51A6A001C78CB /* SSAppShareViewController.xib in Resources */,
 				2E48168820BAD88D00AFCBBB /* SSMarketCell.xib in Resources */,
@@ -2411,6 +2401,7 @@
 				2E6C8A1020C0EEB600C0B37E /* QRCodeGenerateVC.m in Sources */,
 				2E6C891620BC522900C0B37E /* SSAsertCell.m in Sources */,
 				2E60DDA120C4DB1C00A20429 /* SSAddAssertsCell.m in Sources */,
+				2EEEE93C20F7C47F00E988BD /* SSAPPCell.m in Sources */,
 				2EB996E820CD5F8700694110 /* YYLineDataModel.m in Sources */,
 				2EB9977A20CE070300694110 /* LZPageContentView.m in Sources */,
 				2EB989E620CC040400694110 /* AJTagModel.m in Sources */,
@@ -2475,6 +2466,7 @@
 				2EB9973D20CD5F9A00694110 /* YYTimeLineView.m in Sources */,
 				2E48166920BA843B00AFCBBB /* SSAccountViewController.m in Sources */,
 				2E60DD9620C44A0900A20429 /* SSMarketRemindViewController.m in Sources */,
+				2EEEE93420F7BFCD00E988BD /* HXSearchBar.m in Sources */,
 				2E48168720BAD88D00AFCBBB /* SSMarketCell.m in Sources */,
 				2EE4149C20D258200022E976 /* NSString+Password.m in Sources */,
 				2E6C8AC120C25B7A00C0B37E /* SSAuthorizedLoginCV.m in Sources */,

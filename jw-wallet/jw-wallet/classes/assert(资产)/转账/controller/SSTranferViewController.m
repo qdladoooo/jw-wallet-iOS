@@ -41,6 +41,16 @@
     self.fast_title.text = kLocalizedTableString(@"快", gy_LocalizableName);
     [self.sureBtn setTitle:kLocalizedTableString(@"确认", gy_LocalizableName) forState:UIControlStateNormal];
     
+    self.address.layer.borderColor = BORDER_COLOR.CGColor;
+//    self.transMoney.layer.borderColor = BORDER_COLOR.CGColor;
+    self.remark.layer.borderColor = BORDER_COLOR.CGColor;
+    
+    self.address.layer.borderWidth = 0.5f;
+//    self.transMoney.layer.borderWidth = 0.5f;
+    self.remark.layer.borderWidth = 0.5f;
+    self.slider.maximumTrackTintColor = rgba(235,237,245,1);
+    self.slider.minimumTrackTintColor = rgba(26,154,252,1);
+    
     [self setTextField];
     
     // 扫描结果不为空，用解析地址填充第一栏信息

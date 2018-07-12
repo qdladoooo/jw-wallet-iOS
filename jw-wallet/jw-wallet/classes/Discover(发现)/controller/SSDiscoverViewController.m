@@ -13,9 +13,10 @@
 #import "YYBHorizontalCollectionView.h"
 #import "YYBHCModel.h"
 #import "YYBHorizontalCollectionCell.h"
+#import "HXSearchBar.h"
+#import "SSAPPCell.h"
 
-
-@interface SSDiscoverViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate,YYBHorizontalCollectionViewDelegate>
+@interface SSDiscoverViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate,YYBHorizontalCollectionViewDelegate,UISearchBarDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong) UIView *NormalHeaderView;
 @property (nonatomic, strong) UILabel *NormalHeaderTitle;
@@ -34,7 +35,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
-    self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    [self addSearchBar];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, SCREEN_HEIGHT-80) style:UITableViewStyleGrouped];
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor colorWithRed:24 green:244 blue:255 alpha:1];
@@ -46,6 +49,8 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     _imageArr = [NSArray array];
+    
+
 
 }
 
@@ -54,22 +59,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.tableView.contentSize = CGSizeMake(SCREEN_WIDTH,self.tableView.height-80 );
+}
+
 #pragma mark - <UITableViewDelegate,UITableViewDataSource>
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 10;
+    return 2;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (section == 3) {
+    if (section == 1) {
         return 6;
     }
     return 0;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 50;
+    return 80;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if (section == 0) {
-        return 275;
+        return 262;
     }else if(section == 1){
         return 45;
     }else if (section == 2){
@@ -79,16 +89,24 @@
     }
     return 45;
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.001;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return nil;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    SSArticleTableViewCell *cell = [SSArticleTableViewCell cellWithTableView:tableView];
+//    SSArticleTableViewCell *cell = [SSArticleTableViewCell cellWithTableView:tableView];
+//    return cell;
+    SSAPPCell *cell = [SSAPPCell cellWithTableView:tableView];
     return cell;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section == 0) {
         if (_cycleScrollView == nil) {
             
-            _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 275) delegate:self placeholderImage:[UIImage imageNamed:@""]];
+            _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 262) delegate:self placeholderImage:[UIImage imageNamed:@""]];
             _cycleScrollView.backgroundColor = MAIN_GROUNDCOLOR;
             
         }
@@ -152,15 +170,7 @@
     web.urlString = @"https://www.baidu.com";
     [self.navigationController pushViewController:web animated:YES];
 }
-//#pragma mark - 轮播图
-//-(SDCycleScrollView *)cycleScrollView{
-//    if (_cycleScrollView == nil) {
-//        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 275) delegate:self placeholderImage:[UIImage imageNamed:@"banner"]];
-//        _cycleScrollView.backgroundColor = [UIColor redColor];
-//    }
 
-//    return _cycleScrollView;
-//}
 
 /** 点击图片回调 */
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
@@ -177,5 +187,60 @@
 - (void)YYBHorizontalcollectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
    
+}
+//添加搜索条
+- (void)addSearchBar {
+    //加上 搜索栏
+    UIView *searchBarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
+    searchBarView.backgroundColor = MAIN_GROUNDCOLOR;
+    [self.view addSubview:searchBarView];
+    HXSearchBar *searchBar = [[HXSearchBar alloc] initWithFrame:CGRectMake(10, 30, self.view.frame.size.width - 20, 34)];
+    searchBar.backgroundColor = [UIColor clearColor];
+    searchBar.delegate = self;
+    //输入框提示
+    searchBar.placeholder = @"搜索应用";
+    //光标颜色
+    searchBar.cursorColor = [UIColor lightGrayColor];
+    //TextField
+    searchBar.searchBarTextField.layer.cornerRadius = 17;
+    searchBar.searchBarTextField.layer.masksToBounds = YES;
+//    searchBar.searchBarTextField.layer.borderColor = [UIColor redColor].CGColor;
+//    searchBar.searchBarTextField.layer.borderWidth = 1.0;
+    
+    //清除按钮图标
+    //    searchBar.clearButtonImage = [UIImage imageNamed:@"demand_delete"];
+    
+    //去掉取消按钮灰色背景
+    searchBar.hideSearchBarBackgroundImage = YES;
+    
+    [searchBarView addSubview:searchBar];
+}
+#pragma mark - UISearchBar Delegate
+
+//已经开始编辑时的回调
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    HXSearchBar *sear = (HXSearchBar *)searchBar;
+    //取消按钮
+    sear.cancleButton.backgroundColor = [UIColor clearColor];
+    [sear.cancleButton setTitle:@"取消" forState:UIControlStateNormal];
+    [sear.cancleButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    sear.cancleButton.titleLabel.font = [UIFont systemFontOfSize:14];
+}
+
+//编辑文字改变的回调
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    NSLog(@"searchText:%@",searchText);
+}
+
+//搜索按钮
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    
+}
+
+//取消按钮点击的回调
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    searchBar.showsCancelButton = NO;
+    searchBar.text = nil;
+    [self.view endEditing:YES];
 }
 @end

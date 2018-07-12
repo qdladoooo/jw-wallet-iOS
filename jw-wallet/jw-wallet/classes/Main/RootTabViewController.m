@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self buildUI];
-    // Do any additional setup after loading the view.
+
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -31,8 +31,25 @@
 - (void)buildUI{
     
     self.tabBar.translucent     = NO;
-    self.tabBar.backgroundImage = [CommonMethods createImageWithColor:[UIColor clearColor]];
-    self.tabBar.shadowImage     = [CommonMethods createImageWithColor:[UIColor grayColor]];
+
+    //改变tabbar 线条颜色
+    CGRect rect = CGRectMake(0, 0, SCREEN_WIDTH, 0.5);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context,
+                                   FONT_LIGHTGRAYCOLOR.CGColor);
+    CGContextFillRect(context, rect);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [self.tabBar setShadowImage:img];
+    [self.tabBar setBackgroundImage:[[UIImage alloc]init]];
+
+
+//    self.tabBar.backgroundImage = [CommonMethods createImageWithColor:[UIColor clearColor]];
+//    self.tabBar.shadowImage     = [CommonMethods createImageWithColor:FONT_LIGHTGRAYCOLOR];
+//    self.tabBar.tintColor = [UIColor lightGrayColor];
+//    self.tabBar.layer.borderColor = [UIColor lightTextColor].CGColor;
+//    self.tabBar.layer.borderWidth = 0.5;
     
 //    NSArray * normalItems       = @[@"assets",@"markets",@"discover",@"mine"];
 //    NSArray * selectItmes       = @[@"assets_selected",@"markets_selected",@"discover_selected",@"mine_selected"];

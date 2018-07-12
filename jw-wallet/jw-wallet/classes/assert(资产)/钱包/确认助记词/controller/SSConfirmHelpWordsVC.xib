@@ -93,17 +93,17 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-oK-XoR" customClass="GTButtonTagsView">
-                    <rect key="frame" x="15" y="229" width="345" height="210"/>
+                    <rect key="frame" x="15" y="224" width="345" height="210"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="210" id="4LO-XD-MZv"/>
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tsy-Zs-gC1">
-                    <rect key="frame" x="0.0" y="189" width="375" height="40"/>
+                    <rect key="frame" x="0.0" y="189" width="375" height="35"/>
                     <color key="backgroundColor" red="0.94901960784313721" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="B9k-98-mhC"/>
+                        <constraint firstAttribute="height" constant="35" id="B9k-98-mhC"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S22-13-Ci4">
                         <size key="itemSize" width="50" height="50"/>
@@ -117,7 +117,7 @@
                     </connections>
                 </collectionView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ios-Gs-Fci">
-                    <rect key="frame" x="0.0" y="439" width="375" height="228"/>
+                    <rect key="frame" x="0.0" y="434" width="375" height="233"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nX5-fn-YYq">
                             <rect key="frame" x="15" y="15" width="345" height="45"/>
