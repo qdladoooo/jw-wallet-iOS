@@ -56,21 +56,33 @@
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
+
     CGFloat y = self.tableView.contentOffset.y;
     if (y > 145) {
-        _nav_view.backgroundColor = rgba(0, 10, 42, 1);
+        _nav_view.backgroundColor = rgba(7, 12, 47, 1);
     } else {
-        _nav_view.backgroundColor = rgba(0, 10, 42, y/145);
+        _nav_view.backgroundColor = rgba(7, 12, 47, y/145);
     }
+    // 背景色
+    if (self.tableView.contentOffset.y>0) {
+        self.tableView.backgroundColor = BACKGROUNDCOLOR;
+    }else{
+        self.tableView.backgroundColor = [UIColor clearColor];
+    }
+
 }
 #pragma mark - TableView
 - (void)buildTableView {
     
-    self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStyleGrouped];
+    // 头部背景
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/2)];
+    view.backgroundColor = MAIN_GROUNDCOLOR;
+    [self.view addSubview:view];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-   self.tableView.backgroundColor = rgba(7,12,47,1);
+    self.tableView.backgroundColor = MAIN_GROUNDCOLOR;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
 }
@@ -302,6 +314,7 @@
 -(void)vertifyPersonAndMathion{
     
 }
+
 
 
 @end

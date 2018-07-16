@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="address" destination="2Ys-uf-ZcX" id="hnZ-qX-kP4"/>
                 <outlet property="fast_title" destination="PvW-pf-s7D" id="42p-1a-U8T"/>
+                <outlet property="nav_title" destination="Umq-x7-xvM" id="05k-p7-LLK"/>
                 <outlet property="personFees_title" destination="yu5-us-tgP" id="rDI-N9-JgM"/>
                 <outlet property="remark" destination="qkS-WQ-4V1" id="vyl-yM-A8j"/>
                 <outlet property="slider" destination="CId-H3-nUh" id="EAI-0Q-Fsz"/>
@@ -32,7 +33,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZg-xb-aLJ">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 收款人钱包地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ys-uf-ZcX">
                             <rect key="frame" x="0.0" y="45" width="375" height="45"/>
@@ -172,19 +173,53 @@
                         <constraint firstItem="2Ys-uf-ZcX" firstAttribute="top" secondItem="Ly2-iV-OsS" secondAttribute="bottom" constant="8" id="ynK-Ya-3A8"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7f-IG-BOu" customClass="SJNavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转账" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umq-x7-xvM">
+                            <rect key="frame" x="172" y="36" width="31" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="let-xh-Jbi">
+                            <rect key="frame" x="0.0" y="25.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="627-C9-uOD"/>
+                                <constraint firstAttribute="width" constant="40" id="hSy-QS-3J1"/>
+                            </constraints>
+                            <state key="normal" image="nav_white"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="Rc5-Wa-kQh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.027450980392156862" green="0.047058823529411764" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Umq-x7-xvM" secondAttribute="bottom" constant="10" id="IVc-r6-dQH"/>
+                        <constraint firstItem="let-xh-Jbi" firstAttribute="centerY" secondItem="Umq-x7-xvM" secondAttribute="centerY" id="KoC-t0-nFU"/>
+                        <constraint firstAttribute="height" constant="64" id="RRV-tS-eb5"/>
+                        <constraint firstItem="let-xh-Jbi" firstAttribute="leading" secondItem="w7f-IG-BOu" secondAttribute="leading" id="kzf-YA-RqM"/>
+                        <constraint firstItem="Umq-x7-xvM" firstAttribute="centerX" secondItem="w7f-IG-BOu" secondAttribute="centerX" id="wIM-Nk-ZRp"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="IZg-xb-aLJ" secondAttribute="trailing" id="5HL-EK-FaT"/>
-                <constraint firstItem="IZg-xb-aLJ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="FgN-aY-w61"/>
+                <constraint firstItem="w7f-IG-BOu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="7vm-q5-a84"/>
                 <constraint firstItem="IZg-xb-aLJ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="RiY-G2-uSU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="w7f-IG-BOu" secondAttribute="trailing" id="a9D-WP-SkT"/>
+                <constraint firstItem="w7f-IG-BOu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bdH-Fg-3WW"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="IZg-xb-aLJ" secondAttribute="bottom" id="cnn-H6-V4A"/>
+                <constraint firstItem="IZg-xb-aLJ" firstAttribute="top" secondItem="w7f-IG-BOu" secondAttribute="bottom" id="nIZ-ff-ETm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="-49.5" y="-82.5"/>
+            <point key="canvasLocation" x="-236" y="-185"/>
         </view>
     </objects>
     <resources>
+        <image name="nav_white" width="10" height="17"/>
         <image name="wenhao" width="27" height="27"/>
     </resources>
 </document>

@@ -221,6 +221,8 @@
     //添加验证按钮到父视图上
 //    self.captchaButton.center = CGPointMake(self.view.center.x, self.view.center.y + 76);
     self.captchaButton.center = CGPointMake(self.view.center.x , self.view.center.y-94);
+    self.captchaButton.x = 0;
+    self.captchaView.width = SCREEN_WIDTH;
     //推荐直接开启验证
     [self.captchaButton startCaptcha];
     [self.view addSubview:self.captchaButton];

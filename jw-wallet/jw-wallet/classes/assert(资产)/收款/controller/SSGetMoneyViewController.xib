@@ -34,22 +34,22 @@
                             <rect key="frame" x="15" y="100" width="345" height="467"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="向他人扫码收款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-YG-Vn4">
-                                    <rect key="frame" x="119" y="50" width="107.5" height="18"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <rect key="frame" x="113.5" y="70.5" width="119" height="20"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" red="0.1764705882352941" green="0.31372549019607843" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0Xsdhvshjs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcb-PT-as5">
-                                    <rect key="frame" x="129" y="78" width="88" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <rect key="frame" x="140.5" y="100.5" width="65" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.1764705882352941" green="0.31372549019607843" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnM-o9-MPe">
-                                    <rect key="frame" x="98" y="109" width="150" height="36"/>
+                                    <rect key="frame" x="98" y="125" width="150" height="37"/>
                                     <color key="backgroundColor" red="0.058823529409999999" green="0.50980392159999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="36" id="9Na-io-Jca"/>
+                                        <constraint firstAttribute="height" constant="37" id="9Na-io-Jca"/>
                                         <constraint firstAttribute="width" constant="150" id="acq-pl-NJL"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -69,7 +69,7 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="cAD-YG-Vn4" firstAttribute="top" secondItem="09r-Ak-XlQ" secondAttribute="top" constant="50" id="CpU-Pa-1dQ"/>
+                                <constraint firstItem="v1h-Jd-280" firstAttribute="top" secondItem="HnM-o9-MPe" secondAttribute="bottom" constant="10" id="Lal-yc-LMj"/>
                                 <constraint firstItem="v1h-Jd-280" firstAttribute="leading" secondItem="09r-Ak-XlQ" secondAttribute="leading" constant="50" id="LjH-xv-6hG"/>
                                 <constraint firstItem="mcb-PT-as5" firstAttribute="centerX" secondItem="cAD-YG-Vn4" secondAttribute="centerX" id="Mf9-sK-Edw"/>
                                 <constraint firstItem="v1h-Jd-280" firstAttribute="centerX" secondItem="09r-Ak-XlQ" secondAttribute="centerX" id="RWU-If-9FY"/>
@@ -81,14 +81,14 @@
                                 <constraint firstItem="HnM-o9-MPe" firstAttribute="top" secondItem="mcb-PT-as5" secondAttribute="bottom" constant="10" id="xO3-9r-Ycd"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-Hg-1dL">
-                            <rect key="frame" x="170" y="37" width="35" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收款" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-Hg-1dL">
+                            <rect key="frame" x="172.5" y="37" width="30" height="18"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vI-Zi-ieG">
-                            <rect key="frame" x="0.0" y="27.5" width="40" height="40"/>
+                            <rect key="frame" x="0.0" y="26" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="jqu-Pm-PX2"/>
                                 <constraint firstAttribute="width" constant="40" id="wot-Os-8fR"/>
@@ -120,7 +120,7 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="0IF-Ro-X2y" secondAttribute="bottom" id="whX-Wa-AZj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="98.5" y="9.5"/>
+            <point key="canvasLocation" x="-248" y="-7"/>
         </view>
     </objects>
     <resources>

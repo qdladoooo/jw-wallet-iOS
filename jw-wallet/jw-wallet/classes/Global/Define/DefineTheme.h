@@ -17,8 +17,8 @@
 #define TITLE_COLOR [UIColor blackColor]//标题颜色
 #define TEXT_COLOR [UIColor grayColor]//正文颜色
 #define TIPTEXT_COLOR UIColorFromRGB(0x888888)//提示语文本颜色
-#define MAIN_GROUNDCOLOR UIColorFromRGB(0x000A2A)//主题景色
-#define BACKGROUNDCOLOR UIColorFromRGB(0xF2F6FF)//背景颜色
+#define MAIN_GROUNDCOLOR UIColorFromRGB(0x070C2F)//主题景色
+#define BACKGROUNDCOLOR UIColorFromRGB(0xF5F8FC)//背景颜色
 #define FONT_DARKGRAYCOLOR UIColorFromRGB(0x2D5069) // 深灰主题字体
 #define FONT_LIGHTGRAYCOLOR UIColorFromRGB(0xCCCCCC) // 浅色灰主题字体
 #define BORDER_COLOR UIColorFromRGB(0xE6E6E6) // 边框

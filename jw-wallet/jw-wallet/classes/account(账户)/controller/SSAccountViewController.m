@@ -38,8 +38,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = WHITCOLOR;
+    self.view.backgroundColor = BACKGROUNDCOLOR;
     self.fd_prefersNavigationBarHidden = YES;
+
     [self buildTableView];
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -47,11 +48,11 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    // 去除多余的cell
-    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    self.tableView.separatorColor = BACKGROUNDCOLOR;
-    self.tableView.backgroundColor = BACKGROUNDCOLOR;
+
+    
 }
+
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     // 语言设置
@@ -91,13 +92,19 @@
 }
 #pragma mark - TableView
 - (void)buildTableView {
+    // 头部背景
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/2)];
+    view.backgroundColor = MAIN_GROUNDCOLOR;
+    [self.view addSubview:view];
+    
     self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.backgroundColor = [UIColor colorWithRed:24 green:244 blue:255 alpha:1];
-//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    // 去除多余的cell
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.separatorColor = BACKGROUNDCOLOR;
+    self.tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.tableView];
-//    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH, 0.01)];
 }
 #pragma mark - tablewView代理方法
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -208,7 +215,7 @@
         return headerView;
     }else{
         UIView *sectionHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
-        sectionHeader.backgroundColor = rgba(242, 246, 255, 1);
+        sectionHeader.backgroundColor = BACKGROUNDCOLOR;
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15, sectionHeader.bounds.size.height-14-10, 200, 14)];
         if (section==1) {
             label.text = kLocalizedTableString(@"基本信息", gy_LocalizableName);
@@ -249,6 +256,7 @@
     }
     
 }
+
 
 #pragma mark - 弹出Touch ID系统框
 - (void)verifyTouchId
@@ -336,4 +344,15 @@
     }];
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.tableView.contentOffset.y>0) {
+        self.tableView.backgroundColor = BACKGROUNDCOLOR;
+    }else{
+       self.tableView.backgroundColor = [UIColor clearColor];
+    }
+}
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.tableView.contentSize = CGSizeMake(SCREEN_WIDTH,self.tableView.height-100);
+}
 @end

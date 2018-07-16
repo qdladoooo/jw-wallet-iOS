@@ -30,17 +30,21 @@
     [super viewWillAppear:animated];
     
     [self.tableView reloadData];
-    self.tableView.separatorColor = BACKGROUNDCOLOR;
+    self.tableView.separatorColor = BORDER_COLOR;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/2)];
+    view.backgroundColor = MAIN_GROUNDCOLOR;
+    [self.view addSubview:view];
     [self addSearchBar];
+
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, SCREEN_HEIGHT-80) style:UITableViewStyleGrouped];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.backgroundColor = [UIColor colorWithRed:24 green:244 blue:255 alpha:1];
+    self.tableView.backgroundColor = MAIN_GROUNDCOLOR;
     //    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
     if (@available(iOS 11.0, *)) {
@@ -107,7 +111,6 @@
         if (_cycleScrollView == nil) {
             
             _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 262) delegate:self placeholderImage:[UIImage imageNamed:@""]];
-            _cycleScrollView.backgroundColor = MAIN_GROUNDCOLOR;
             
         }
         _cycleScrollView.imageURLStringsGroup = @[@"https://img.zcool.cn/community/017a40596eea61a8012193a3e8f019.jpg@2o.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527967337152&di=e3686479ec94c4f3e7c5a1a87835d572&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015aeb591d13cfb5b3086ed4c94464.png",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527967337151&di=2d527d16eb9ceeb6b5318716e3bc4c49&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F011d75596ccb8da8012193a3569662.jpg%401280w_1l_2o_100sh.jpg"];
@@ -145,7 +148,7 @@
     else{
         
             _NormalHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 45)];
-            _NormalHeaderView.backgroundColor = [UIColor colorFromHexRGB:@"f2f6ff"];
+            _NormalHeaderView.backgroundColor = BACKGROUNDCOLOR;
             _NormalHeaderTitle = [[UILabel alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(_NormalHeaderView.frame) -5-12, SCREEN_WIDTH, 12)];
             _NormalHeaderTitle.textColor = FONT_DARKGRAYCOLOR;
             _NormalHeaderTitle.font = [UIFont systemFontOfSize:12];
@@ -192,10 +195,9 @@
 - (void)addSearchBar {
     //加上 搜索栏
     UIView *searchBarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
-    searchBarView.backgroundColor = MAIN_GROUNDCOLOR;
+    searchBarView.backgroundColor = rgba(7, 12, 47, 1);
     [self.view addSubview:searchBarView];
     HXSearchBar *searchBar = [[HXSearchBar alloc] initWithFrame:CGRectMake(10, 30, self.view.frame.size.width - 20, 34)];
-    searchBar.backgroundColor = [UIColor clearColor];
     searchBar.delegate = self;
     //输入框提示
     searchBar.placeholder = @"搜索应用";
@@ -242,5 +244,15 @@
     searchBar.showsCancelButton = NO;
     searchBar.text = nil;
     [self.view endEditing:YES];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    // 背景色
+    if (self.tableView.contentOffset.y>0) {
+        self.tableView.backgroundColor = BACKGROUNDCOLOR;
+    }else{
+        self.tableView.backgroundColor = [UIColor clearColor];
+    }
+
 }
 @end

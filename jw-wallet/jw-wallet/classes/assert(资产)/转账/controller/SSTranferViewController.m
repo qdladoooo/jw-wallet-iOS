@@ -9,6 +9,7 @@
 #import "SSTranferViewController.h"
 
 @interface SSTranferViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nav_title;
 @property (weak, nonatomic) IBOutlet UITextField *address;
 @property (weak, nonatomic) IBOutlet UITextField *transMoney;
 @property (weak, nonatomic) IBOutlet UITextField *remark;
@@ -30,8 +31,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.fd_prefersNavigationBarHidden = YES;
     // 国际化
-    self.title = kLocalizedTableString(@"转账", gy_LocalizableName);
+    self.nav_title.text = kLocalizedTableString(@"转账", gy_LocalizableName);
+    
     self.transferInformation_title.text = kLocalizedTableString(@"转账信息", gy_LocalizableName);
     self.personFees_title.text = kLocalizedTableString(@"矿工费用", gy_LocalizableName);
     self.address.placeholder = kLocalizedTableString(@"收款人钱包地址", gy_LocalizableName);
@@ -109,6 +112,9 @@
     } failure:^(NSError *error) {
         [MBProgressHUD showText:[NSString stringWithFormat:@"%@",error]];
     }];
+}
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

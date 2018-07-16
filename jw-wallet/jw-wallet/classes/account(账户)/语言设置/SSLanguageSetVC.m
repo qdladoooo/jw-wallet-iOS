@@ -33,6 +33,8 @@
                   @"en"];// 英语
     self.nav_title.text = kLocalizedTableString(@"语言设置", gy_LocalizableName);
     self.nav_title.font = [UIFont boldSystemFontOfSize:15];
+    self.tableview.separatorColor = BORDER_COLOR;
+    self.tableview.backgroundColor = BACKGROUNDCOLOR;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,7 +91,7 @@
         RootTabViewController *tab = [[RootTabViewController alloc] init];
         [UIApplication sharedApplication].keyWindow.rootViewController = tab;
         // 跳转到设置页
-        tab.selectedIndex = 3;
+        tab.selectedIndex = 2;
     }];
     
 }

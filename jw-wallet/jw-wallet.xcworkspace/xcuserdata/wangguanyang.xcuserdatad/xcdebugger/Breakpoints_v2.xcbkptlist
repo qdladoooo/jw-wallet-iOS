@@ -116,7 +116,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/controller/SSCreatePurseViewController.m"
-            timestampString = "552897637.039067"
+            timestampString = "553419855.25911"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
@@ -324,11 +324,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/controller/SSCreatePurseViewController.m"
-            timestampString = "552897637.04018"
+            timestampString = "553419855.259734"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "314"
-            endingLineNumber = "314"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
             landmarkName = "-SaveWalletInfoArray"
             landmarkType = "7">
          </BreakpointContent>
@@ -340,13 +340,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/controller/SSCreatePurseViewController.m"
-            timestampString = "552897637.040233"
+            timestampString = "553419855.2599781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
             landmarkName = "-requestData"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jw-wallet/classes/assert(&#x8d44;&#x4ea7;)/&#x94b1;&#x5305;/controller/SSCreatePurseViewController.m"
+            timestampString = "553442576.615173"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "-check_box_click:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
