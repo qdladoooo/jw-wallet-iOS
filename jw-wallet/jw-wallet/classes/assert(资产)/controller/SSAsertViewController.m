@@ -13,6 +13,7 @@
 #import "SSManagerPurseViewController.h"
 #import "WCQRCodeScanningVC.h"
 #import "SSHomeCoverVC.h"
+#import "SSAssetsAlert.h"
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate,SRWebSocketDelegate>
 @property(nonatomic, strong) UITableView* tableView;
 @property(nonatomic, strong) NSArray* dataArr;/**< array */
@@ -24,6 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.fd_prefersNavigationBarHidden = YES;
+    
     [self buildTableView];
     _dataArr = @[@"1",@"2",@"3",@"4",@"1",@"2",@"3",@"4"];
 
@@ -35,14 +38,13 @@
     // 启动图- 创建/导入钱包
     [self checkVersion];
     
-    self.fd_prefersNavigationBarHidden = YES;
     
     [self navigationView];
     
     [self requestSocketData];
-    
-    
-    
+    // 弹窗
+    [SSAssetsAlert showAseestAlert];
+
 }
 #pragma mark - 设置导航栏透明
 - (void)viewWillAppear:(BOOL)animated {
@@ -106,6 +108,7 @@
         cell.name1.text = @"ETH";
         cell.name2.text = cell.name1.text;
     }
+
     return cell;
 }
 
@@ -315,6 +318,9 @@
     
 }
 
-
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 30, 0);
+}
 
 @end

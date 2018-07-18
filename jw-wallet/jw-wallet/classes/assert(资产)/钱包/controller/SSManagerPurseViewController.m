@@ -43,6 +43,7 @@
     if (walletIndex) {
         self.indexPathRow = walletIndex;
     }
+    [MBProgressHUD showNoDataView:self.tableView];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

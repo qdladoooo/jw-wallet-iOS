@@ -250,6 +250,8 @@
 		2EB9978120CE0F9000694110 /* SSKeystoreContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9977F20CE0F9000694110 /* SSKeystoreContentCell.m */; };
 		2EB9978220CE0F9000694110 /* SSKeystoreContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9978020CE0F9000694110 /* SSKeystoreContentCell.xib */; };
 		2EB9978520CE113100694110 /* SJAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9978320CE113100694110 /* SJAlert.m */; };
+		2EB9EF5A20FF9A5100589E68 /* SSAssetsAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9EF5920FF9A5100589E68 /* SSAssetsAlert.m */; };
+		2EB9EF5C20FF9A6A00589E68 /* SSAssetsAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9EF5B20FF9A6A00589E68 /* SSAssetsAlert.xib */; };
 		2ECBF14820E72C15008C87E1 /* SJGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBF14620E72C15008C87E1 /* SJGradientView.m */; };
 		2ECBF14B20E747A2008C87E1 /* SSGrandientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBF14A20E747A2008C87E1 /* SSGrandientView.m */; };
 		2EE1E1CD20E52E53003957A6 /* SSWalletInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1E1CC20E52E53003957A6 /* SSWalletInfo.m */; };
@@ -719,6 +721,9 @@
 		2EB9978020CE0F9000694110 /* SSKeystoreContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSKeystoreContentCell.xib; sourceTree = "<group>"; };
 		2EB9978320CE113100694110 /* SJAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJAlert.m; sourceTree = "<group>"; };
 		2EB9978420CE113100694110 /* SJAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJAlert.h; sourceTree = "<group>"; };
+		2EB9EF5820FF9A5100589E68 /* SSAssetsAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAssetsAlert.h; sourceTree = "<group>"; };
+		2EB9EF5920FF9A5100589E68 /* SSAssetsAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAssetsAlert.m; sourceTree = "<group>"; };
+		2EB9EF5B20FF9A6A00589E68 /* SSAssetsAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSAssetsAlert.xib; sourceTree = "<group>"; };
 		2ECBF14620E72C15008C87E1 /* SJGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJGradientView.m; sourceTree = "<group>"; };
 		2ECBF14720E72C15008C87E1 /* SJGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJGradientView.h; sourceTree = "<group>"; };
 		2ECBF14920E747A2008C87E1 /* SSGrandientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSGrandientView.h; sourceTree = "<group>"; };
@@ -1245,6 +1250,9 @@
 				2E32EE4320C9FFDE00D00CFB /* SSTransRecordHeaderView.h */,
 				2E32EE4420C9FFDE00D00CFB /* SSTransRecordHeaderView.m */,
 				2E32EE4620C9FFEA00D00CFB /* SSTransRecordHeaderView.xib */,
+				2EB9EF5820FF9A5100589E68 /* SSAssetsAlert.h */,
+				2EB9EF5920FF9A5100589E68 /* SSAssetsAlert.m */,
+				2EB9EF5B20FF9A6A00589E68 /* SSAssetsAlert.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -2286,6 +2294,7 @@
 				2E32EE4720C9FFEA00D00CFB /* SSTransRecordHeaderView.xib in Resources */,
 				2E32EE2720C927E400D00CFB /* hobby.plist in Resources */,
 				2EB9973A20CD5F9A00694110 /* YYFiveRecordTableViewCell.xib in Resources */,
+				2EB9EF5C20FF9A6A00589E68 /* SSAssetsAlert.xib in Resources */,
 				2E48166E20BA868300AFCBBB /* SSAccoutCell.xib in Resources */,
 				2E48153A20B91FB900AFCBBB /* Assets.xcassets in Resources */,
 				2E32EE3D20C988A700D00CFB /* SSTransRecordVC.xib in Resources */,
@@ -2403,6 +2412,7 @@
 				2E60DDA120C4DB1C00A20429 /* SSAddAssertsCell.m in Sources */,
 				2EEEE93C20F7C47F00E988BD /* SSAPPCell.m in Sources */,
 				2EB996E820CD5F8700694110 /* YYLineDataModel.m in Sources */,
+				2EB9EF5A20FF9A5100589E68 /* SSAssetsAlert.m in Sources */,
 				2EB9977A20CE070300694110 /* LZPageContentView.m in Sources */,
 				2EB989E620CC040400694110 /* AJTagModel.m in Sources */,
 				2EB9973420CD5F9A00694110 /* YYTopBarView.m in Sources */,

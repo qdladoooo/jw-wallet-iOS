@@ -40,7 +40,7 @@
     [self.view addSubview:view];
     [self addSearchBar];
 
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, SCREEN_HEIGHT-80) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, SCREEN_HEIGHT-80-49) style:UITableViewStyleGrouped];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -65,7 +65,7 @@
 
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-    self.tableView.contentSize = CGSizeMake(SCREEN_WIDTH,self.tableView.height-80 );
+    
 }
 
 #pragma mark - <UITableViewDelegate,UITableViewDataSource>

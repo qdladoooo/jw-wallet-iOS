@@ -270,7 +270,8 @@ static char ReLoadingBtnKey;
 
 #pragma mark - 无数据界面提示
 + (void)showNoDataView:(UIView *)view {
-    [self showNoDataView:view title:@"没有相关数据..." imageName:@"no-wifi"];
+     [self showNoDataView:view title:@"您还没有创建任何钱包" imageName:@"没有钱包插图"];
+//    [self showNoDataView:view title:@"没有相关数据..." imageName:@"no-wifi"];
 }
 
 + (void)showNoDataView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName {
@@ -337,7 +338,7 @@ static char ReLoadingBtnKey;
     
     // title
     UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.font = [UIFont systemFontOfSize:18];
+    titleLabel.font = [UIFont systemFontOfSize:14];
     CGSize titleMaxSize = CGSizeMake(bgViewFrame.size.width, MAXFLOAT);
     CGSize titleSize = [self sizeWithText:title andFont:titleLabel.font andMaxSize:titleMaxSize];
     CGFloat titleX = (bgViewFrame.size.width - titleSize.width) * 0.5;
