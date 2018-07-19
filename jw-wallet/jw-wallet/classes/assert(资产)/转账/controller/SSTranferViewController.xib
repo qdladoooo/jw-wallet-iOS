@@ -76,7 +76,7 @@
                             <subviews>
                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CId-H3-nUh">
                                     <rect key="frame" x="13" y="10" width="349" height="31"/>
-                                    <color key="thumbTintColor" red="0.058823529409999999" green="0.50980392159999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="thumbTintColor" red="0.050980392156862744" green="0.49803921568627452" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="sliderChangeValue:" destination="-1" eventType="valueChanged" id="2UJ-MC-Snz"/>
                                     </connections>
@@ -136,7 +136,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ue-ab-1fr">
                             <rect key="frame" x="15" y="324" width="345" height="44"/>
-                            <color key="backgroundColor" red="0.058823529409999999" green="0.50980392159999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.050980392156862744" green="0.49803921568627452" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="1b9-3x-TaF"/>
                             </constraints>

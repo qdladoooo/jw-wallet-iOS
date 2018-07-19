@@ -23,7 +23,7 @@
  关闭
  */
 - (IBAction)close:(id)sender {
-    [self hiddenAnmation];
+        [self hiddenAnmation];
 }
 
 

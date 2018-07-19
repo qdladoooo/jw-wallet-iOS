@@ -98,7 +98,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVg-XE-0K9">
                     <rect key="frame" x="187.5" y="622" width="187.5" height="45"/>
-                    <color key="backgroundColor" red="0.058823529409999999" green="0.50980392159999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.050980392156862744" green="0.49803921568627452" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="m6q-h9-RmS"/>
                         <constraint firstAttribute="height" constant="45" id="s1C-ux-okT"/>
