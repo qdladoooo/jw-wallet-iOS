@@ -43,7 +43,7 @@
     if (walletIndex) {
         self.indexPathRow = walletIndex;
     }
-    [MBProgressHUD showNoDataView:self.tableView];
+   
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -58,6 +58,10 @@
     self.data = [SSWalletInfo mj_objectArrayWithKeyValuesArray:self.walletDataArr];
     
     [self.tableView reloadData];
+    
+    if (self.data.count==0) {
+        [MBProgressHUD showNoDataView:self.tableView];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

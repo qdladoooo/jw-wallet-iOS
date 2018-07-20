@@ -7,16 +7,19 @@
 //
 
 #import "SSAssetsAlert.h"
+
 @interface SSAssetsAlert()
 @property (weak, nonatomic) IBOutlet UIView *contentView;
+
 
 @end
 @implementation SSAssetsAlert
 
-+(void)showAseestAlert{
++(SSAssetsAlert *)showAseestAlert{
     SSAssetsAlert *alertView = (SSAssetsAlert *)[[NSBundle mainBundle] loadNibNamed:@"SSAssetsAlert" owner:nil options:nil].lastObject;
     alertView.frame = [UIApplication sharedApplication].keyWindow.bounds;
     [alertView showAnimation];
+    return alertView;
 }
 
 /**
@@ -32,7 +35,12 @@
  添加资产
  */
 - (IBAction)addAssets:(id)sender {
-    [MBProgressHUD showText:@"添加资产"];
+
+    if (self.AddAssetsBlock) {
+        self.AddAssetsBlock();
+    }
+    [self hiddenAnmation];
+
 }
 
 -(void)showAnimation{

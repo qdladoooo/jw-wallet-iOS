@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SSAssetsAlert : UIView
-+(void)showAseestAlert;
++(SSAssetsAlert *)showAseestAlert;
+/**
+ 添加资产
+ */
+@property (nonatomic, strong) void (^AddAssetsBlock)(void);
 @end

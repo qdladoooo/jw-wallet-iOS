@@ -67,6 +67,7 @@
     for (int i = 0; i < normalItems.count; i++)
     {
         UIViewController * homeview =[[NSClassFromString(controllClass[i]) alloc]init];
+        
         LWTNavigationViewController * navigation =[[LWTNavigationViewController alloc]initWithRootViewController:homeview];
         navigation.tabBarItem.image                     = [[UIImage imageNamed:normalItems[i]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         navigation.tabBarItem.selectedImage             = [[UIImage imageNamed:selectItmes[i]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

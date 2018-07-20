@@ -31,6 +31,7 @@
     
     [self.tableView reloadData];
     self.tableView.separatorColor = BORDER_COLOR;
+    [_cycleScrollView adjustWhenControllerViewWillAppera];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -122,6 +123,7 @@
         _cycleScrollView.autoScrollTimeInterval = 3;
         _cycleScrollView.zoomType = YES;
         _cycleScrollView.ShowGradientLayer = YES;
+        
     
         _cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
         //        _cycleScrollView.pageControlRightOffset = 100;

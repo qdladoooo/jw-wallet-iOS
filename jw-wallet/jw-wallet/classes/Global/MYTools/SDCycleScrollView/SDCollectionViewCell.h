@@ -38,7 +38,7 @@
 #define MinHeight 180
 #define Screen_Width [[UIScreen mainScreen] bounds].size.width
 #define Screen_Height [[UIScreen mainScreen] bounds].size.height
-
+#define Device_iPhone5 ((Screen_Height > 480.0) && (Screen_Height <= 568.0))
 @interface SDCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) UIImageView *imageView;

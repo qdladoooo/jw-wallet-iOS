@@ -47,8 +47,8 @@
     
     //设置全局状态栏字体颜色
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    [self setAppWindows];
-    [self setRootViewController];
+//    [self setAppWindows];
+//    [self setRootViewController];
     
 
     
@@ -68,13 +68,16 @@
         
         RootTabViewController *tabBarVc = [[RootTabViewController alloc] init];
         self.window.rootViewController = tabBarVc;
+        [self.window makeKeyAndVisible];
         tabBarVc.selectedIndex = 0;
         
     } else { // 新版本，进入导航页界面
         self.window.rootViewController = [[SJ_NewfeatureViewController alloc] init];
+        [self.window makeKeyAndVisible];
         // 存储新版本 进入首页再进行存储
         [defaults setObject:currentVersion forKey:key];
         [defaults synchronize];
+        
     }
     
     

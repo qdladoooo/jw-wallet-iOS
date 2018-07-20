@@ -14,6 +14,7 @@
 #import "WCQRCodeScanningVC.h"
 #import "SSHomeCoverVC.h"
 #import "SSAssetsAlert.h"
+#import "SSAddAssertsVC.h"
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate,SRWebSocketDelegate>
 @property(nonatomic, strong) UITableView* tableView;
 @property(nonatomic, strong) NSArray* dataArr;/**< array */
@@ -43,7 +44,13 @@
     
     [self requestSocketData];
     // 弹窗
-    [SSAssetsAlert showAseestAlert];
+    SSAssetsAlert *alert = [SSAssetsAlert showAseestAlert];
+    __weak typeof (self) weakSelf = self;
+   alert.AddAssetsBlock = ^(){
+        SSAddAssertsVC *vc = [[SSAddAssertsVC alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    };
+    
 
 }
 #pragma mark - 设置导航栏透明
