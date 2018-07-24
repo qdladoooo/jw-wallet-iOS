@@ -161,7 +161,7 @@
 		</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>相机权限访问</string>
+	<string>扫描二维码功能需要访问您的相机权限</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>相册权限访问</string>
 	<key>UILaunchStoryboardName</key>
