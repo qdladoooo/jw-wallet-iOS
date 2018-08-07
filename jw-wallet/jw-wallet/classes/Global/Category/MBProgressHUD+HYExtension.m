@@ -237,14 +237,15 @@ static char ReLoadingBtnKey;
 
 +(void)showText:(NSString *)text onView:(UIView *)view {
     MBProgressHUD *hud = view ?  [self showHUDAddedTo:view animated:YES] :[self showHUDAddedTo:kKeyWindowView animated:YES];
-    hud.detailsLabelFont = kSystemFontOfSize(15);
-    hud.detailsLabelText = text;
+    hud.detailsLabel.font = kSystemFontOfSize(15);
+    hud.detailsLabel.text = text;
     hud.mode = MBProgressHUDModeText;
+    hud.detailsLabel.textColor = [UIColor whiteColor];
     hud.margin = margin;
     hud.removeFromSuperViewOnHide = YES;
     hud.userInteractionEnabled = NO;
     hud.animationType = MBProgressHUDAnimationZoom;
-    [hud hide:YES afterDelay:1.5];
+    [hud hideAnimated:YES afterDelay:1.5];
     hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
     hud.bezelView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
 }
@@ -261,9 +262,9 @@ static char ReLoadingBtnKey;
     if (!title) {
         title = @"努力加载中...";
     }
-    hud.labelText = title;
-    hud.labelFont = kSystemFontOfSize(18);
-    hud.labelColor = [UIColor darkGrayColor];
+    hud.label.text = title;
+    hud.label.font = kSystemFontOfSize(18);
+    hud.label.textColor = [UIColor darkGrayColor];
     hud.opacity = 0.0;
     hud.removeFromSuperViewOnHide = YES;
     hud.mode = MBProgressHUDModeCustomView;
@@ -280,7 +281,7 @@ static char ReLoadingBtnKey;
     [self showNoDataView:view title:title imageName:imageName reloadTarget:nil reloadAction:nil];
 }
 
-+ (void)showNoDataView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName reloadBlock:(void (^)())reloadBlock {
++ (void)showNoDataView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName reloadBlock:(void (^)(void))reloadBlock {
     [self showNoDataView:view title:title imageName:imageName block:reloadBlock action:nil addTarget:nil];
 }
 
@@ -288,16 +289,16 @@ static char ReLoadingBtnKey;
     [self showNoDataView:view title:title imageName:imageName block:nil action:action addTarget:target];
 }
 
-+ (void)showNoDataView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName  block:(void (^)())reload action:(SEL)action addTarget:(id)target {
++ (void)showNoDataView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName  block:(void (^)(void))reload action:(SEL)action addTarget:(id)target {
     [self tipView:view title:title message:nil imageName:imageName block:reload action:action addTarget:target];
 }
 
 #pragma mark - 无网络页面提示 默认图片
-+ (void)showNetworkErrorView:(UIView *)view reloadBlock:(void (^)())reloadBlock {
++ (void)showNetworkErrorView:(UIView *)view reloadBlock:(void (^)(void))reloadBlock {
     [self showNetworkErrorView:view title:@"加载失败!" message:@"请检查您的网络是否正常" reloadBlock:reloadBlock];
 }
 
-+ (void)showNetworkErrorView:(UIView *)view title:(NSString *)title message:(NSString *)message reloadBlock:(void (^)())reloadBlock {
++ (void)showNetworkErrorView:(UIView *)view title:(NSString *)title message:(NSString *)message reloadBlock:(void (^)(void))reloadBlock {
     [self showNetworkErrorView:view title:title message:message block:reloadBlock action:nil addTarget:nil];
 }
 
@@ -309,17 +310,17 @@ static char ReLoadingBtnKey;
     [self showNetworkErrorView:view title:title message:message block:nil action:action addTarget:target];
 }
 
-+ (void)showNetworkErrorView:(UIView *)view title:(NSString *)title message:(NSString *)message block:(void (^)())reload action:(SEL)action addTarget:(id)target {
++ (void)showNetworkErrorView:(UIView *)view title:(NSString *)title message:(NSString *)message block:(void (^)(void))reload action:(SEL)action addTarget:(id)target {
     [self tipView:view title:title message:message imageName:@"no-wifi" block:reload action:action addTarget:target];
 }
 
-+ (void)tipView:(UIView *)view title:(NSString *)title message:(NSString *)message imageName:(NSString *)imageName block:(void (^)())reload action:(SEL)action addTarget:(nullable id)target {
++ (void)tipView:(UIView *)view title:(NSString *)title message:(NSString *)message imageName:(NSString *)imageName block:(void (^)(void))reload action:(SEL)action addTarget:(nullable id)target {
     MBProgressHUD *hud = [[self alloc] init];
     [hud tipView:view title:title message:message imageName:imageName block:reload action:action addTarget:target hud:hud];
 }
 
 
-- (void)tipView:(UIView *)view title:(NSString *)title message:(NSString *)message imageName:(NSString *)imageName block:(void (^)())reload action:(SEL)action addTarget:(nullable id)target hud:(MBProgressHUD *)hud{
+- (void)tipView:(UIView *)view title:(NSString *)title message:(NSString *)message imageName:(NSString *)imageName block:(void (^)(void))reload action:(SEL)action addTarget:(nullable id)target hud:(MBProgressHUD *)hud{
     self.hud = hud;
     CGFloat padding = 15;
     
