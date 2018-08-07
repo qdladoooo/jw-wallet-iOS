@@ -245,6 +245,8 @@ static char ReLoadingBtnKey;
     hud.userInteractionEnabled = NO;
     hud.animationType = MBProgressHUDAnimationZoom;
     [hud hide:YES afterDelay:1.5];
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
 }
 
 + (void)showAnimationHUDWithImages:(NSArray *)images title:(NSString *)title showView:(UIView *)view aplhaBackground:(BOOL)bg {
