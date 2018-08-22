@@ -57,7 +57,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
-    [MBProgressHUD showText:@"feixiang"];
 
 }
 - (void)didReceiveMemoryWarning {
