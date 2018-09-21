@@ -82,6 +82,7 @@
             <connections>
                 <outlet property="addNewAssets" destination="q8o-w8-Ikk" id="nes-dp-H0Y"/>
                 <outlet property="walletName" destination="MlD-dC-PX8" id="5oB-HX-Nco"/>
+                <outlet property="walletNameBtn" destination="0Ql-PZ-tCp" id="wOa-Vs-lEv"/>
             </connections>
             <point key="canvasLocation" x="209.5" y="-396"/>
         </view>

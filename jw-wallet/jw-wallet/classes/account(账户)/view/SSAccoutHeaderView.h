@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SSAccoutHeaderView : UIView
+@property (weak, nonatomic) IBOutlet UILabel *accountName;
+@property (weak, nonatomic) IBOutlet UILabel *accountId;
 +(UIView *)creatHeaderView;
 @end

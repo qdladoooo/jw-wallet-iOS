@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SSAsertHearView : UIView
+@property (weak, nonatomic) IBOutlet UIButton *walletNameBtn;
 +(UIView *)createAsertHearView;
 @end

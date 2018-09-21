@@ -19,7 +19,9 @@
 #import "SSTouchIDSetCell.h"
 #import "SSTouchIDVC.h"
 #import <LocalAuthentication/LocalAuthentication.h>
-@interface SSAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "RequestUtils.h"
+#import "SSAccountModel.h"
+@interface SSAccountViewController ()<UITableViewDelegate,UITableViewDataSource,SRWebSocketDelegate>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView* tableView;
 @property (nonatomic, strong) NSString *launguageShow;
@@ -27,10 +29,15 @@
 @property (nonatomic, strong) NSString *status1;
 @property (nonatomic, strong) NSString *status2;
 
+@property (nonatomic, copy) NSString *accountName;
+@property (nonatomic, copy) NSString *accountID;
+@property (nonatomic, strong) SSAccountModel *accountModel;
 /**
  开关状态数据源
  */
 @property (nonatomic, copy) NSArray *statusArr;
+@property (nonatomic, strong)  SSAccoutHeaderView *header;
+@property(nonatomic, strong) SocketRocketUtility *utility;
 @end
 
 @implementation SSAccountViewController
@@ -47,9 +54,7 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    
-
-    
+    [self requestSocketData];
 }
 
 
@@ -83,13 +88,15 @@
     _status2 = status2?@"1":@"0";
     
     _statusArr = @[_status1,_status2];
-    
+
     [self.tableView reloadData];
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 #pragma mark - TableView
 - (void)buildTableView {
     // 头部背景
@@ -211,8 +218,10 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section==0) {
-        UIView *headerView = [SSAccoutHeaderView creatHeaderView];
-        return headerView;
+        self.header = [[[NSBundle mainBundle] loadNibNamed:@"SSAccoutHeaderView" owner:nil options:nil] lastObject];
+        self.header.accountId.text = self.accountModel.ID;
+        self.header.accountName.text = self.accountModel.name;
+        return self.header;
     }else{
         UIView *sectionHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
         sectionHeader.backgroundColor = BACKGROUNDCOLOR;
@@ -355,4 +364,28 @@
     [super viewDidLayoutSubviews];
     self.tableView.contentSize = CGSizeMake(SCREEN_WIDTH,self.tableView.height-100);
 }
+#pragma mark - 请求数据
+-(void)requestSocketData{
+    
+    self.utility = [SocketRocketUtility instance];
+    [self.utility SRWebSocketOpenWithURLString:SocketBaseURLString];
+    __weak __typeof(self) weakSelf = self;
+    if (self.utility.didOpen) {
+        NSString *json =[RequestUtils get_accounts:0 ids:@"1.2.0"];
+        [weakSelf.utility sendDataWithJson:json];
+    }
+
+    self.utility.didReceiveMessage = ^(id message) {
+        //收到服务端发送过来的消息
+        NSDictionary *dit = [message mj_JSONObject];
+        NSDictionary *result = dit[@"result"][0];
+        weakSelf.accountModel = [SSAccountModel mj_objectWithKeyValues:result];
+        [weakSelf.tableView reloadData];
+    };
+  
+}
+
+
+
+
 @end

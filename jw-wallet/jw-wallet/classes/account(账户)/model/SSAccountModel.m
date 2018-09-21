@@ -9,5 +9,7 @@
 #import "SSAccountModel.h"
 
 @implementation SSAccountModel
-
++ (NSDictionary *)mj_replacedKeyFromPropertyName{
+    return @{@"ID":@"id"};
+}
 @end

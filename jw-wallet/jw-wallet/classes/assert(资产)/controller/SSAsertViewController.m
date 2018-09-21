@@ -15,11 +15,15 @@
 #import "SSHomeCoverVC.h"
 #import "SSAssetsAlert.h"
 #import "SSAddAssertsVC.h"
+#import "RequestUtils.h"
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate,SRWebSocketDelegate>
 @property(nonatomic, strong) UITableView* tableView;
 @property(nonatomic, strong) NSArray* dataArr;/**< array */
 //@property (nonatomic, strong) UIView *navgationView;
 @property(nonatomic, strong) UIView *nav_view;
+
+
+@property(nonatomic, strong) SocketRocketUtility *utility;
 @end
 
 @implementation SSAsertViewController
@@ -43,6 +47,7 @@
     [self navigationView];
     
     [self requestSocketData];
+    
     // 弹窗
     SSAssetsAlert *alert = [SSAssetsAlert showAseestAlert];
     __weak typeof (self) weakSelf = self;
@@ -50,19 +55,21 @@
         SSAddAssertsVC *vc = [[SSAddAssertsVC alloc] init];
         [weakSelf.navigationController pushViewController:vc animated:YES];
     };
-    
 
+    
 }
 #pragma mark - 设置导航栏透明
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    
 
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 
 }
+
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
@@ -133,8 +140,16 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-   UIView *headview = [SSAsertHearView createAsertHearView];
-    return headview;
+    SSAsertHearView *header = [[[NSBundle mainBundle] loadNibNamed:@"SSAsertHearView" owner:nil options:nil] lastObject];
+    NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:@"walletName"];
+    if (name.length) {
+        [header.walletNameBtn setTitle:name forState:UIControlStateNormal];
+    }else{
+        [header.walletNameBtn setTitle:@"" forState:UIControlStateNormal];
+    }
+    
+    return header;
+
 }
 
 
@@ -235,19 +250,24 @@
 }
 #pragma mark - 请求数据
 -(void)requestSocketData{
-//    NSString *url = [NSString stringWithFormat:@"%@",BiteSharesURL];
-    NSString *url = [NSString stringWithFormat:@"%@",SocketBaseURLString];
+    self.utility = [SocketRocketUtility instance];
+    [self.utility SRWebSocketOpenWithURLString:SocketBaseURLString];
+      __weak __typeof(self) weakSelf = self;
+    self.utility.didOpen = ^{
 
-    [[SocketRocketUtility instance] SRWebSocketOpenWithURLString:url];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidOpen) name:kWebSocketDidOpenNote object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidReceiveMsg:) name:kWebSocketdidReceiveMessageNote object:nil];
-    
-//        [[SocketRocketUtility instance] SRWebSocketClose]; // 在需要得地方 关闭socket
-    
+       
+        [weakSelf.utility sendDataWithJson:[RequestUtils get_full_accounts:@"1.2.0"]];
+        NSString *json1 =[RequestUtils get_accounts:0 ids:@"1.2.0"];
+        [weakSelf.utility sendDataWithJson:json1];
+    };
+    self.utility.didReceiveMessage = ^(id message) {
+        
+    };
 }
 
 - (void)SRWebSocketDidOpen {
     NSLog(@"开启成功");
+    
     //在成功后需要做的操作。。。
     
     // 如果需要发送数据到服务器使用下面代码
@@ -267,6 +287,14 @@
 ////    // get——account
 //    NSArray *arr1 = @[@0,@"get_accounts",@[@[@"1.2.0"]]];
 //    [[SocketRocketUtility instance] sendData:arr1 withMethod:@"call" IDStr:@"1"];
+//    NSString *json =[RequestUtils get_accounts:0 ids:@"1.2.0"];
+//    [[SocketRocketUtility instance] sendDataWithJson:json];
+//
+//    NSString *json1 = [RequestUtils get_full_accounts:@"1.2.0"];
+//    [[SocketRocketUtility instance] sendDataWithJson:json1];
+    // 获取资产列表信息
+//    NSString *json = [RequestUtils get_assets:@"1.3.0"];
+//    [[SocketRocketUtility instance] sendDataWithJson:json];
     
 }
 
@@ -275,49 +303,42 @@
     //收到服务端发送过来的消息
     NSString * message = note.object;
     NSLog(@"message:%@",message);
+/*
+message: {
+    "id": 3302,
+    "jsonrpc": "2.0",
+    "result": [{
+        "id": "1.3.0",
+        "symbol": "KRIS",
+        "precision": 8,
+        "issuer": "1.2.3",
+        "options": {
+            "max_supply": "1000000000000000000",
+            "market_fee_percent": 0,
+            "max_market_fee": "1000000000000000000",
+            "issuer_permissions": 0,
+            "flags": 0,
+            "core_exchange_rate": {
+                "base": {
+                    "amount": 1,
+                    "asset_id": "1.3.0"
+                },
+                "quote": {
+                    "amount": 1,
+                    "asset_id": "1.3.0"
+                }
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "",
+            "extensions": []
+        },
+        "dynamic_asset_data_id": "2.3.0"
+    }]
+    */
 
-    /*
-     [{
-     "id": "1.2.0",
-     "membership_expiration_date": "1969-12-31T23:59:59",
-     "registrar": "1.2.0",
-     "referrer": "1.2.0",
-     "lifetime_referrer": "1.2.0",
-     "network_fee_percentage": 2000,
-     "lifetime_referrer_fee_percentage": 8000,
-     "referrer_rewards_percentage": 0,
-     "name": "committee-account",
-     "owner": {
-     "weight_threshold": 1,
-     "account_auths": [],
-     "key_auths": [],
-     "address_auths": []
-     },
-     "active": {
-     "weight_threshold": 1,
-     "account_auths": [],
-     "key_auths": [],
-     "address_auths": []
-     },
-     "options": {
-     "memo_key": "KRIS1111111111111111111111111111111114T1Anm",
-     "voting_account": "1.2.5",
-     "num_witness": 0,
-     "num_committee": 0,
-     "votes": [],
-     "extensions": []
-     },
-     "statistics": "2.6.0",
-     "whitelisting_accounts": [],
-     "blacklisting_accounts": [],
-     "whitelisted_accounts": [],
-     "blacklisted_accounts": [],
-     "owner_special_authority": [0, {}],
-     "active_special_authority": [0, {}],
-     "top_n_control_flags": 0
-     }]
-     }
-     */
 }
 
 
@@ -329,5 +350,10 @@
     [super viewDidLayoutSubviews];
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 30, 0);
 }
-
+#pragma mark - 请求账户数据
+//-(void)requestDate{
+//    NSString *json =[RequestUtils get_accounts:0 ids:@"1.2.0"];
+//    [[SocketRocketUtility instance] sendDataWithJson:json];
+//
+//}
 @end

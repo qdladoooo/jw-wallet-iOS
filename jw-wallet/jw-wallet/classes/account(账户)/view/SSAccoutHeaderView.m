@@ -9,16 +9,12 @@
 #import "SSAccoutHeaderView.h"
 @interface SSAccoutHeaderView()
 @property (weak, nonatomic) IBOutlet UILabel *accoutLabel;
-@property (weak, nonatomic) IBOutlet UILabel *accountName;
-@property (weak, nonatomic) IBOutlet UILabel *accountId;
-
 @end
 @implementation SSAccoutHeaderView
 
 -(void)awakeFromNib{
     [super awakeFromNib];
     self.accoutLabel.text = kLocalizedTableString(@"账户", gy_LocalizableName);
-    self.accountName.text = kLocalizedTableString(@"账户名称", gy_LocalizableName);
     self.accoutLabel.font = [UIFont boldSystemFontOfSize:15];
     self.accountName.font = [UIFont boldSystemFontOfSize:15];
     self.accountId.font = [UIFont boldSystemFontOfSize:12];

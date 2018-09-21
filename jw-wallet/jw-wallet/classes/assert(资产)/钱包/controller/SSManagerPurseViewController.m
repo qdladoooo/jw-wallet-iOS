@@ -134,6 +134,9 @@
     [self.tableView reloadData];
     // 存储默认index
     [[NSUserDefaults standardUserDefaults] setInteger:self.indexPathRow forKey:@"walletIndex"];
+    
+    SSWalletInfo *model = self.data[self.indexPathRow];
+    [[NSUserDefaults standardUserDefaults] setObject:model.walletName forKey:@"walletName"];
 }
 
 

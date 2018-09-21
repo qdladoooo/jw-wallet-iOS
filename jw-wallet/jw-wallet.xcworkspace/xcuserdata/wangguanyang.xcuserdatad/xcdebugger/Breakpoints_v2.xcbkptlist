@@ -211,38 +211,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "jw-wallet/classes/Global/NetWorkRequest/WebSocket/SocketRocketUtility.m"
-            timestampString = "551864306.66054"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
-            landmarkName = "-webSocket:didReceivePong:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "jw-wallet/classes/Global/NetWorkRequest/WebSocket/SocketRocketUtility.m"
-            timestampString = "551864306.660591"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "-sendData:withMethod:IDStr:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "jw-wallet/classes/account(&#x8d26;&#x6237;)/&#x5bc6;&#x7801;&#x76f8;&#x5173;/SSChangePasswordVC.m"
             timestampString = "552318193.9437931"
             startingColumnNumber = "9223372036854775807"

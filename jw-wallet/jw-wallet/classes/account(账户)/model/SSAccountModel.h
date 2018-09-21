@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface SSAccountModel : NSObject
-
+@property (nonatomic, copy) NSString *ID;
+@property (nonatomic, copy) NSString *name;
 @end
