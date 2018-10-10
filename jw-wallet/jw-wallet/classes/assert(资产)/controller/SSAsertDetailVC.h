@@ -10,4 +10,8 @@
 
 @interface SSAsertDetailVC : UIViewController
 
+/**
+ 账户余额
+ */
+@property (nonatomic, strong) NSString *balances;
 @end

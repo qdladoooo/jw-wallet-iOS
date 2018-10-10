@@ -16,17 +16,40 @@
 #import "SSAssetsAlert.h"
 #import "SSAddAssertsVC.h"
 #import "RequestUtils.h"
+#import "FCUtility.h"
+#import "AccountObserverFull.h"
+#import "AssetsInfo.h"
+#import "AccountInfo.h"
+#import "AccountBalances.h"
+#import "LSStretchableTableHeaderView.h"
 @interface SSAsertViewController ()<UITableViewDataSource, UITableViewDelegate,SRWebSocketDelegate>
 @property(nonatomic, strong) UITableView* tableView;
 @property(nonatomic, strong) NSArray* dataArr;/**< array */
 //@property (nonatomic, strong) UIView *navgationView;
 @property(nonatomic, strong) UIView *nav_view;
-
-
+@property(nonatomic,strong) LSStretchableTableHeaderView *strechView;
+@property (nonatomic, strong) UIView *headBackView;
 @property(nonatomic, strong) SocketRocketUtility *utility;
+@property (nonatomic, strong)AccountObserverFull *infoModel;
+@property (nonatomic, copy) NSMutableArray *assestsDetailsDataArr;
+@property (nonatomic, copy) NSMutableArray *assestsDetailsModelArr;
+/**
+ 资产数量
+ */
+@property (nonatomic, assign) NSInteger assestsCount;
+@property (nonatomic, strong) AccountBalances *balanceModel;
+@property (nonatomic, strong) AssetsInfo *assetsModel;
+@property (nonatomic, strong) AccountInfo *AccountInfoModel;
+
+/**
+ 账户余额
+ */
+@property (nonatomic, strong) NSString *balances;
+
 @end
 
 @implementation SSAsertViewController
+static int recordNumer = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,6 +63,8 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+
+    
     // 启动图- 创建/导入钱包
     [self checkVersion];
     
@@ -47,14 +72,15 @@
     [self navigationView];
     
     [self requestSocketData];
+
     
     // 弹窗
-    SSAssetsAlert *alert = [SSAssetsAlert showAseestAlert];
-    __weak typeof (self) weakSelf = self;
-   alert.AddAssetsBlock = ^(){
-        SSAddAssertsVC *vc = [[SSAddAssertsVC alloc] init];
-        [weakSelf.navigationController pushViewController:vc animated:YES];
-    };
+//    SSAssetsAlert *alert = [SSAssetsAlert showAseestAlert];
+//    __weak typeof (self) weakSelf = self;
+//   alert.AddAssetsBlock = ^(){
+//        SSAddAssertsVC *vc = [[SSAddAssertsVC alloc] init];
+//        [weakSelf.navigationController pushViewController:vc animated:YES];
+//    };
 
     
 }
@@ -79,33 +105,32 @@
     } else {
         _nav_view.backgroundColor = rgba(7, 12, 47, y/145);
     }
-    // 背景色
-    if (self.tableView.contentOffset.y>0) {
-        self.tableView.backgroundColor = BACKGROUNDCOLOR;
-    }else{
-        self.tableView.backgroundColor = [UIColor clearColor];
-    }
+   
+
 
 }
 #pragma mark - TableView
 - (void)buildTableView {
-    
-    // 头部背景
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/2)];
-    view.backgroundColor = MAIN_GROUNDCOLOR;
-    [self.view addSubview:view];
-    
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
+
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, -150, SCREEN_WIDTH, SCREEN_HEIGHT+150) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.backgroundColor = MAIN_GROUNDCOLOR;
+    self.tableView.backgroundColor = WHITCOLOR;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     [self.view addSubview:self.tableView];
+    // 头部背景
+        _headBackView = [[UIView alloc] initWithFrame:CGRectMake(0, -150, SCREEN_WIDTH, 150)];
+    _headBackView.backgroundColor = MAIN_GROUNDCOLOR;
+        [self.view addSubview:_headBackView];    
+    LSStretchableTableHeaderView *strechView=[LSStretchableTableHeaderView stretchHeaderForTableView:self.tableView headerView:self.tableView.tableHeaderView withView:_headBackView];
+    self.strechView =strechView;
+    
 }
 
 //tableView代理方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _dataArr.count;
+    return self.assestsCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -113,14 +138,14 @@
     if (indexPath.row!=0) {
         cell.darkView.hidden = YES;
     }
-    if (indexPath.row==0 || indexPath.row == 2) {
-        cell.icon.image = [UIImage imageNamed:@"btc"];
-        cell.name1.text = @"BTC";
-        cell.name2.text = cell.name1.text;
-    }else{
-        cell.icon.image = [UIImage imageNamed:@"eth"];
-        cell.name1.text = @"ETH";
-        cell.name2.text = cell.name1.text;
+    cell.icon.image = [UIImage imageNamed:@"eos		"];
+    if (indexPath.row<self.assestsCount) {
+        cell.name1.text = self.assetsModel.result[indexPath.row].symbol;
+        CGFloat amount = self.balanceModel.result[indexPath.row].amount.doubleValue;
+        NSInteger precision = self.assetsModel.result[indexPath.row].precision;
+//        amount / 10^precision
+        cell.name2.text = [NSString stringWithFormat:@"%.2f",amount/pow(10, precision)];
+        self.balances = cell.name2.text;
     }
 
     return cell;
@@ -128,6 +153,10 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     SSAsertDetailVC *vc = [[SSAsertDetailVC alloc] init];
+    CGFloat amount = self.balanceModel.result[indexPath.row].amount.doubleValue;
+    NSInteger precision = self.assetsModel.result[indexPath.row].precision;
+    //        amount / 10^precision
+     vc.balances = [NSString stringWithFormat:@"%.2f",amount/pow(10, precision)];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -141,12 +170,9 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     SSAsertHearView *header = [[[NSBundle mainBundle] loadNibNamed:@"SSAsertHearView" owner:nil options:nil] lastObject];
-    NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:@"walletName"];
-    if (name.length) {
-        [header.walletNameBtn setTitle:name forState:UIControlStateNormal];
-    }else{
-        [header.walletNameBtn setTitle:@"" forState:UIControlStateNormal];
-    }
+        header.walletName.text = self.AccountInfoModel.result[0].name;
+    NSString *walletID = [NSString stringWithFormat:@"ID:%@",self.AccountInfoModel.result[0].ID];
+    [header.walletNameAdressBtn setTitle:walletID forState:UIControlStateNormal];
     
     return header;
 
@@ -253,107 +279,86 @@
     self.utility = [SocketRocketUtility instance];
     [self.utility SRWebSocketOpenWithURLString:SocketBaseURLString];
       __weak __typeof(self) weakSelf = self;
+    NSString *lookup_account_names = [RequestUtils lookup_account_names:@"w200"];
+    NSString *get_account_balances = [RequestUtils get_account_balances:@"1.2.22"];
+    NSString *get_assets = [RequestUtils get_assets:@"1.3.0"];
     self.utility.didOpen = ^{
 
-       
-        [weakSelf.utility sendDataWithJson:[RequestUtils get_full_accounts:@"1.2.0"]];
-        NSString *json1 =[RequestUtils get_accounts:0 ids:@"1.2.0"];
-        [weakSelf.utility sendDataWithJson:json1];
+        [weakSelf.utility sendData:lookup_account_names];
     };
     self.utility.didReceiveMessage = ^(id message) {
-        
+        id result = [FCUtility toOCData:message];
+        switch ([result[@"id"] integerValue]) {
+            case LOOKUP_ACCOUNT_NAMES_ID: {
+                AccountInfo *info = [AccountInfo yy_modelWithJSON:message];
+                weakSelf.AccountInfoModel = info;
+                NSString *ID =  info.result[0].ID;
+                NSString *get_account_balances = [RequestUtils get_account_balances:ID];
+                [weakSelf.utility sendData:get_account_balances];
+                
+                // 获取账户历史数据
+                NSString *get_account_history = [RequestUtils get_account_history:ID];
+                [weakSelf.utility sendData:get_account_history];
+                NSLog(@"AccountInfo");
+                break;
+            }
+            case GET_ACCOUNT_BALANCES_ID: {
+                // 获取资产详情
+                AccountBalances *info = [AccountBalances yy_modelWithJSON:message];
+                weakSelf.balanceModel = info;
+                NSMutableArray *idArr = [NSMutableArray array];
+                for (int i = 0; i<info.result.count; i++) {
+                    NSString *assetsIDS = info.result[i].asset_id;
+                    [idArr addObject:assetsIDS];
+                }
+            
+                NSString *str = [idArr componentsJoinedByString:@"\",\""];
+                SSLog(@"%@",str);
+                NSString *get_assets = [RequestUtils get_assets:str];
+                [weakSelf.utility sendData:get_assets];
+                weakSelf.assestsCount = info.result.count;
+                NSLog(@"AccountBalances");
+                break;
+            }
+            case GET_FULL_ACCOUNTS_ID:
+            {
+                weakSelf.infoModel = [AccountObserverFull yy_modelWithJSON:message];
+                NSString *idStr = [NSString stringWithFormat:@"%ld",weakSelf.infoModel.ID];
+                NSString *get_assets = [RequestUtils get_assets:@"1.2.0"];
+                [weakSelf.utility sendData:get_assets];
+                
+                break;
+            }
+            case GET_ASSETS_ID: {
+                    weakSelf.assetsModel = [AssetsInfo yy_modelWithJSON:message];
+            
+                    NSString *symbol = weakSelf.assetsModel.result[0].symbol;
+                    NSString *precision = [NSString stringWithFormat:@"%ld",weakSelf.assetsModel.result[0].precision];
+                SSLog(@"symbol:%@,precision:%@",symbol,precision);
+                    [weakSelf.tableView reloadData];
+                NSLog(@"AssetsInfo");
+                break;
+                
+            }
+            case GET_ACCOUNTS_HISTORY:
+            {
+                NSLog(@"get_account_history");
+                break;
+            }
+            default:
+                break;
+        }
+        SSLog(@"ReciveMessage:%@",message);
     };
 }
 
-- (void)SRWebSocketDidOpen {
-    NSLog(@"开启成功");
-    
-    //在成功后需要做的操作。。。
-    
-    // 如果需要发送数据到服务器使用下面代码
-//     { “id”：1，“method”：“call”，“params”：[ 0，“get_accounts”，[[ “1.2.0” ]]]}
-    // "id":2,"method":"call","params":[1,"login",["",""]]} 登录
-    //  message:{"id":2,"jsonrpc":"2.0","result":true} 登录成功
-//    现在我们可以database通过:: 调用API的任何方法
-//
-//    >  { “id” ：1 ， “method” ：“call” ， “params” ：[ DATABASE_API_ID ，“get_accounts” ，[[ “1.2.0” ]]]}
-
-//    NSArray *param = @[@0,@"get_accounts",@[@[@"1.2.0"]]];
-//    [[SocketRocketUtility instance] sendData:param withMethod:@"call" IDStr:@"1"];
-  
-    // 登录
-//    NSArray *arr = @[@1,@"login",@[@"buybuybuy",@"123456"]];
-//    [[SocketRocketUtility instance] sendData:arr withMethod:@"call" IDStr:@"2"];
-////    // get——account
-//    NSArray *arr1 = @[@0,@"get_accounts",@[@[@"1.2.0"]]];
-//    [[SocketRocketUtility instance] sendData:arr1 withMethod:@"call" IDStr:@"1"];
-//    NSString *json =[RequestUtils get_accounts:0 ids:@"1.2.0"];
-//    [[SocketRocketUtility instance] sendDataWithJson:json];
-//
-//    NSString *json1 = [RequestUtils get_full_accounts:@"1.2.0"];
-//    [[SocketRocketUtility instance] sendDataWithJson:json1];
-    // 获取资产列表信息
-//    NSString *json = [RequestUtils get_assets:@"1.3.0"];
-//    [[SocketRocketUtility instance] sendDataWithJson:json];
-    
-}
 
 
-- (void)SRWebSocketDidReceiveMsg:(NSNotification *)note {
-    //收到服务端发送过来的消息
-    NSString * message = note.object;
-    NSLog(@"message:%@",message);
-/*
-message: {
-    "id": 3302,
-    "jsonrpc": "2.0",
-    "result": [{
-        "id": "1.3.0",
-        "symbol": "KRIS",
-        "precision": 8,
-        "issuer": "1.2.3",
-        "options": {
-            "max_supply": "1000000000000000000",
-            "market_fee_percent": 0,
-            "max_market_fee": "1000000000000000000",
-            "issuer_permissions": 0,
-            "flags": 0,
-            "core_exchange_rate": {
-                "base": {
-                    "amount": 1,
-                    "asset_id": "1.3.0"
-                },
-                "quote": {
-                    "amount": 1,
-                    "asset_id": "1.3.0"
-                }
-            },
-            "whitelist_authorities": [],
-            "blacklist_authorities": [],
-            "whitelist_markets": [],
-            "blacklist_markets": [],
-            "description": "",
-            "extensions": []
-        },
-        "dynamic_asset_data_id": "2.3.0"
-    }]
-    */
 
-}
-
-
--(void)vertifyPersonAndMathion{
-    
-}
 
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 30, 0);
 }
-#pragma mark - 请求账户数据
-//-(void)requestDate{
-//    NSString *json =[RequestUtils get_accounts:0 ids:@"1.2.0"];
-//    [[SocketRocketUtility instance] sendDataWithJson:json];
-//
-//}
+
 @end

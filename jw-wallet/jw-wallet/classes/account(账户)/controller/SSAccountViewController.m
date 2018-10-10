@@ -21,6 +21,8 @@
 #import <LocalAuthentication/LocalAuthentication.h>
 #import "RequestUtils.h"
 #import "SSAccountModel.h"
+#import "FCUtility.h"
+#import "AccountInfo.h"
 @interface SSAccountViewController ()<UITableViewDelegate,UITableViewDataSource,SRWebSocketDelegate>
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, strong) UITableView* tableView;
@@ -38,6 +40,7 @@
 @property (nonatomic, copy) NSArray *statusArr;
 @property (nonatomic, strong)  SSAccoutHeaderView *header;
 @property(nonatomic, strong) SocketRocketUtility *utility;
+@property (nonatomic, strong) AccountInfo *AccountInfoModel;
 @end
 
 @implementation SSAccountViewController
@@ -219,8 +222,8 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section==0) {
         self.header = [[[NSBundle mainBundle] loadNibNamed:@"SSAccoutHeaderView" owner:nil options:nil] lastObject];
-        self.header.accountId.text = self.accountModel.ID;
-        self.header.accountName.text = self.accountModel.name;
+        self.header.accountId.text = [NSString stringWithFormat:@"ID: %@",self.AccountInfoModel.result[0].ID];
+        self.header.accountName.text = self.AccountInfoModel.result[0].name;
         return self.header;
     }else{
         UIView *sectionHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
@@ -370,17 +373,31 @@
     self.utility = [SocketRocketUtility instance];
     [self.utility SRWebSocketOpenWithURLString:SocketBaseURLString];
     __weak __typeof(self) weakSelf = self;
+     NSString *lookup_account_names = [RequestUtils lookup_account_names:@"w200"];
     if (self.utility.didOpen) {
-        NSString *json =[RequestUtils get_accounts:0 ids:@"1.2.0"];
-        [weakSelf.utility sendDataWithJson:json];
+        
+        [weakSelf.utility sendData:lookup_account_names];
     }
 
     self.utility.didReceiveMessage = ^(id message) {
         //收到服务端发送过来的消息
-        NSDictionary *dit = [message mj_JSONObject];
-        NSDictionary *result = dit[@"result"][0];
-        weakSelf.accountModel = [SSAccountModel mj_objectWithKeyValues:result];
-        [weakSelf.tableView reloadData];
+        id result = [FCUtility toOCData:message];
+        switch ([result[@"id"] integerValue]) {
+            case LOOKUP_ACCOUNT_NAMES_ID: {
+                AccountInfo *info = [AccountInfo yy_modelWithJSON:message];
+                weakSelf.AccountInfoModel = info;
+//                NSString *ID =  info.result[0].ID;
+//                NSString *get_account_balances = [RequestUtils get_account_balances:ID];
+//                [weakSelf.utility sendData:get_account_balances];
+                [weakSelf.tableView reloadData];
+                NSLog(@"AccountInfo");
+                
+                break;
+            }
+            
+            default:
+                break;
+        }
     };
   
 }

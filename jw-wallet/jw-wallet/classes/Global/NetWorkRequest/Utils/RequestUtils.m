@@ -1,4 +1,4 @@
- //
+//
 // Created by Cool on 2018/8/15.
 // Copyright (c) 2018 Cool. All rights reserved.
 //
@@ -111,5 +111,34 @@
     return json;
 }
 
++ (NSString *)get_dynamic_global_properties {
+    NSMutableString *json = [[NSMutableString alloc] init];
+    [json appendFormat:@"{\"id\":%d, \"method\":\"call\", \"params\":[0,\"get_dynamic_global_properties\",[]]}", GET_DYNAMIC_GLOBAL_PROPERTIES];
+    return json;
+}
 
++ (NSString *)get_chain_properties {
+    NSMutableString *json = [[NSMutableString alloc] init];
+    [json appendFormat:@"{\"id\":%d, \"method\":\"call\", \"params\":[0,\"get_chain_properties\",[]]}", GET_CHAIN_PROPERTIES];
+    return json;
+}
+
++ (NSString *)broadcast_transaction_synchronous:(NSString *)transaction {
+    NSMutableString *json = [[NSMutableString alloc] init];
+    [json appendFormat:@"{\"id\":%d, \"method\":\"call\", \"params\":[2,\"broadcast_transaction_synchronous\",[%@]]}", BROADCAST_TRANSACTION_SYNCHRONOUS, transaction];
+    return json;
+}
+
+
++ (NSString *)get_account_history:(NSString *)ids {
+    return [self get_accounts:GET_ACCOUNTS_HISTORY ids:ids];
+}
+
++ (NSString *)get_account_history:(int)id1 ids:(NSString *)ids {
+    NSMutableString *json = [[NSMutableString alloc] init];
+    [json appendFormat:@"{\"id\":%d,", id1];
+    [json appendFormat:@"\"method\":\"call\", "];
+    [json appendFormat:@"\"params\":[0,\"get_account_history\",[[\"%@\"]]]}", ids];
+    return json;
+}
 @end

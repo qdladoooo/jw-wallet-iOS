@@ -47,6 +47,8 @@
     // 生成二维码(Default)
     [self setupGenerateQRCode];
     [self addGradualLayer];
+    // 钱包地址
+    self.address.text = self.walletID;
 }
 
 - (void)didReceiveMemoryWarning {

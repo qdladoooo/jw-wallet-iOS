@@ -1,24 +1,27 @@
- //
+//
 // Created by Cool on 2018/8/15.
 // Copyright (c) 2018 Cool. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-
 static int const LOOKUP_ACCOUNT_NAMES_ID = 3300;//AccountInfo
 static int const GET_ACCOUNT_BALANCES_ID = 3301;//AccountBalances
 static int const GET_ASSETS_ID = 3302;//AssetsInfo
 static int const GET_ACCOUNTS_ID = 3303;//AccountInfo
+
 
 static int const LOGIN_ID = 3304;//AccountObserveUpdate
 static int const DATABASE_ID = 3305;//AccountObserveUpdate
 static int const SET_SUBSCRIBE_CALLBACK_ID = 3306;//AccountObserveUpdate
 static int const CANCEL_ALL_SUBSCRIPTIONS_ID = 3307;//AccountObserveUpdate
 static int const GET_FULL_ACCOUNTS_ID = 3308;//AccountObserveUpdate
+static int const GET_DYNAMIC_GLOBAL_PROPERTIES = 3309;//GlobalProperties
+static int const GET_CHAIN_PROPERTIES = 3310;//ChainProperties
+static int const BROADCAST_TRANSACTION_SYNCHRONOUS = 3311;//TransactionResult
 
+static int const GET_ACCOUNTS_HISTORY = 3312;//AccountHistory
 @interface RequestUtils : NSObject
-
 
 /**
  * 1.根据账号名获取账号ID
@@ -85,6 +88,7 @@ static int const GET_FULL_ACCOUNTS_ID = 3308;//AccountObserveUpdate
 + (NSString *)cancel_all_subscriptions;
 
 + (NSString *)cancel_all_subscriptions:(int)id;
+
 /**
  * 5.5取消账户更新回调
  * @return
@@ -92,4 +96,27 @@ static int const GET_FULL_ACCOUNTS_ID = 3308;//AccountObserveUpdate
 + (NSString *)get_full_accounts:(NSString *)ids;
 
 + (NSString *)get_full_accounts:(int)id1 ids:(NSString *)ids;
+
+/**
+ * 6.获取交易ref
+ * @return
+ */
++ (NSString *)get_dynamic_global_properties;
+
+/**
+ * 6.1获取chainid
+ * @return
+ */
++ (NSString *)get_chain_properties;
+
++ (NSString *)broadcast_transaction_synchronous:(NSString *)transaction;
+// 获取账户历史数据
+//(get_account_history)
+//(get_account_history_by_operations)
+//(get_account_history_operations)
+//opreation_type 为 0
++ (NSString *)get_account_history:(NSString *)ids;
+
++ (NSString *)get_account_history:(int)id1 ids:(NSString *)ids;
+
 @end

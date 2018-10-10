@@ -30,12 +30,14 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
+  - OpenSSL-Universal (1.0.2.13)
   - SDWebImage (4.4.0):
     - SDWebImage/Core (= 4.4.0)
   - SDWebImage/Core (4.4.0)
   - SGQRCode (2.2.0)
   - SocketRocket (0.5.1)
   - WebViewJavascriptBridge (6.0.3)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
@@ -47,10 +49,12 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
   - MJExtension (= 3.0.13)
   - MJRefresh (= 3.1.12)
+  - OpenSSL-Universal (~> 1.0.2.13)
   - SDWebImage (~> 4.4.0)
   - SGQRCode (~> 2.2.0)
   - SocketRocket
   - WebViewJavascriptBridge (= 6.0.3)
+  - YYModel (~> 1.0.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -64,10 +68,12 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - OpenSSL-Universal
     - SDWebImage
     - SGQRCode
     - SocketRocket
     - WebViewJavascriptBridge
+    - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -80,11 +86,13 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  OpenSSL-Universal: 401888162f11c33ebbd46f782d9229da35c61327
   SDWebImage: b534502786e43dde36dfcaee89356fe6df30e203
   SGQRCode: 6cd7f03ea6b74d1267820d427b07d1451b387c79
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 5e490a5fc31c3eb33fef43ca082f5790b1baa57a
+PODFILE CHECKSUM: 92339d2be760864dca3f7e9fd3291e406cbe72a7
 
 COCOAPODS: 1.5.3

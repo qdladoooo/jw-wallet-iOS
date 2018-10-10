@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *transfer; // 转账
 @property (weak, nonatomic) IBOutlet UIButton *getMoney; // 收款
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UILabel *balancesLabel;
 
 @end
 
@@ -29,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fd_prefersNavigationBarHidden = YES;
+    self.balancesLabel.text = self.balances;
     self.nav_title.text = kLocalizedTableString(@"资产详情", gy_LocalizableName);
     self.nav_title.font = [UIFont boldSystemFontOfSize:15];
     self.banlance_title.text = kLocalizedTableString(@"账户余额",gy_LocalizableName);

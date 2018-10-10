@@ -51,4 +51,5 @@
 #import "SJGradientView.h"
 #import "SSGrandientView.h"
 #import "SSHelpWordsModel.h"
+#import <YYModel/NSObject+YYModel.h>
 #endif /* SHSF_pch */

@@ -16,9 +16,9 @@ extern NSString *const kWebSocketdidReceiveMessageNote;
 
 @interface SocketRocketUtility : NSObject
 
-typedef void (^SocketDidOpen)(void);
+typedef void (^SocketDidOpen)();
 
-typedef void (^SocketDidClose)(void);
+typedef void (^SocketDidClose)();
 
 typedef void (^SocketDidReceiveMessage)(id message);
 
@@ -33,7 +33,6 @@ typedef void (^SocketDidReceiveMessage)(id message);
 - (void)SRWebSocketOpenWithURLString:(NSString *)urlString;//开启连接
 - (void)SRWebSocketClose;//关闭连接
 - (void)sendData:(id)data;//发送数据
-//- (void)sendData:(id)data withMethod:(NSString *)method IDStr:(NSString *)IDStr;
-- (void)sendDataWithJson:(NSString *)jsonString;
+- (void)sendData:(id)data withMethod:(NSString *)method IDStr:(NSString *)IDStr;
 
 @end

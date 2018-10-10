@@ -44,6 +44,9 @@ pod 'SocketRocket'
 #数据库二次封装
 pod 'BGFMDB', '~> 2.0.10'
 
+pod 'OpenSSL-Universal', '~> 1.0.2.13'
+pod 'YYModel', '~> 1.0.4'
+
 ## Comment the next line if you're not using Swift and don't want to use dynamic frameworks
 #use_frameworks!
 #pod 'CKMnemonic', '~> 0.1.7'

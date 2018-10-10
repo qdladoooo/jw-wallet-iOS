@@ -9,7 +9,6 @@
 #import "SSAsertHearView.h"
 #import "SSGetMoneyViewController.h"
 @interface SSAsertHearView()
-@property (weak, nonatomic) IBOutlet UILabel *walletName;
 @property (weak, nonatomic) IBOutlet UIButton *addNewAssets;
 
 
@@ -35,6 +34,7 @@
  */
 - (IBAction)getMoneyAdress:(id)sender {
     SSGetMoneyViewController *vc = [[SSGetMoneyViewController alloc] init];
+    vc.walletID = self.walletNameAdressBtn.titleLabel.text;
     [self.viewController.navigationController pushViewController:vc  animated:YES];
 }
 

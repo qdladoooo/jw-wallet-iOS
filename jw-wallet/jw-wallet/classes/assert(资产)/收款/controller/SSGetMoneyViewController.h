@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SSGetMoneyViewController : UIViewController
-
+@property (nonatomic, strong) NSString *walletID;
 @end
