@@ -96,6 +96,8 @@
 // 转账
 - (IBAction)transferAction:(id)sender {
     SSTranferViewController *vc = [[SSTranferViewController alloc] init];
+    vc.AccountID = self.AccountID;
+    vc.AssetID = self.AssetID;
     [self.navigationController pushViewController:vc  animated:YES];
 }
 // 收款

@@ -1640,9 +1640,9 @@
 			isa = PBXGroup;
 			children = (
 				2EACADA62154D3FF003CD29B /* TransactionUtils.h */,
-				2EACADA72154D3FF003CD29B /* BaseHttpUtils.m */,
 				2EACADA92154D3FF003CD29B /* TransactionUtils.m */,
 				2EACADAA2154D3FF003CD29B /* BaseHttpUtils.h */,
+				2EACADA72154D3FF003CD29B /* BaseHttpUtils.m */,
 				2EACADA82154D3FF003CD29B /* RequestUtils.h */,
 				2EACADAB2154D3FF003CD29B /* RequestUtils.m */,
 			);

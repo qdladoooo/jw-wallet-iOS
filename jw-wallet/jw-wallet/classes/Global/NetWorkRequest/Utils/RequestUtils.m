@@ -131,14 +131,14 @@
 
 
 + (NSString *)get_account_history:(NSString *)ids {
-    return [self get_accounts:GET_ACCOUNTS_HISTORY ids:ids];
+    return [self get_account_history:GET_ACCOUNTS_HISTORY ids:ids];
 }
 
 + (NSString *)get_account_history:(int)id1 ids:(NSString *)ids {
     NSMutableString *json = [[NSMutableString alloc] init];
     [json appendFormat:@"{\"id\":%d,", id1];
     [json appendFormat:@"\"method\":\"call\", "];
-    [json appendFormat:@"\"params\":[0,\"get_account_history\",[[\"%@\"]]]}", ids];
+    [json appendFormat:@"\"params\":[0,\"get_account_history\",[[\"%@\"]],\"opreation_type\",0]}", ids];
     return json;
 }
 @end

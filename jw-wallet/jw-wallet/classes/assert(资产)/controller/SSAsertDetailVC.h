@@ -14,4 +14,13 @@
  账户余额
  */
 @property (nonatomic, strong) NSString *balances;
+
+/**
+ 资产ID
+ */
+@property (nonatomic, strong) NSString *AssetID;
+/**
+ 账户ID
+ */
+@property (nonatomic, strong) NSString *AccountID;
 @end

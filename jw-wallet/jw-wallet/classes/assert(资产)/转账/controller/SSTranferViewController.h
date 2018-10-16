@@ -14,4 +14,12 @@
  扫描二维码获取地址
  */
 @property(nonatomic,copy) NSString *jump_URL;
+/**
+ 资产ID
+ */
+@property (nonatomic, strong) NSString *AssetID;
+/**
+ 账户ID
+ */
+@property (nonatomic, strong) NSString *AccountID;
 @end

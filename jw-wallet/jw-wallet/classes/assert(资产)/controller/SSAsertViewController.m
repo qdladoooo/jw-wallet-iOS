@@ -46,6 +46,10 @@
  */
 @property (nonatomic, strong) NSString *balances;
 
+/**
+ 账户ID
+ */
+@property (nonatomic, strong) NSString *accountID;
 @end
 
 @implementation SSAsertViewController
@@ -138,7 +142,7 @@ static int recordNumer = 0;
     if (indexPath.row!=0) {
         cell.darkView.hidden = YES;
     }
-    cell.icon.image = [UIImage imageNamed:@"eos		"];
+    cell.icon.image = [UIImage imageNamed:@"eos"];
     if (indexPath.row<self.assestsCount) {
         cell.name1.text = self.assetsModel.result[indexPath.row].symbol;
         CGFloat amount = self.balanceModel.result[indexPath.row].amount.doubleValue;
@@ -153,6 +157,8 @@ static int recordNumer = 0;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     SSAsertDetailVC *vc = [[SSAsertDetailVC alloc] init];
+    vc.AssetID = self.assetsModel.result[indexPath.row].ID;
+    vc.AccountID = self.accountID;
     CGFloat amount = self.balanceModel.result[indexPath.row].amount.doubleValue;
     NSInteger precision = self.assetsModel.result[indexPath.row].precision;
     //        amount / 10^precision
@@ -293,10 +299,13 @@ static int recordNumer = 0;
                 AccountInfo *info = [AccountInfo yy_modelWithJSON:message];
                 weakSelf.AccountInfoModel = info;
                 NSString *ID =  info.result[0].ID;
+                weakSelf.accountID = ID;
                 NSString *get_account_balances = [RequestUtils get_account_balances:ID];
                 [weakSelf.utility sendData:get_account_balances];
                 
                 // 获取账户历史数据
+//                NSString *get_account = [RequestUtils get_accounts:ID];
+//                [weakSelf.utility sendData:get_account];
                 NSString *get_account_history = [RequestUtils get_account_history:ID];
                 [weakSelf.utility sendData:get_account_history];
                 NSLog(@"AccountInfo");
